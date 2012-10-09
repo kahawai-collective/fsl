@@ -1,0 +1,21 @@
+#Makefile for Figo library.
+
+# Home  directory
+FIGO_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
+
+# Include directories
+FIGO_INCLUDE_DIRS := -I$(FIGO_HOME)/.. -I$(FIGO_CPP_HOME)/requirements/include
+
+# Library directories
+FIGO_LIB_DIRS := -L$(FIGO_HOME)/requirements/lib
+
+# Libraries that need to be included
+FIGO_LIBS := 
+
+# C++ compile command
+FIGO_COMPILE := g++ -std=c++0x $(FIGO_INCLUDE_DIRS)
+
+# The .test file extension is used to indicate that a C++ file should be compiled into a test
+%.test : %.cpp
+	$(FIGO_COMPILE) -DFIGO_TEST_SINGLE -o $@ $< $(FIGO_LIB_DIRS) $(FIGO_LIBS) -lboost_unit_test_framework
+
