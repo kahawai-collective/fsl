@@ -16,13 +16,13 @@ FIGO_LIBS :=
 FIGO_COMPILE := g++ -std=c++0x $(FIGO_INCLUDE_DIRS)
 
 # Compile a single test. The .test file extension is used to indicate that a C++ file should be compiled into a test executable
-%.test : %.cpp
+%.exe : %.cxx
 	$(FIGO_COMPILE) -DFIGO_TEST_SINGLE -o $@ $< $(FIGO_LIB_DIRS) $(FIGO_LIBS) -lboost_unit_test_framework
 
 # Run a single test and redirect stdout and sterr to file with extension .test.out
-%.test.out : %.test
+%.test : %.exe
 	./$< > $@ 2>&1
 
 clean:
-	rm -f *.o *.test *.test.out
+	rm -f *.o *.exe *.test
 
