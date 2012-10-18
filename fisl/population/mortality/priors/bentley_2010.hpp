@@ -1,15 +1,15 @@
 #pragma once
 
-#include <figo/math/probability/lognormal.hpp>
-#include <figo/math/statistics/multivariate/regression.hpp>
+#include <fisl/math/probability/lognormal.hpp>
+#include <fisl/math/statistics/multivariate/regression.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Population {
 namespace Mortality {
 namespace Priors {
 namespace Bentley2010 {
 	
-using Figo::Math::Statistics::Multivariate::Regression;
+using Fisl::Math::Statistics::Multivariate::Regression;
 
 class MFromK : public Regression {
 /*

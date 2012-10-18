@@ -3,13 +3,13 @@
 #include <boost/math/distributions/uniform.hpp>
 #include <boost/random/uniform_real.hpp>
 
-#include <figo/math/probability/distribution.hpp>
+#include <fisl/math/probability/distribution.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Probability {
 
-using namespace Figo;
+using namespace Fisl;
 
 class Uniform : public Distribution<Uniform> {
 public:

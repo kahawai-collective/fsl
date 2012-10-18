@@ -6,7 +6,7 @@
 
 #include "../steepness_he_2006.hpp"
 
-using Figo::Population::Recruitment::Priors::SteepnessHe2006;
+using Fisl::Population::Recruitment::Priors::SteepnessHe2006;
 
 BOOST_AUTO_TEST_CASE(examples){
 	//! Generate examples of priors for different levels of M and sigma

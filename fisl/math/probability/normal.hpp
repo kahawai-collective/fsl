@@ -3,13 +3,13 @@
 #include <boost/math/distributions/normal.hpp>
 #include <boost/random/normal_distribution.hpp>
 
-#include <figo/math/probability/distribution.hpp>
+#include <fisl/math/probability/distribution.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Probability {
 
-using namespace Figo;
+using namespace Fisl;
 
 class Normal : public Distribution<Normal> {
 private:

@@ -1,10 +1,10 @@
-#Makefile for Figo library.
+#Makefile for FiSL.
 
-# Home  directory
-FIGO_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
+# Home  directory is the one above this
+FIGO_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 
 # Include directories
-FIGO_INCLUDE_DIRS := -I$(FIGO_HOME)/.. -I$(FIGO_CPP_HOME)/requirements/include
+FIGO_INCLUDE_DIRS := -I$(FIGO_HOME) -I$(FIGO_HOME)/requirements/include
 
 # Library directories
 FIGO_LIB_DIRS := -L$(FIGO_HOME)/requirements/lib

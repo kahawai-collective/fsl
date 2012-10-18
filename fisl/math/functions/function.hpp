@@ -1,9 +1,9 @@
 #pragma once
 
-#include <figo/common.hpp>
-#include <figo/array.hpp>
+#include <fisl/common.hpp>
+#include <fisl/array.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Functions {
     

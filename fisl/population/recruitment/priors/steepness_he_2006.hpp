@@ -2,14 +2,14 @@
 
 #include <boost/foreach.hpp>
 
-#include <figo/probability/uniform.hpp>
+#include <fisl/probability/uniform.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Population {
 namespace Recruitment {
 namespace Priors {
 	
-using Figo::Probability::Uniform;
+using Fisl::Probability::Uniform;
 
 /*!
 A prior for steepness based on natural mortality and recruitment variability (He et al 2006)

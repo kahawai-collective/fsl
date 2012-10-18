@@ -3,16 +3,16 @@ Priors based on analysis of Fishbase
 */
 #pragma once
 
-#include <figo/math/probability/lognormal.hpp>
-#include <figo/math/statistics/multivariate/regression.hpp>
+#include <fisl/math/probability/lognormal.hpp>
+#include <fisl/math/statistics/multivariate/regression.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Population {
 namespace Growth {
 namespace Priors {
 	
-using Figo::Math::Probability::Lognormal;
-using Figo::Math::Statistics::Multivariate::Regression;
+using Fisl::Math::Probability::Lognormal;
+using Fisl::Math::Statistics::Multivariate::Regression;
 	
 class Linf : public Lognormal {
 public:

@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 
-namespace Figo {
+namespace Fisl {
     
 template<class Type=double, int Dimension1=0, int Dimension2=0, int Dimension3=0, int Dimension4=0, int Dimension5=0> class Array;
 

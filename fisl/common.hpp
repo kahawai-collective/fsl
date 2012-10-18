@@ -5,6 +5,6 @@
 
 #pragma once
 
-namespace Figo {
+namespace Fisl {
 
 }

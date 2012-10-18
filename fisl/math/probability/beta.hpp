@@ -2,9 +2,9 @@
 
 #include <boost/math/distributions/beta.hpp>
 
-#include <figo/math/probability/distribution.hpp>
+#include <fisl/math/probability/distribution.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Probability {
 	

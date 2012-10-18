@@ -3,13 +3,13 @@
 #include <boost/math/distributions/lognormal.hpp>
 #include <boost/random/lognormal_distribution.hpp>
 
-#include <figo/math/probability/distribution.hpp>
+#include <fisl/math/probability/distribution.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Probability {
 
-using namespace Figo;
+using namespace Fisl;
 
 class Lognormal : public Distribution<Lognormal> {
 private:

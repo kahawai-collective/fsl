@@ -2,5 +2,5 @@
 *.o
 
 #Ignore test executables and output
+*.exe
 *.test
-*.test.out

@@ -1,4 +1,4 @@
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Probability {
 

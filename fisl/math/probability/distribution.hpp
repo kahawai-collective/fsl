@@ -11,9 +11,9 @@
 //For default random number generation...
 #include <boost/random/uniform_01.hpp>
 
-#include <figo/common.hpp>
+#include <fisl/common.hpp>
 
-namespace Figo {
+namespace Fisl {
 namespace Math {
 namespace Probability {
 	

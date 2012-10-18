@@ -11,7 +11,7 @@
 
 BOOST_AUTO_TEST_SUITE(cached)
 
-using namespace Figo::Math::Probability;    
+using namespace Fisl::Math::Probability;    
 
 BOOST_AUTO_TEST_CASE(beta){     
     Beta beta;

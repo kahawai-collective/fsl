@@ -8,7 +8,7 @@
 
 BOOST_AUTO_TEST_SUITE(cached)
 
-using namespace Figo::Math::Functions;    
+using namespace Fisl::Math::Functions;    
 Cached<Identity,10> c1;
     
 BOOST_AUTO_TEST_CASE(reset_plain){     
@@ -33,6 +33,5 @@ BOOST_AUTO_TEST_CASE(reset_function){
     BOOST_CHECK_EQUAL(c1(3),7);
     BOOST_CHECK_EQUAL(c1(9),1);
 }
-
 
 BOOST_AUTO_TEST_SUITE_END()
