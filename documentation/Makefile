@@ -1,3 +1,7 @@
-all:
-	make -C doxygen all
+all: doxygen
+
+.PHONY: doxygen
+
+doxygen:
+	make -C doxygen
 	
