@@ -13,10 +13,8 @@ using Fisl::Probability::Uniform;
 
 /*!
 
-# SteepnessHe2006
-
 A prior for steepness based on natural mortality and recruitment variability ([He et al 2006](http://fishbull.noaa.gov/1043/he.pdf))
- 
+
 */
 class SteepnessHe2006 {
 public:
