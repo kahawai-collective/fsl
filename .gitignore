@@ -1,6 +1,9 @@
+#Ignore the sanbox directory
+sandbox
+
 #Ignore object files
 *.o
 
 #Ignore test executables and output
 *.exe
-*.test
+*.out

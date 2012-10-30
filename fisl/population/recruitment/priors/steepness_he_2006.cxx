@@ -1,10 +1,13 @@
-#define BOOST_TEST_DYN_LINK
-#define BOOST_TEST_MODULE steepness_he_2006_tests
+#ifdef FISL_TEST_SINGLE
+    #define BOOST_TEST_MODULE tests
+#endif
 #include <boost/test/unit_test.hpp>
+
+#include <fstream>
 
 #include <boost/foreach.hpp>
 
-#include "../steepness_he_2006.hpp"
+#include <fisl/population/recruitment/priors/steepness_he_2006.hpp>
 
 using Fisl::Population::Recruitment::Priors::SteepnessHe2006;
 

@@ -1,13 +1,13 @@
 #ifdef FISL_TEST_SINGLE
-	#define BOOST_TEST_MODULE tests
+    #define BOOST_TEST_MODULE tests
 #endif
 #include <boost/test/unit_test.hpp>
 
-#include "../beta.hpp"
-#include "../fixed.hpp"
-#include "../lognormal.hpp"
-#include "../normal.hpp"
-#include "../uniform.hpp"
+#include <fisl/math/probability/beta.hpp>
+#include <fisl/math/probability/fixed.hpp>
+#include <fisl/math/probability/lognormal.hpp>
+#include <fisl/math/probability/normal.hpp>
+#include <fisl/math/probability/uniform.hpp>
 
 BOOST_AUTO_TEST_SUITE(cached)
 

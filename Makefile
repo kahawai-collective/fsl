@@ -1,4 +1,5 @@
 all:
-	make -C requirements
-	make -C fisl
-	make -C documentation
+	$(MAKE) -C requirements
+	$(MAKE) -C fisl
+	$(MAKE) -C documentation
+	

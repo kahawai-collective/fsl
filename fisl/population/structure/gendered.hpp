@@ -1,5 +1,7 @@
 #pragma once
 
+#include <fisl/array.hpp>
+
 namespace Fisl {
 namespace Population {
 namespace Structure {

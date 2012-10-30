@@ -2,14 +2,14 @@
 
 #include <boost/foreach.hpp>
 
-#include <fisl/probability/uniform.hpp>
+#include <fisl/math/probability/uniform.hpp>
 
 namespace Fisl {
 namespace Population {
 namespace Recruitment {
 namespace Priors {
 	
-using Fisl::Probability::Uniform;
+using Fisl::Math::Probability::Uniform;
 
 /*!
 
