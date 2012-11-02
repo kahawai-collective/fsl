@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="gendered_8hpp" kind="file">
+    <compoundname>gendered.hpp</compoundname>
+    <includes refid="array_8hpp" local="no">fisl/array.hpp</includes>
+    <includedby refid="gendered_8cxx" local="no">gendered.cxx</includedby>
+    <incdepgraph>
+      <node id="161">
+        <label>fisl/array.hpp</label>
+        <link refid="array_8hpp"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>gendered.hpp</label>
+        <link refid="gendered.hpp"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>vector</label>
+      </node>
+      <node id="163">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="164">
+        <label>gendered.hpp</label>
+        <link refid="gendered.hpp"/>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>gendered.cxx</label>
+        <link refid="gendered_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFisl_1_1Population_1_1Structure_1_1Gendered" prot="public">Fisl::Population::Structure::Gendered</innerclass>
+    <innernamespace refid="namespaceFisl">Fisl</innernamespace>
+    <innernamespace refid="namespaceFisl_1_1Population">Fisl::Population</innernamespace>
+    <innernamespace refid="namespaceFisl_1_1Population_1_1Structure">Fisl::Population::Structure</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="array_8hpp" kindref="compound">fisl/array.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fisl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Population<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Structure<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Type</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">&gt;<sp/></highlight></codeline>
+<codeline lineno="12" refid="classFisl_1_1Population_1_1Structure_1_1Gendered" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered" kindref="compound">Gendered</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classArray" kindref="compound">Array</ref>&lt;Type,2&gt;<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1aaab10efd9a0d7d97a7a6e4afd08eca1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1aaab10efd9a0d7d97a7a6e4afd08eca1f" kindref="member">proportion</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1a2121a1a85256c9266436984bad21201c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered" kindref="compound">Gendered</ref>&amp;<sp/><ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1a2121a1a85256c9266436984bad21201c" kindref="member">ageing</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>recruits){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*this)(0).<ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1a2121a1a85256c9266436984bad21201c" kindref="member">ageing</ref>(recruits<sp/>*<sp/><ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1aaab10efd9a0d7d97a7a6e4afd08eca1f" kindref="member">proportion</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*this)(1).<ref refid="classFisl_1_1Population_1_1Structure_1_1Gendered_1a2121a1a85256c9266436984bad21201c" kindref="member">ageing</ref>(recruits<sp/>*<sp/>(1-proportion));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/gendered.hpp"/>
+  </compounddef>
+</doxygen>

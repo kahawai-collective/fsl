@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespaceFisl_1_1Population_1_1Structure" kind="namespace">
+    <compoundname>Fisl::Population::Structure</compoundname>
+    <innerclass refid="classFisl_1_1Population_1_1Structure_1_1Aged" prot="public">Fisl::Population::Structure::Aged</innerclass>
+    <innerclass refid="classFisl_1_1Population_1_1Structure_1_1Gendered" prot="public">Fisl::Population::Structure::Gendered</innerclass>
+    <innerclass refid="classFisl_1_1Population_1_1Structure_1_1Numbers" prot="public">Fisl::Population::Structure::Numbers</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/aged.hpp" line="7"/>
+  </compounddef>
+</doxygen>

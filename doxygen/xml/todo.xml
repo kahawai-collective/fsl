@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Member <ref refid="classFisl_1_1Math_1_1Probability_1_1Distribution_1a5c3913bd5c2a35ad5f37b2f6436a7097" kindref="member">Fisl::Math::Probability::Distribution&lt; Derived &gt;::pdf</ref>  (const double &amp;x) const </term></varlistentry>
+<listitem><para>implement Duple&lt;&gt; to provide for range and support </para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

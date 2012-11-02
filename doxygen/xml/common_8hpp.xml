@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="common_8hpp" kind="file">
+    <compoundname>common.hpp</compoundname>
+    <includedby refid="function_8hpp" local="no">function.hpp</includedby>
+    <includedby refid="identity_8hpp" local="no">identity.hpp</includedby>
+    <includedby refid="threshold_8hpp" local="no">threshold.hpp</includedby>
+    <includedby refid="distribution_8hpp" local="no">distribution.hpp</includedby>
+    <invincdepgraph>
+      <node id="88">
+        <label>uniform.hpp</label>
+        <link refid="uniform_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>beta.hpp</label>
+        <link refid="beta_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>bentley_2010.hpp</label>
+        <link refid="mortality_2priors_2bentley__2010_8hpp"/>
+      </node>
+      <node id="89">
+        <label>steepness_he_2006.hpp</label>
+        <link refid="steepness__he__2006_8hpp"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>threshold.hpp</label>
+        <link refid="threshold_8hpp"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>cached.cxx</label>
+        <link refid="cached_8cxx"/>
+      </node>
+      <node id="84">
+        <label>lognormal.hpp</label>
+        <link refid="lognormal_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>identity.hpp</label>
+        <link refid="identity_8hpp"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>functions.hpp</label>
+        <link refid="functions_8hpp"/>
+      </node>
+      <node id="87">
+        <label>normal.hpp</label>
+        <link refid="normal_8hpp"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>steepness_he_2006.cxx</label>
+        <link refid="steepness__he__2006_8cxx"/>
+      </node>
+      <node id="85">
+        <label>bentley_2010.hpp</label>
+        <link refid="growth_2priors_2bentley__2010_8hpp"/>
+      </node>
+      <node id="83">
+        <label>distributions.cxx</label>
+        <link refid="distributions_8cxx"/>
+      </node>
+      <node id="76">
+        <label>function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>common.hpp</label>
+        <link refid="common.hpp"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceFisl">Fisl</innernamespace>
+    <briefdescription>
+<para>Definitions of common #includes and typedefs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fisl<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/common.hpp"/>
+  </compounddef>
+</doxygen>
