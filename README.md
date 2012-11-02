@@ -1,9 +1,14 @@
 # FiSL : Fisheries Simuation Library
 
-FiSL is a C++ library for fisheries simulation.
+*FiSL* is a C++ library for fisheries simulation.
 It aims to be highly modular library without compromising speed.
 It does that by making the most of modern C++ language features such as templates
-and recent advances in compiler optimisation. 
+and type inference, as well as recent advances in compiler optimisation. 
+
+Because *FiSL* is modular it can be used for general fisheries simulation.
+However, the main purpose for *FiSL* is as a library for fisheries management procedure evaluation (MPE).
+*FiSL* provides C++ classes that can be composed in alternative ways to 
+provides for alternative types of MPE range from simple to complex.
 
 ## Documentation
 
@@ -36,7 +41,7 @@ a large volume of documentation from it. Whilst the documentation that Dosygen p
 very comprehensive it can be a bit daunting to non-programmers.
 
 You can download Doxygen [here](http://www.stack.nl/~dimitri/doxygen/download.html#latestsrc).
-See the requirements/Makefile for installion for Ubuntu.
+See `requirements/Makefile` for quick installation for Linux.
 
 #### Fislgen
 
@@ -46,4 +51,13 @@ Markdown allows for very easy formatting of text.
 The purpose of Fislgen is to create more customised, less busy, documentation for the library,
 targetted at people that are not programmers.
 
+### Publishing documentation
 
+Currently, documentation is published to a [Github Project Page](http:http://pages.github.com/) using the 
+`gh-pages` branch and is available at <a href="http://trident-systems.github.com/fisl/index.html">http://trident-systems.github.com/fisl/</a>.
+To generate and publish documentation do (see the Makefile for a few requirements):
+
+```sh
+cd  documentation
+make publish
+```
