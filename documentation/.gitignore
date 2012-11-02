@@ -1,0 +1,4 @@
+# Ignore the published directory which is only there for publishing
+# to Github Pages
+published
+
