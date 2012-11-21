@@ -13,6 +13,8 @@ template<
 class Aged : public Array<Type,Ages> {
 public:
     static const int age_max = Ages-1;
+	
+	double recruits;
 
     Aged(void){
     }
@@ -27,7 +29,7 @@ public:
         }
     }
 
-    Aged& ageing(const Type& recruits){
+    Aged& ageing(void){
         auto& self = *this;
         self(age_max).add(self(age_max-1));
         for(int age=age_max-1;age>0;age--) self(age) = self(age-1);
