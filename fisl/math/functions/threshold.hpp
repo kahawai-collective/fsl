@@ -11,7 +11,7 @@ class Threshold : public Function {
 public:
     double inflection;
     
-    double operator(const double& x){
+    double operator()(const double& x){
         return (x<inflection)?0:1;
     }
 };

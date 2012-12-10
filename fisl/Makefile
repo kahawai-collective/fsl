@@ -14,16 +14,17 @@
 FISL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 
 # Include directories
-FISL_INCLUDE_DIRS := -I$(FISL_HOME) -I$(FISL_HOME)/requirements/include
+FISL_INCLUDE_DIRS := -I$(FISL_HOME) -I$(FISL_HOME)/requirements/include -I/media/Data/UCI/stencila/source/stencila/cpp/ -I/media/Data/UCI/stencila/source/stencila/cpp/requirements/include
 
 # Library directories
-FISL_LIB_DIRS := -L$(FISL_HOME)/requirements/lib
+FISL_LIB_DIRS := -L$(FISL_HOME)/requirements/lib -L/media/Data/UCI/stencila/source/stencila/cpp/requirements/lib
 
 # Libraries that need to be included
-FISL_LIBS := 
+FISL_LIBS := -lboost_system -lboost_filesystem -lboost_date_time \
+				-lsqlite3 -ldl -lpthread
 
 # C++ compile command
-FISL_COMPILE := g++ -std=c++0x $(FISL_INCLUDE_DIRS)
+FISL_COMPILE := g++ -std=c++0x -g $(FISL_INCLUDE_DIRS)
 
 # Get a list of tests (files with extension *.cxx)
 FISL_TESTS_CXX := $(shell find -name *.cxx)
