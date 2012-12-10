@@ -1,4 +1,4 @@
-#Ignore the sanbox directory
+#Ignore the sandbox directory
 sandbox
 
 #Ignore object files
@@ -7,3 +7,8 @@ sandbox
 #Ignore test executables and output
 *.exe
 *.out
+
+#Ignore CodeLite IDE files
+fisl.workspace*
+fisl.tags
+tests.project
