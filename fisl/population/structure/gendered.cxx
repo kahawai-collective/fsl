@@ -6,6 +6,7 @@
 #include <fisl/population/structure/numbers.hpp>
 #include <fisl/population/structure/aged.hpp>
 #include <fisl/population/structure/gendered.hpp>
+#include <fisl/population/structure/numbers.hpp>
 
 BOOST_AUTO_TEST_SUITE(population_structure_aged)
 
