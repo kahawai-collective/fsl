@@ -10,21 +10,7 @@
 # Remember to use parrallel builds for speedy compilation and running of all tests
 #    make -j 5 clean tests
 
-# Home  directory is the one above this
-FISL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
-
-# Include directories
-FISL_INCLUDE_DIRS := -I$(FISL_HOME) -I$(FISL_HOME)/requirements/include -I/media/Data/UCI/stencila/source/stencila/cpp/ -I/media/Data/UCI/stencila/source/stencila/cpp/requirements/include
-
-# Library directories
-FISL_LIB_DIRS := -L$(FISL_HOME)/requirements/lib -L/media/Data/UCI/stencila/source/stencila/cpp/requirements/lib
-
-# Libraries that need to be included
-FISL_LIBS := -lboost_system -lboost_filesystem -lboost_date_time \
-				-lsqlite3 -ldl -lpthread
-
-# C++ compile command
-FISL_COMPILE := g++ -std=c++0x -g $(FISL_INCLUDE_DIRS)
+include Makefile.include
 
 # Get a list of tests (files with extension *.cxx)
 FISL_TESTS_CXX := $(shell find -name *.cxx)
@@ -42,7 +28,7 @@ tests : $(FISL_TESTS_OUT)
 # Run a single test and redirect stdout and sterr to bothe the console and to a file with extension .out
 %.out : %.exe
 	./$< 2>&1 | tee $@
-	
+
 all : tests
 
 clean:

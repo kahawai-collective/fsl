@@ -2,9 +2,9 @@
 BOOST_VERSION = 1_50_0
 DOXYGEN_VERSION = 1.8.2
 
-all: boost 
+all: boost stencila-library
 
-.PHONY: boost 
+.PHONY: boost stencila
 
 ####################################################
 # include and lib directories 
@@ -39,6 +39,20 @@ boost_$(BOOST_VERSION)/lib/libboost_system.a: boost_$(BOOST_VERSION)
 boost: boost_$(BOOST_VERSION)/lib/libboost_system.a include lib
 	ln -sfT ../boost_$(BOOST_VERSION)/include/boost include/boost
 	for file in $$(ls boost_$(BOOST_VERSION)/lib/*.a); do ln -sf ../$$file lib; done
+	
+####################################################
+# stencila
+#
+# 	wget -O stencila-master.zip https://github.com/stencila/stencila/archive/master.zip
+#	unzip stencila-master.zip
+	
+stencila-repo:
+	git clone https://github.com/stencila/stencila.git
+
+stencila: stencila-repo
+	cd stencila; git pull
+	cd stencila/cpp/requirements; make pugixml rapidjson smhasher sqlite
+	cd stencila/cpp; make library
 
 ####################################################
 # Doxygen http://www.stack.nl/~dimitri/doxygen/

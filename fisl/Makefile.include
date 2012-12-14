@@ -1,0 +1,16 @@
+# Home  directory is the one above this
+FISL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
+
+include $(FISL_HOME)/requirements/stencila/cpp/Makefile.common
+
+# Include directories
+FISL_INCLUDE_DIRS := -I$(FISL_HOME) -I$(FISL_HOME)/requirements/include $(STENCILA_CPP_INCLUDE_DIRS)
+
+# Library directories 
+FISL_LIB_DIRS := -L$(FISL_HOME)/requirements/lib $(STENCILA_CPP_LIB_DIRS)
+
+# Libraries that need to be included 
+FISL_LIBS := $(STENCILA_CPP_LIBS)
+
+# C++ compile command
+FISL_COMPILE := g++ -std=c++0x -g $(FISL_INCLUDE_DIRS)
