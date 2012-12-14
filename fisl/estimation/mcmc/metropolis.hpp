@@ -2,9 +2,9 @@
 
 #include <fstream>
 
-#include <stencila/dataset.hpp>
-#include <stencila/dataset.cpp>
 #include <stencila/datatable.hpp>
+#include <stencila/dataset.hpp>
+#include <stencila/hashing.cpp>
 
 #include <fisl/real.hpp>
 #include <fisl/array.hpp>
@@ -81,7 +81,7 @@ public:
 			proposal(par) = Normal(value,std::sqrt(variance)).random();
 		}
 		//! Obtain likelihood for proposal
-		Real ll_proposal = static_cast<Derived&>(*this).log_like(proposal);
+		Real ll_proposal = static_cast<Derived*>(this)->log_like(proposal);
 		//! Test to see if this proposal will be accepted
 		Real ratio = ll_proposal-ll;
 		iterations++;
