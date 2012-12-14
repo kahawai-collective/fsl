@@ -4,8 +4,6 @@ DOXYGEN_VERSION = 1.8.2
 
 all: boost stencila-library
 
-.PHONY: boost stencila
-
 ####################################################
 # include and lib directories 
 # 
@@ -46,10 +44,10 @@ boost: boost_$(BOOST_VERSION)/lib/libboost_system.a include lib
 # 	wget -O stencila-master.zip https://github.com/stencila/stencila/archive/master.zip
 #	unzip stencila-master.zip
 	
-stencila-repo:
+stencila:
 	git clone https://github.com/stencila/stencila.git
 
-stencila: stencila-repo
+stencila-library: stencila
 	cd stencila; git pull
 	cd stencila/cpp/requirements; make pugixml rapidjson smhasher sqlite
 	cd stencila/cpp; make library
