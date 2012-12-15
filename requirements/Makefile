@@ -7,7 +7,7 @@ all: boost stencila-library
 ####################################################
 # include and lib directories 
 # 
-# Where soft links to C++ files and compiles libraries go
+# These directories are where soft links to C++ header files and compiled libraries go
 
 include: 
 	mkdir -p include
@@ -17,7 +17,6 @@ lib:
 
 ####################################################
 # boost
-#
 
 boost_$(BOOST_VERSION).tar.bz2:
 	wget http://prdownloads.sourceforge.net/boost/boost_$(BOOST_VERSION).tar.bz2
@@ -38,19 +37,25 @@ boost: boost_$(BOOST_VERSION)/lib/libboost_system.a include lib
 	ln -sfT ../boost_$(BOOST_VERSION)/include/boost include/boost
 	for file in $$(ls boost_$(BOOST_VERSION)/lib/*.a); do ln -sf ../$$file lib; done
 	
+
 ####################################################
 # stencila
-#
+	
+ # Currently just using git to clone the stencila repo. An alternative, if a specific version was required, would
+ # be to get a zip ball
 # 	wget -O stencila-master.zip https://github.com/stencila/stencila/archive/master.zip
 #	unzip stencila-master.zip
-	
 stencila:
 	git clone https://github.com/stencila/stencila.git
 
+# Note that boost is not built as a stencila requirement since it is already a fisl requirement
+# Instead, just provide a softlink to the fisl copy of boost
 stencila-library: stencila
 	cd stencila; git pull
 	cd stencila/cpp/requirements; make pugixml rapidjson smhasher sqlite
+	cd stencila/cpp/requirements; ln -sFT ../../../../include/boost/ include/boost
 	cd stencila/cpp; make library
+
 
 ####################################################
 # Doxygen http://www.stack.nl/~dimitri/doxygen/

@@ -1,6 +1,10 @@
+# A Makefile for including when building FiSL tests or projects
+
 # Home  directory is the one above this
 FISL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 
+# Include the Stencila common makefile for its cuild variables (e.g. STENCILA_CPP_INCLUDE_DIRS)
+# This must be included after FISL_HOME is defined otherwise that gets messed up
 include $(FISL_HOME)/requirements/stencila/cpp/Makefile.common
 
 # Include directories
