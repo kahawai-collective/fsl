@@ -28,6 +28,10 @@ tests : $(FISL_TESTS_OUT)
 # Run a single test and redirect stdout and sterr to bothe the console and to a file with extension .out
 %.out : %.exe
 	./$< 2>&1 | tee $@
+	
+# Compile a skeleton C++ file
+%.exe : %.cpp
+	$(FISL_COMPILE) -o $@ $< $(FISL_LIB_DIRS) $(FISL_LIBS)
 
 all : tests
 
