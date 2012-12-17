@@ -11,4 +11,4 @@ sandbox
 #Ignore CodeLite IDE files
 fisl.workspace*
 fisl.tags
-tests.project
+*.project

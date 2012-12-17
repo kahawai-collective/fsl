@@ -3,6 +3,7 @@
 #include <fisl/math/functions/function.hpp>
 
 #include <fisl/population/growth/vonbert.hpp>
+#include <fisl/population/morphometry/morphometry.hpp>
 #include <fisl/population/maturity/maturity.hpp>
 #include <fisl/population/recruitment/bevertonholt.hpp>
 
@@ -39,8 +40,9 @@ template<
     int Ages,
 	class Type = Numbers,
     class Sizes = Math::Functions::Cached<Population::Growth::VonBert,Ages>,
-	class Weights = Unity,
+	class Weights = Math::Functions::Cached<Population::Morphometry::Power,Ages>,
 	class Maturities = Math::Functions::Cached<Population::Maturity::Threshold,Ages>,
+	class Recruitment = Population::Recruitment::BevertonHolt,
 	class Mortality = Population::Mortality::Rate
 > 
 class Aged : public Array<Type,Ages> {
@@ -51,8 +53,10 @@ public:
 	Weights weights;
 	Maturities maturities;
 	
-	Real recruits;
+	Recruitment recruitment;
 	Mortality mortality;
+	
+	Real recruits;
 
     Aged(void){
     }
@@ -77,22 +81,24 @@ public:
 };
 
 template<
-    class Type
+    class Type,
+	class Recruitment = Population::Recruitment::BevertonHolt
 > 
-class Gendered {
+class Sexed {
 public:
+	Type males;
+	Type females;
 	
-	Real recruits;
+	Recruitment recruitment;
 	Real proportion;
 	
-    Type male;
-	Type female;
-	
-    Gendered& ageing(void){
-		male.recruits = recruits * proportion;
-		male.ageing();
-		female.recruits = recruits * (1-proportion);
-		female.ageing();
+	Real recruits;
+
+    Sexed& ageing(void){
+		males.recruits = recruits * proportion;
+		males.ageing();
+		females.recruits = recruits * (1-proportion);
+		females.ageing();
         return *this;
     }
 };

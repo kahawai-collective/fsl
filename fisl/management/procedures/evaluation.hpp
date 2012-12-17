@@ -7,7 +7,9 @@ class Evaluation {
 public:
 
     int run(void){
-        static_cast<Derived*>(this)->conditioner.run();
+		static_cast<Derived*>(this)->priors();
+		static_cast<Derived*>(this)->posteriors();
+		
         return 0;
     }
 };

@@ -23,6 +23,11 @@ public:
         mean_(mean),
         sd_(sd){
     }
+	
+	Normal(const double& mean, const double& cv, bool is_cv):
+        mean_(mean),
+        sd_(std::fabs(mean*cv)){
+    }
     
     double mean(void) const {
         return mean_;
