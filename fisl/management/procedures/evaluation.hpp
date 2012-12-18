@@ -1,3 +1,5 @@
+#pragma once
+
 namespace Fisl {
 namespace Management {
 namespace Procedures {
