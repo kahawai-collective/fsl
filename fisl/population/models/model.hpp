@@ -2,10 +2,10 @@
 
 #include <fisl/math/functions/function.hpp>
 
-#include <fisl/population/growth/vonbert.hpp>
+#include <fisl/population/growth/von-bert.hpp>
 #include <fisl/population/morphometry/morphometry.hpp>
 #include <fisl/population/maturity/maturity.hpp>
-#include <fisl/population/recruitment/bevertonholt.hpp>
+#include <fisl/population/recruitment/beverton-holt.hpp>
 
 #include <fisl/population/mortality/rate.hpp>
 
@@ -56,7 +56,7 @@ public:
 	Recruitment recruitment;
 	Mortality mortality;
 	
-	Real recruits;
+	double recruits;
 
     Aged(void){
     }
@@ -85,14 +85,25 @@ template<
 	class Recruitment = Population::Recruitment::BevertonHolt
 > 
 class Sexed {
+private:
+	double proportion_;
+
 public:
 	Type males;
 	Type females;
 	
 	Recruitment recruitment;
-	Real proportion;
 	
-	Real recruits;
+	double recruits;
+		
+	double proportion(void) const {
+		return proportion_;
+	}
+	
+	Sexed& proportion(const double& p) {
+		proportion_ = p;
+		return *this;
+	}
 
     Sexed& ageing(void){
 		males.recruits = recruits * proportion;

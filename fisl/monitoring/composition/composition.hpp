@@ -14,15 +14,15 @@ class Sample {
 public:
 	static const unsigned int bins = (lowest-highest)/step+1;
 	
-	Sample(const Handle& handle, const Real& size, const std::initializer_list<Real>& proportions):
+	Sample(const Handle& handle, const double& size, const std::initializer_list<double>& proportions):
 		handle(handle),
 		size(size){
 		//! @todo initialise proportions
 	}
 	
 	Handle handle;
-	Real size;
-	Real proportions[bins];
+	double size;
+	double proportions[bins];
 };
 	
 template<

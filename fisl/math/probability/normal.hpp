@@ -23,14 +23,23 @@ public:
         mean_(mean),
         sd_(sd){
     }
-	
-	Normal(const double& mean, const double& cv, bool is_cv):
-        mean_(mean),
-        sd_(std::fabs(mean*cv)){
-    }
     
     double mean(void) const {
         return mean_;
+    }
+
+    Normal& mean(const double& mean) {
+        mean_ = mean;
+		return *this;
+    }
+	
+    double sd(void) const {
+        return sd_;
+    }
+
+    Normal& sd(const double& sd) {
+        sd_ = sd;
+		return *this;
     }
 
     boost::math::normal boost_dist(void) const {
@@ -42,6 +51,13 @@ public:
         boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
         return randomVariate();
     }
+};
+
+class NormalCv : public Normal {
+public:
+	NormalCv(const double& mean, const double& cv):
+		Normal(mean,std::fabs(mean*cv)){
+	}
 };
 
 }}}

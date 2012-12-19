@@ -6,7 +6,6 @@
 #include <stencila/dataset.hpp>
 #include <stencila/hashing.cpp>
 
-#include <fisl/real.hpp>
 #include <fisl/array.hpp>
 #include <fisl/math/probability/uniform.hpp>
 #include <fisl/math/probability/normal.hpp>
@@ -37,16 +36,16 @@ template<
 class Metropolis : public Dataset {
 public:
 	//! Vector that represents the paramter values at the end of the chain
-	Array<Real,Parameters> values;
-	Real ll;
+	Array<double,Parameters> values;
+	double ll;
 	
 	//! Variances for proposals. These need to be tuned
 	//! by user to obtain an acceptance ratio (20-70%)
-	Array<Real,Parameters> variances;
+	Array<double,Parameters> variances;
 	
 	unsigned int iterations;
 	unsigned int accepted;
-	Real acceptance;
+	double acceptance;
 	
 	Datatable samples;
 	
@@ -74,16 +73,16 @@ public:
 		typedef Math::Probability::Uniform Uniform;
 		
 		//! Generate a proposal for each parameter
-		Array<Real,Parameters> proposal;
+		Array<double,Parameters> proposal;
 		for(int par=0;par<Parameters;par++){
-			Real value = values(par);
-			Real variance = variances(par);
+			double value = values(par);
+			double variance = variances(par);
 			proposal(par) = Normal(value,std::sqrt(variance)).random();
 		}
 		//! Obtain likelihood for proposal
-		Real ll_proposal = static_cast<Derived*>(this)->log_like(proposal);
+		double ll_proposal = static_cast<Derived*>(this)->log_like(proposal);
 		//! Test to see if this proposal will be accepted
-		Real ratio = ll_proposal-ll;
+		double ratio = ll_proposal-ll;
 		iterations++;
 		if(ratio>std::log(Uniform().random())){
 			values = proposal;

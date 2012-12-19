@@ -27,6 +27,20 @@ public:
         return mean_;
     }
 
+    Lognormal& mean(const double& mean) {
+        mean_ = mean;
+		return *this;
+    }
+	
+    double sd(void) const {
+        return sd_;
+    }
+
+    Lognormal& sd(const double& sd) {
+        sd_ = sd;
+		return *this;
+    }
+
     boost::math::lognormal boost_dist(void) const {
         //boost::math uses different properties for location and scale so some conversion is necessary
         double scale_squared = std::log(1.0+sd_*sd_/(mean_*mean_));
