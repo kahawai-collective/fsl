@@ -1,4 +1,7 @@
-# Markov chain Monte Carlo methods
+/*!
+@namespace Fisl::Estimation::Mcmc
+
+Markov chain Monte Carlo methods
 
 This modules implements MCMC algorithms.
 Currently only the very simple Metropolis algorithm is implemented.
@@ -15,3 +18,11 @@ The SCAM algorithm of Haario et al (2005) seems like a good option.
 * Haario, H., Laine, M., Mira, A., & Saksman, E. (2006). DRAM: efficient adaptive MCMC. Statistics and Computing, 16(4), 339-354.
 * Christen, J. A., & Fox, C. (2010). A general purpose sampling algorithm for continuous distributions (the t-walk). Bayesian Analysis, 5(2), 263-281.
   Available in C++ and C at http://www.cimat.mx/~jac/twalk
+*/
+namespace Fisl {
+namespace Estimation {
+namespace Mcmc {
+
+} // end namespace Fisl
+} // end namespace Estimation
+} // end namespace Mcmc
