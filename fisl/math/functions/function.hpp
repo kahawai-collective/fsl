@@ -54,6 +54,8 @@ public:
     double operator()(const unsigned int& index) const {
         return ArrayType::operator()(index);
     }
-};
+}; // end class Cached 
 
-}}}
+} // end namespace Fisl
+} // end namespace Math
+} // end namespace Functions

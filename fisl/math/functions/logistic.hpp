@@ -40,6 +40,8 @@ public:
     double operator()(const double& x){
         return 1.0/(1.0+std::pow(19,(inflection_-x)/steepness_));
     }
-};
+}; // end class Logistic
 
-}}}
+} // end namespace Fisl
+} // end namespace Math
+} // end namespace Functions
