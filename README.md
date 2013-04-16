@@ -1,13 +1,13 @@
-# FiSL : Fisheries Simuation Library
+# FSL : Fisheries Simuation Library
 
-*FiSL* is a C++ library for fisheries simulation.
+*FSL* is a C++ library for fisheries simulation.
 It aims to be highly modular library without compromising speed.
 It does that by making the most of modern C++ language features such as templates
 and type inference, as well as recent advances in compiler optimisation. 
 
-Because *FiSL* is modular it can be used for general fisheries simulation.
-However, the main purpose for *FiSL* is as a library for fisheries management procedure evaluation (MPE).
-*FiSL* provides C++ classes that can be composed in alternative ways to 
+Because *FSL* is modular it can be used for general fisheries simulation.
+However, the main purpose for *FSL* is as a library for fisheries management procedure evaluation (MPE).
+*FSL* provides C++ classes that can be composed in alternative ways to 
 provides for alternative types of MPE range from simple to complex.
 
 ## Documentation
@@ -45,7 +45,7 @@ See `requirements/Makefile` for quick installation for Linux.
 
 #### Fislgen
 
-Fislgen is a Python script written for FiSL (hence the name!).
+Fislgen is a Python script written for FSL (hence the name!).
 It extracts sections of documentation written using the [Markdown language](http://daringfireball.net/projects/markdown).
 Markdown allows for very easy formatting of text.
 The purpose of Fislgen is to create more customised, less busy, documentation for the library,
@@ -54,7 +54,7 @@ targetted at people that are not programmers.
 ### Publishing documentation
 
 Currently, documentation is published to a [Github Project Page](http:http://pages.github.com/) using the 
-`gh-pages` branch and is available at <a href="http://trident-systems.github.com/fisl/index.html">http://trident-systems.github.com/fisl/</a>.
+`gh-pages` branch and is available at <a href="http://trident-systems.github.com/fsl/index.html">http://trident-systems.github.com/fsl/</a>.
 To generate and publish documentation do (see the Makefile for a few requirements):
 
 ```sh
