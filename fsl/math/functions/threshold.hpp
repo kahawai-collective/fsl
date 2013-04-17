@@ -24,7 +24,7 @@ public:
 	};
     
     double operator()(const double& x){
-        return (x<inflection)?0:1;
+        return (x<inflection_)?0:1;
     }
 }; // end class Threshold
 

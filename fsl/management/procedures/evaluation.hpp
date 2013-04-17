@@ -1,22 +1,50 @@
 #pragma once
 
+#include <iostream>
+#include <typeinfo>
+
 namespace Fsl {
 namespace Management {
 namespace Procedures {
+
+class PriorDocumenter{
+public:
+    template<
+        class Target,
+        class Prior
+    >
+    PriorDocumenter& operator()(Target& target, Target& (Target::* setter)(const double& value),const Prior& prior){
+        std::cout<<typeid(target).name()<<" "<<typeid(setter).name()<<" "<<prior.repr()<<std::endl;
+        return *this;
+    }
+};
+
 
 template<class Derived>
 class Evaluation {
 public:
 
-    int run(void){
-        static_cast<Derived*>(this)->priors();
-        static_cast<Derived*>(this)->posteriors();
+    void prior(void){
         
-        return 0;
+    }
+
+    void document(void){
+        PriorDocumenter priors;
+        static_cast<Derived*>(this)->priors(priors);
+    }
+
+    void condition(void){
+        //static_cast<Derived*>(this)->log_likelihood();
+    }
+
+    void run(void){
+        document();
+        condition();
+        //evaluate();
     }
     
 }; //end class Evaluation
 
-} //end namespace Fsl
-} //end namespace Management
 } //end namespace Procedures
+} //end namespace Management
+} //end namespace Fsl

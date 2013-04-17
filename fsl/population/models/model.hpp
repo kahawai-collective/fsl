@@ -82,7 +82,7 @@ public:
 
 template<
     class Type,
-	class Recruitment = Population::Recruitment::BevertonHolt
+	class Recruitment_ = Population::Recruitment::BevertonHolt
 > 
 class Sexed {
 private:
@@ -92,7 +92,8 @@ public:
 	Type males;
 	Type females;
 	
-	Recruitment recruitment;
+	typedef Recruitment_ Recruitment;
+    Recruitment recruitment;
 	
 	double recruits;
 		
@@ -104,6 +105,10 @@ public:
 		proportion_ = p;
 		return *this;
 	}
+    
+    Sexed& proportion_set(const double& p){
+        
+    }
 
     Sexed& ageing(void){
 		males.recruits = recruits * proportion;

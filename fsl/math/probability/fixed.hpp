@@ -3,15 +3,25 @@ namespace Math {
 namespace Probability {
 
 class Fixed {
-public:
-    double value;
+private:
+    double value_;
     
-    Fixed(double value_ = 0){
-        value = value_;
+public:
+    
+    Fixed(double value = 0){
+        value_ = value;
+    }
+    
+    std::string repr(void) const {
+        return str(boost::format("Fixed(%g)")%value());
+    }
+    
+    double value(void) const {
+        return value_;
     }
     
     double mean(void) const {
-        return value;
+        return value_;
     }
     
     double sd(void) const {
@@ -19,7 +29,7 @@ public:
     }
 
     double random(void) const {
-        return value;
+        return value_;
     };
 };
 

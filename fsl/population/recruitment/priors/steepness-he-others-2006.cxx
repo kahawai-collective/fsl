@@ -7,7 +7,7 @@
 
 #include <boost/foreach.hpp>
 
-#include <fsl/population/recruitment/priors/steepness_he_2006.hpp>
+#include <fsl/population/recruitment/priors/steepness-he-others-2006.hpp>
 
 using Fsl::Population::Recruitment::Priors::SteepnessHe2006;
 

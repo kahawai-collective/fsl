@@ -25,8 +25,8 @@ public:
         Metropolis<McmcNormal,1>::reset();
     }
     
-    Real log_like(const Array<Real,1>& parameters){
-        Real x = parameters(0);
+    double log_like(const Array<double,1>& parameters){
+        double x = parameters(0);
         return std::log(dist.pdf(x));
     }
 }; 
@@ -42,8 +42,8 @@ BOOST_AUTO_TEST_CASE(test_1){
 class McmcRegress : public Metropolis<McmcRegress,2> {
 public:
     
-    Array<Real,10> x;
-    Array<Real,10> y;
+    Array<double,10> x;
+    Array<double,10> y;
     
     void reset(void){
         x = {0,1,2,3,4,5,6,7,8,9};
@@ -53,12 +53,12 @@ public:
         Metropolis<McmcRegress,2>::reset();
     }
 
-    Real log_like(const Array<Real,2>& parameters){
-        Real a = parameters(0);
-        Real b = parameters(1);
+    double log_like(const Array<double,2>& parameters){
+        double a = parameters(0);
+        double b = parameters(1);
         double ll = 0;
         for(int i=0;i<10;i++){
-            Real pred = a + x(i)*b;
+            double pred = a + x(i)*b;
             ll += std::log(Normal(y(i),0.1).pdf(pred));
         }
         return ll;
