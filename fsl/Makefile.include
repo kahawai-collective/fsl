@@ -1,20 +1,20 @@
 # A Makefile for including when building FiSL tests or projects
 
 # Home  directory is the one above this
-FISL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
+FSL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 
 # Include the Stencila common makefile for its cuild variables (e.g. STENCILA_CPP_INCLUDE_DIRS)
-# This must be included after FISL_HOME is defined otherwise that gets messed up
-include $(FISL_HOME)/requirements/stencila/cpp/Makefile.common
+# This must be included after FSL_HOME is defined otherwise that gets messed up
+include $(FSL_HOME)/requirements/stencila/cpp/Makefile.common
 
 # Include directories
-FISL_INCLUDE_DIRS := -I$(FISL_HOME) -I$(FISL_HOME)/requirements/include $(STENCILA_CPP_INCLUDE_DIRS)
+FSL_INCLUDE_DIRS := -I$(FSL_HOME) -I$(FSL_HOME)/requirements/include $(STENCILA_CPP_INCLUDE_DIRS)
 
 # Library directories 
-FISL_LIB_DIRS := -L$(FISL_HOME)/requirements/lib $(STENCILA_CPP_LIB_DIRS)
+FSL_LIB_DIRS := -L$(FSL_HOME)/requirements/lib $(STENCILA_CPP_LIB_DIRS)
 
 # Libraries that need to be included 
-FISL_LIBS := $(STENCILA_CPP_LIBS)
+FSL_LIBS := $(STENCILA_CPP_LIBS)
 
 # C++ compile command
-FISL_COMPILE := g++ -std=c++0x -g $(FISL_INCLUDE_DIRS)
+FSL_COMPILE := g++ -Wall -O2 -std=c++0x -g $(FSL_INCLUDE_DIRS)

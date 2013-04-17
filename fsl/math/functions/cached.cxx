@@ -1,4 +1,4 @@
-#ifdef FISL_TEST_SINGLE
+#ifdef FSL_TEST_SINGLE
     #define BOOST_TEST_MODULE tests
 #endif
 #include <boost/test/unit_test.hpp>
