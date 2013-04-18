@@ -2,12 +2,13 @@
 
 #include <fsl/math/functions/function.hpp>
 
+#include <fsl/population/mortality/rate.hpp>
 #include <fsl/population/growth/von-bert.hpp>
 #include <fsl/population/morphometry/morphometry.hpp>
 #include <fsl/population/maturity/maturity.hpp>
 #include <fsl/population/recruitment/beverton-holt.hpp>
+#include <fsl/population/recruitment/stochastic.hpp>
 
-#include <fsl/population/mortality/rate.hpp>
 
 namespace Fsl {
 namespace Population {
@@ -82,39 +83,26 @@ public:
 
 template<
     class Type,
-	class Recruitment_ = Population::Recruitment::BevertonHolt
+    class Recruitment_ = Population::Recruitment::Stochastic<Population::Recruitment::BevertonHolt>
 > 
 class Sexed {
-private:
-	double proportion_;
+
+    FSL_PROPERTY(Sexed,proportion,double);
 
 public:
-	Type males;
-	Type females;
-	
-	typedef Recruitment_ Recruitment;
+    Type males;
+    Type females;
+
+    typedef Recruitment_ Recruitment;
     Recruitment recruitment;
-	
-	double recruits;
-		
-	double proportion(void) const {
-		return proportion_;
-	}
-	
-	Sexed& proportion(const double& p) {
-		proportion_ = p;
-		return *this;
-	}
-    
-    Sexed& proportion_set(const double& p){
-        
-    }
+
+    double recruits;
 
     Sexed& ageing(void){
-		males.recruits = recruits * proportion;
-		males.ageing();
-		females.recruits = recruits * (1-proportion);
-		females.ageing();
+        males.recruits = recruits * proportion_;
+        males.ageing();
+        females.recruits = recruits * (1-proportion_);
+        females.ageing();
         return *this;
     }
 };

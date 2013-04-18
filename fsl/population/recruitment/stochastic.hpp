@@ -8,36 +8,35 @@
 namespace Fsl {
 namespace Population {
 namespace Recruitment {
-	
+
 template<
-	class Relationship,
-	class Variation,
-	class Autocorrelation
+    class Relationship = BevertonHolt,
+    class Variation = Math::Probability::Lognormal,
+    class Autocorrelation = Math::Series::Autocorrelation
 >
 class Stochastic;
-	
+
 template<
-	class Relationship
+    class Relationship_
 >
 class Stochastic<
-	Relationship,
-	Math::Probability::Lognormal,
-	Math::Series::Autocorrelation
+    Relationship_,
+    Math::Probability::Lognormal,
+    Math::Series::Autocorrelation
 > {
 public:
-	Relationship relationship;
-	Math::Probability::Normal variation;
-	Math::Series::Autocorrelation autocorrelation;
-	
-	double spawners;
-	
-	double recruits(void) {
-		double deviation; 
-		deviation = variation.random();
-		deviation = autocorrelation.value(deviation);
-		double multiplier = std::exp(deviation-0.5*variation.sd()*variation.sd());
-		return relationship.recruits(spawners)*multiplier;
-	}
+    typedef Relationship_ Relationship;
+    Relationship relationship;
+    
+    Math::Probability::Normal variation;
+    Math::Series::Autocorrelation autocorrelation;
+
+    double operator()(const double& spawners) {
+        double deviation = variation.random();
+        deviation = autocorrelation(deviation);
+        double multiplier = std::exp(deviation-0.5*variation.sd()*variation.sd());
+        return relationship(spawners)*multiplier;
+    }
 };
 
 }

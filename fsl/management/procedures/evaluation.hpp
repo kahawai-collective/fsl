@@ -13,10 +13,11 @@ public:
         class Target,
         class Prior
     >
-    PriorDocumenter& operator()(Target& target, Target& (Target::* setter)(const double& value),const Prior& prior){
-        std::cout<<typeid(target).name()<<" "<<typeid(setter).name()<<" "<<prior.repr()<<std::endl;
+    PriorDocumenter& operator()(Target& target, std::string name, double (Target::* getter)(void) const, Target& (Target::* setter)(const double& value),const Prior& prior){
+        std::cout<<typeid(target).name()<<" "<<typeid(setter).name()<<" "<<typeid(prior).name()<<std::endl;
         return *this;
     }
+    
 };
 
 

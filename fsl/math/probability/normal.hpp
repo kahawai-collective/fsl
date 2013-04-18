@@ -4,6 +4,7 @@
 #include <boost/random/normal_distribution.hpp>
 #include <boost/format.hpp>
 
+#include <fsl/property.hpp>
 #include <fsl/math/probability/distribution.hpp>
 
 namespace Fsl {
@@ -13,13 +14,12 @@ namespace Probability {
 using namespace Fsl;
 
 class Normal : public Distribution<Normal> {
-private:
 
-    double mean_;
-    double sd_;
-    
+    FSL_PROPERTY(Normal,mean,double)
+    FSL_PROPERTY(Normal,sd,double)
+
 public:
-    
+
     Normal(const double& mean=1, const double& sd=1):
         mean_(mean),
         sd_(sd){
@@ -27,24 +27,6 @@ public:
     
     std::string describe(void) const {
         return str(boost::format("Normal(%g,%g)")%mean()%sd());
-    }
-    
-    double mean(void) const {
-        return mean_;
-    }
-
-    Normal& mean(const double& mean) {
-        mean_ = mean;
-		return *this;
-    }
-	
-    double sd(void) const {
-        return sd_;
-    }
-
-    Normal& sd(const double& sd) {
-        sd_ = sd;
-		return *this;
     }
 
     boost::math::normal boost_dist(void) const {

@@ -26,7 +26,10 @@ using Fsl::Population::Mortality::Rate;
 #include <fsl/math/probability/distributions.hpp>
 using namespace Fsl::Math::Probability;
 
-#include <fsl/population/recruitment/priors/steepness-he-others-2006.hpp>
+#include <fsl/population/recruitment/priors/variation-bentley-2012.hpp>
+using Fsl::Population::Recruitment::Priors::VariationBentley2012;
+#include <fsl/population/recruitment/priors/autocorrelation-bentley-2012.hpp>
+using Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012;
 
 #include <fsl/monitoring/composition/composition.hpp>
 using namespace Fsl::Monitoring;
@@ -59,8 +62,7 @@ public:
                 Cached<Logistic,ages>, // Maturities
                 int, // Recruitment
                 Rate // Mortality
-            >,
-            BevertonHolt //Recruitment
+            >
         > Fish;
         Fish fish;
         
@@ -77,82 +79,74 @@ public:
     //!
     //! Usually just evaluates model parameter values with respect to prior probability distributions
     template<
-        class Helper
+        class Aide
     >
-    void priors(Helper& helper){
-        
-        // Extract model components so they can be used a shortcuts below
-        typedef Model::Fish Fish;
-        Fish& fish = model.fish;
-        
-        auto& males = fish.males;
-        auto& females = fish.females;
+    void priors(Aide& aide){
+
         auto& fishing = model.fishing;
         auto& line = fishing.line;
         auto& trawl = fishing.trawl;
         
-        // Define a mapping of model setter methods to prior probability distributions
-        // Using std::make_tuple is avery conveinent way to 
-        helper
-            
-            // Recruitment
-            
-            // Proportion of males
-            (fish, &Fish::proportion, Fixed(0.5))
-            
-            // Steepness
-            // Cordue & Pomarède (2012) : base case 0.75; sensitivity 0.9
-            (fish.recruitment, &Fish::Recruitment::steepness, Fixed(0.75))
-        ;
-        /*
-            // Variation
-            // Cordue & Pomarède (2012) : 0.6
-            //&fish.recruitment.sd,               Population::Recruitment::Priors::SigmaBentley2012(),
-            // Autocorrelation
-            //&fish.recruitment.rho,              Population::Recruitment::Priors::RhoBentley2012(),
-            
-            // Instantaneous rate of natural mortality
-            // Cordue & Pomerede (2012) : 0.08 for base case and did sensitivity analyses with 0.06 & 0.10
-            //! @todo Consider using a 'flat-topped-triangular' distribution here
-            &males.mortality,       Uniform(0.06,0.1),
-            &females.mortality,     Uniform(0.06,0.1),
-            
-            // Size-at-age : von Bertalannfy function parameters
-            // Horn et al (2010) estimates with 10% CV
-            // Prior on cv of size-at-age same as used by Cordue & Pomarède (2012)
-            &males.sizes.k,         NormalCv(0.125,0.1),
-            &males.sizes.linf,      NormalCv(72.2,0.1),
-            &males.sizes.t0,        Fixed(-0.5),
-            //&males.sizes.cv,        Uniform(0.02,0.20),
-            
-            &females.sizes.k,       NormalCv(0.071,0.1),
-            &females.sizes.linf,    NormalCv(92.5,0.1),
-            &females.sizes.t0,      Fixed(-0.5),
-            //&females.sizes.cv,      Uniform(0.02,0.20),
-            
-            // Weight-at-size : power function parameters
-            &males.weights.a,       NormalCv(0.00963,0.1),
-            &males.weights.b,       NormalCv(3.173,0.1),
-            
-            &females.weights.a,     NormalCv(0.00963,0.1),
-            &females.weights.b,     NormalCv(3.173,0.1),
-            
-            // Maturity-at-age : logistic function parameters
-            &males.maturities.inflection,       NormalCv(15,0.1),
-            &males.maturities.steepness,        NormalCv(5,0.1),
-            
-            &females.maturities.inflection,     NormalCv(17,0.1),
-            &females.maturities.steepness,      NormalCv(10,0.1),
-            
-            // Selectivity-at-size 
-            // Uniformative priors based on eyeballing length frequencies
-            &line.selectivities.inflection,     Uniform(40,60),
-            &line.selectivities.steepness,      Uniform(0,60),
-            
-            &trawl.selectivities.inflection,    Uniform(40,60),
-            &trawl.selectivities.steepness,     Uniform(0,60)
-        */
-
+        auto& fish = model.fish;
+        
+        // Proportion of males
+        fish.proportion(aide,Fixed(0.5));
+        
+        // Steepness
+        // Cordue & Pomarède (2012) : base case 0.75; sensitivity 0.9
+        fish.recruitment.relationship.steepness(aide,Fixed(0.75));
+        
+        // Variation
+        // Cordue & Pomarède (2012) : 0.6
+        fish.recruitment.variation.sd(aide,VariationBentley2012());
+        
+        // Autocorrelation
+        fish.recruitment.autocorrelation.coefficient(aide, AutocorrelationBentley2012());
+        
+        auto& males = fish.males;
+        auto& females = fish.females;
+        
+        // Instantaneous rate of natural mortality
+        // Cordue & Pomerede (2012) : 0.08 for base case and did sensitivity analyses with 0.06 & 0.10
+        //! @todo Consider using a 'flat-topped-triangular' distribution here
+        males.mortality.instantaneous(aide, Uniform(0.06,0.1));
+        females.mortality.instantaneous(aide, Uniform(0.06,0.1));
+        
+        // Size-at-age : von Bertalannfy function parameters
+        // Horn et al (2010) estimates with 10% CV
+        // Prior on cv of size-at-age same as used by Cordue & Pomarède (2012)
+        //! @todo Implement distributions of size-at-age
+        males.sizes.k(aide, NormalCv(0.125,0.1));
+        males.sizes.linf(aide, NormalCv(72.2,0.1));
+        males.sizes.t0(aide, Fixed(-0.5));
+        //males.sizes.cv(aide, Uniform(0.02,0.20));
+        
+        females.sizes.k(aide, NormalCv(0.071,0.1));
+        females.sizes.linf(aide, NormalCv(92.5,0.1));
+        females.sizes.t0(aide, Fixed(-0.5));
+        //females.sizes.cv(aide, Uniform(0.02,0.20));
+        
+        // Weight-at-size : power function parameters
+        males.weights.a(aide, NormalCv(0.00963,0.1));
+        males.weights.b(aide, NormalCv(3.173,0.1));
+        
+        females.weights.a(aide, NormalCv(0.00963,0.1));
+        females.weights.b(aide, NormalCv(3.173,0.1));
+        
+        // Maturity-at-age : logistic function parameters
+        males.maturities.inflection(aide, NormalCv(15,0.1));
+        males.maturities.steepness(aide, NormalCv(5,0.1));
+        
+        females.maturities.inflection(aide, NormalCv(17,0.1));
+        females.maturities.steepness(aide, NormalCv(10,0.1));
+        
+        // Selectivity-at-size 
+        // Uniformative priors based on eyeballing length frequencies
+        line.selectivities.inflection(aide, Uniform(40,60));
+        line.selectivities.steepness(aide, Uniform(0,60));
+        
+        trawl.selectivities.inflection(aide, Uniform(40,60));
+        trawl.selectivities.steepness(aide, Uniform(0,60));
     }
     
     double log_likelihood(int time){
