@@ -39,16 +39,15 @@ using Fsl::Estimation::Mcmc::Metropolis;
 
 using namespace Fsl;
 
-struct Fishery {
-    double catches;
+class Fishery {
+    FSL_PROPERTY(Fishery,catches,double)
+    
     Logistic selectivities;
 };
 
 class BNS : public Evaluation<BNS> {
 public:
 
-    typedef Evaluation<BNS> Base;
-    
     class Model {
     public:
         
@@ -75,82 +74,92 @@ public:
     };
     Model model;
     
+    BNS(void){
+        conditioning.start = 1936;
+        conditioning.finish = 2013;
+    }
+    
     //! @brief Time-independent log-likelihood calculation
     //!
     //! Usually just evaluates model parameter values with respect to prior probability distributions
     template<
-        class Aide
+        class Connection
     >
-    void priors(Aide& aide){
+    void priors(Connection& connect){
 
         auto& fishing = model.fishing;
         auto& line = fishing.line;
         auto& trawl = fishing.trawl;
         
         auto& fish = model.fish;
-        
-        // Proportion of males
-        fish.proportion(aide,Fixed(0.5));
-        
-        // Steepness
-        // Cordue & Pomarède (2012) : base case 0.75; sensitivity 0.9
-        fish.recruitment.relationship.steepness(aide,Fixed(0.75));
-        
-        // Variation
-        // Cordue & Pomarède (2012) : 0.6
-        fish.recruitment.variation.sd(aide,VariationBentley2012());
-        
-        // Autocorrelation
-        fish.recruitment.autocorrelation.coefficient(aide, AutocorrelationBentley2012());
-        
         auto& males = fish.males;
         auto& females = fish.females;
         
-        // Instantaneous rate of natural mortality
-        // Cordue & Pomerede (2012) : 0.08 for base case and did sensitivity analyses with 0.06 & 0.10
-        //! @todo Consider using a 'flat-topped-triangular' distribution here
-        males.mortality.instantaneous(aide, Uniform(0.06,0.1));
-        females.mortality.instantaneous(aide, Uniform(0.06,0.1));
-        
-        // Size-at-age : von Bertalannfy function parameters
-        // Horn et al (2010) estimates with 10% CV
-        // Prior on cv of size-at-age same as used by Cordue & Pomarède (2012)
-        //! @todo Implement distributions of size-at-age
-        males.sizes.k(aide, NormalCv(0.125,0.1));
-        males.sizes.linf(aide, NormalCv(72.2,0.1));
-        males.sizes.t0(aide, Fixed(-0.5));
-        //males.sizes.cv(aide, Uniform(0.02,0.20));
-        
-        females.sizes.k(aide, NormalCv(0.071,0.1));
-        females.sizes.linf(aide, NormalCv(92.5,0.1));
-        females.sizes.t0(aide, Fixed(-0.5));
-        //females.sizes.cv(aide, Uniform(0.02,0.20));
-        
-        // Weight-at-size : power function parameters
-        males.weights.a(aide, NormalCv(0.00963,0.1));
-        males.weights.b(aide, NormalCv(3.173,0.1));
-        
-        females.weights.a(aide, NormalCv(0.00963,0.1));
-        females.weights.b(aide, NormalCv(3.173,0.1));
-        
-        // Maturity-at-age : logistic function parameters
-        males.maturities.inflection(aide, NormalCv(15,0.1));
-        males.maturities.steepness(aide, NormalCv(5,0.1));
-        
-        females.maturities.inflection(aide, NormalCv(17,0.1));
-        females.maturities.steepness(aide, NormalCv(10,0.1));
-        
-        // Selectivity-at-size 
-        // Uniformative priors based on eyeballing length frequencies
-        line.selectivities.inflection(aide, Uniform(40,60));
-        line.selectivities.steepness(aide, Uniform(0,60));
-        
-        trawl.selectivities.inflection(aide, Uniform(40,60));
-        trawl.selectivities.steepness(aide, Uniform(0,60));
+        connect
+            
+            // Proportion of males
+            __(fish.proportion,Fixed(0.5))
+            
+            // Steepness
+            // Cordue & Pomarède (2012) : base case 0.75; sensitivity 0.9
+            __(fish.recruitment.relationship.steepness,Fixed(0.75))
+
+            // Variation
+            // Cordue & Pomarède (2012) : 0.6
+            __(fish.recruitment.variation.sd,VariationBentley2012())
+            
+            // Autocorrelation
+            __(fish.recruitment.autocorrelation.coefficient, AutocorrelationBentley2012())
+            
+            // Instantaneous rate of natural mortality
+            // Cordue & Pomerede (2012) : 0.08 for base case and did sensitivity analyses with 0.06 & 0.10
+            //! @todo Consider using a 'flat-topped-triangular' distribution here
+            __(males.mortality.instantaneous, Uniform(0.06,0.1))
+            __(females.mortality.instantaneous, Uniform(0.06,0.1))
+            
+            // Size-at-age : von Bertalannfy function parameters
+            // Horn et al (2010) estimates with 10% CV
+            // Prior on cv of size-at-age same as used by Cordue & Pomarède (2012)
+            //! @todo Implement distributions of size-at-age
+            __(males.sizes.k, NormalCv(0.125,0.1))
+            __(males.sizes.linf, NormalCv(72.2,0.1))
+            __(males.sizes.t0, Fixed(-0.5))
+            //males.sizes.cv(aide, Uniform(0.02,0.20));
+            
+            __(females.sizes.k, NormalCv(0.071,0.1))
+            __(females.sizes.linf, NormalCv(92.5,0.1))
+            __(females.sizes.t0, Fixed(-0.5))
+            //females.sizes.cv(aide, Uniform(0.02,0.20));
+            
+            // Weight-at-size : power function parameters
+            __(males.weights.a, NormalCv(0.00963,0.1))
+            __(males.weights.b, NormalCv(3.173,0.1))
+            
+            __(females.weights.a, NormalCv(0.00963,0.1))
+            __(females.weights.b, NormalCv(3.173,0.1))
+            
+            // Maturity-at-age : logistic function parameters
+            __(males.maturities.inflection, NormalCv(15,0.1))
+            __(males.maturities.steepness, NormalCv(5,0.1))
+            
+            __(females.maturities.inflection, NormalCv(17,0.1))
+            __(females.maturities.steepness, NormalCv(10,0.1))
+            
+            // Selectivity-at-size 
+            // Uniformative priors based on eyeballing length frequencies
+            __(line.selectivities.inflection, Uniform(40,60))
+            __(line.selectivities.steepness, Uniform(0,60))
+            
+            __(trawl.selectivities.inflection, Uniform(40,60))
+            __(trawl.selectivities.steepness, Uniform(0,60))
+        ;
     }
     
-    double log_likelihood(int time){
-        double log_likelihood = 0;
+    template<
+        class Aide
+    >
+    double likelihood(Aide& aide, int time){
+        double likelihood = 0;
         
         auto& fishing = model.fishing;
         auto& line = fishing.line;
@@ -166,7 +175,7 @@ public:
             range line;
             range trawl;
         };
-        const Catches catches [] = {
+        static const Catches catches [] = {
             {1936,{0,150},{0,0}},
             {1937,{0,150},{0,0}},
             {1938,{0,150},{0,0}},
@@ -244,10 +253,11 @@ public:
             {2010,{1759,1759},{300,300}},
             {2011,{1700,1700},{300,300}},
             {2012,{1700,1700},{300,300}},
+            {2013,{1700,1700},{300,300}},
         };
         auto catche = catches[time-1936];
-        line.catches = Uniform(catche.line.lo,catche.line.hi).random();
-        trawl.catches = Uniform(catche.trawl.lo,catche.trawl.hi).random();
+        line.catches(aide,Uniform(catche.line.lo,catche.line.hi));
+        trawl.catches(aide,Uniform(catche.trawl.lo,catche.trawl.hi));
         
         // CPUE
         struct CPUEs {
@@ -280,7 +290,7 @@ public:
         };
         auto cpue = cpues[time-1936];
         
-        static const Composition::Sample<19,121,2> line_lengths[16] = {
+        /*static const Composition::Sample<19,121,2> line_lengths[16] = {
             {1993,10,{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.000833034,0.01907067,0.06234897,0.05787144,0.09205867,0.07474554,0.07462903,0.06442023,0.05551416,0.06665473,0.06177136,0.05009846,0.05755423,0.03631356,0.04637422,0.04059342,0.02823511,0.02532275,0.01646804,0.01509342,0.01095231,0.01054003,0.005978919,0.004740671,0.008281408,0.002961299,0.003867287,0.003174747,0.001295687,0.001050167,0.0007580613,0,0.0001366856,0,0.0001470798,0}},
             {1994, 2,{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.002088497,0,0,0.01118551,0.0386302,0.04073961,0.03668246,0.0587458,0.06882336,0.0844908,0.1339844,0.08683745,0.07804843,0.094172,0.04425235,0.04293688,0.03625063,0.03115765,0.02785656,0.01417502,0.02453844,0.009071525,0.01535035,0.004280811,0.006553846,0.001712733,0.004409622,0.001821751,0.0003476381,0.0008556447,0,0,0,0,0,0,0}},
             {1995, 4,{0,0,0,0,0,0,0,0,0,0,0,0,0.001951494,0.006970228,0.05123687,0.0747149,0.04020342,0.0635675,0.06250192,0.0825977,0.071601,0.09895632,0.06510201,0.04441395,0.06159359,0.04387734,0.0431837,0.01933916,0.01585675,0.01469333,0.01314635,0.01921609,0.01862644,0.01324993,0.01091688,0.01166447,0.009225448,0.006070978,0.006858778,0.007866656,0.006880516,0.004725787,0.002802254,0.0008428806,0.002679879,0.0004551937,0.001804038,0,0.0006062384,0,0}},
@@ -297,7 +307,7 @@ public:
             {2006, 6,{0,0,0,0,0,0,0,0,1.118206e-05,0,0.0001358196,0,0,0,0.0004356601,0.02089889,0.0924201,0.07464896,0.1665842,0.1312537,0.09719674,0.09858058,0.108905,0.045692,0.05177953,0.02354293,0.02193468,0.01568127,0.006974484,0.02108778,0.003428229,0.003325304,0.001890497,0.0007110101,0.002315411,0.004167773,0.001501069,0.001808627,0.001333887,0.0005952916,0.0005992896,0.0002018768,9.962319e-05,0.0002585633,0,0,0,0,0,0,0}},
             {2007, 8,{0,0,0,0,0,0,0,0,0,0,0,0,0,0.01372076,0.03743546,0.1030029,0.08709071,0.07538374,0.0620374,0.06411771,0.05755508,0.06313634,0.07717764,0.05973588,0.06378247,0.05062632,0.03956377,0.02898915,0.02039481,0.01102126,0.01270849,0.008389985,0.01157540,0.007763662,0.01608820,0.008995939,0.005763921,0.004451052,0.003437062,0.002257977,0.001204630,0.000918174,0.0005841044,0.0007674782,0,0,0,1.330027e-05,0.0002959331,1.330027e-05,0}},
             {2008, 8,{0,0,0,0,0,0,0,0,0,0,0,0,0,0.003411721,0.0255222,0.09457644,0.1207092,0.1207135,0.0946572,0.09570498,0.08473751,0.07118058,0.07757383,0.03784860,0.02427679,0.02235321,0.01903186,0.02376668,0.02203408,0.009871937,0.01098032,0.004785387,0.004065826,0.003256392,0.002226485,0.003036518,0.001084377,0.004871237,0.004265542,0.007898112,0.003363144,0.001601792,0,0,0,0.0005945635,0,0,0,0,0}}
-        };
+        };*/
         
         //static const Composition::Sample<19,121,2> trawl_lengths[1] = {
             //{1995, 17,{0,0,0,0,0,0,0,0,0,0,0,0.005386854,0,0,0.004395466,0.04199339,0.0645052,0.02791055,0.05898416,0.1018713,0.1369029,0.067774,0.1153757,0.122697,0.07824038,0.03888739,0.0410989,0.01585228,0.02495305,0.01320923,0.008759512,0.008558257,0.002305707,0.005695989,0.004088632,0.00280899,0.003484397,0,0,0.000993046,0.002342325,0,0,0.00092533,0,0,0,0,0,0,0}},
@@ -313,16 +323,16 @@ public:
         //};
         
         //Palliser Bank 1986 catch-at-age
-        static const Composition::Sample<5,50> trawl_ages[1] = {
-            {1986,200,{0.0003,0.003,0.0125,0.0129,0.018,0.0311,0.0336,0.0449,0.0477,0.0334,0.0394,0.0346,0.0288,0.0548,0.0412,0.0348,0.0443,0.0381,0.0616,0.0541,0.0442,0.0433,0.0426,0.0404,0.0302,0.0265,0.0187,0.0233,0.0103,0.01,0.0055,0.0098,0.0059,0.0055,0.0021,0.0023,0.0021,0.0014,0.002,0.0007,0.0013,0.0007,0.0005,0.0002,0.0003,0.0011}}
-        };
+        //static const Composition::Sample<5,50> trawl_ages[1] = {
+        //    {1986,200,{0.0003,0.003,0.0125,0.0129,0.018,0.0311,0.0336,0.0449,0.0477,0.0334,0.0394,0.0346,0.0288,0.0548,0.0412,0.0348,0.0443,0.0381,0.0616,0.0541,0.0442,0.0433,0.0426,0.0404,0.0302,0.0265,0.0187,0.0233,0.0103,0.01,0.0055,0.0098,0.0059,0.0055,0.0021,0.0023,0.0021,0.0014,0.002,0.0007,0.0013,0.0007,0.0005,0.0002,0.0003,0.0011}}
+        //};
         
         //Bay of Plenty/East Northland 2001 catch-at-age
-        static const Composition::Sample<4,38> line_ages[1] = {
-            {2001,200,{6.00E-04,0.0178,0.0168,0.0622,0.0933,0.0938,0.0822,0.0688,0.0841,0.0384,0.0449,0.0475,0.0438,0.0406,0.042,0.048,0.0281,0.0214,0.0209,0.0223,0.0105,0.0086,0.0119,0.0107,0.0126,0.0032,0.0061,0.0022,0.0049,0.0022,0.0025,0.0046,0.0011,0,0.0012}},
-        };
+        //static const Composition::Sample<4,38> line_ages[1] = {
+        //    {2001,200,{6.00E-04,0.0178,0.0168,0.0622,0.0933,0.0938,0.0822,0.0688,0.0841,0.0384,0.0449,0.0475,0.0438,0.0406,0.042,0.048,0.0281,0.0214,0.0209,0.0223,0.0105,0.0086,0.0119,0.0107,0.0126,0.0032,0.0061,0.0022,0.0049,0.0022,0.0025,0.0046,0.0011,0,0.0012}},
+        //};
         
-        return log_likelihood;
+        return likelihood;
     }
 
 } mpe;

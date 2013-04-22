@@ -8,22 +8,60 @@ namespace Management {
 namespace Procedures {
 
 class PriorDocumenter{
+public:/*
+    template<
+        class Target,
+        class Distribution
+    >
+    PriorDocumenter& operator()(Target& target, std::string name, double (Target::* getter)(void) const, Target& (Target::* setter)(const double& value),const Distribution& distibution){
+        std::cout<<typeid(target).name()<<" "<<typeid(setter).name()<<" "<<typeid(distibution).name()<<std::endl;
+        return *this;
+    }
+    */
+    template<
+        class Property,
+        class Distribution
+    >
+    PriorDocumenter& operator()(const Property& property,const Distribution& distibution){
+        std::cout<<property.name()<<" ~ "<<typeid(distibution).name()<<std::endl;
+        return *this;
+    }
+    
+    template<
+        class Property,
+        class Distribution
+    >
+    PriorDocumenter& operator()(const char* name, const Property& property,const Distribution& distibution){
+        std::cout<<name<<" ~ "<<typeid(distibution).name()<<std::endl;
+        return *this;
+    }
+};
+
+class LikelihoodDocumenter{
 public:
     template<
         class Target,
-        class Prior
+        class Distribution
     >
-    PriorDocumenter& operator()(Target& target, std::string name, double (Target::* getter)(void) const, Target& (Target::* setter)(const double& value),const Prior& prior){
-        std::cout<<typeid(target).name()<<" "<<typeid(setter).name()<<" "<<typeid(prior).name()<<std::endl;
+    LikelihoodDocumenter& operator()(Target& target, std::string name, double (Target::* getter)(void) const, Target& (Target::* setter)(const double& value),const Distribution& distibution){
+        std::cout<<typeid(target).name()<<" "<<typeid(setter).name()<<" "<<typeid(distibution).name()<<std::endl;
         return *this;
     }
     
 };
 
 
-template<class Derived>
+template<
+    class Derived
+>
 class Evaluation {
 public:
+
+    struct Conditioning {
+        int start;
+        int finish;
+    };
+    Conditioning conditioning;
 
     void prior(void){
         
@@ -32,10 +70,15 @@ public:
     void document(void){
         PriorDocumenter priors;
         static_cast<Derived*>(this)->priors(priors);
+        
+        LikelihoodDocumenter likelihoods;
+        for(int time=conditioning.start;time<=conditioning.finish;time++){
+            static_cast<Derived*>(this)->likelihood(likelihoods,time);
+        }
     }
 
     void condition(void){
-        //static_cast<Derived*>(this)->log_likelihood();
+        
     }
 
     void run(void){
