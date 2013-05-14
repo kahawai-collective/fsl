@@ -16,8 +16,8 @@ instantaneous rates of mortality and getting survival.
 class Rate {
 private:
 
-	double rate_;
-	
+    double rate_;
+
 public:
 
     FSL_PROPERTY_DEF(Rate,rate,double)
@@ -56,6 +56,10 @@ public:
     //! Set the survival rate (\f$1-r\f$)
     Rate& survival(const double& s) {
         rate_ = 1-s;
+        return *this;
+    }
+    
+    Rate& initialise(void){
         return *this;
     }
 };

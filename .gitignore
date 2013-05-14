@@ -5,6 +5,7 @@ sandbox
 *.o
 
 #Ignore test executables and output
+*.debug
 *.exe
 *.out
 

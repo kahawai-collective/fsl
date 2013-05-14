@@ -16,5 +16,6 @@ FSL_LIB_DIRS := -L$(FSL_HOME)/requirements/lib $(STENCILA_CPP_LIB_DIRS)
 # Libraries that need to be included 
 FSL_LIBS := $(STENCILA_CPP_LIBS)
 
-# C++ compile command
-FSL_COMPILE := g++ -Wall -O2 -std=c++0x -g $(FSL_INCLUDE_DIRS)
+# C++ compile commands
+FSL_COMPILE_PROD := g++ -Wall -O2 -std=c++0x $(FSL_INCLUDE_DIRS)
+FSL_COMPILE_DEBUG := g++ -Wall -O0 -std=c++0x -g $(FSL_INCLUDE_DIRS)

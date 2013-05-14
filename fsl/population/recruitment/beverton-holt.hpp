@@ -28,6 +28,10 @@ public:
         return -(s0_*steepness_-s0_)/(5*steepness_-1);
     }
 
+    BevertonHolt& initialise(void){
+        return *this;
+    }
+
     double operator()(const double& stock) {
         return 4*steepness_*r0_*stock/((5*steepness_-1)*stock+s0_*(1-steepness_));
     }

@@ -8,15 +8,34 @@ template<
 > class Property {
 private:
 
+    typedef Type (Class::* Getter)(void) const;
+    typedef Class& (Class::* Setter)(const Type& value);
+
+    Class* object_;
     std::string name_;
+    Getter getter_;
+    Setter setter_;
 
 public:
-    Property(Class& object,const char* name, Type (Class::* getter)(void) const, Class& (Class::* setter)(const Type& value)){
-        name_ = name;
+
+    Property(Class& object,const char* name, Type (Class::* getter)(void) const, Class& (Class::* setter)(const Type& value)):
+        object_(&object),
+        name_(name),
+        getter_(getter),
+        setter_(setter){
     }
     
     std::string name(void) const {
         return name_;
+    }
+    
+    Type get(void) const {
+        return (object_->*getter_)();
+    }
+    
+    Class& set(const Type& value) const {
+        (object_->*setter_)(value);
+        return *object_;
     }
 };
 
@@ -52,6 +71,6 @@ public:                                                         \
     }
 
 #define __(PROPERTY,OTHER) \
-    (#PROPERTY,PROPERTY(_),OTHER)
+    (PROPERTY(_),OTHER)
 
 

@@ -32,20 +32,20 @@ public:
 
     typedef Array<double,Dimension> ArrayType;
 
-    void reset(void){
+    void initialise(void){
         for(unsigned int index=0;index<ArrayType::size();index++) {
             ArrayType::operator()(index) = Function::operator()(index);
         }
     }
     
-    void reset(const double& base,const double& step){
+    void initialise(const double& base,const double& step){
         for(unsigned int index=0;index<ArrayType::size();index++) {
             ArrayType::operator()(index) = Function::operator()(base+index*step);
         }
     }
     
     template<typename Callable>
-    void reset(Callable callable){
+    void initialise(Callable callable){
         for(unsigned int index=0;index<ArrayType::size();index++) {
             ArrayType::operator()(index) = Function::operator()(callable(index));
         }
