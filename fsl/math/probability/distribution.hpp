@@ -102,6 +102,10 @@ public:
 	double quantile(const double& p) const {
 		return boost::math::quantile(static_cast<const Derived&>(*this).boost_dist(),p);
 	}
+    
+	double cdf(const double& from,const double& to) const {
+		return cdf(to)-cdf(from);
+	}
 	
 	template<
 		typename Function,

@@ -12,45 +12,26 @@ namespace Probability {
 using namespace Fsl;
 
 class Lognormal : public Distribution<Lognormal> {
-private:
-    double mean_;
-    double sd_;
-    
 public:
-    
-    Lognormal(const double& mean=1, const double& sd=1):
-        mean_(mean),
-        sd_(sd){
-    }
-    
-    double mean(void) const {
-        return mean_;
-    }
 
-    Lognormal& mean(const double& mean) {
-        mean_ = mean;
-		return *this;
-    }
-	
-    double sd(void) const {
-        return sd_;
-    }
-
-    Lognormal& sd(const double& sd) {
-        sd_ = sd;
-		return *this;
+    double mean;
+    double sd;
+    
+    Lognormal(const double& mean_=1, const double& sd_=1):
+        mean(mean_),
+        sd(sd_){
     }
 
     boost::math::lognormal boost_dist(void) const {
         //boost::math uses different properties for location and scale so some conversion is necessary
-        double scale_squared = std::log(1.0+sd_*sd_/(mean_*mean_));
-        double location = std::log(mean_)-0.5*scale_squared;
+        double scale_squared = std::log(1.0+sd*sd/(mean*mean));
+        double location = std::log(mean)-0.5*scale_squared;
         double scale = std::sqrt(scale_squared);
         return boost::math::lognormal(location,scale);
     }
     
     double random(void) const {
-        boost::lognormal_distribution<> distr(mean_,sd_);
+        boost::lognormal_distribution<> distr(mean,sd);
         boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
         return randomVariate();
     }

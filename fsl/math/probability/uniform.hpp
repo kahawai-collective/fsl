@@ -27,9 +27,14 @@ public:
     }
     
     double random(void) const {
-        boost::uniform_real<> distr(lower,upper);
-        boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
-        return randomVariate();
+        // If lower and upper are equal then boost random number generator
+        // will loop endlessly attempting to create a valid value. So escape that condition...
+        if(lower==upper) return lower;
+        else{
+            boost::uniform_real<> distr(lower,upper);
+            boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
+            return randomVariate();
+        }
     }
 
     bool accept(const double& value) const {

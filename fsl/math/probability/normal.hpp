@@ -14,27 +14,25 @@ namespace Probability {
 using namespace Fsl;
 
 class Normal : public Distribution<Normal> {
-
-    FSL_PROPERTY(Normal,mean,double)
-    FSL_PROPERTY(Normal,sd,double)
-
 public:
+    double mean;
+    double sd;
 
-    Normal(const double& mean=1, const double& sd=1):
-        mean_(mean),
-        sd_(sd){
+    Normal(const double& mean_=1, const double& sd_=1):
+        mean(mean_),
+        sd(sd_){
     }
     
     std::string describe(void) const {
-        return str(boost::format("Normal(%g,%g)")%mean()%sd());
+        return str(boost::format("Normal(%g,%g)")%mean%sd);
     }
 
     boost::math::normal boost_dist(void) const {
-        return boost::math::normal(mean_,sd_);
+        return boost::math::normal(mean,sd);
     }
     
     double random(void) const {
-        boost::normal_distribution<> distr(mean_,sd_);
+        boost::normal_distribution<> distr(mean,sd);
         boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
         return randomVariate();
     }
@@ -42,9 +40,9 @@ public:
 
 class NormalCv : public Normal {
 public:
-	NormalCv(const double& mean, const double& cv):
-		Normal(mean,std::fabs(mean*cv)){
-	}
+    NormalCv(const double& mean=1, const double& cv=1):
+        Normal(mean,std::fabs(mean*cv)){
+    }
 };
 
 }}}
