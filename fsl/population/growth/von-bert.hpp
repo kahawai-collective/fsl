@@ -5,22 +5,21 @@
 namespace Fsl {
 namespace Population {
 namespace Growth {
-	
+
 using Fsl::Math::Functions::Function; 
 
 /*!
 von Bertallanfy growth function
 */
 class VonBert : public Function {
-
-    FSL_PROPERTY(VonBert,k,double)
-    FSL_PROPERTY(VonBert,linf,double)
-    FSL_PROPERTY(VonBert,t0,double)
-
 public:
 
+    double k;
+    double linf;
+    double t0;
+
     double operator()(const double& age) const {
-        return linf_*(1-std::exp(-k_*(age-t0_)));
+        return linf*(1-std::exp(-k*(age-t0)));
     }
 };
 

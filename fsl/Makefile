@@ -10,6 +10,8 @@
 # Remember to use parallel builds for speedy compilation and running of all tests
 #    make -j 5 clean tests
 
+all : tests
+
 include Makefile.include
 
 # Get a list of FSL header source files (files with extension *.hpp)
@@ -32,13 +34,11 @@ tests : $(FSL_TESTS_OUT)
 
 # Run a single test and redirect stdout and sterr to both the console and to a file with extension .out
 %.out : %.test
-	./$< 2>&1 | tee $@
+	$< 2>&1 | tee $@
 
 # Compile a production executable
 %.exe : %.cpp $(FSL_HEADERS)
 	$(FSL_COMPILE_PROD) -o $@ %.cpp $(FSL_LIB_DIRS) $(FSL_LIBS)
-
-all : tests
 
 clean:
 	rm -f $(FSL_TESTS_EXE) $(FSL_TESTS_OUT)

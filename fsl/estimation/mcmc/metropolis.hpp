@@ -6,7 +6,6 @@
 #include <stencila/dataset.hpp>
 #include <stencila/hashing.cpp>
 
-#include <fsl/array.hpp>
 #include <fsl/math/probability/uniform.hpp>
 #include <fsl/math/probability/normal.hpp>
 

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <fsl/property.hpp>
-
 namespace Fsl {
 namespace Population {
 namespace Mortality {
@@ -19,8 +17,6 @@ private:
     double rate_;
 
 public:
-
-    FSL_PROPERTY_DEF(Rate,rate,double)
     
     //! Get the rate of mortality (\f$r\f$)
     double rate(void) const {
@@ -33,21 +29,22 @@ public:
         return *this;
     };
     
-    FSL_PROPERTY_DEF(Rate,instantaneous,double)
-
-    //! Get the instantaneous rate of mortality (\f$i=-ln(1-r)\f$)
-    double instantaneous() const {
-        return -std::log(1-rate_);
-    }
-
-    //! Set the instantaneous rate of mortality (\f$r=1-exp(-i)\f$)
-    Rate& instantaneous(const double& i){
-        rate_ = 1-std::exp(-i);
-        return *this;
-    }
+    class Instantaneous {
+    private:
+        Rate& parent;
+    public:
+        Instantaneous(Rate& rate):
+            parent(rate){
+        }
+        void operator=(const double& value){
+            parent.rate(1-std::exp(-value));
+        }
+        operator double(void)const {
+            return -std::log(1-parent.rate());
+        }
+    };
+    Instantaneous instantaneous;
     
-    FSL_PROPERTY_DEF(Rate,survival,double)
-
     //! Get the survival rate (\f$1-r\f$)
     double survival(void) const {
         return 1-rate_;
@@ -59,9 +56,15 @@ public:
         return *this;
     }
     
+    Rate(void):
+        instantaneous(*this){
+        
+    }
+    
     Rate& initialise(void){
         return *this;
     }
+    
 };
 
 }

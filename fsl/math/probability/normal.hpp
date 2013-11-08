@@ -4,7 +4,6 @@
 #include <boost/random/normal_distribution.hpp>
 #include <boost/format.hpp>
 
-#include <fsl/property.hpp>
 #include <fsl/math/probability/distribution.hpp>
 
 namespace Fsl {

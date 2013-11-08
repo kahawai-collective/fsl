@@ -1,7 +1,6 @@
 #pragma once
 
 #include <fsl/common.hpp>
-#include <fsl/array.hpp>
 
 namespace Fsl {
 namespace Math {

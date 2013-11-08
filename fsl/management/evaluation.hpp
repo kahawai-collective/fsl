@@ -14,12 +14,6 @@ template<
 class Evaluation {
 public:
 
-    Derived& initialise(void){
-        Derived& self = static_cast<Derived&>(*this);
-        self.evaluation.initialise();
-        return self;
-    }
-
     Derived& document(void){
         Derived& self = static_cast<Derived&>(*this);
         self.conditioning.document(self.model);
@@ -29,13 +23,18 @@ public:
 
     Derived& condition(void){
         Derived& self = static_cast<Derived&>(*this);
-        self.conditioning.condition(self.model);
+        self.conditioner.condition(self);
         return self;
     }
     
     Derived& evaluate(void){
         Derived& self = static_cast<Derived&>(*this);
-        self.evaluation.evaluate(self.model);
+        for(int replicate=0;replicate<self.conditioning.replicates();replicate++){
+            self.conditioning.apply(replicate,self.model);
+            for(int candidate=0;candidate<self.evaluation.candidates();candidate++){
+                self.evaluation.evaluate(candidate,self.model);
+            }
+        }
         return self;
     }
 

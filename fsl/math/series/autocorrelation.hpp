@@ -1,7 +1,5 @@
 #pragma once
 
-#include <fsl/property.hpp>
-
 namespace Fsl {
 namespace Math {
 namespace Series {
@@ -14,17 +12,17 @@ private:
 
 public:
 
-    FSL_PROPERTY(Autocorrelation,coefficient,double)
+    double coefficient;
     
     Autocorrelation(void):
         started_(false),
         last_(0),
-        coefficient_(0){
+        coefficient(0){
     }
 
     double operator()(const double& deviation) {
         if(started_) {
-            last_ = coefficient_*last_ + std::sqrt(1-std::pow(coefficient_,2))*deviation;
+            last_ = coefficient*last_ + std::sqrt(1-std::pow(coefficient,2))*deviation;
         }
         else {
             last_ = deviation;

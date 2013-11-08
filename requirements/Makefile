@@ -50,12 +50,12 @@ stencila:
 
 # Note that boost is not built as a stencila requirement since it is already a fisl requirement
 # Instead, just provide a softlink to the fisl copy of boost
-stencila-library: stencila
+stencila-library: stencila include
 	cd stencila; git pull
 	cd stencila/cpp/requirements; make pugixml rapidjson smhasher sqlite
 	cd stencila/cpp/requirements; ln -sFT ../../../../include/boost/ include/boost
 	cd stencila/cpp; make library
-
+	ln -sfT ../stencila/cpp/stencila include/stencila
 
 ####################################################
 # Doxygen http://www.stack.nl/~dimitri/doxygen/

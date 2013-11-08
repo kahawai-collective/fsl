@@ -17,24 +17,40 @@ template<
 class Stochastic;
 
 template<
-    class Relationship_
+    class Relationship
 >
 class Stochastic<
-    Relationship_,
+    Relationship,
     Math::Probability::Lognormal,
     Math::Series::Autocorrelation
 > {
 public:
-    typedef Relationship_ Relationship;
     Relationship relationship;
-    
-    Math::Probability::Normal variation;
+    int seed;
+    double sd;
     Math::Series::Autocorrelation autocorrelation;
+    
+    boost::mt19937 generator;
+    
+    void initialise(void){
+        generator.seed(seed);
+    }
+    
+    double stock_virgin(void) const {
+        return relationship.stock_virgin();
+    }
+    
+    double recruits_virgin(void) const {
+        return relationship.recruits_virgin();
+    }
 
     double operator()(const double& spawners) {
-        double deviation = variation.random();
+        boost::normal_distribution<> distr(0,1);
+        boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(generator,distr);
+        double deviation = randomVariate()*sd;
+        
         deviation = autocorrelation(deviation);
-        double multiplier = std::exp(deviation-0.5*variation.sd()*variation.sd());
+        double multiplier = std::exp(deviation-0.5*sd*sd);
         return relationship(spawners)*multiplier;
     }
 };

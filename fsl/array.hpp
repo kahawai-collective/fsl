@@ -45,6 +45,10 @@ public:
         return values[index];
     }
     
+    const Type& operator[](int index) const {
+        return values[index];
+    }
+    
     double sum(void){
         double sum = 0;
         std::for_each(values.begin(),values.end(),[&](double value){
