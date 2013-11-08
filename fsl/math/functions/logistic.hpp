@@ -1,29 +1,32 @@
 #pragma once
 
 #include <fsl/common.hpp>
-
 #include <fsl/math/functions/function.hpp>
 
 namespace Fsl {
 namespace Math {
 namespace Functions {
 
-//! Logistic function parameterised
+/**
+ * Logistic function parameterised with inflection and
+ * steepness parameters
+ */ 
 class Logistic : public Function {
-
-    //! @property inflection
-    //! Value of x at which y==0.50
-    FSL_PROPERTY(Logistic,inflection,double)
-
-    //! @property steepness
-    //! Difference between the value of x where y==0.95 and
-    //! inflection point
-    FSL_PROPERTY(Logistic,steepness,double)
-
 public:
+    
+    /**
+     * Value of x at which y==0.50
+     */
+    double inflection;
 
-    double operator()(const double& x){
-        return 1.0/(1.0+std::pow(19,(inflection_-x)/steepness_));
+    /**
+     * Difference between the value of x where y==0.95 and
+     * inflection point
+     */
+    double steepness;
+
+    double operator()(const double& x) const {
+        return 1.0/(1.0+std::pow(19,(inflection-x)/steepness));
     }
 
 }; // end class Logistic

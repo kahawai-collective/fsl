@@ -7,16 +7,21 @@ namespace Fsl {
 namespace Math {
 namespace Functions {
     
-/*!
+/**
  * A base class for all functions
  * 
- * This class is not expect to be used but it defines the interface
+ * This class is not expected to be used but it defines the interface
  * that all Functions are expected to have. Functions act as functors with
  * a "call operator" which takes a double and returns a double.
  */
 class Function {
 public:
     
+    /**
+     * Get the value of the function
+     * @param  x Point at which function is evaluated
+     * @return   Value of function
+     */
     double operator()(const double& x){
         return 0;
     }
@@ -51,9 +56,23 @@ public:
         }
     }
     
-    double operator()(const unsigned int& index) const {
+    template<typename Distributions>
+    void initialise_integrate(const Distributions& distributions){
+        for(unsigned int index=0;index<ArrayType::size();index++) {
+            auto& distribution = distributions[index];
+            auto integral = distribution.integrate(static_cast<Function&>(*this));
+            ArrayType::operator()(index) = integral;
+        }
+    }
+    
+    double operator()(const double& value) const {
+        return Function::operator()(value);
+    }
+    
+    double operator[](const unsigned int& index) const {
         return ArrayType::operator()(index);
     }
+    
 }; // end class Cached 
 
 } // end namespace Fsl

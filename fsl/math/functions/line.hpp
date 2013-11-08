@@ -8,28 +8,18 @@
 namespace Fsl {
 namespace Math {
 namespace Functions {
-    
-/**
- * Power function
- */
-class Power : public Function {
+
+class Line : public Function {
 public:
 
-    /**
-     * Value of function when x==1
-     */
     double a;
-    
-    /**
-     * Exponent of power function
-     */
     double b;
 
-    double operator()(const double& x) const {
-        return a*std::pow(x,b);
+    double operator()(const double& x){
+        return a+x*b;
     }
 
-}; // end class Power
+}; // end class Line
 
 } // end namespace Fsl
 } // end namespace Math
