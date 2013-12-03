@@ -2,9 +2,8 @@
 
 #include <fstream>
 
-#include <stencila/datatable.hpp>
-#include <stencila/dataset.hpp>
-#include <stencila/hashing.cpp>
+#include <stencila/arrays.hpp>
+#include <stencila/tables.hpp>
 
 #include <fsl/math/probability/uniform.hpp>
 #include <fsl/math/probability/normal.hpp>
@@ -13,8 +12,10 @@ namespace Fsl {
 namespace Estimation {
 namespace Mcmc {
     
-using Stencila::Dataset;
-using Stencila::Datatable;
+using namespace Stencila::Arrays;
+using namespace Stencila::Tables;
+using Stencila::Real;
+using Stencila::Integer;
 
 /*!
 @brief Metropolis Markov chain Monte Carlo algorithm
@@ -32,30 +33,29 @@ template<
     class Derived,
     int Parameters
 >
-class Metropolis : public Dataset {
+class Metropolis {
 public:
     //! Vector that represents the paramter values at the end of the chain
-    Array<double,Parameters> values;
+    Array<> values = Parameters;
     double ll;
     
     //! Variances for proposals. These need to be tuned
     //! by user to obtain an acceptance ratio (20-70%)
-    Array<double,Parameters> variances;
+    Array<> variances = Parameters;
     
     unsigned int iterations;
     unsigned int accepted;
     double acceptance;
     
-    Datatable samples;
+    Table samples;
     
-    Metropolis(void){
-        using Stencila::Integer;
-        using Stencila::Real;
-        samples = create("samples",
+    Metropolis(void):
+        samples("samples",
             "iteration",Real,
             "acceptance",Real,
             "log_like",Real
-        );
+        )
+    {
         //! @todo add all parameters
         for(int par=0;par<Parameters;par++) samples.add("p"+boost::lexical_cast<std::string>(par),Real);
     }
@@ -72,7 +72,7 @@ public:
         typedef Math::Probability::Uniform Uniform;
         
         //! Generate a proposal for each parameter
-        Array<double,Parameters> proposal;
+        Array<> proposal(Parameters);
         for(int par=0;par<Parameters;par++){
             double value = values(par);
             double variance = variances(par);
@@ -107,6 +107,6 @@ public:
     }
 };
 
-} // end namespace Fsl
-} // end namespace Estimation
 } // end namespace Mcmc
+} // end namespace Estimation
+} // end namespace Fsl

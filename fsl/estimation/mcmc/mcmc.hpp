@@ -23,6 +23,6 @@ namespace Fsl {
 namespace Estimation {
 namespace Mcmc {
 
-} // end namespace Fsl
-} // end namespace Estimation
 } // end namespace Mcmc
+} // end namespace Estimation
+} // end namespace Fsl
