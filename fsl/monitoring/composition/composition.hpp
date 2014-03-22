@@ -24,12 +24,12 @@ public:
     
     Sample(const double& size, const std::vector<double>& observed):
         size(size){
-        assert(observed.size()!=bins);
+        assert(observed.size()==bins);
         for(unsigned int bin=0;bin<bins;bin++) observeds[bin] = observed[bin];
     }
     
     void expected(const std::vector<double>& expected){
-        assert(expected.size()!=bins);
+        assert(expected.size()==bins);
         for(unsigned int bin=0;bin<bins;bin++) expecteds[bin] = expected[bin];
     }
     
@@ -73,7 +73,13 @@ public:
     void expected(const Key& key, const std::vector<double>& proportions){
         samples[key].expected(proportions);
     }
-    
+
+    double likelihood(void) const {
+        double likelihood = 0;
+        for(auto& sample : samples) likelihood += sample.second.likelihood();
+        return likelihood;
+    }
+
     void observeds_output(const std::string& filename){
         std::ofstream file(filename);
         file<<"key\tbin\tobs\n";
@@ -83,23 +89,18 @@ public:
             }
         }
     }
-    
-    void expecteds_output(std::ostream& stream,const std::string& prefix=""){
+
+    void stream(std::ostream& stream,const std::string& prefix=""){
         for(auto& sample : samples) {
             for(unsigned int bin=0;bin<SampleType::bins;bin++){
+                if(prefix.length()>0) stream<<prefix<<"\t";
                 stream
-                    <<prefix
                     <<sample.first<<"\t"
                     <<bin<<"\t"
+                    <<sample.second.observeds[bin]<<"\t"
                     <<sample.second.expecteds[bin]<<"\n";
             }
         }
-    }
-
-    double likelihood(void) const {
-        double likelihood = 0;
-        for(auto& sample : samples) likelihood += sample.second.likelihood();
-        return likelihood;
     }
 };
 

@@ -22,20 +22,26 @@ public:
         sd_(sd){
     }
 
+    double minimum(void) const {
+        return 0;
+    }
+
     const double& mean(void) const {
         return mean_;
     }
 
-    double& mean(void) {
-        return mean_;
+    Lognormal& mean(const double& mean) {
+        mean_ = mean;
+        return *this;
     }
 
     const double& sd(void) const {
         return sd_;
     }
 
-    double& sd(void) {
-        return sd_;
+    Lognormal& sd(const double& sd) {
+        sd_ = sd;
+        return *this;
     }
 
     boost::math::lognormal boost_dist(void) const {

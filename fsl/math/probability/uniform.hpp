@@ -25,6 +25,18 @@ public:
     boost::math::uniform boost_dist(void) const {
         return boost::math::uniform(lower_,upper_);
     }
+
+    double minimum(void) const {
+        return lower_;
+    }
+
+    double maximum(void) const {
+        return upper_;
+    }
+	
+	double mean(void) const {
+		return (lower_+upper_)/2; 
+	}
     
     double random(void) const {
         // If lower and upper are equal then boost random number generator

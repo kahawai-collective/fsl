@@ -12,7 +12,15 @@ public:
 	
 	Truncated(double a=1,double b=1,double min_=-INFINITY, double max_=INFINITY):
 		Base(a,b),min(min_),max(max_){}
-	
+
+	double minimum(void) const {
+		return min;
+	}
+
+	double maximum(void) const {
+		return max;
+	}
+
 	double random(void) const {
 		double trial = Base::random();
 		if(trial<min or trial>max) return random();

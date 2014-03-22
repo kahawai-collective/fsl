@@ -26,8 +26,8 @@ public:
     double operator()(const double& x){
         return (x<inflection_)?0:1;
     }
-}; // end class Threshold
+}; // class Threshold
 
-} // end namespace Fsl
-} // end namespace Math
-} // end namespace Functions
+} // namespace Functions
+} // namespace Math
+} // namespace Fsl

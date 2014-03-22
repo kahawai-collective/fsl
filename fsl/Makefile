@@ -34,7 +34,7 @@ tests : $(FSL_TESTS_OUT)
 
 # Run a single test and redirect stdout and sterr to both the console and to a file with extension .out
 %.out : %.test
-	$< 2>&1 | tee $@
+	cd $(shell dirname $<); ./$(shell basename $<) 2>&1 | tee $@
 
 # Compile a production executable
 %.exe : %.cpp $(FSL_HEADERS)

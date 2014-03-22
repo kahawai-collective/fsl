@@ -37,8 +37,12 @@ public:
         return r0;
     }
 
-    double operator()(const double& stock) {
+    double recruits(const double& stock) {
         return 4*steepness*r0*stock/((5*steepness-1)*stock+s0*(1-steepness));
+    }
+
+    double operator()(const double& stock) {
+        return recruits(stock);
     }
 
 };

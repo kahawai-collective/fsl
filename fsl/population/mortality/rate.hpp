@@ -21,6 +21,10 @@ public:
     Rate(const double& rate=0):
         rate_(rate){
     }
+
+    operator double(void) const {
+        return rate();
+    }
     
     //! Get the rate of mortality (\f$r\f$)
     double rate(void) const {

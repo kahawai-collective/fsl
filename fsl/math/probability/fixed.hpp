@@ -31,6 +31,10 @@ public:
     double random(void) const {
         return value_;
     };
+
+    double pdf(const double& x) const {
+        return (x==value_)?1:1e-6;
+    }
 };
 
 }}}

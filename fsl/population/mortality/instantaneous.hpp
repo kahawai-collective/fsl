@@ -12,6 +12,10 @@ public:
     Instantaneous(const double& value=0){
         instantaneous(value);
     }
+
+    operator double(void) const {
+        return instantaneous();
+    }
 };
 
 }

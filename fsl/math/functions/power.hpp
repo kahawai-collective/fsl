@@ -14,12 +14,11 @@ namespace Functions {
  */
 class Power : public Function {
 public:
-
     /**
      * Value of function when x==1
      */
     double a;
-    
+
     /**
      * Exponent of power function
      */

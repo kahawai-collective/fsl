@@ -10,7 +10,6 @@ namespace Population {
 namespace Recruitment {
 
 template<
-    class Relationship = BevertonHolt,
     class Variation = Math::Probability::Lognormal,
     class Autocorrelation = Math::Series::Autocorrelation
 >

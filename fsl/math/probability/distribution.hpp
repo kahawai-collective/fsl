@@ -48,6 +48,14 @@ public:
 	void reset(void){
 	}
 	
+	double minimum(void) const {
+		return -INFINITY;
+	}
+
+	double maximum(void) const {
+		return INFINITY;
+	}
+
 	double mean(void) const {
 		return boost::math::mean(static_cast<const Derived&>(*this).boost_dist());
 	}
@@ -103,7 +111,7 @@ public:
 		return boost::math::quantile(static_cast<const Derived&>(*this).boost_dist(),p);
 	}
     
-	double cdf(const double& from,const double& to) const {
+	double integrate(const double& from,const double& to) const {
 		return cdf(to)-cdf(from);
 	}
 	

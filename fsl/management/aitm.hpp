@@ -91,6 +91,7 @@ public:
     Real starting;
     
     Real* const index;
+    Real* const benchmark;
 
     typedef Fsl::Math::Series::Filters::Ema Ema;
     Ema ema;
@@ -100,10 +101,11 @@ public:
     RestrictProportionalChange changes;
     RestrictValue values;
     
-    BIPR(Real* const control,const Real& starting,Real* const index,const Real& responsiveness=1,const Real& multiplier=1,const Real& change_min=0,const Real& change_max=1,const Real& value_min=0,const Real& value_max=INFINITY):
+    BIPR(Real* const control,const Real& starting, Real* const index, Real* const benchmark, const Real& responsiveness=1,const Real& multiplier=1,const Real& change_min=0,const Real& change_max=1,const Real& value_min=0,const Real& value_max=INFINITY):
         Control(control,starting),
         starting(starting),
         index(index),
+        benchmark(benchmark),
         ema(responsiveness),
         multiplier(multiplier),
         changes(change_min,change_max),
@@ -131,8 +133,9 @@ public:
     BIPR& operate(void){
         Real last = value;
         Real current = *index;
+        Real benchmark_value = *benchmark;
         Real smooth = ema.update(current);
-        value = smooth * multiplier;
+        value = smooth/benchmark_value * multiplier;
         value = changes.restrict(value,last);
         value = values.restrict(value);
         Control::operate();
