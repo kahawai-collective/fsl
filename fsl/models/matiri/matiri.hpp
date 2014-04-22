@@ -1,6 +1,7 @@
 #pragma once
 
 #include <stencila/array.hpp>
+#include <stencila/query.hpp>
 using namespace Stencila;
 
 #include <fsl/date.hpp>
@@ -135,15 +136,18 @@ public:
      */
     
     struct Sex : Dimension<Sex,Sexes>{
-        static const char* label(void) { return "sex"; }
+        Sex(void):Dimension<Sex,Sexes>("sex"){}
+        static const char* name(void) { return "sex"; }
     } sexes;
 
     struct Age : Dimension<Age,Ages>{
-        static const char* label(void) { return "age"; }
+        Age(void):Dimension<Age,Ages>("age"){}
+        static const char* name(void) { return "age"; }
     } ages;
 
     struct Sector : Dimension<Sector,Sectors>{
-        static const char* label(void) { return "sector"; }
+        Sector(void):Dimension<Sector,Sectors>("sector"){}
+        static const char* name(void) { return "sector"; }
     } sectors;
 
     //! @}
@@ -350,9 +354,9 @@ public:
     Array<double,Sector> exploitation_rate = 0;
 
     /**
-     * Exploitation survival
+     * Exploitation survival by sex and age
      */
-    Array<double,Sector,Age> exploitation_survival = 1;
+    Array<double,Sex,Age> exploitation_survival = 1;
 
     /**
      * @}
@@ -495,24 +499,20 @@ public:
      */
     void initialise(void){
 
-        recruitment_relation.initialise();
-
         for(auto sex : sexes){
             for(auto age : ages){
-                lengths(sex,age) = length_age(sex).distribution(age+0.5);
+                double age_mid = age.index() + 0.5;
+
+                lengths(sex,age) = length_age(sex).distribution(age_mid);
 
                 weights(sex,age) = lengths(sex,age).integrate(weight_length(sex));
 
-                maturities(sex,age) = maturity_age(sex)(
-                    age + 0.5
-                );
+                maturities(sex,age) = maturity_age(sex)(age_mid);
 
                 mortalities(sex,age) = mortality(sex);
                 
                 for(auto sector : sectors){
-                    selectivities(sector,sex,age) = selectivity_sex(sector,sex) * selectivity_age(sector,sex)(
-                        age + 0.5
-                    );
+                    selectivities(sector,sex,age) = selectivity_sex(sector,sex) * selectivity_age(sector,sex)(age_mid);
                 }
 
                 survivals(sex,age) = Population::Mortality::Rate(
@@ -575,7 +575,7 @@ public:
         biomass_spawning *= 0.001;
 
         // Calculate number of recruits
-        recruits_determ = recruitment_relation?recruitment_relation.recruits(biomass_spawning):recruitment_relation.r0;
+        recruits_determ = recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;
         if(recruitment_variation){
             recruits_deviation = recruitment_variation.random();
         }

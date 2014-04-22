@@ -145,15 +145,38 @@ public:
 
     struct Set {
         uint index = 0;
-        std::vector<double> values; 
+        std::vector<double> values;
 
-        Set& append(const double& value){
+        std::vector<std::string> ids;
+
+        Set& append(const double& value,const std::string& name,const std::string& label){
             values.push_back(value);
+            std::string id = name;
+            if(label.length()>0) id += "." + label;
+            ids.push_back(id);
             return *this;
+        }
+
+        void begin(void) {
+            index = 0;
         }
 
         double next(void) {
             return values[index++];
+        }
+
+        uint find(const std::string& id){
+            auto found = std::find(ids.begin(),ids.end(),id);
+            if(found==ids.end()) throw std::runtime_error("No parameter found with id:"+id);
+            return found-ids.begin();
+        }
+
+        double get(const std::string& id){
+            return values[find(id)];
+        }
+
+        void set(const std::string& id,double value){
+            values[find(id)] = value;
         }
     };
 
@@ -182,7 +205,7 @@ public:
 
         template<class Parameter>
         void operator()(const Parameter& parameter,double& variable,const std::string& label=""){
-            set.append(parameter.prior.mean());
+            set.append(parameter.prior.mean(),parameter.name,label);
         }
     };
 
@@ -214,10 +237,10 @@ public:
             boost::split(items,line,boost::is_any_of("\t "));
             // Check that they match
             if(items[0]!=parameter.name) throw std::runtime_error("Parameter name did not match expected: "+parameter.name+" : "+items[0]);
-            if(items[1]!=label) throw std::runtime_error("Parameter label did not match expected: "+label+" : "+items[1]);
-            // Get the value
+            if(items[1]!=label) throw std::runtime_error("Parameter label did not match expected for parameter: "+parameter.name+" : "+label+" : "+items[1]);
+            // Get the value and append it
             double value = boost::lexical_cast<double>(items[2]);
-            set.append(value);
+            set.append(value,parameter.name,label);
         }
     };
 
@@ -281,6 +304,60 @@ public:
         apply(writer);
     }
 
+
+    struct Profiler {
+        static const bool setter = false;
+        std::string name;
+        double min;
+        double max;
+
+        Profiler(const std::string& name):
+            name(name){
+        }
+
+        template<class Parameter>
+        void operator()(const Parameter& parameter,double& variable,const std::string& label=""){
+            if(parameter.name==name){
+                min = parameter.prior.minimum();
+                max = parameter.prior.maximum();
+            }
+        }
+    };
+
+    template<
+        class Data
+    >
+    void profile(const std::string& parameter, const Set& parameters, const Data& data, const std::string& filename){
+        // Open the file
+        std::ofstream file(filename);
+        // Define a profiler which will change the values of the parameter of interest
+        Profiler profiler(parameter);
+        apply(profiler);
+        // Create a copy of the parameter set
+        Set modified = parameters;
+
+        double jump = (profiler.max-profiler.min)/30;
+        for(double value=profiler.min;value<=profiler.max;value+=jump){
+            file<<value;
+            modified.set(parameter,value);
+            modified.begin();
+
+            Model model;
+            Data data_ = data;
+            for(uint time=self().first();time<=self().last();time++){
+                // Apply the parameter set to the model
+                set(model,time,modified);
+                model.update(time);
+                data_.get(model,time);
+            }
+
+            auto likes = data_.likelihoods();
+            for(auto like : likes){
+                file<<"\t"<<like;
+            }
+            file<<std::endl;
+        }
+    }
 };
 
 } // namespace Estimation

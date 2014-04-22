@@ -23,10 +23,10 @@ template<
 	class D9 = Singular9,
 	class D10 = Singular10
 >
-class Fits : public Grid<Fit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> {
+class Fits : public Array<Fit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> {
 public:
 
-	typedef Grid<Fit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> Base;
+	typedef Array<Fit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> Base;
 
 	double uncertainty;
 
@@ -56,8 +56,8 @@ public:
 		double likelihood = 0;
 		for(auto fit : *this){
 			if(std::isfinite(fit.observed) and std::isfinite(fit.expected)){
-				double uncertainty = std::isfinite(fit.uncertainty)?(uncertainty+fit.uncertainty): uncertainty;
-				Distribution distribution(fit.observed,fit.uncertainty);
+				double error = std::isfinite(fit.uncertainty)?(uncertainty+fit.uncertainty):uncertainty;
+				Distribution distribution(fit.observed,error);
 				likelihood += log(distribution.pdf(fit.expected));
 			}
 		}
