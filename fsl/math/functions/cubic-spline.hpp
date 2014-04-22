@@ -24,11 +24,11 @@ namespace Functions {
 /** Templated on type of X, Y. X and Y must have operator +, -, *, /. Y must have defined
  * a constructor that takes a scalar. */
 template <typename X, typename Y>
-class Spline {
+class CubicSpline {
 public:
-    Spline(void) {}
+    CubicSpline(void) {}
 
-    Spline(const std::vector<X>& x, const std::vector<Y>& y) {
+    CubicSpline(const std::vector<X>& x, const std::vector<Y>& y) {
         knots(x,y);
     }
 
