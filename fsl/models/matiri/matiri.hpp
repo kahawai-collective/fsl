@@ -57,8 +57,6 @@ using Fsl::Population::Recruitment::Autocorrelated;
 #include <fsl/population/recruitment/beverton-holt.hpp>
 using Fsl::Population::Recruitment::BevertonHolt;
 
-//#include <fsl/estimation/samples.hpp>
-
 enum Binary {no=1,yes=1};
 
 template<
@@ -240,7 +238,7 @@ public:
     Array<
         double,
         Sex,Age
-    > survivals;
+    > mortality_survivals;
 
     /**
      * @}
@@ -356,7 +354,7 @@ public:
     /**
      * Exploitation survival by sex and age
      */
-    Array<double,Sex,Age> exploitation_survival = 1;
+    Array<double,Sex,Age> exploitation_survivals = 1;
 
     /**
      * @}
@@ -377,7 +375,7 @@ public:
             sex<<"tag\tyear\tsex\tmortality\tmaturity_age_inflection\tmaturity_age_steepness\n";
 
             sex_age.open(path+"/sex_age.tsv");
-            sex_age<<"tag\tyear\tsex\tage\tmortalities\tsurvivals\tlength_mean\tlength_sd\tweights\tmaturities\n";
+            sex_age<<"tag\tyear\tsex\tage\tmortalities\tmortality_survivals\tlength_mean\tlength_sd\tweights\tmaturities\n";
 
             sector.open(path+"/sector.tsv");
             sector<<"tag\tyear\tsector\tbiomass_vulnerable\tcatches\texploitation_rate_max\texploitation_rate\n";
@@ -417,7 +415,7 @@ public:
                 writer.sex_age
                     <<tag<<"\t"<<year<<"\t"<<sex<<"\t"<<age<<"\t"
                     <<mortalities(sex,age)<<"\t"
-                    <<survivals(sex,age)<<"\t"
+                    <<mortality_survivals(sex,age)<<"\t"
                     <<lengths(sex,age).mean()<<"\t"
                     <<lengths(sex,age).sd()<<"\t"
                     <<weights(sex,age)<<"\t"
@@ -515,7 +513,7 @@ public:
                     selectivities(sector,sex,age) = selectivity_sex(sector,sex) * selectivity_age(sector,sex)(age_mid);
                 }
 
-                survivals(sex,age) = Population::Mortality::Rate(
+                mortality_survivals(sex,age) = Population::Mortality::Rate(
                     mortalities(sex,age)
                 ).survival();
             }
@@ -576,9 +574,8 @@ public:
 
         // Calculate number of recruits
         recruits_determ = recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;
-        if(recruitment_variation){
-            recruits_deviation = recruitment_variation.random();
-        }
+        if(recruitment_variation) recruits_deviation = recruitment_variation.random();
+        else recruits_deviation = 1;
         recruits = recruits_determ * recruits_deviation;
 
         // Ageing and recruitment
@@ -617,7 +614,7 @@ public:
                 catches(sector) = exploitation_rate(sector) * biomass_vulnerable(sector);
             }
 
-            // Pre-calculate the exploitation_survival for each sex and age
+            // Pre-calculate the exploitation_survivals for each sex and age
             for(auto sex : sexes){
                 for(auto age : ages){
                     double prod = 1;
@@ -625,19 +622,19 @@ public:
                         prod *= (1 - exploitation_rate(sector) * selectivities(sector,sex,age));
                     }
                     if(prod<0) prod = 0;
-                    exploitation_survival(sex,age) = prod;
+                    exploitation_survivals(sex,age) = prod;
                 }
             }
         } else {
             biomass_vulnerable = 0.0;
             exploitation_rate = 0.0;
-            exploitation_survival = 1.0;
+            exploitation_survivals = 1.0;
         }
 
         // Mortality and exploitation
         for(auto sex : sexes){
             for(auto age : ages){
-                numbers(sex,age) *=  survivals(sex,age) * exploitation_survival(sex,age);
+                numbers(sex,age) *=  mortality_survivals(sex,age) * exploitation_survivals(sex,age);
             }
         }
 
@@ -675,7 +672,7 @@ public:
         for(auto sex : sexes){
             double surviving = recruitment_relation.r0 * ((sex==0)?sex_ratio:(1-sex_ratio));
             for(auto age : ages){
-                surviving *= survivals(sex,age);
+                surviving *= mortality_survivals(sex,age);
                 numbers(sex,age) = surviving;
             }
         }
