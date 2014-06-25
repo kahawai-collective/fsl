@@ -97,6 +97,13 @@ namespace Models {
 namespace Matiri {
 
 /**
+ * Enumeration used to signify specific points
+ * in each time step. Used for customising the
+ * calculation of model variables.
+ */
+enum When {begin,mid,end};
+
+/**
  * Sex, age and sector structured fishery model.
  * 
  * @author Nokome Bentley <nokome.bentley@trophia.com>
@@ -169,6 +176,11 @@ public:
      * Fish spawning biomass
      */
     double biomass_spawning = 0;
+
+    /**
+     * When in time step fish spawning biomass is calculated
+     */
+    double biomass_spawning_when = begin;
 
     /**
      * @}
@@ -453,6 +465,28 @@ public:
     /**
      * @}
      */
+    
+    double biomass_update(){
+        biomass = 0;
+        for(auto sex : sexes){
+            for(auto age : ages){
+                biomass += numbers(sex,age) * weights(sex,age);
+            }
+        }
+        biomass *= 0.001;
+        return biomass;
+    }
+    
+    double biomass_spawning_update(){
+        biomass_spawning = 0;
+        for(auto sex : sexes){
+            for(auto age : ages){
+                biomass_spawning += numbers(sex,age) * weights(sex,age) * maturities(sex,age);
+            }
+        }
+        biomass_spawning *= 0.001;
+        return biomass_spawning;
+    }
 
     void exploitation_off(void){
         exploitation_on = false;
@@ -558,20 +592,6 @@ public:
      */
     void year(int year){
 
-        self().year_begin(year);
-
-        // Calculate total biomass and spawning biomass
-        biomass = 0;
-        biomass_spawning = 0;
-        for(auto sex : sexes){
-            for(auto age : ages){
-                biomass += numbers(sex,age) * weights(sex,age);
-                biomass_spawning += numbers(sex,age) * weights(sex,age) * maturities(sex,age);
-            }
-        }
-        biomass *= 0.001;
-        biomass_spawning *= 0.001;
-
         // Calculate number of recruits
         recruits_determ = recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;
         if(recruitment_variation) recruits_deviation = recruitment_variation.random();
@@ -589,6 +609,13 @@ public:
             // Recruits are split between sexes according to the sex ratio
             numbers(sex,0) = recruits * sex_ratio;
         }
+
+        // Execute any additional beggining of year processes defined by
+        // the derived model class
+        self().year_begin(year);
+
+        // Updates for beggining of year
+        if(biomass_spawning_when==begin) biomass_spawning_update();
 
         // Vulnerable biomass
         for(auto sector : sectors){
@@ -638,7 +665,13 @@ public:
             }
         }
 
+        // Execute any additional end of year processes defined by
+        // the derived model class
         self().year_end(year);
+
+        // Updates for end of year
+        if(biomass_spawning_when==end) biomass_spawning_update();
+        biomass_update();
     }
 
     /**
