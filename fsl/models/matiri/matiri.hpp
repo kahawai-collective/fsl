@@ -387,7 +387,7 @@ public:
             sex<<"tag\tyear\tsex\tmortality\tmaturity_age_inflection\tmaturity_age_steepness\n";
 
             sex_age.open(path+"/sex_age.tsv");
-            sex_age<<"tag\tyear\tsex\tage\tmortalities\tmortality_survivals\tlength_mean\tlength_sd\tweights\tmaturities\n";
+            sex_age<<"tag\tyear\tsex\tage\tnumbers\tmortalities\tmortality_survivals\tlength_mean\tlength_sd\tweights\tmaturities\n";
 
             sector.open(path+"/sector.tsv");
             sector<<"tag\tyear\tsector\tbiomass_vulnerable\tcatches\texploitation_rate_max\texploitation_rate\n";
@@ -426,6 +426,7 @@ public:
             for(auto age : ages){
                 writer.sex_age
                     <<tag<<"\t"<<year<<"\t"<<sex<<"\t"<<age<<"\t"
+                    <<numbers(sex,age)<<"\t"
                     <<mortalities(sex,age)<<"\t"
                     <<mortality_survivals(sex,age)<<"\t"
                     <<lengths(sex,age).mean()<<"\t"
@@ -460,6 +461,11 @@ public:
             year(y);
             write(writer,tag,y);
         }
+    }
+
+    void write(void){
+        Writer writer;
+        write(writer,"-",0);
     }
 
     /**
@@ -510,18 +516,8 @@ public:
         catches = values;
     }
 
-    /**
-     * @{
-     * @name Parameter setting methods
-     */
-
-    /**
-     * Set default parameter values
-     *
-     * Mainly used in testing.
-     * Should be overridden by derived class
-     */
-    void defaults(void){
+    void check(void) const {
+        if(not std::isfinite(recruitment_relation.r0) or recruitment_relation.r0 <= 0) throw std::runtime_error("recruitment_relation.r0 has invalid value");
     }
    
     //! @}
@@ -530,6 +526,7 @@ public:
      * Initialise various model variables based on current parameter values
      */
     void initialise(void){
+        check();
 
         for(auto sex : sexes){
             for(auto age : ages){
@@ -547,9 +544,7 @@ public:
                     selectivities(sector,sex,age) = selectivity_sex(sector,sex) * selectivity_age(sector,sex)(age_mid);
                 }
 
-                mortality_survivals(sex,age) = Population::Mortality::Rate(
-                    mortalities(sex,age)
-                ).survival();
+                mortality_survivals(sex,age) = Population::Mortality::Rate().instantaneous(mortalities(sex,age)).survival();
             }
         }
 
