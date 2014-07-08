@@ -97,13 +97,6 @@ namespace Models {
 namespace Matiri {
 
 /**
- * Enumeration used to signify specific points
- * in each time step. Used for customising the
- * calculation of model variables.
- */
-enum When {begin,mid,end};
-
-/**
  * Sex, age and sector structured fishery model.
  * 
  * @author Nokome Bentley <nokome.bentley@trophia.com>
@@ -176,11 +169,6 @@ public:
      * Fish spawning biomass
      */
     double biomass_spawning = 0;
-
-    /**
-     * When in time step fish spawning biomass is calculated
-     */
-    double biomass_spawning_when = begin;
 
     /**
      * @}
@@ -371,106 +359,6 @@ public:
     /**
      * @}
      */
-
-    struct Writer {
-        std::ofstream overall;
-        std::ofstream sex;
-        std::ofstream sex_age;
-        std::ofstream sector;
-        std::ofstream sector_sex_age;
-
-        Writer(const std::string& path="."){
-            overall.open(path+"/overall.tsv");
-            overall<<"tag\tyear\tbiomass\tbiomass_spawning\trecruits_determ\trecruits_deviation\trecruits\tsex_ratio\n";
-
-            sex.open(path+"/sex.tsv");
-            sex<<"tag\tyear\tsex\tmortality\tmaturity_age_inflection\tmaturity_age_steepness\n";
-
-            sex_age.open(path+"/sex_age.tsv");
-            sex_age<<"tag\tyear\tsex\tage\tnumbers\tmortalities\tmortality_survivals\tlength_mean\tlength_sd\tweights\tmaturities\n";
-
-            sector.open(path+"/sector.tsv");
-            sector<<"tag\tyear\tsector\tbiomass_vulnerable\tcatches\texploitation_rate_max\texploitation_rate\n";
-
-            sector_sex_age.open(path+"/sector_sex_age.tsv");
-            sector_sex_age<<"tag\tyear\tsector\tsex\tage\tselectivities\n";            
-        }
-    };
-
-    void write(Writer& writer, const std::string& tag, uint year){
-        writer.overall
-            <<tag<<"\t"
-            <<year<<"\t"
-            <<biomass<<"\t"
-            <<biomass_spawning<<"\t"
-            <<recruits_determ<<"\t"
-            <<recruits_deviation<<"\t"
-            <<recruits<<"\t"
-            <<sex_ratio<<"\n";
-
-        for(auto sex : sexes){
-            writer.sex
-                <<tag<<"\t"<<year<<"\t"<<sex<<"\t"
-                <<mortality(sex)<<"\t"
-                <<length_age(sex).k<<"\t"
-                <<length_age(sex).linf<<"\t"
-                <<length_age(sex).cv1<<"\t"
-                <<length_age(sex).cv2<<"\t"
-                <<weight_length(sex).a<<"\t"
-                <<weight_length(sex).b<<"\t"
-                <<maturity_age(sex).inflection<<"\t"
-                <<maturity_age(sex).steepness<<"\n"
-                ;
-        }
-        for(auto sex : sexes){
-            for(auto age : ages){
-                writer.sex_age
-                    <<tag<<"\t"<<year<<"\t"<<sex<<"\t"<<age<<"\t"
-                    <<numbers(sex,age)<<"\t"
-                    <<mortalities(sex,age)<<"\t"
-                    <<mortality_survivals(sex,age)<<"\t"
-                    <<lengths(sex,age).mean()<<"\t"
-                    <<lengths(sex,age).sd()<<"\t"
-                    <<weights(sex,age)<<"\t"
-                    <<maturities(sex,age)<<"\n"
-                    ;
-            }
-        }
-        for(auto sector : sectors){
-            writer.sector
-                <<tag<<"\t"<<year<<"\t"<<sector<<"\t"
-                <<biomass_vulnerable(sector)<<"\t"
-                <<catches(sector)<<"\t"
-                <<exploitation_rate_max(sector)<<"\t"
-                <<exploitation_rate(sector)<<"\n"
-                ;
-        }
-        for(auto sector : sectors){
-            for(auto sex : sexes){
-                for(auto age : ages){
-                    writer.sector_sex_age
-                        <<tag<<"\t"<<year<<"\t"<<sector<<"\t"<<sex<<"\t"<<age<<"\t"
-                        <<selectivities(sector,sex,age)<<"\n";
-                }
-            }
-        }
-    }
-
-    void write(Writer& writer, const std::string& tag, uint begin, uint end){
-        for(int y=begin;y<end;y++){
-            year(y);
-            write(writer,tag,y);
-        }
-    }
-
-    void write(void){
-        Writer writer;
-        write(writer,"-",0);
-    }
-
-    /**
-     * @}
-     */
     
     double biomass_update(){
         biomass = 0;
@@ -530,18 +418,18 @@ public:
 
         for(auto sex : sexes){
             for(auto age : ages){
-                double age_mid = age.index() + 0.5;
+                double age_ = age.index();
 
-                lengths(sex,age) = length_age(sex).distribution(age_mid);
+                lengths(sex,age) = length_age(sex).distribution(age_);
 
                 weights(sex,age) = lengths(sex,age).integrate(weight_length(sex));
 
-                maturities(sex,age) = maturity_age(sex)(age_mid);
+                maturities(sex,age) = maturity_age(sex)(age_);
 
                 mortalities(sex,age) = mortality(sex);
                 
                 for(auto sector : sectors){
-                    selectivities(sector,sex,age) = selectivity_sex(sector,sex) * selectivity_age(sector,sex)(age_mid);
+                    selectivities(sector,sex,age) = selectivity_sex(sector,sex) * selectivity_age(sector,sex)(age_);
                 }
 
                 mortality_survivals(sex,age) = Population::Mortality::Rate().instantaneous(mortalities(sex,age)).survival();
@@ -572,20 +460,10 @@ public:
         recruitment_relation.s0 = biomass_spawning;
     }
 
-    void year_begin(int year){
-
-    }
-
-    void year_end(int year){
-
-    }
-
     /**
-     * Simulate one year
-     * 
-     * @param y Year
+     * Update the model
      */
-    void year(int year){
+    void update(uint time=0){
 
         // Calculate number of recruits
         recruits_determ = recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;
@@ -605,12 +483,9 @@ public:
             numbers(sex,0) = recruits * sex_ratio;
         }
 
-        // Execute any additional beggining of year processes defined by
-        // the derived model class
-        self().year_begin(year);
-
-        // Updates for beggining of year
-        if(biomass_spawning_when==begin) biomass_spawning_update();
+        // Update biomasses
+        biomass_update();
+        biomass_spawning_update();
 
         // Vulnerable biomass
         for(auto sector : sectors){
@@ -659,40 +534,6 @@ public:
                 numbers(sex,age) *=  mortality_survivals(sex,age) * exploitation_survivals(sex,age);
             }
         }
-
-        // Execute any additional end of year processes defined by
-        // the derived model class
-        self().year_end(year);
-
-        // Updates for end of year
-        if(biomass_spawning_when==end) biomass_spawning_update();
-        biomass_update();
-    }
-
-    /**
-     * Simulate over a range of years
-     * 
-     * @param begin Start year
-     * @param end   End year
-     */
-    void years(int begin,int end){
-        for(int y=begin;y<end;y++) year(y);
-    }
-
-    /**
-     * Update the model to a given date
-     *
-     * This method is provided to be compatible with the model interface.
-     * Since this is a annual model this simply calls the `year` method.
-     * 
-     * @param date Date of update
-     */
-    void update(const Date& date){
-        year(date.year());
-    }
-
-    void update(uint y){
-        year(y);
     }
 
     void seed(void){
@@ -714,13 +555,13 @@ public:
         recruitment_variation.off();
         // Iterate until there is a very minor change in biomass
         uint steps = 0;
-        const uint steps_max = 100000;
+        const uint steps_max = 10000;
         double biomass_prev = 1;
         while(steps<steps_max){
-            year(0);
+            update();
 
             double diff = fabs(biomass-biomass_prev)/biomass_prev;
-            if(diff<0.0001 and steps>ages.size()) break;
+            if(diff<0.00001 and steps>ages.size()) break;
             biomass_prev = biomass;
 
             steps++;
@@ -731,6 +572,102 @@ public:
         recruitment_variation.on();
     }
 };
+
+class Writer {
+public:
+
+    std::ofstream overall;
+    std::ofstream sex;
+    std::ofstream sex_age;
+    std::ofstream sector;
+    std::ofstream sector_sex_age;
+
+    Writer(const std::string& path="."){
+        overall.open(path+"/overall.tsv");
+        overall<<"tag\ttime\tbiomass\tbiomass_spawning\trecruits_determ\trecruits_deviation\trecruits\tsex_ratio\n";
+
+        sex.open(path+"/sex.tsv");
+        sex<<"tag\ttime\tsex\tmortality\tmaturity_age_inflection\tmaturity_age_steepness\n";
+
+        sex_age.open(path+"/sex_age.tsv");
+        sex_age<<"tag\ttime\tsex\tage\tnumbers\tmortalities\tmortality_survivals\tlength_mean\tlength_sd\tweights\tmaturities\n";
+
+        sector.open(path+"/sector.tsv");
+        sector<<"tag\ttime\tsector\tbiomass_vulnerable\tcatches\texploitation_rate_max\texploitation_rate\n";
+
+        sector_sex_age.open(path+"/sector_sex_age.tsv");
+        sector_sex_age<<"tag\ttime\tsector\tsex\tage\tselectivities\n";            
+    }
+
+    template<class Model,typename Tag>
+    void write(const Model& model, const Tag& tag, uint time=0){
+        this->overall
+            <<tag<<"\t"
+            <<time<<"\t"
+            <<model.biomass<<"\t"
+            <<model.biomass_spawning<<"\t"
+            <<model.recruits_determ<<"\t"
+            <<model.recruits_deviation<<"\t"
+            <<model.recruits<<"\t"
+            <<model.sex_ratio<<"\n";
+
+        for(auto sex : model.sexes){
+            this->sex
+                <<tag<<"\t"<<time<<"\t"<<sex<<"\t"
+                <<model.mortality(sex)<<"\t"
+                <<model.length_age(sex).k<<"\t"
+                <<model.length_age(sex).linf<<"\t"
+                <<model.length_age(sex).cv1<<"\t"
+                <<model.length_age(sex).cv2<<"\t"
+                <<model.weight_length(sex).a<<"\t"
+                <<model.weight_length(sex).b<<"\t"
+                <<model.maturity_age(sex).inflection<<"\t"
+                <<model.maturity_age(sex).steepness<<"\n"
+                ;
+        }
+        for(auto sex : model.sexes){
+            for(auto age : model.ages){
+                this->sex_age
+                    <<tag<<"\t"<<time<<"\t"<<sex<<"\t"<<age<<"\t"
+                    <<model.numbers(sex,age)<<"\t"
+                    <<model.mortalities(sex,age)<<"\t"
+                    <<model.mortality_survivals(sex,age)<<"\t"
+                    <<model.lengths(sex,age).mean()<<"\t"
+                    <<model.lengths(sex,age).sd()<<"\t"
+                    <<model.weights(sex,age)<<"\t"
+                    <<model.maturities(sex,age)<<"\n"
+                    ;
+            }
+        }
+        for(auto sector : model.sectors){
+            this->sector
+                <<tag<<"\t"<<time<<"\t"<<sector<<"\t"
+                <<model.biomass_vulnerable(sector)<<"\t"
+                <<model.catches(sector)<<"\t"
+                <<model.exploitation_rate_max(sector)<<"\t"
+                <<model.exploitation_rate(sector)<<"\n"
+                ;
+        }
+        for(auto sector : model.sectors){
+            for(auto sex : model.sexes){
+                for(auto age : model.ages){
+                    this->sector_sex_age
+                        <<tag<<"\t"<<time<<"\t"<<sector<<"\t"<<sex<<"\t"<<age<<"\t"
+                        <<model.selectivities(sector,sex,age)<<"\n";
+                }
+            }
+        }
+    }
+
+    template<class Model>
+    void write(Model& model, const std::string& tag, uint begin, uint end){
+        for(uint time=begin;time<end;time++){
+            model.update(time);
+            write(model,tag,time);
+        }
+    }
+
+}; // class Writer
 
 } // namespace Matiri
 } // namespace Models

@@ -10,4 +10,5 @@ sandbox
 *.out
 
 #Ignore IDE files
-.ide
+*.sublime-project
+*.sublime-workspace
