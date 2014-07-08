@@ -1,48 +1,13 @@
 #pragma once
 
 #include <boost/algorithm/string.hpp>
+#include <boost/regex.hpp>
 
+#include <fsl/estimation/variables.hpp>
 #include <fsl/math/probability/uniform.hpp>
 
 namespace Fsl {
 namespace Estimation {
-
-namespace Links {
-
-struct Identity {
-    double to(const double& value) const {
-        return value;
-    }
-    double from(const double& value) const {
-        return value;
-    }
-};
-
-struct Log {
-    /**
-     * Transform the parameter into a model variable
-     * 
-     * To avoid numerical overflow this function limits the
-     * results of the exponential to approximately
-     * 1e-20 to 1e20
-     */
-    double to(const double& value) const {
-        static const double limit = 46;
-        if(value<-limit) return std::exp(-limit);
-        if(value>limit) return std::exp(limit);
-        return std::exp(value);
-        
-    }
-
-    /**
-     * Transform the model variable into a parameter
-     */
-    double from(const double& value) const {
-        return std::log(value);
-    }
-};
-
-} // namespace Links
 
 namespace Priors {
 
@@ -87,15 +52,31 @@ template<
 class Parameter {
 public:
     std::string name;
+    std::string notes;
     Prior prior;
     Link link;
 
     Parameter(void){
     }
 
+    Parameter(const double& p1):
+        prior(p1){
+    }
+
+    Parameter(const double& p1,const double& p2):
+        prior(p1,p2){
+    }
+
     template<typename... Args>
-    Parameter(const std::string name,Args... args):
+    Parameter(const std::string& name,Args... args):
         name(name),
+        prior(args...){
+    }
+
+    template<typename... Args>
+    Parameter(const std::string& name,const std::string& notes,Args... args):
+        name(name),
+        notes(notes),
         prior(args...){
     }
 
@@ -110,11 +91,153 @@ public:
     }
 };
 
+/**
+ * A set of parameters
+ */
+class ParameterSample : public std::vector<double> {
+private:
+    uint index_ = 0;
+    std::vector<std::string> ids_;
+
+public:
+    ParameterSample(void){}
+
+    template<typename Type>
+    ParameterSample(Type data):std::vector<double>(data){};
+
+    ParameterSample& append(const double& value){
+        push_back(value);
+        return *this;
+    }
+
+    ParameterSample& append(const double& value,const std::string& name,const std::string& label=""){
+        push_back(value);
+        std::string id = name;
+        if(label.length()>0) id += "." + label;
+        ids_.push_back(id);
+        return *this;
+    }
+
+    //void begin(void) {
+    //   index_ = 0;
+    //}
+
+    double next(void) {
+        return (*this)[index_++];
+    }
+
+    uint find(const std::string& id){
+        auto found = std::find(ids_.begin(),ids_.end(),id);
+        if(found==ids_.end()) throw std::runtime_error("No parameter found with id:"+id);
+        return found-ids_.begin();
+    }
+
+    double get(const std::string& id){
+        return (*this)[find(id)];
+    }
+
+    void set(const std::string& id,double value){
+        (*this)[find(id)] = value;
+    }
+};
+
+class ParameterSamples : public std::vector<ParameterSample> {
+private:
+
+    std::vector<std::string> ids_;
+    ParameterSample sample_;
+
+public:
+
+    ParameterSamples(void){}
+    
+    template<typename Type>
+    ParameterSamples(Type data):std::vector<ParameterSample>(data){};
+
+    ParameterSample random(void) {
+        uint row = std::rand()%size();
+        sample_ = operator[](row);
+        return sample_;
+    }
+
+    double get(const std::string& id){
+        uint column = std::find(ids_.begin(),ids_.end(),id)-ids_.begin();
+        return sample_[column];
+    }
+
+    /**
+     * Read a file of tab separated values
+     * 
+     * @param  filename Filename to read
+     * @param  header   Does the file have a header
+     * @return          [description]
+     */
+    ParameterSamples& read(const std::string& filename,bool header=true){
+        std::ifstream file(filename);
+        std::string line;
+
+        boost::regex rgx("\\s+");
+        boost::sregex_token_iterator end;
+                
+        if(header){
+            std::getline(file, line);
+            boost::sregex_token_iterator iter(line.begin(),line.end(),rgx,-1);
+            for( ; iter != end; ++iter) ids_.push_back(*iter);
+        }
+
+        while(true){
+            std::getline(file, line);
+            if(not file.good()) break;
+            boost::sregex_token_iterator iter(line.begin(),line.end(),rgx,-1);
+            ParameterSample sample;
+            for( ; iter != end; ++iter) sample.push_back(boost::lexical_cast<float>(*iter));
+            push_back(sample);
+        }
+
+        return *this;
+    }
+
+    void read_ss3(const std::string& filename){
+        // Read in posterior
+        std::ifstream file(filename);
+        std::string line;
+
+        // Get header
+        std::getline(file, line);
+        boost::regex rgx("\\s+");
+        boost::sregex_token_iterator iter(line.begin(),line.end(),rgx,-1);
+        boost::sregex_token_iterator end;
+        for( ; iter != end; ++iter) ids_.push_back(*iter);
+
+        while(true){
+            std::getline(file, line);
+            if(not file.good()) break;
+            boost::sregex_token_iterator iter(line.begin(),line.end(),rgx,-1);
+            ParameterSample sample;
+            for( ; iter != end; ++iter) sample.push_back(boost::lexical_cast<float>(*iter));
+            push_back(sample);
+        }
+    }
+
+    void write(const std::string& filename){
+        std::ofstream file(filename);
+        if(ids_.size()>0){
+            for(auto label : ids_) file<<label<<"\t";
+            file<<std::endl;
+        }
+        for(auto row : *this){
+            for(auto value : row) file<<value<<"\t";
+            file<<std::endl;
+        }
+    }
+
+};
+
 template<
     class Derived,
     class Model
 >
-class ParameterGroup {
+class ParameterSet {
 public:
 
     Derived& self(void) {
@@ -143,83 +266,49 @@ public:
     }
 
 
-    struct Set {
-        uint index = 0;
-        std::vector<double> values;
-
-        std::vector<std::string> ids;
-
-        Set& append(const double& value,const std::string& name,const std::string& label){
-            values.push_back(value);
-            std::string id = name;
-            if(label.length()>0) id += "." + label;
-            ids.push_back(id);
-            return *this;
-        }
-
-        void begin(void) {
-            index = 0;
-        }
-
-        double next(void) {
-            return values[index++];
-        }
-
-        uint find(const std::string& id){
-            auto found = std::find(ids.begin(),ids.end(),id);
-            if(found==ids.end()) throw std::runtime_error("No parameter found with id:"+id);
-            return found-ids.begin();
-        }
-
-        double get(const std::string& id){
-            return values[find(id)];
-        }
-
-        void set(const std::string& id,double value){
-            values[find(id)] = value;
-        }
-    };
-
-
     struct Setter {
         static const bool setter = true;
-        Set& set_;
+        ParameterSample& sample_;
 
-        Setter(Set& set):set_(set){}
+        Setter(ParameterSample& sample):sample_(sample){}
+
+        void operator()(double& variable, uint index){
+            variable = sample_[index];
+        }
 
         template<class Parameter>
         void operator()(const Parameter& parameter,double& variable,const std::string& label=""){
-            variable = parameter.to(set_.next());
+            variable = parameter.to(sample_.next());
         }
     };
 
-    void set(Model& model, uint time, Set& set){
-        Setter setter(set);
+    void set(Model& model, uint time, ParameterSample& sample){
+        Setter setter(sample);
         apply(setter,model,time);
     }
 
 
     struct PriorMeanGetter {
         static const bool setter = false;
-        Set set;
+        ParameterSample sample;
 
         template<class Parameter>
         void operator()(const Parameter& parameter,double& variable,const std::string& label=""){
-            set.append(parameter.prior.mean(),parameter.name,label);
+            sample.append(parameter.prior.mean(),parameter.name,label);
         }
     };
 
-    Set means(void){
+    ParameterSample means(void){
         PriorMeanGetter means;
         apply(means);
-        return means.set;
+        return means.sample;
     } 
 
 
     struct SetReader {
         static const bool setter = false;
         std::ifstream file;
-        Set set;
+        ParameterSample sample;
 
         SetReader(const std::string& path){
             // Open the file and consume the header
@@ -240,36 +329,36 @@ public:
             if(items[1]!=label) throw std::runtime_error("Parameter label did not match expected for parameter: "+parameter.name+" : "+label+" : "+items[1]);
             // Get the value and append it
             double value = boost::lexical_cast<double>(items[2]);
-            set.append(value,parameter.name,label);
+            sample.append(value,parameter.name,label);
         }
     };
 
-    Set read_set(const std::string& path){
+    ParameterSample read_set(const std::string& path){
         SetReader reader(path);
         apply(reader);
-        return reader.set;
+        return reader.sample;
     }
 
 
     struct SetWriter {
         static const bool setter = false;
         std::ostream* stream;
-        Set set;
+        ParameterSample sample;
 
         template<class Parameter>
         void operator()(const Parameter& parameter,double& variable,const std::string& label=""){
-            (*stream)<<parameter.name<<"\t"<<label<<"\t"<<set.next()<<"\t"<<std::endl;
+            (*stream)<<parameter.name<<"\t"<<label<<"\t"<<sample.next()<<"\t"<<std::endl;
         }
     };
 
-    void write_set(const std::string& filename,Set set){
+    void write_set(const std::string& filename,ParameterSample sample){
         std::ofstream file(filename);
         file<<"name\tlabel\tvalue"<<std::endl;
         
         SetWriter writer;
         writer.stream = &file;
-        writer.set = set;
-        writer.set.index = 0;
+        writer.sample = sample;
+        writer.sample.index = 0;
         
         apply(writer);
     }
@@ -327,14 +416,14 @@ public:
     template<
         class Data
     >
-    void profile(const std::string& parameter, const Set& parameters, const Data& data, const std::string& filename){
+    void profile(const std::string& parameter, const ParameterSample& parameters, const Data& data, const std::string& filename){
         // Open the file
         std::ofstream file(filename);
         // Define a profiler which will change the values of the parameter of interest
         Profiler profiler(parameter);
         apply(profiler);
         // Create a copy of the parameter set
-        Set modified = parameters;
+        ParameterSample modified = parameters;
 
         double jump = (profiler.max-profiler.min)/30;
         for(double value=profiler.min;value<=profiler.max;value+=jump){
@@ -358,6 +447,234 @@ public:
             file<<std::endl;
         }
     }
+    /*
+
+    struct Counter {
+        uint count = 0;
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& value, Parameter& parameter){
+            count++;
+        }
+    };
+
+    uint count(void) const {
+        Model model;
+        Counter counter;
+        bind(model,counter);
+        return counter.count;
+    }
+
+    struct Headerer {
+        std::string header;
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& target, Parameter& parameter){
+            if(header.length()>0) header += "\t";
+            header += name;
+        }
+    };
+
+
+    struct Getter {
+        uint index = 0;
+        std::vector<double> parameters;
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            parameters.push_back(parameter.from(variable));
+        }
+    };
+
+    std::vector<double> get(Model& model){
+        Getter getter;
+        bind(model,getter);
+        return getter.parameters;
+    }
+
+
+    struct Setter {
+        uint index = 0;
+        std::vector<double> parameters;
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            variable = parameter.to(parameters[index++]);
+        }
+    };
+
+    void set(Model& model, const std::vector<double>& parameters){
+        Setter setter;
+        setter.parameters = parameters;
+        bind(model,setter);
+    }
+
+
+    struct Mean {
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            variable = parameter.to(parameter.prior.mean());
+        }
+    };
+
+    void means(Model& model){
+        Mean mean;
+        bind(model,mean);
+    }
+
+
+    struct PriorParameterSampler {
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            variable = parameter.to(parameter.prior.random());
+        }
+    };
+
+    std::vector<double> prior_sample(void){
+        Model model;
+        PriorParameterSampler sampler;
+        bind(model,sampler);
+        return get(model);
+    }
+
+    struct Validator {
+        uint index = 0;
+        std::vector<double> parameters;
+        bool ok = true;
+
+        Validator(const std::vector<double>& parameters):
+            parameters(parameters){
+        }
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            double value = parameters[index++];
+            if(value<parameter.prior.minimum() or value>parameter.prior.maximum()){
+                ok = false;
+            }
+        }
+    };
+
+    bool valid(const std::vector<double>& parameters){
+        Model model;
+        Validator validator(parameters);
+        bind(model,validator);
+        return validator.ok;
+    }
+
+    struct Restricter {
+        uint index = 0;
+        std::vector<double> ins;
+        std::vector<double> outs;
+
+        Restricter(const std::vector<double>& parameters):
+            ins(parameters),
+            outs(parameters.size()){
+        }
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            double out;
+            double in = ins[index];
+            if(in<parameter.prior.minimum() or in>parameter.prior.maximum()) out = parameter.prior.random(); 
+            else out = in;
+            outs[index] = out;
+            index++;
+        }
+    };
+
+    std::vector<double> restrict(const std::vector<double>& parameters){
+        Model model;
+        Restricter restricter(parameters);
+        bind(model,restricter);
+        return restricter.outs;
+    }
+
+    struct Probability {
+        double probability = 0;
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            probability += std::log(parameter.prior.pdf(parameter.from(variable)));
+        }
+    };
+
+    double prior_probability(const std::vector<double>& parameters){
+        Model model;
+        Setter setter;
+        setter.parameters = parameters;
+        bind(model,setter);
+        Probability probability;
+        bind(model,probability);
+        return probability.probability;
+    }
+
+    std::string header(){
+        Model model;
+        Headerer headerer;
+        bind(model,headerer);
+        return headerer.header;
+    }
+
+    void parameters(std::ostream& stream, const std::vector<double>& parameters){
+        uint size = parameters.size();
+        for(uint index=0;index<size;index++){
+            stream<<parameters[index];
+            if(index<size-1) stream<<"\t";
+        }
+    }
+
+    struct ValueWriter {
+        std::ostream* stream;
+        bool started = false;
+
+        template<class Distribution>
+        void operator()(const std::string& name, double& variable, Distribution& parameter){
+            if(started) (*stream)<<"\t";
+            (*stream)<<variable;
+            if(not started) started = true;
+        }
+    };
+
+    void variables(std::ostream& stream, Model& model){
+        ValueWriter valueWriter;
+        valueWriter.stream = &stream;
+        bind(model,valueWriter);
+    }
+
+    void variables(std::ostream& stream, const std::vector<double>& parameters){
+        Model model;
+        set(model,parameters);
+        variables(stream,model);
+    }
+
+
+    struct PriorWriter {
+        std::ostream* stream;
+        bool started = false;
+
+        template<class Parameter>
+        void operator()(const std::string& name, double& variable, Parameter& parameter){
+            double lower = parameter.prior.minimum();
+            double upper = parameter.prior.maximum();
+            double step = (upper-lower)/500;
+            for(double value=lower;value<=upper;value+=step){
+                (*stream)<<name<<"\t"<<value<<"\t"<<parameter.prior.pdf(value)<<"\t"<<std::endl;
+            }
+        }
+    };
+
+    void prior_pdfs(const std::string& filename){
+        std::ofstream file(filename);
+        file<<"name\tvalue\tpdf"<<std::endl;
+        
+        PriorWriter writer;
+        writer.stream = &file;
+        
+        Model model;
+        bind(model,writer);
+    }
+    */
 };
 
 } // namespace Estimation

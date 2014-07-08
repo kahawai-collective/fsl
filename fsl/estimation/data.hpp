@@ -1,9 +1,11 @@
 #pragma once
 
+#include <fsl/estimation/variables.hpp>
+
 namespace Fsl {
 namespace Estimation {
 
-class Fit {
+class DataFit {
 public:
 	double observed = NAN;
 	double uncertainty = NAN;
@@ -23,31 +25,31 @@ template<
 	class D9 = Singular9,
 	class D10 = Singular10
 >
-class Fits : public Array<Fit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> {
+class DataFits : public Array<DataFit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> {
 public:
 
-	typedef Array<Fit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> Base;
+	typedef Array<DataFit,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10> Base;
 
 	double uncertainty;
 
-	Fits(const double& uncertainty=0):
+	DataFits(const double& uncertainty=0):
 		uncertainty(uncertainty){
 	}
 
 	void read_observed(const std::string& path){
-		Base::read(path,[](std::istream& stream, Fit& fit){
+		Base::read(path,[](std::istream& stream, DataFit& fit){
 			stream>>fit.observed;
 		});
 	}
 
 	void read_observed_uncertainty(const std::string& path){
-		Base::read(path,[](std::istream& stream, Fit& fit){
+		Base::read(path,[](std::istream& stream, DataFit& fit){
 			stream>>fit.observed>>fit.uncertainty;
 		});
 	}
 
 	void write(const std::string& path){
-		Base::write(path,{"observed","uncertainty","expected"},[](std::ostream& stream,const Fit& fit){
+		Base::write(path,{"observed","uncertainty","expected"},[](std::ostream& stream,const DataFit& fit){
 			stream<<fit.observed<<"\t"<<fit.uncertainty<<"\t"<<fit.expected;
 		});
 	}
@@ -64,23 +66,6 @@ public:
 		return likelihood;
 	}
 };
-
-template<
-    class Derived,
-    class Model
->
-class DataGroup {
-public:
-
-    Derived& self(void) {
-        return static_cast<Derived&>(*this);
-    }
-
-    const Derived& self(void) const {
-        return static_cast<const Derived&>(*this);
-    }
-
- };
 
 } // namespace Estimation
 } // namespace Fsl
