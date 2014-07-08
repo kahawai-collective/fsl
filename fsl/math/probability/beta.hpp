@@ -17,7 +17,7 @@ public:
 
     using Distribution<Beta>::random;
     
-    Beta(const double& alpha=0, const double& beta=0):
+    Beta(const double& alpha = NAN, const double& beta = NAN):
         alpha_(alpha),
         beta_(beta){        
     }

@@ -12,35 +12,39 @@ namespace Probability {
 using namespace Fsl;
 
 class Lognormal : public Distribution<Lognormal> {
-private:
-    double mean_;
-    double sd_;
-
 public:
-    Lognormal(const double& mean=1, const double& sd=1):
-        mean_(mean),
-        sd_(sd){
+
+    double location;
+    double dispersion;
+
+    Lognormal(const double& location = NAN, const double& dispersion = NAN):
+        location(location),
+        dispersion(dispersion){
+    }
+
+    bool valid(void) const {
+        return location>0 and dispersion>0;
     }
 
     double minimum(void) const {
         return 0;
     }
 
-    const double& mean(void) const {
-        return mean_;
+    double mean(void) const {
+        return location;
     }
 
     Lognormal& mean(const double& mean) {
-        mean_ = mean;
+        location = mean;
         return *this;
     }
 
-    const double& sd(void) const {
-        return sd_;
+    double sd(void) const {
+        return dispersion;
     }
 
     Lognormal& sd(const double& sd) {
-        sd_ = sd;
+        dispersion = sd;
         return *this;
     }
 
@@ -56,6 +60,14 @@ public:
         boost::lognormal_distribution<> distr(mean(),sd());
         boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
         return randomVariate();
+    }
+
+    template<class Mirror>
+    void reflect(Mirror& mirror) {
+        mirror
+            .data(location,"location")
+            .data(dispersion,"dispersion")
+        ;
     }
 };
 

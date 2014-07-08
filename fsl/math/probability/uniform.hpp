@@ -12,45 +12,61 @@ namespace Probability {
 using namespace Fsl;
 
 class Uniform : public Distribution<Uniform> {
-private:
-    double lower_;
-    double upper_;
-
 public:
-    Uniform(double lower = 0, double upper = 1):
-        lower_(lower),
-        upper_(upper){
+
+    double lower;
+    double upper;
+
+    Uniform(double lower = NAN, double upper = NAN):
+        lower(lower),
+        upper(upper){
     }
     
+    bool valid(void) const {
+        return std::isfinite(lower) and std::isfinite(upper) and lower<upper;
+    }
+
     boost::math::uniform boost_dist(void) const {
-        return boost::math::uniform(lower_,upper_);
+        return boost::math::uniform(lower,upper);
     }
 
     double minimum(void) const {
-        return lower_;
+        return lower;
     }
 
     double maximum(void) const {
-        return upper_;
+        return upper;
     }
 	
 	double mean(void) const {
-		return (lower_+upper_)/2; 
+		return (lower+upper)/2; 
 	}
+
+    double sd(void) const {
+        return std::sqrt(std::pow(upper-lower,2)/12.0); 
+    }
     
     double random(void) const {
         // If lower and upper are equal then boost random number generator
         // will loop endlessly attempting to create a valid value. So escape that condition...
-        if(lower_==upper_) return lower_;
+        if(lower==upper) return lower;
         else{
-            boost::uniform_real<> distr(lower_,upper_);
+            boost::uniform_real<> distr(lower,upper);
             boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
             return randomVariate();
         }
     }
 
     bool accept(const double& value) const {
-        return value>=lower_ and value<=upper_;
+        return value>=lower and value<=upper;
+    }
+
+    template<class Mirror>
+    void reflect(Mirror& mirror) {
+        mirror
+            .data(lower,"lower")
+            .data(upper,"upper")
+        ;
     }
 };
 

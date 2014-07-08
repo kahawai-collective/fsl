@@ -19,11 +19,15 @@ private:
 
 public:
 
-    Normal(const double& mean=1, const double& sd=1):
+    Normal(const double& mean = NAN, const double& sd = NAN):
         mean_(mean),
         sd_(sd){
     }
     
+    bool valid(void) const {
+        return std::isfinite(mean_) and sd_>0;
+    }
+
     const double& mean(void) const {
         return mean_;
     }
@@ -48,6 +52,14 @@ public:
         boost::normal_distribution<> distr(mean(),sd());
         boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
         return randomVariate();
+    }
+
+    template<class Mirror>
+    void reflect(Mirror& mirror) {
+        mirror
+            .data(mean_,"mean")
+            .data(sd_,"sd")
+        ;
     }
 };
 

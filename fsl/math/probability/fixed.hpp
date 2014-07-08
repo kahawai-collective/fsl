@@ -2,26 +2,29 @@ namespace Fsl {
 namespace Math {
 namespace Probability {
 
-class Fixed {
-private:
-    double value_;
-    
+class Fixed {    
 public:
     
-    Fixed(double value = 0){
-        value_ = value;
+    double value;
+
+    Fixed(double val = NAN){
+        value = val;
     }
-    
-    std::string repr(void) const {
-        return str(boost::format("Fixed(%g)")%value());
+
+    bool valid(void) const {
+        return std::isfinite(value);
     }
-    
-    double value(void) const {
-        return value_;
+
+    double minimum(void) const {
+        return value;
+    }
+
+    double maximum(void) const {
+        return value;
     }
     
     double mean(void) const {
-        return value_;
+        return value;
     }
     
     double sd(void) const {
@@ -29,11 +32,26 @@ public:
     }
 
     double random(void) const {
-        return value_;
+        return value;
     };
 
+    double likelihood(const double& x) const {
+        return (x==value)?0:-INFINITY;
+    }
+
     double pdf(const double& x) const {
-        return (x==value_)?1:1e-6;
+        return (x==value)?1:0;
+    }
+
+    double quantile(const double& p) const {
+        return value;
+    }
+
+    template<class Mirror>
+    void reflect(Mirror& mirror) {
+        mirror
+            .data(value,"value")
+        ;
     }
 };
 

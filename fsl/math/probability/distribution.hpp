@@ -98,20 +98,35 @@ public:
 		return boost::math::support(Derived::dist());
 	}
 	*/
+
+	bool valid(void) const {
+		return true;
+	}
+
+	const Derived& derived(void) const {
+		return static_cast<const Derived&>(*this);
+	}
+
+	double likelihood(const double& x) const {
+		return std::log(pdf(x));
+	}
 	
 	double pdf(const double& x) const {
-		return boost::math::pdf(static_cast<const Derived&>(*this).boost_dist(),x);
+		if(derived().valid()) return boost::math::pdf(derived().boost_dist(),x);
+		else return NAN;
 	}
 	
 	double cdf(const double& x) const {
-		return boost::math::cdf(static_cast<const Derived&>(*this).boost_dist(),x);
+		if(derived().valid()) return boost::math::cdf(derived().boost_dist(),x);
+		else return NAN;
 	}
 	
 	double quantile(const double& p) const {
-		return boost::math::quantile(static_cast<const Derived&>(*this).boost_dist(),p);
+		if(derived().valid()) return boost::math::quantile(derived().boost_dist(),p);
+		else return NAN;
 	}
     
-	double integrate(const double& from,const double& to) const {
+	double integral(const double& from,const double& to) const {
 		return cdf(to)-cdf(from);
 	}
 	
