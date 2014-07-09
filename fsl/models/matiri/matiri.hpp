@@ -405,7 +405,7 @@ public:
     }
 
     void check(void) const {
-        if(not std::isfinite(recruitment_relation.r0) or recruitment_relation.r0 <= 0) throw std::runtime_error("recruitment_relation.r0 has invalid value");
+        recruitment_relation.check();
     }
    
     //! @}
@@ -414,6 +414,24 @@ public:
      * Initialise various model variables based on current parameter values
      */
     void initialise(void){
+
+        // Before checking, determine if parameterising by recruitment_relation.s0
+        // or by recruitment_relation.r0 and set other accordingly
+        bool use_r0 = true;
+        if(recruitment_relation.r0>0){
+            use_r0 = true;
+            recruitment_relation.s0 = 1;
+        }
+        else if(recruitment_relation.s0>0){
+            use_r0 = false;
+            recruitment_relation.r0 = 1;
+        }
+        else {
+            throw std::runtime_error(str(boost::format(
+                "Either `Matiri::Model::recruitment_relation.s0` <%s> or `Matiri::Model::recruitment_relation.r0` <%s> must be assigned a value greater than 0")
+                    %recruitment_relation.s0%recruitment_relation.r0));
+        }
+
         check();
 
         for(auto sex : sexes){
@@ -455,9 +473,10 @@ public:
 
         /**
          * Once the population has converged to unfished equilibrium, the virgin
-         * spawning biomass can be set.
+         * spawning biomass, or the virgin recruitment, can be set.
          */
-        recruitment_relation.s0 = biomass_spawning;
+        if(use_r0) recruitment_relation.s0 = biomass_spawning;
+        else recruitment_relation.r0 = recruitment_relation.s0/biomass_spawning;
     }
 
     /**
