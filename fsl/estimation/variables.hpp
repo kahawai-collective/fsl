@@ -138,10 +138,11 @@ Variate<Distribution>& Variate<Distribution>::value(const double& value){
 
 template<>
 Variate<Fixed>& Variate<Fixed>::value(const double& value){
-    // Using the default defintiion of this function can cause problems
+    // Using the default definition of this function can cause problems
     // for `Variate<Fixed>`s because (due to [machine epsilon](http://en.wikipedia.org/wiki/Machine_epsilon)?)
     // a value that is equal to the fixed value can be evaluated as less than or greater than the value.
-    // In any case, there is no need to set value's for `Variate<Fixed>`, it is already fixed.
+    // So this method does not do any of the checking done in the default
+    value_ = value;
     return *this;
 }
 
@@ -257,8 +258,12 @@ public:
     }
 
     double get(uint row, const std::string& name) const {
-        uint column = std::find(names_.begin(),names_.end(),name)-names_.begin();
-        return get(row,column);
+        auto iter = std::find(names_.begin(),names_.end(),name);
+        if(iter != names_.end()){
+            uint column = iter-names_.begin();
+            return get(row,column);
+        }
+        else return NAN;
     }
 
     std::vector<std::string> names(void) const {
@@ -563,7 +568,7 @@ private:
             try {
                 variate = vector[index++];
             } catch(const std::exception& exc){
-                throw std::runtime_error("error when loading variate <"+name+"> from vector: "+exc.what());
+                throw std::runtime_error("Error when loading variate <"+name+"> from vector: "+exc.what());
             }
         }       
     };
@@ -595,9 +600,11 @@ public:
         template<class Distribution,class... Indices>
         Reader& data(Variables<Distribution,Indices...>& variables, const std::string& name){
             std::string filename = filename_(name);
-            if(boost::filesystem::exists(filename)) {
+            if(boost::filesystem::exists(filename)){
                 std::cout<<"Reading <"<<filename_(name)<<">\n";
                 variables.read(filename,true);
+            } else {
+                std::cout<<"Warning file not found <"<<filename_(name)<<">\n";
             }
             return *this;
         }    
