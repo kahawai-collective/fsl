@@ -1,12 +1,21 @@
 #pragma once
 
-#include <iostream>
-#include <typeinfo>
-
-#include <fsl/date.hpp>
-
 namespace Fsl {
 namespace Management {
+
+class Procedure {
+public:
+
+    void signature(void){
+        std::runtime_error("Procedure must define a signature");
+    }
+
+    void reset(void){
+    }
+
+    void operate(){
+    }
+};
 
 template<class Procedure=void> 
 class ProcedureDynamic;
@@ -72,5 +81,26 @@ public:
 
 };
 
-} //end namespace Management
-} //end namespace Fsl
+template<
+    typename Type = double
+>
+class ControlProcedure : public Procedure {
+public:
+    Type* const control;
+    Type value;
+
+    ControlProcedure(Type* const control,const Type& value=0):
+        control(control),
+        value(value){
+    }
+    
+    void reset(void){
+    }
+
+    void operate(){
+        *control = value;
+    }
+};
+
+} // namespace Management
+} // namespace Fsl
