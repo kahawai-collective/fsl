@@ -2,8 +2,6 @@
 
 #include <boost/regex.hpp>
 
-//#include <stencila/polymorph.hpp>
-//#include <stencila/mirrors.hpp>
 #include <stencila/reflector.hpp>
 
 namespace Fsl {
@@ -49,7 +47,7 @@ struct Log {
 template<
     class Distribution
 >
-class Variate : public Distribution {
+class Variate : public Distribution, public Reflector<Variate<Distribution>> {
 private:
     double value_ = NAN;
 
@@ -129,9 +127,9 @@ bool Variate<Fixed>::free(void) const {
 
 template<class Distribution>
 Variate<Distribution>& Variate<Distribution>::value(const double& value){
-    if(not std::isfinite(value)) throw std::runtime_error(str(boost::format("value <%s> is not finite.")%value));
-    if(value<Distribution::minimum()) throw std::runtime_error(str(boost::format("value <%s> is less than minimum <%s> for variate.")%value%Distribution::minimum()));
-    else if(value>Distribution::maximum()) throw std::runtime_error(str(boost::format("value <%s> is greater than maximum <%s> for variate.")%value%Distribution::maximum()));
+    if(not std::isfinite(value)) throw std::runtime_error(str(boost::format("Value <%s> is not finite.")%value));
+    if(value<Distribution::minimum()) throw std::runtime_error(str(boost::format("Value <%s> is less than minimum <%s> for variate.")%value%Distribution::minimum()));
+    else if(value>Distribution::maximum()) throw std::runtime_error(str(boost::format("Value <%s> is greater than maximum <%s> for variate.")%value%Distribution::maximum()));
     else value_ = value;
     return *this;
 }
@@ -141,7 +139,6 @@ Variate<Fixed>& Variate<Fixed>::value(const double& value){
     // Using the default definition of this function can cause problems
     // for `Variate<Fixed>`s because (due to [machine epsilon](http://en.wikipedia.org/wiki/Machine_epsilon)?)
     // a value that is equal to the fixed value can be evaluated as less than or greater than the value.
-    // So this method does not do any of the checking done in the default
     value_ = value;
     return *this;
 }
@@ -166,6 +163,13 @@ public:
     }
 
     uint columns(void) const;
+
+    /**
+     * Check the sample has a column with name
+     * 
+     * @param  name Variate name
+     */
+    bool has(const std::string& name) const;
 
     /**
      * Get a variate value from the sample
@@ -253,6 +257,12 @@ public:
         return names_.size();
     }
 
+    bool has(const std::string& name) const {
+        auto iter = std::find(names_.begin(),names_.end(),name);
+        if(iter != names_.end()) return true;
+        else return false;
+    }
+
     double get(uint row, uint column) const {
         return cells_[row].values[column];
     }
@@ -335,7 +345,13 @@ public:
             if(not file.good()) break;
             boost::sregex_token_iterator iter(line.begin(),line.end(),rgx,-1);
             Values values;
-            for( ; iter != end; ++iter) values.push_back(boost::lexical_cast<float>(*iter));
+            for( ; iter != end; ++iter){
+                std::string string = *iter;
+                double value;
+                if(string=="NA") value = NAN;
+                else value = boost::lexical_cast<double>(string);
+                values.push_back(value);
+            }
             double likelihood = values.back();
             values.pop_back();
             cells_.push_back(Cell_(values,likelihood));
@@ -364,6 +380,10 @@ public:
 
 uint Sample::columns(void) const {
     return samples_.columns();
+}
+
+bool Sample::has(const std::string& name) const {
+    return samples_.has(name);
 }
 
 double Sample::get(uint index) const {
@@ -428,7 +448,6 @@ class Set : public Reflector<Derived> {
 public:
 
     std::string path = ".";
-
     std::ostream* stream_ = nullptr;
 
     Set(const std::string& path="."):
@@ -533,9 +552,13 @@ private:
         template<class Distribution>
         void variate(Variate<Distribution>& variate, const std::string& name){
             try {
-                variate = sample.get(name);
+                if(sample.has(name)){
+                    double value = sample.get(name);
+                    if(not std::isfinite(value)) throw std::runtime_error("`Set::load` : When loading variate <"+name+"> from sample, value was not finite");
+                    variate = value;
+                }
             } catch(const std::exception& exc){
-                throw std::runtime_error("Error when loading variate <"+name+"> from sample:"+exc.what());
+                throw std::runtime_error("`Set::load` : Error when loading variate <"+name+"> from sample : "+exc.what());
             }
         }       
     };

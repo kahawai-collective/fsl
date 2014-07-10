@@ -107,26 +107,11 @@ template<
     uint Ages,
     uint Sectors
 >
-class Model {
+class Model : public Polymorph<Derived> {
 public:
 
     Model(void){
     }
-
-    /**
-     * Convienience function for getting Derived type.
-     * Used below for calling statically polymorphic methods.
-     */
-    Derived& self(void) {
-        return static_cast<Derived&>(*this);
-    }
-    const Derived& self(void) const {
-        return static_cast<const Derived&>(*this);
-    }
-
-    int replicate;
-    int realisation;
-    int evaluation;
 
     /**
      * @name Dimensions
@@ -360,7 +345,7 @@ public:
      * @}
      */
     
-    double biomass_update(){
+    double biomass_update(void){
         biomass = 0;
         for(auto sex : sexes){
             for(auto age : ages){
@@ -371,7 +356,7 @@ public:
         return biomass;
     }
     
-    double biomass_spawning_update(){
+    double biomass_spawning_update(void){
         biomass_spawning = 0;
         for(auto sex : sexes){
             for(auto age : ages){
@@ -380,6 +365,18 @@ public:
         }
         biomass_spawning *= 0.001;
         return biomass_spawning;
+    }
+
+    void biomass_vulnerable_update(void){
+        for(auto sector : sectors){
+            double sum = 0;
+            for(auto sex : sexes){
+                for(auto age : ages){
+                    sum += numbers(sex,age) * weights(sex,age) * selectivities(sector,sex,age);
+                }
+            }
+            biomass_vulnerable(sector) = sum * 0.001;
+        }
     }
 
     void exploitation_off(void){
@@ -475,8 +472,21 @@ public:
          * Once the population has converged to unfished equilibrium, the virgin
          * spawning biomass, or the virgin recruitment, can be set.
          */
-        if(use_r0) recruitment_relation.s0 = biomass_spawning;
-        else recruitment_relation.r0 = recruitment_relation.s0/biomass_spawning;
+        if(use_r0){
+            recruitment_relation.s0 = biomass_spawning;
+        }
+        else {
+            // Parameterised by B0 so scale everything up
+            double scaler = recruitment_relation.s0/biomass_spawning;
+            recruitment_relation.r0 *= scaler;
+            for(auto sex : sexes){
+                for(auto age : ages){
+                    numbers(sex,age) *= scaler;
+                }
+            }
+            biomass *= scaler;
+            biomass_spawning *= scaler;
+        }
     }
 
     /**
@@ -505,17 +515,7 @@ public:
         // Update biomasses
         biomass_update();
         biomass_spawning_update();
-
-        // Vulnerable biomass
-        for(auto sector : sectors){
-            double sum = 0;
-            for(auto sex : sexes){
-                for(auto age : ages){
-                    sum += numbers(sex,age) * weights(sex,age) * selectivities(sector,sex,age);
-                }
-            }
-            biomass_vulnerable(sector) = sum * 0.001;
-        }
+        biomass_vulnerable_update();
 
         // Exploitation rate
         if(exploitation_on){
