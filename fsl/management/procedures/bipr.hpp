@@ -14,7 +14,6 @@ public:
     double starting;
     
     double* const index;
-    double* const benchmark;
 
     typedef Fsl::Math::Series::Filters::Ema Ema;
     Ema ema;
@@ -24,11 +23,10 @@ public:
     RestrictProportionalChange changes;
     RestrictValue values;
     
-    BIPR(double* const control,const double& starting, double* const index, double* const benchmark, const double& responsiveness=1,const double& multiplier=1,const double& change_min=0,const double& change_max=1,const double& value_min=0,const double& value_max=INFINITY):
+    BIPR(double* const control,const double& starting, double* const index, const double& responsiveness=1,const double& multiplier=1,const double& change_min=0,const double& change_max=1,const double& value_min=0,const double& value_max=INFINITY):
         ControlProcedure(control,starting),
         starting(starting),
         index(index),
-        benchmark(benchmark),
         ema(responsiveness),
         multiplier(multiplier),
         changes(change_min,change_max),
@@ -37,7 +35,7 @@ public:
     }
     
     std::string signature(void){
-        return boost::str(boost::format("BIPR %s %s %s %s %s %s %s - - -")
+        return boost::str(boost::format("BIPR(%s,%s,%s,%s,%s,%s,%s)")
             %starting
             %ema.coefficient
             %multiplier
@@ -55,9 +53,8 @@ public:
     BIPR& operate(void){
         double last = value;
         double current = *index;
-        double benchmark_value = *benchmark;
         double smooth = ema.update(current);
-        value = smooth/benchmark_value * multiplier;
+        value = smooth * multiplier;
         value = changes.restrict(value,last);
         value = values.restrict(value);
 

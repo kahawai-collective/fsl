@@ -14,7 +14,7 @@ public:
     }
     
     std::string signature(void){
-        return boost::str(boost::format("CONST %s - - - - - - - - -")
+        return boost::str(boost::format("CONST(%s)")
             %value
         );
     }

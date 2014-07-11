@@ -15,19 +15,19 @@ public:
      */
     std::vector<ProcedureAny> procedures;
 
-    uint first = 1936;
-    uint start = 2014;
-    uint last = 2040;
+    uint first;
+    uint start;
+    uint last;
 
     uint replicates = 0;
-    std::string log;
 
     Derived& write(void){
         std::ofstream procedures_file("procedures.tsv");
-        int candidate = 0;
+        procedures_file<<"procedure\tsignature\n";
+        int index = 0;
         for(auto& procedure : procedures) {
-            procedures_file<<candidate<<"\t"<<procedure.signature()<<"\n";
-            candidate++;
+            procedures_file<<index<<"\t"<<procedure.signature()<<"\n";
+            index++;
         }
         return derived();
     }
@@ -52,7 +52,7 @@ public:
         RowWriter performances(
             performance,
             "performances.tsv",
-            {"replicate","sample","candidate"}
+            {"replicate","sample","procedure"}
         );
         // For each replicate...
         for(uint replicate=0;replicate<replicates;replicate++){
@@ -78,6 +78,8 @@ public:
             uint seed = replicate + 13750892;
             // For each candidate...
             for(uint candidate=0;candidate<procedures.size();candidate++){
+                // Reset the evaluator
+                derived().reset();
                 // Reset random seed
                 using Math::Probability::Generator;
                 Generator.seed(seed);
@@ -93,18 +95,16 @@ public:
                 for(uint time=start;time<=last;time++){
                     //... set model parameters
                     parameters_.set(model_,time);
-                    //... do `before()` method
-                    derived().before(replicate,candidate,time,model_);
                     //... operate the procedure
                     procedure.operate();
+                    //... do `before()` method
+                    derived().before(replicate,candidate,time,model_);
                     //... update the model
                     model_.update(time);
                     //... do `after()` method
                     derived().after(replicate,candidate,time,model_);
                     //... update performance
                     performance_.update(time,model_);
-                    //... stream for first 100 samples
-                    //if(replicate<100) model_writer.write(model,sample.index(),year);
                 }
                 performance_.finalise(model_);
                 performances.write(performance_,replicate,sample.index(),candidate);

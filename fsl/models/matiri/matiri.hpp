@@ -571,6 +571,7 @@ public:
      */
     void equilibrium(void){
         // Turn off recruitment variation
+        bool recruitment_variation_on = recruitment_variation;
         recruitment_variation.off();
         // Iterate until there is a very minor change in biomass
         uint steps = 0;
@@ -588,7 +589,7 @@ public:
         // Throw an error if there was no convergence
         if(steps>steps_max) throw std::runtime_error("Did not converge");
         // Turn on recruitment deviation again
-        recruitment_variation.on();
+        if(recruitment_variation_on) recruitment_variation.on();
     }
 };
 
