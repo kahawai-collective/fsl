@@ -95,14 +95,14 @@ public:
                 for(uint time=start;time<=last;time++){
                     //... set model parameters
                     parameters_.set(model_,time);
-                    //... operate the procedure
-                    procedure.operate();
                     //... do `before()` method
                     derived().before(replicate,candidate,time,model_);
-                    //... update the model
-                    model_.update(time);
+                    //... operate the procedure
+                    procedure.operate();
                     //... do `after()` method
                     derived().after(replicate,candidate,time,model_);
+                    //... update the model
+                    model_.update(time);
                     //... update performance
                     performance_.update(time,model_);
                 }

@@ -89,16 +89,33 @@ public:
     Type* const control;
     Type value;
 
-    ControlProcedure(Type* const control,const Type& value=0):
+    ControlProcedure(Type* const control,const Type& value = 0):
         control(control),
         value(value){
-    }
-    
-    void reset(void){
     }
 
     void operate(){
         *control = value;
+    }
+};
+
+/**
+ * Most management procedures are dynamic
+ */
+template<
+    typename Type = double
+>
+class DynamicControlProcedure : public ControlProcedure<Type> {
+public:
+    Type starting;
+
+    DynamicControlProcedure(Type* const control,const Type& starting = 0):
+        ControlProcedure<Type>(control,starting),
+        starting(starting){
+    }
+    
+    void reset(void){
+        ControlProcedure<Type>::value = starting;
     }
 };
 

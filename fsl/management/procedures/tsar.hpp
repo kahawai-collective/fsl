@@ -9,24 +9,26 @@ namespace Management {
 namespace Procedures {
 
 /**
- * BTAR (Biomass Trajectory Asymmetric Restricted)
- *
- * This management procedure
+ * Trajectory Status Assymetric Restricted
  */
-class BTAR : public BIPR {
+class TSAR : public DynamicControlProcedure<> {
 public:
 
+    double* const index;
+
+    typedef Fsl::Math::Series::Filters::Ema Smoother;
+    Smoother smoother;
+    
     // Definition of trajectory
     double initial;
     double rate;
     double target;
     int step;
 
-    //
-    double moderation;
-
-    // Asymmetry of response
-    double asymmetry;
+    double trigger;
+    
+    RestrictProportionalChange changes;
+    RestrictValue values;
 
 private:
 
@@ -45,49 +47,51 @@ private:
      */
     double target_value_;
 
+    double status_last_;
+
+    double multiplier_;
+
 public:
     
-    BTAR(
+    TSAR(
         double* const control,
-        const double& starting,
+        const double& starting, 
         double* const index, 
         const double& responsiveness=1,
-        const double& multiplier=1,
         const double& initial=1, const double& rate=0.01,const double& target=2,
-        const double& moderation=1,
-        const double& asymmetry=0,
+        const double& trigger=1,
         const double& change_min=0,const double& change_max=1,
-        const double& value_min=0,const double& value_max=INFINITY
-    ):
-        BIPR(control,starting,index,responsiveness,multiplier,change_min,change_max,value_min,value_max),
+        const double& value_min=0,const double& value_max=INFINITY):
+        DynamicControlProcedure(control,starting),
+        index(index),
+        smoother(responsiveness),
         initial(initial),rate(rate),target(target),
-        moderation(moderation),
-        asymmetry(asymmetry){
+        trigger(trigger),
+        changes(change_min,change_max),
+        values(value_min,value_max){
+        reset();
     }
     
     std::string signature(void){
-        return boost::str(boost::format("BTAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
+        return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
             %starting
             %smoother.coefficient
-            %multiplier
             %initial%rate%target
-            %moderation
-            %asymmetry
+            %trigger
             %changes.lower%changes.upper
             %values.lower%values.upper
         );
     }
     
-    BTAR& reset(void){
+    TSAR& reset(void){
+        smoother.reset();
         step = 0;
-        BIPR::reset();
+        DynamicControlProcedure::reset();
         return *this;
     }
     
-    BTAR& operate(void){
-        // Store current control value
+    TSAR& operate(void){
         double last = value;
-        // Get biomass index and update smoother
         double current = *index;
         double smooth = smoother.update(current);
         // In the first step do some intitialisation
@@ -95,38 +99,36 @@ public:
             initial_value_ = smooth * initial;
             rate_value_ = smooth * rate;
             target_value_ = smooth * target;
-            //multiplier_ = value/initial_value_;
+            multiplier_ = value*1/initial;
         }
-        // Calculate trajectory index and deviation from it
+        // Calculate trajectory index and status relative to it
         double trajectory;
         if(rate>0) trajectory = std::min(initial_value_+rate_value_*step,target_value_);
         else trajectory = std::max(initial_value_+rate_value_*step,target_value_);
-        double deviation = smooth/trajectory-1;
-        // Calculate status relative to trajectory including
-        // adjusting for any asymmetry
-        double asymmetric;
-        if(asymmetry>0 and deviation<0) asymmetric = deviation * (1-asymmetry);
-        else if(asymmetry<0 and deviation>0) asymmetric = deviation * (asymmetry+1);
-        else asymmetric = deviation;
-        //
-        double moderating;
-        if(moderation==0) moderating = 1;
-        else{
-            if(asymmetric<0) moderating = 1-std::pow(std::fabs(asymmetric),1/moderation);
-            else moderating = 1+std::pow(asymmetric,1/moderation);
+        double status = smooth/trajectory;
+        if(step==0){
+            status_last_ = status;
         }
-
-        // Calculate a new control value
-        value = smooth * multiplier * moderating;
+        // If greater than x% change in since last time a change was made
+        // then adjust accordingly
+        double change = std::log(status/status_last_);
+        if(std::fabs(change)>=trigger){
+            value = status * multiplier_;
+        }
         // Restrict change and range of values
         value = changes.restrict(value,last);
         value = values.restrict(value);
+        // Now check to see if there has been a change
+        if(value!=last){
+            status_last_ = status;
+        }
         // Do `DynamicControlProcedure::operate()` to actually change the control
         DynamicControlProcedure::operate();
         // Increment step
         step++;
         return *this;
     }
+
 };
 
 } // namespace Procedures
