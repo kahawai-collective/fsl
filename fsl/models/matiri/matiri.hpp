@@ -175,6 +175,12 @@ public:
     Switch<Autocorrelated<Lognormal>,Constant> recruitment_variation;
 
     /**
+     * Flag for whether recruiment deviations are drawn randomly (otherwise
+     * they may be set in each time by the user)
+     */
+    bool recruitment_variation_random = true;
+
+    /**
      * Deterministic recruitment at time t 
      */
     double recruits_determ = 0;
@@ -496,7 +502,9 @@ public:
 
         // Calculate number of recruits
         recruits_determ = recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;
-        if(recruitment_variation) recruits_deviation = recruitment_variation.random();
+        if(recruitment_variation) {
+            if(recruitment_variation_random) recruits_deviation = recruitment_variation.random();
+        }
         else recruits_deviation = 1;
         recruits = recruits_determ * recruits_deviation;
 
