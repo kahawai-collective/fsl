@@ -10,7 +10,7 @@ BOOST_AUTO_TEST_SUITE(matiri)
     using namespace Fsl::Models;   
 
     BOOST_AUTO_TEST_CASE(one){
-        class MyModel : public Matiri::Model<MyModel,30,2,3> {
+        class MyModel : public Matiri<MyModel,30,2,3> {
         public:
 		    void defaults(void){
 		        recruitment_relation.r0 = 1e6;

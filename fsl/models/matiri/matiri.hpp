@@ -94,7 +94,6 @@ public:
 
 namespace Fsl {
 namespace Models {
-namespace Matiri {
 
 /**
  * Sex, age and sector structured fishery model.
@@ -107,10 +106,10 @@ template<
     uint Ages,
     uint Sectors
 >
-class Model : public Polymorph<Derived> {
+class Matiri : public Polymorph<Derived> {
 public:
 
-    Model(void){
+    Matiri(void){
     }
 
     /**
@@ -599,9 +598,9 @@ public:
         // Turn on recruitment deviation again
         if(recruitment_variation_on) recruitment_variation.on();
     }
-};
+}; // class Matiri
 
-class Writer {
+class MatiriWriter {
 public:
 
     std::ofstream overall;
@@ -610,7 +609,7 @@ public:
     std::ofstream sector;
     std::ofstream sector_sex_age;
 
-    Writer(const std::string& path="."){
+    MatiriWriter(const std::string& path="."){
         overall.open(path+"/overall.tsv");
         overall<<"tag\ttime\tbiomass\tbiomass_spawning\trecruits_determ\trecruits_deviation\trecruits\tsex_ratio\n";
 
@@ -695,8 +694,7 @@ public:
         }
     }
 
-}; // class Writer
+}; // class MatiriWriter
 
-} // namespace Matiri
 } // namespace Models
 } // namespace Fsl
