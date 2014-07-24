@@ -95,6 +95,7 @@ public:
 
 	void write(const std::string& filename){
 		std::ofstream file(filename);
+		file.setf(std::ios::scientific);
 		if(labels_.size()>0){
 			for(auto label : labels_) file<<label<<"\t";
 			file<<std::endl;
