@@ -1,3 +1,5 @@
+#pragma once
+
 namespace Fsl {
 namespace Math {
 namespace Probability {
