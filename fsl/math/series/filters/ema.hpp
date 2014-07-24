@@ -17,6 +17,14 @@ public:
         reset();
     }
 
+    void operator=(const double& other) {
+        value = other;
+    }
+
+    operator double(void) const {
+        return value;
+    }
+
     Ema& reset(void){
         value = NAN;
         return *this;
