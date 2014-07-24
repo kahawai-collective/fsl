@@ -5,6 +5,29 @@
 namespace Fsl {
 namespace Estimation {
 
+template<class Distribution> using Datum = Variable<Distribution>;
+template<class Distribution, class... Indices> using Datums = Variables<Distribution,Indices...>;
+
+template<
+    class Derived
+>
+class DataSet : public Set<Derived> {
+public:
+
+    DataSet(const std::string& path="data"):
+        Set<Derived>(path){
+    }
+};
+
+} // namespace Estimation
+} // namespace Fsl
+
+#if 0
+#include <fsl/estimation/variables.hpp>
+
+namespace Fsl {
+namespace Estimation {
+
 class DataFit {
 public:
 	double observed = NAN;
@@ -69,3 +92,4 @@ public:
 
 } // namespace Estimation
 } // namespace Fsl
+#endif

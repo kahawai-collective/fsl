@@ -4,6 +4,8 @@
 
 #include <stencila/reflector.hpp>
 
+#include <fsl/math/probability/fixed.hpp>
+
 namespace Fsl {
 namespace Estimation {
 
@@ -62,6 +64,10 @@ public:
         value_(value){
     }
 
+    Variate(const Distribution& distribution):
+        Distribution(distribution){
+    }
+
     template<typename... Args>
     Variate(const double& value, const Args&... args):
         Distribution(args...),
@@ -102,11 +108,7 @@ public:
 
     bool free(void) const;
 
-    double restrict(const double& value){
-        if(value<Distribution::minimum()) return Distribution::minimum();
-        else if(value>Distribution::maximum()) return Distribution::maximum();
-        else return value;
-    }
+    double restrict(const double& value);
 
     double likelihood(void) const {
         if(valid()) return Distribution::likelihood(value());
@@ -141,6 +143,25 @@ Variate<Fixed>& Variate<Fixed>::value(const double& value){
     // a value that is equal to the fixed value can be evaluated as less than or greater than the value.
     value_ = value;
     return *this;
+}
+
+template<class Distribution>
+double Variate<Distribution>::restrict(const double& value){
+    double min = Distribution::minimum();
+    double max = Distribution::maximum();
+    if(value<=min or value>=max){
+        double range = max-min;
+        double epsilon = std::numeric_limits<double>::epsilon();
+        double buffer = std::max(range*0.0001,epsilon);
+        if(value<=min) return min+buffer;
+        else return max-buffer;
+    }
+    else return value;
+}
+
+template<>
+double Variate<Fixed>::restrict(const double& value){
+    return value_;
 }
 
 class Samples;
@@ -607,7 +628,7 @@ public:
         std::string path_;
 
         std::string filename_(const std::string& name){
-            return path_ + "/" + name + ".in.tsv";
+            return path_ + "/input/" + name + ".tsv";
         }
 
     public:
@@ -649,7 +670,7 @@ public:
         std::ofstream file_;
     public:
         ListWriter(const std::string& path):
-            file_(path+"/list.tsv"){
+            file_(path+"/output/list.tsv"){
             file_<<"name\tvalue\tminimum\tmaximum\tmean\tsd\n";
         }
 
@@ -682,7 +703,7 @@ public:
         std::ofstream file;
     public:
         PdfWriter(const std::string& path):
-            file(path+"/pdfs.tsv"){
+            file(path+"/output/pdfs.tsv"){
             file<<"name\tvalue\tpdf\n";
         }
 
@@ -727,7 +748,7 @@ public:
         std::string path_;
 
         std::string filename_(const std::string& name){
-            return path_ + "/" + name + ".out.tsv";
+            return path_ + "/output/" + name + ".tsv";
         }
 
     public:
@@ -757,7 +778,7 @@ public:
         std::ofstream file_;
     public:
         LikelihoodsWriter(const std::string& path):
-            file_(path+"/likelihoods.tsv"){
+            file_(path+"/output/likelihoods.tsv"){
             file_<<"name\tlikelihood\n";
         }
 
@@ -893,31 +914,6 @@ private:
         }       
     };
 
-};
-
-template<class Distribution> using Parameter = Variable<Distribution>;
-template<class Distribution, class... Indices> using Parameters = Variables<Distribution,Indices...>;
-
-template<
-    class Derived
->
-class ParameterSet : public Set<Derived> {
-public:
-
-    ParameterSet(const std::string& path="parameters"):
-        Set<Derived>(path){
-    }
-};
-
-template<
-    class Derived
->
-class DataSet : public Set<Derived> {
-public:
-
-    DataSet(const std::string& path="data"):
-        Set<Derived>(path){
-    }
 };
 
 } // namespace Estimation

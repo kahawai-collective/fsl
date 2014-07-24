@@ -1,5 +1,29 @@
 #pragma once
 
+#include <fsl/estimation/variables.hpp>
+
+namespace Fsl {
+namespace Estimation {
+
+template<class Distribution> using Parameter = Variable<Distribution>;
+template<class Distribution, class... Indices> using Parameters = Variables<Distribution,Indices...>;
+
+template<
+    class Derived
+>
+class ParameterSet : public Set<Derived> {
+public:
+
+    ParameterSet(const std::string& path="parameters"):
+        Set<Derived>(path){
+    }
+};
+
+} // namespace Estimation
+} // namespace Fsl
+
+
+#if 0
 #include <boost/algorithm/string.hpp>
 #include <boost/regex.hpp>
 
@@ -679,3 +703,4 @@ public:
 
 } // namespace Estimation
 } // namespace Fsl
+#endif
