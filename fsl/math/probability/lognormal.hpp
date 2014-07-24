@@ -49,15 +49,11 @@ public:
     }
 
     boost::math::lognormal boost_dist(void) const {
-        //boost::math uses different properties for location and scale so some conversion is necessary
-        double scale_squared = std::log(1.0+sd()*sd()/(mean()*mean()));
-        double location = std::log(mean()*mean())-0.5*scale_squared;
-        double scale = std::sqrt(scale_squared);
-        return boost::math::lognormal(location,scale);
+        return boost::math::lognormal(location,dispersion);
     }
     
     double random(void) const {
-        boost::lognormal_distribution<> distr(mean(),sd());
+        boost::lognormal_distribution<> distr(location,dispersion);
         boost::variate_generator<boost::mt19937&,decltype(distr)> randomVariate(Generator,distr);
         return randomVariate();
     }
