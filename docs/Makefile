@@ -11,7 +11,7 @@ doxygen:
 # Requires the a branch called "gh-pages":
 #	git branch gh-pages
 # and the "ghp-import" script
-publish:
+publish: doxygen
 	mkdir -p published
 	cp -f index.html published
 	cp -fr doxygen published
