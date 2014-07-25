@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
   <compounddef id="namespaceFisl_1_1Population_1_1Growth" kind="namespace">
     <compoundname>Fisl::Population::Growth</compoundname>
+    <innerclass refid="classFisl_1_1Population_1_1Growth_1_1VonBert" prot="public">Fisl::Population::Growth::VonBert</innerclass>
     <innernamespace refid="namespaceFisl_1_1Population_1_1Growth_1_1Priors">Fisl::Population::Growth::Priors</innernamespace>
     <briefdescription>
     </briefdescription>

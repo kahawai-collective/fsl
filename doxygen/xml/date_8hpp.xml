@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="date_8hpp" kind="file">
+    <compoundname>date.hpp</compoundname>
+    <includes local="no">boost/date_time/gregorian/gregorian.hpp</includes>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <incdepgraph>
+      <node id="141">
+        <label>boost/date_time/gregorian/gregorian.hpp</label>
+      </node>
+      <node id="140">
+        <label>date.hpp</label>
+        <link refid="date.hpp"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="143">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>date.hpp</label>
+        <link refid="date.hpp"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/date_time/gregorian/gregorian.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceFsl_1a3e7425b7cb85a0e2f569fdbc3eb7ce18" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::gregorian::date<sp/><ref refid="namespaceFsl_1a3e7425b7cb85a0e2f569fdbc3eb7ce18" kindref="member">Date</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespaceFsl_1a2df0b7704a5cdf60e24dae6f8a68d84e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::gregorian::days<sp/><ref refid="namespaceFsl_1a2df0b7704a5cdf60e24dae6f8a68d84e" kindref="member">Days</ref>;</highlight></codeline>
+<codeline lineno="10" refid="namespaceFsl_1a2f5a5a8d909056cf799f04f4de2f351d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::gregorian::weeks<sp/><ref refid="namespaceFsl_1a2f5a5a8d909056cf799f04f4de2f351d" kindref="member">Weeks</ref>;</highlight></codeline>
+<codeline lineno="11" refid="namespaceFsl_1a28548f0359fad300092d677cef76663b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::gregorian::months<sp/><ref refid="namespaceFsl_1a28548f0359fad300092d677cef76663b" kindref="member">Months</ref>;</highlight></codeline>
+<codeline lineno="12" refid="namespaceFsl_1ab29aa4fd10087747c05346cff5aa11e1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::gregorian::years<sp/><ref refid="namespaceFsl_1ab29aa4fd10087747c05346cff5aa11e1" kindref="member">Years</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="namespaceFsl_1ab8e33d59028fbee187036c58da1d0802" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::gregorian::year_iterator<sp/><ref refid="namespaceFsl_1ab8e33d59028fbee187036c58da1d0802" kindref="member">YearIterator</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp"/>
+  </compounddef>
+</doxygen>

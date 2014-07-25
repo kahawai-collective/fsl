@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline" kind="class" prot="public">
+    <compoundname>Fsl::Math::Functions::PiecewiseSpline</compoundname>
+    <includes refid="piecewise-spline_8hpp" local="no">piecewise-spline.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Fsl::Math::Functions::PiecewiseSpline::xs</definition>
+        <argsstring></argsstring>
+        <name>xs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Fsl::Math::Functions::PiecewiseSpline::ys</definition>
+        <argsstring></argsstring>
+        <name>ys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a3325801a0c0db799aa0457688e23e400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Functions::PiecewiseSpline::PiecewiseSpline</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;xs, const std::vector&lt; double &gt; &amp;ys)</argsstring>
+        <name>PiecewiseSpline</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>xs</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>ys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a78df92b1ead81a127f8f3aa8936bddb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::PiecewiseSpline::interpolate</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>interpolate</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" bodystart="23" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp" bodystart="14" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a78df92b1ead81a127f8f3aa8936bddb3" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::PiecewiseSpline</scope><name>interpolate</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a3325801a0c0db799aa0457688e23e400" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::PiecewiseSpline</scope><name>PiecewiseSpline</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::PiecewiseSpline</scope><name>xs</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::PiecewiseSpline</scope><name>ys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

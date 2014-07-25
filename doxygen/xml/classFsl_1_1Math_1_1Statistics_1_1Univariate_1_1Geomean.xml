@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean" kind="class" prot="public">
+    <compoundname>Fsl::Math::Statistics::Univariate::Geomean</compoundname>
+    <includes refid="univariate_8hpp" local="no">univariate.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1af3b30f774f6ebd60d45138384fe34bec" prot="private" static="no" mutable="no">
+        <type>accumulator_set&lt; double, stats&lt; tag::mean &gt; &gt;</type>
+        <definition>accumulator_set&lt;double, stats&lt;tag::mean&gt; &gt; Fsl::Math::Statistics::Univariate::Geomean::accumulator</definition>
+        <argsstring></argsstring>
+        <name>accumulator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="38" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1a1649f9c292659c23046ad7bd27222381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Math::Statistics::Univariate::Geomean::append</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>append</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="41" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1aa3e6d1678343e2a9cf48c6ec9e4fb566" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate_1a77f57fe243eaf7a18a3fe539068e0d6d" kindref="member">Real</ref></type>
+        <definition>Real Fsl::Math::Statistics::Univariate::Geomean::value</definition>
+        <argsstring>(void) const </argsstring>
+        <name>value</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="45" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="36" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" bodystart="36" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1af3b30f774f6ebd60d45138384fe34bec" prot="private" virt="non-virtual"><scope>Fsl::Math::Statistics::Univariate::Geomean</scope><name>accumulator</name></member>
+      <member refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1a1649f9c292659c23046ad7bd27222381" prot="public" virt="non-virtual"><scope>Fsl::Math::Statistics::Univariate::Geomean</scope><name>append</name></member>
+      <member refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1aa3e6d1678343e2a9cf48c6ec9e4fb566" prot="public" virt="non-virtual"><scope>Fsl::Math::Statistics::Univariate::Geomean</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

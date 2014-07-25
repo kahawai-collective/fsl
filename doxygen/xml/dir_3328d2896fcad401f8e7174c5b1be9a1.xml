@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_3328d2896fcad401f8e7174c5b1be9a1" kind="dir">
+    <compoundname>management</compoundname>
+    <innerdir refid="dir_06158f41ec59dd17e2a2371f1036fe41">procedures</innerdir>
+    <innerfile refid="evaluator_8hpp">evaluator.hpp</innerfile>
+    <innerfile refid="performance_8hpp">performance.hpp</innerfile>
+    <innerfile refid="procedure_8hpp">procedure.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/"/>
+  </compounddef>
+</doxygen>

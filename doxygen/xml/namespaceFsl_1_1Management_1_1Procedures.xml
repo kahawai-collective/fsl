@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Management_1_1Procedures" kind="namespace">
+    <compoundname>Fsl::Management::Procedures</compoundname>
+    <innerclass refid="classFsl_1_1Management_1_1Procedures_1_1BIPR" prot="public">Fsl::Management::Procedures::BIPR</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1Procedures_1_1BTAR" prot="public">Fsl::Management::Procedures::BTAR</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1Procedures_1_1CONST" prot="public">Fsl::Management::Procedures::CONST</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1Procedures_1_1TSAR" prot="public">Fsl::Management::Procedures::TSAR</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

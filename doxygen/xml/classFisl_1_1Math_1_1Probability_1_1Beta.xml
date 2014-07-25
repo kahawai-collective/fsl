@@ -99,25 +99,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="12">
+      <node id="25">
         <label>Fisl::Math::Probability::Beta</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Beta"/>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="26">
         <label>Fisl::Math::Probability::Distribution&lt; Beta &gt;</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14">
+      <node id="27">
         <label>Fisl::Math::Probability::Beta</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Beta"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="28" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="28">
         <label>Fisl::Math::Probability::Distribution&lt; Beta &gt;</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>

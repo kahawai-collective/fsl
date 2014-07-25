@@ -1,62 +1,58 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
   <compounddef id="threshold_8hpp" kind="file">
     <compoundname>threshold.hpp</compoundname>
-    <includes refid="common_8hpp" local="no">fisl/common.hpp</includes>
-    <includes refid="function_8hpp" local="no">fisl/math/functions/function.hpp</includes>
-    <includedby refid="functions_8hpp" local="yes">functions.hpp</includedby>
+    <includes refid="common_8hpp" local="no">fsl/common.hpp</includes>
+    <includes refid="function_8hpp" local="no">fsl/math/functions/function.hpp</includes>
+    <includedby refid="maturity_8hpp" local="no">maturity.hpp</includedby>
     <incdepgraph>
-      <node id="232">
+      <node id="590">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="591">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="590" relation="include">
+        </childnode>
+      </node>
+      <node id="589">
         <label>threshold.hpp</label>
         <link refid="threshold.hpp"/>
-        <childnode refid="233" relation="include">
+        <childnode refid="590" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
+        <childnode refid="591" relation="include">
         </childnode>
-      </node>
-      <node id="235">
-        <label>fisl/array.hpp</label>
-        <link refid="array_8hpp"/>
-        <childnode refid="236" relation="include">
-        </childnode>
-        <childnode refid="237" relation="include">
-        </childnode>
-      </node>
-      <node id="236">
-        <label>vector</label>
-      </node>
-      <node id="237">
-        <label>algorithm</label>
-      </node>
-      <node id="234">
-        <label>fisl/math/functions/function.hpp</label>
-        <link refid="function_8hpp"/>
-        <childnode refid="233" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-      </node>
-      <node id="233">
-        <label>fisl/common.hpp</label>
-        <link refid="common_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="238">
-        <label>threshold.hpp</label>
-        <link refid="threshold.hpp"/>
-        <childnode refid="239" relation="include">
+      <node id="594">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="595" relation="include">
         </childnode>
       </node>
-      <node id="239">
-        <label>functions.hpp</label>
-        <link refid="functions_8hpp"/>
+      <node id="593">
+        <label>maturity.hpp</label>
+        <link refid="maturity_8hpp"/>
+        <childnode refid="594" relation="include">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>threshold.hpp</label>
+        <link refid="threshold.hpp"/>
+        <childnode refid="593" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
       </node>
     </invincdepgraph>
-    <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Threshold" prot="public">Fisl::Math::Functions::Threshold</innerclass>
-    <innernamespace refid="namespaceFisl">Fisl</innernamespace>
-    <innernamespace refid="namespaceFisl_1_1Math">Fisl::Math</innernamespace>
-    <innernamespace refid="namespaceFisl_1_1Math_1_1Functions">Fisl::Math::Functions</innernamespace>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Threshold" prot="public">Fsl::Math::Functions::Threshold</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Functions">Fsl::Math::Functions</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -64,24 +60,38 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
 <codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="common_8hpp" kindref="compound" tooltip="Definitions of common #includes and typedefs.">fisl/common.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fisl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="common_8hpp" kindref="compound">fsl/common.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fsl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fisl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Functions<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="10" refid="classFisl_1_1Math_1_1Functions_1_1Threshold" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFisl_1_1Math_1_1Functions_1_1Threshold" kindref="compound">Threshold</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Functions_1_1Function" kindref="compound">Function</ref><sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="12" refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a6186f09dc601a1469893bb641f504b1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a6186f09dc601a1469893bb641f504b1a" kindref="member">inflection</ref>;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="14" refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a0035c46bd425dbff867d31b4f666320b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a0035c46bd425dbff867d31b4f666320b" kindref="member">operator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x){</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x&lt;<ref refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a6186f09dc601a1469893bb641f504b1a" kindref="member">inflection</ref>)?0:1;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal">}}}</highlight></codeline>
+<codeline lineno="10" refid="classFsl_1_1Math_1_1Functions_1_1Threshold" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold" kindref="compound">Threshold</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Function" kindref="compound">Function</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" kindref="member">inflection_</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1acc76b2303f2755eac2bb4b25068306e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1acc76b2303f2755eac2bb4b25068306e3" kindref="member">inflection</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" kindref="member">inflection_</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1ae4cc217eadacb9a90ce05c5b7ba17fd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold" kindref="compound">Threshold</ref>&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1ae4cc217eadacb9a90ce05c5b7ba17fd7" kindref="member">inflection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" kindref="member">inflection_</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1aa11fce9c2b7785529155fa4945ff3b23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1aa11fce9c2b7785529155fa4945ff3b23" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x&lt;<ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" kindref="member">inflection_</ref>)?0:1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>Threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/math/functions/threshold.hpp"/>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp"/>
   </compounddef>
 </doxygen>

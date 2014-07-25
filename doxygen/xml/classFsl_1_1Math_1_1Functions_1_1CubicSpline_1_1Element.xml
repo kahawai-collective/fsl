@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" kind="class" prot="protected">
+    <compoundname>Fsl::Math::Functions::CubicSpline::Element</compoundname>
+    <includes refid="cubic-spline_8hpp" local="no">cubic-spline.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" prot="public" static="no" mutable="no">
+        <type>X</type>
+        <definition>X Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="137" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a977578f6e3dbe70d9812927ba94cbdc5" prot="public" static="no" mutable="no">
+        <type>Y</type>
+        <definition>Y Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="138" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1ac1da307eef4d8b05fcdf913ad3af033d" prot="public" static="no" mutable="no">
+        <type>Y</type>
+        <definition>Y Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="138" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a87a758f0dbe29392ba326147f4151c89" prot="public" static="no" mutable="no">
+        <type>Y</type>
+        <definition>Y Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="138" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa182c368712f50742bab84fb8bd218ce" prot="public" static="no" mutable="no">
+        <type>Y</type>
+        <definition>Y Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="138" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a4a31332a7ef5223c7a08c5748316d9e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::Element</definition>
+        <argsstring>(X _x)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>X</type>
+          <declname>_x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="121" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a67e8ae8e6271db0645186bee5ff7cc88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::Element</definition>
+        <argsstring>(X _x, Y _a, Y _b, Y _c, Y _d)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>X</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>Y</type>
+          <declname>_a</declname>
+        </param>
+        <param>
+          <type>Y</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>Y</type>
+          <declname>_c</declname>
+        </param>
+        <param>
+          <type>Y</type>
+          <declname>_d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="122" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="122" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1adce5fe8e8956206a5d6744ca6175a773" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Y</type>
+        <definition>Y Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::eval</definition>
+        <argsstring>(const X &amp;xx) const </argsstring>
+        <name>eval</name>
+        <param>
+          <type>const X &amp;</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="125" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1abc29f26ea1ceecd093947ad7b4cd1c14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::operator&lt;</definition>
+        <argsstring>(const Element &amp;e) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" kindref="compound">Element</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="130" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa34bbfc3ea581be80f682887936948d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Functions::CubicSpline&lt; X, Y &gt;::Element::operator&lt;</definition>
+        <argsstring>(const X &amp;xx) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const X &amp;</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="133" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="133" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" line="119" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp" bodystart="119" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a977578f6e3dbe70d9812927ba94cbdc5" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>a</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1ac1da307eef4d8b05fcdf913ad3af033d" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>b</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a87a758f0dbe29392ba326147f4151c89" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>c</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa182c368712f50742bab84fb8bd218ce" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>d</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a4a31332a7ef5223c7a08c5748316d9e5" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>Element</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a67e8ae8e6271db0645186bee5ff7cc88" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>Element</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1adce5fe8e8956206a5d6744ca6175a773" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>eval</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1abc29f26ea1ceecd093947ad7b4cd1c14" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>operator&lt;</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa34bbfc3ea581be80f682887936948d0" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>operator&lt;</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::CubicSpline::Element</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

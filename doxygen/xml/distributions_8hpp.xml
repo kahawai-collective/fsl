@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="distributions_8hpp" kind="file">
+    <compoundname>distributions.hpp</compoundname>
+    <includes refid="fixed_8hpp" local="no">fsl/math/probability/fixed.hpp</includes>
+    <includes refid="positive_8hpp" local="no">fsl/math/probability/positive.hpp</includes>
+    <includes refid="beta_8hpp" local="no">fsl/math/probability/beta.hpp</includes>
+    <includes refid="fournier-robustified-multivariate-normal_8hpp" local="no">fsl/math/probability/fournier-robustified-multivariate-normal.hpp</includes>
+    <includes refid="lognormal_8hpp" local="no">fsl/math/probability/lognormal.hpp</includes>
+    <includes refid="multinomial_8hpp" local="no">fsl/math/probability/multinomial.hpp</includes>
+    <includes refid="normal_8hpp" local="no">fsl/math/probability/normal.hpp</includes>
+    <includes refid="uniform_8hpp" local="no">fsl/math/probability/uniform.hpp</includes>
+    <incdepgraph>
+      <node id="205">
+        <label>boost/random/variate_generator.hpp</label>
+      </node>
+      <node id="218">
+        <label>boost/random/uniform_real.hpp</label>
+      </node>
+      <node id="212">
+        <label>fsl/math/probability/multinomial.hpp</label>
+        <link refid="multinomial_8hpp"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="215">
+        <label>boost/random/normal_distribution.hpp</label>
+      </node>
+      <node id="199">
+        <label>fsl/math/probability/positive.hpp</label>
+        <link refid="positive_8hpp"/>
+      </node>
+      <node id="214">
+        <label>boost/math/distributions/normal.hpp</label>
+      </node>
+      <node id="206">
+        <label>boost/math/distributions/uniform.hpp</label>
+      </node>
+      <node id="197">
+        <label>distributions.hpp</label>
+        <link refid="distributions.hpp"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>boost/random/mersenne_twister.hpp</label>
+      </node>
+      <node id="213">
+        <label>fsl/math/probability/normal.hpp</label>
+        <link refid="normal_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>ctime</label>
+      </node>
+      <node id="210">
+        <label>boost/math/distributions/lognormal.hpp</label>
+      </node>
+      <node id="202">
+        <label>fsl/math/probability/distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>boost/random/lognormal_distribution.hpp</label>
+      </node>
+      <node id="208">
+        <label>fsl/math/probability/fournier-robustified-multivariate-normal.hpp</label>
+        <link refid="fournier-robustified-multivariate-normal_8hpp"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>boost/math/distributions/beta.hpp</label>
+      </node>
+      <node id="198">
+        <label>fsl/math/probability/fixed.hpp</label>
+        <link refid="fixed_8hpp"/>
+      </node>
+      <node id="209">
+        <label>fsl/math/probability/lognormal.hpp</label>
+        <link refid="lognormal_8hpp"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>boost/random/uniform_01.hpp</label>
+      </node>
+      <node id="217">
+        <label>fsl/math/probability/uniform.hpp</label>
+        <link refid="uniform_8hpp"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>fsl/math/probability/beta.hpp</label>
+        <link refid="beta_8hpp"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Special<sp/>&quot;distributions&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="fixed_8hpp" kindref="compound">fsl/math/probability/fixed.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="positive_8hpp" kindref="compound">fsl/math/probability/positive.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Distributions<sp/>in<sp/>alphabetical<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="beta_8hpp" kindref="compound">fsl/math/probability/beta.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="fournier-robustified-multivariate-normal_8hpp" kindref="compound">fsl/math/probability/fournier-robustified-multivariate-normal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lognormal_8hpp" kindref="compound">fsl/math/probability/lognormal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="multinomial_8hpp" kindref="compound">fsl/math/probability/multinomial.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="normal_8hpp" kindref="compound">fsl/math/probability/normal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="uniform_8hpp" kindref="compound">fsl/math/probability/uniform.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/distributions.hpp"/>
+  </compounddef>
+</doxygen>

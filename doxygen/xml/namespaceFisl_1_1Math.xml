@@ -4,6 +4,7 @@
     <compoundname>Fisl::Math</compoundname>
     <innernamespace refid="namespaceFisl_1_1Math_1_1Functions">Fisl::Math::Functions</innernamespace>
     <innernamespace refid="namespaceFisl_1_1Math_1_1Probability">Fisl::Math::Probability</innernamespace>
+    <innernamespace refid="namespaceFisl_1_1Math_1_1Series">Fisl::Math::Series</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

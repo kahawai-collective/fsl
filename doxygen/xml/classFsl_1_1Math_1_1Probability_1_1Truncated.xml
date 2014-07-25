@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1Truncated" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::Truncated</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Base</basecompoundref>
+    <derivedcompoundref refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012" prot="public" virt="non-virtual">Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</derivedcompoundref>
+    <includes refid="truncated_8hpp" local="no">truncated.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Base</declname>
+        <defname>Base</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Truncated_1a8bd0f303e0ccdb97620149171575285b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Truncated&lt; Base &gt;::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Truncated_1a02003efb297f89398469f8a287763909" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Truncated&lt; Base &gt;::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Truncated_1aea6bc0a85a4c344d581ca9a5773af139" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::Truncated&lt; Base &gt;::Truncated</definition>
+        <argsstring>(double a=NAN, double b=NAN, double min_=-INFINITY, double max_=INFINITY)</argsstring>
+        <name>Truncated</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_</declname>
+          <defval>-INFINITY</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_</declname>
+          <defval>INFINITY</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Truncated_1a14a24c393b10597eded64e5afdfbea0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Truncated&lt; Base &gt;::minimum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>minimum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Truncated_1a378e3bb4283f08ae884946cdd2aae03f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Truncated&lt; Base &gt;::maximum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Truncated_1a52362de74a44e26333f06fff7915899b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Truncated&lt; Base &gt;::random</definition>
+        <argsstring>(void) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="405">
+        <label>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012&lt; Normal &gt;</label>
+        <link refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>Fsl::Math::Probability::Truncated&lt; Base &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Truncated"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>Base</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="406">
+        <label>Fsl::Math::Probability::Truncated&lt; Base &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Truncated"/>
+        <childnode refid="407" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>Base</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" line="8" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/truncated.hpp" bodystart="8" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a02003efb297f89398469f8a287763909" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Truncated</scope><name>max</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a378e3bb4283f08ae884946cdd2aae03f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Truncated</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a8bd0f303e0ccdb97620149171575285b" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Truncated</scope><name>min</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a14a24c393b10597eded64e5afdfbea0d" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Truncated</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a52362de74a44e26333f06fff7915899b" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Truncated</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1aea6bc0a85a4c344d581ca9a5773af139" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Truncated</scope><name>Truncated</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

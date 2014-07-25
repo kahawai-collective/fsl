@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="cubic-spline_8hpp" kind="file">
+    <compoundname>cubic-spline.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cassert</includes>
+    <includes refid="common_8hpp" local="no">fsl/common.hpp</includes>
+    <includes refid="function_8hpp" local="no">fsl/math/functions/function.hpp</includes>
+    <incdepgraph>
+      <node id="130">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="129">
+        <label>cassert</label>
+      </node>
+      <node id="131">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>vector</label>
+      </node>
+      <node id="126">
+        <label>cubic-spline.hpp</label>
+        <link refid="cubic-spline.hpp"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline" prot="public">Fsl::Math::Functions::CubicSpline</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" prot="protected">Fsl::Math::Functions::CubicSpline::Element</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Functions">Fsl::Math::Functions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="common_8hpp" kindref="compound">fsl/common.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fsl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Functions<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">/*<sp/>&quot;THE<sp/>BEER-WARE<sp/>LICENSE&quot;<sp/>(Revision<sp/>42):<sp/>Devin<sp/>Lane<sp/>wrote<sp/>this<sp/>file.<sp/>As<sp/>long<sp/>as<sp/>you<sp/>retain<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>this<sp/>notice<sp/>you<sp/>can<sp/>do<sp/>whatever<sp/>you<sp/>want<sp/>with<sp/>this<sp/>stuff.<sp/>If<sp/>we<sp/>meet<sp/>some<sp/>day,<sp/>and<sp/>you</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>think<sp/>this<sp/>stuff<sp/>is<sp/>worth<sp/>it,<sp/>you<sp/>can<sp/>buy<sp/>me<sp/>a<sp/>beer<sp/>in<sp/>return.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>X,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Y&gt;</highlight></codeline>
+<codeline lineno="27" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline" kindref="compound">CubicSpline</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a28102f369d1057ef922fb3e51e622343" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a28102f369d1057ef922fb3e51e622343" kindref="member">CubicSpline</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a53a0c40fd676cd1374657f670e9acf1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a53a0c40fd676cd1374657f670e9acf1e" kindref="member">CubicSpline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;X&gt;&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Y&gt;&amp;<sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1ac3d7035e7cdcdf900d5a9b1a917715f7" kindref="member">knots</ref>(x,y);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a09ffe6891c78ff33644c476250d23f95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a09ffe6891c78ff33644c476250d23f95" kindref="member">~Spline</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1ac3d7035e7cdcdf900d5a9b1a917715f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Spline&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1ac3d7035e7cdcdf900d5a9b1a917715f7" kindref="member">knots</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;X&gt;&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Y&gt;&amp;<sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(x.size()<sp/>==<sp/>y.size());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(x.size()<sp/>&gt;=<sp/>3);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::vector&lt;X&gt;::difference_type<sp/>size_type;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_type<sp/>n<sp/>=<sp/>y.size()<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Y&gt;<sp/>b(n),<sp/>d(n),<sp/>a(n),<sp/>c(n+1),<sp/>l(n+1),<sp/>u(n+1),<sp/>z(n+1);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;X&gt;<sp/>h(n+1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l[0]<sp/>=<sp/>Y(1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u[0]<sp/>=<sp/>Y(0);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z[0]<sp/>=<sp/>Y(0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h[0]<sp/>=<sp/>x[1]<sp/>-<sp/>x[0];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(size_type<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h[i]<sp/>=<sp/>x[i+1]<sp/>-<sp/>x[i];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l[i]<sp/>=<sp/>Y(2<sp/>*<sp/>(x[i+1]<sp/>-<sp/>x[i-1]))<sp/>-<sp/>Y(h[i-1])<sp/>*<sp/>u[i-1];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u[i]<sp/>=<sp/>Y(h[i])<sp/>/<sp/>l[i];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>(Y(3)<sp/>/<sp/>Y(h[i]))<sp/>*<sp/>(y[i+1]<sp/>-<sp/>y[i])<sp/>-<sp/>(Y(3)<sp/>/<sp/>Y(h[i-1]))<sp/>*<sp/>(y[i]<sp/>-<sp/>y[i-1]);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z[i]<sp/>=<sp/>(a[i]<sp/>-<sp/>Y(h[i-1])<sp/>*<sp/>z[i-1])<sp/>/<sp/>l[i];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l[n]<sp/>=<sp/>Y(1);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z[n]<sp/>=<sp/>c[n]<sp/>=<sp/>Y(0);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(size_type<sp/>j<sp/>=<sp/>n-1;<sp/>j<sp/>&gt;=<sp/>0;<sp/>j--)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c[j]<sp/>=<sp/>z[j]<sp/>-<sp/>u[j]<sp/>*<sp/>c[j+1];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b[j]<sp/>=<sp/>(y[j+1]<sp/>-<sp/>y[j])<sp/>/<sp/>Y(h[j])<sp/>-<sp/>(Y(h[j])<sp/>*<sp/>(c[j+1]<sp/>+<sp/>Y(2)<sp/>*<sp/>c[j]))<sp/>/<sp/>Y(3);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[j]<sp/>=<sp/>(c[j+1]<sp/>-<sp/>c[j])<sp/>/<sp/>Y(3<sp/>*<sp/>h[j]);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(size_type<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.push_back(<ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" kindref="compound">Element</ref>(x[i],<sp/>y[i],<sp/>b[i],<sp/>c[i],<sp/>d[i]));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a1c36c10f238426f28f805519d796c392" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Y<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a1c36c10f238426f28f805519d796c392" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>X&amp;<sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a09262c9266acb4ec1bdc6d656c3b7710" kindref="member">interpolate</ref>(x);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a09262c9266acb4ec1bdc6d656c3b7710" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Y<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a09262c9266acb4ec1bdc6d656c3b7710" kindref="member">interpolate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>X&amp;x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.size()<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Y();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::vector&lt;element_type&gt;::const_iterator<sp/>it;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>=<sp/>std::lower_bound(<ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.begin(),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.end(),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a54209d82cbae3a3f52d6a9899c372305" kindref="member">element_type</ref>(x));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.begin())<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it--;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it-&gt;eval(x);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1ad2c77d1e9ed9a075d611c6e50024ca7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Y&gt;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1ad2c77d1e9ed9a075d611c6e50024ca7e" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;X&gt;&amp;<sp/>xx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a09262c9266acb4ec1bdc6d656c3b7710" kindref="member">interpolate</ref>(xx);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Evaluate<sp/>at<sp/>multiple<sp/>locations,<sp/>assuming<sp/>xx<sp/>is<sp/>sorted<sp/>ascending<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a1dcf8fd2d3b4161852a2479768d451ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Y&gt;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a1dcf8fd2d3b4161852a2479768d451ec" kindref="member">interpolate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;X&gt;&amp;<sp/>xx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.size()<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::vector&lt;Y&gt;(xx.size());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::vector&lt;X&gt;::const_iterator<sp/>it;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::vector&lt;element_type&gt;::const_iterator<sp/>it2;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2<sp/>=<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.begin();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Y&gt;<sp/>ys;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(it<sp/>=<sp/>xx.begin();<sp/>it<sp/>!=<sp/>xx.end();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2<sp/>=<sp/>std::lower_bound(it2,<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.end(),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a54209d82cbae3a3f52d6a9899c372305" kindref="member">element_type</ref>(*it));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it2<sp/>!=<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>.begin())<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2--;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ys.push_back(it2-&gt;eval(*it));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ys;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" kindref="compound">Element</ref><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a4a31332a7ef5223c7a08c5748316d9e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a4a31332a7ef5223c7a08c5748316d9e5" kindref="member">Element</ref>(X<sp/>_x)<sp/>:<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref>(_x)<sp/>{}</highlight></codeline>
+<codeline lineno="122" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a67e8ae8e6271db0645186bee5ff7cc88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a67e8ae8e6271db0645186bee5ff7cc88" kindref="member">Element</ref>(X<sp/>_x,<sp/>Y<sp/>_a,<sp/>Y<sp/>_b,<sp/>Y<sp/>_c,<sp/>Y<sp/>_d)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref>(_x),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a977578f6e3dbe70d9812927ba94cbdc5" kindref="member">a</ref>(_a),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1ac1da307eef4d8b05fcdf913ad3af033d" kindref="member">b</ref>(_b),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a87a758f0dbe29392ba326147f4151c89" kindref="member">c</ref>(_c),<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa182c368712f50742bab84fb8bd218ce" kindref="member">d</ref>(_d)<sp/>{}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1adce5fe8e8956206a5d6744ca6175a773" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1adce5fe8e8956206a5d6744ca6175a773" kindref="member">eval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>X&amp;<sp/>xx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>xix(xx<sp/>-<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a977578f6e3dbe70d9812927ba94cbdc5" kindref="member">a</ref><sp/>+<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1ac1da307eef4d8b05fcdf913ad3af033d" kindref="member">b</ref><sp/>*<sp/>xix<sp/>+<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a87a758f0dbe29392ba326147f4151c89" kindref="member">c</ref><sp/>*<sp/>(xix<sp/>*<sp/>xix)<sp/>+<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa182c368712f50742bab84fb8bd218ce" kindref="member">d</ref><sp/>*<sp/>(xix<sp/>*<sp/>xix<sp/>*<sp/>xix);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1abc29f26ea1ceecd093947ad7b4cd1c14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1abc29f26ea1ceecd093947ad7b4cd1c14" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" kindref="compound">Element</ref>&amp;<sp/>e)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref><sp/>&lt;<sp/>e.<ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa34bbfc3ea581be80f682887936948d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa34bbfc3ea581be80f682887936948d0" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>X&amp;<sp/>xx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref><sp/>&lt;<sp/>xx;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a70f8522db80cf95f4a053281442a7cb3" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="138" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa182c368712f50742bab84fb8bd218ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a977578f6e3dbe70d9812927ba94cbdc5" kindref="member">a</ref>,<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1ac1da307eef4d8b05fcdf913ad3af033d" kindref="member">b</ref>,<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1a87a758f0dbe29392ba326147f4151c89" kindref="member">c</ref>,<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element_1aa182c368712f50742bab84fb8bd218ce" kindref="member">d</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a54209d82cbae3a3f52d6a9899c372305" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1_1Element" kindref="compound">Element</ref><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a54209d82cbae3a3f52d6a9899c372305" kindref="member">element_type</ref>;</highlight></codeline>
+<codeline lineno="142" refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;element_type&gt;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline_1a4027905cfacba0bb5729b29fd01d8153" kindref="member">mElements</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>Spline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/cubic-spline.hpp"/>
+  </compounddef>
+</doxygen>

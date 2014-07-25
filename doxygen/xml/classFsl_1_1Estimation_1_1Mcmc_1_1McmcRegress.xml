@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Mcmc::McmcRegress</compoundname>
+    <basecompoundref refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis" prot="public" virt="non-virtual">Fsl::Estimation::Mcmc::Metropolis&lt; McmcRegress, 2 &gt;</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1a104565c0a3fbcbaac38709353c7fe5c3" prot="public" static="no" mutable="no">
+        <type>Array</type>
+        <definition>Array Fsl::Estimation::Mcmc::McmcRegress::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="45" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1a8a006757b18489087b3650421309d177" prot="public" static="no" mutable="no">
+        <type>Array</type>
+        <definition>Array Fsl::Estimation::Mcmc::McmcRegress::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="46" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1af9c000ecc8937f790cdab2fbaa6cb2a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Mcmc::McmcRegress::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="48" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1ad3634b999ca1704767a5f4dae9e75aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Mcmc::McmcRegress::log_like</definition>
+        <argsstring>(const Array&lt;&gt; &amp;parameters)</argsstring>
+        <name>log_like</name>
+        <param>
+          <type>const Array&lt;&gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="56" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="56" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="243">
+        <label>Fsl::Estimation::Mcmc::Metropolis&lt; McmcRegress, 2 &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis"/>
+      </node>
+      <node id="242">
+        <label>Fsl::Estimation::Mcmc::McmcRegress</label>
+        <link refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="245">
+        <label>Fsl::Estimation::Mcmc::Metropolis&lt; McmcRegress, 2 &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis"/>
+      </node>
+      <node id="244">
+        <label>Fsl::Estimation::Mcmc::McmcRegress</label>
+        <link refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress"/>
+        <childnode refid="245" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="42" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="42" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1a2e5e8a84a65da459c3efe5bff78edcfa" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>acceptance</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1acc6ef08e5cb587a6ace8190d9189d5c5" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>accepted</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1aff39a772965439b4d06fae04682de47a" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>iterations</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1a480c2bac66c59226d5cf6d33b0c92d9d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>ll</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1ad3634b999ca1704767a5f4dae9e75aab" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>log_like</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1abb13f1170775bce82f5c01643370ed95" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>Metropolis</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1af9c000ecc8937f790cdab2fbaa6cb2a5" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1aadc6266e4561181615f0b0e1161afcb4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>run</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1adb0d61403f23b240a80532e548ec8933" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>samples</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1a0b03fd5a9008e976034757c75e89f381" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>step</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1ad6d406ed26a0af76c7d64e7316b7135c" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>values</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis_1a370bf0aee05a8c2b06235273f3f8c4fa" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>variances</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1a104565c0a3fbcbaac38709353c7fe5c3" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>x</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress_1a8a006757b18489087b3650421309d177" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Mcmc::McmcRegress</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

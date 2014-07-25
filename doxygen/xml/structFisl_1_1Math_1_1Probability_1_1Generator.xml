@@ -27,24 +27,24 @@
     <detaileddescription>
 <para>A scaffolding object that holds the random number generator used in the random() methods </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="35">
+      <node id="63">
         <label>Fisl::Math::Probability::Generator</label>
         <link refid="structFisl_1_1Math_1_1Probability_1_1Generator"/>
-        <childnode refid="36" relation="public-inheritance">
+        <childnode refid="64" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="64">
         <label>boost::mt19937</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="37">
+      <node id="65">
         <label>Fisl::Math::Probability::Generator</label>
         <link refid="structFisl_1_1Math_1_1Probability_1_1Generator"/>
-        <childnode refid="38" relation="public-inheritance">
+        <childnode refid="66" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="66">
         <label>boost::mt19937</label>
       </node>
     </collaborationgraph>

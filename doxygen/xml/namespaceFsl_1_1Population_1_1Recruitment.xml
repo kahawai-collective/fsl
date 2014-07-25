@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Population_1_1Recruitment" kind="namespace">
+    <compoundname>Fsl::Population::Recruitment</compoundname>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" prot="public">Fsl::Population::Recruitment::Autocorrelated</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4" prot="public">Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" prot="public">Fsl::Population::Recruitment::BevertonHolt</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1Stochastic" prot="public">Fsl::Population::Recruitment::Stochastic</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1Stochastic_3_01Relationship_00_01Math_1_1Probability_1_d88e401ff29abb2c5fc289ccf3b776e7" prot="public">Fsl::Population::Recruitment::Stochastic&lt; Relationship, Math::Probability::Lognormal, Math::Series::Autocorrelation &gt;</innerclass>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Recruitment_1_1Priors">Fsl::Population::Recruitment::Priors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

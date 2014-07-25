@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="constant_8hpp" kind="file">
+    <compoundname>constant.hpp</compoundname>
+    <includes refid="function_8hpp" local="no">fsl/math/functions/function.hpp</includes>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <incdepgraph>
+      <node id="120">
+        <label>constant.hpp</label>
+        <link refid="constant.hpp"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="121">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="124">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>constant.hpp</label>
+        <link refid="constant.hpp"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Constant" prot="public">Fsl::Math::Functions::Constant</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Functions">Fsl::Math::Functions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fsl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="6" refid="namespaceFsl_1_1Math" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="7" refid="namespaceFsl_1_1Math_1_1Functions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Functions<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Math_1_1Functions_1_1Constant" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Constant</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Function" kindref="compound">Function</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a07c11e08877b0f053e74ef22600ae50c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a07c11e08877b0f053e74ef22600ae50c" kindref="member">value</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a35d9a6a55efd5f5b11e5555f0f56e1f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a35d9a6a55efd5f5b11e5555f0f56e1f2" kindref="member">value</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ab3a628c7ee0a5fecf92ed32b47d49e3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Constant</ref>&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ab3a628c7ee0a5fecf92ed32b47d49e3f" kindref="member">value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a07c11e08877b0f053e74ef22600ae50c" kindref="member">value</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" kindref="member">value_</ref><sp/>=<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a07c11e08877b0f053e74ef22600ae50c" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a4aacd0976c8090f6bbe98aceff4339c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a4aacd0976c8090f6bbe98aceff4339c3" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>end<sp/>class<sp/>Constant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp"/>
+  </compounddef>
+</doxygen>

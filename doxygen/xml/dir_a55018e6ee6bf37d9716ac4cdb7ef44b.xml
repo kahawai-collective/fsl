@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_a55018e6ee6bf37d9716ac4cdb7ef44b" kind="dir">
+    <compoundname>series</compoundname>
+    <innerdir refid="dir_568f735188814e21dfee82f99bfa6a5c">filters</innerdir>
+    <innerfile refid="autocorrelation_8hpp">autocorrelation.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/"/>
+  </compounddef>
+</doxygen>

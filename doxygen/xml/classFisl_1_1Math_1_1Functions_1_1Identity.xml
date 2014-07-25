@@ -28,25 +28,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="39">
+      <node id="67">
         <label>Fisl::Math::Functions::Identity</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Identity"/>
-        <childnode refid="40" relation="public-inheritance">
+        <childnode refid="68" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="40">
+      <node id="68">
         <label>Fisl::Math::Functions::Function</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Function"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="41">
+      <node id="69">
         <label>Fisl::Math::Functions::Identity</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Identity"/>
-        <childnode refid="42" relation="public-inheritance">
+        <childnode refid="70" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="42">
+      <node id="70">
         <label>Fisl::Math::Functions::Function</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Function"/>
       </node>

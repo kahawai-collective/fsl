@@ -4,8 +4,9 @@
     <compoundname>functions</compoundname>
     <innerfile refid="cached_8cxx">cached.cxx</innerfile>
     <innerfile refid="function_8hpp">function.hpp</innerfile>
-    <innerfile refid="functions_8hpp">functions.hpp</innerfile>
     <innerfile refid="identity_8hpp">identity.hpp</innerfile>
+    <innerfile refid="logistic_8hpp">logistic.hpp</innerfile>
+    <innerfile refid="power_8hpp">power.hpp</innerfile>
     <innerfile refid="threshold_8hpp">threshold.hpp</innerfile>
     <briefdescription>
     </briefdescription>

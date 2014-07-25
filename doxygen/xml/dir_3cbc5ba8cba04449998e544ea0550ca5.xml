@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_3cbc5ba8cba04449998e544ea0550ca5" kind="dir">
+    <compoundname>fsl</compoundname>
+    <innerdir refid="dir_5bbea00ee09b2ab4c8f40d592b0d2985">estimation</innerdir>
+    <innerdir refid="dir_3328d2896fcad401f8e7174c5b1be9a1">management</innerdir>
+    <innerdir refid="dir_ffdedecddc1faa0f91b331c4087f65dd">math</innerdir>
+    <innerdir refid="dir_ce97430be5a15eb537b15a82db5a0eaf">models</innerdir>
+    <innerdir refid="dir_80c2f0ebecf320193822eca58c8e04b0">monitoring</innerdir>
+    <innerdir refid="dir_a2b2eb2b5e9e6fef5ed7408086ebf378">population</innerdir>
+    <innerfile refid="common_8hpp">common.hpp</innerfile>
+    <innerfile refid="date_8hpp">date.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/"/>
+  </compounddef>
+</doxygen>

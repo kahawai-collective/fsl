@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
   <compounddef id="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006" kind="class" prot="public">
     <compoundname>Fisl::Population::Recruitment::Priors::SteepnessHe2006</compoundname>
-    <includes refid="steepness__he__2006_8hpp" local="no">steepness_he_2006.hpp</includes>
+    <includes refid="steepness-he-others-2006_8hpp" local="no">steepness-he-others-2006.hpp</includes>
     <innerclass refid="structFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters" prot="public">Fisl::Population::Recruitment::Priors::SteepnessHe2006::Parameters</innerclass>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1a4cc2d49f12b894607721a4f4725e8b2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" line="27" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" bodystart="27" bodyend="73"/>
+        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" line="27" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="27" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1a283b815a48233c3b47ce184964bd0687" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" line="75" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" bodystart="75" bodyend="81"/>
+        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" line="75" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="75" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1a78c48824f05bffa395348994f8dfc36e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; std::pair&lt; double, double &gt; &gt;</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" line="83" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" bodystart="83" bodyend="97"/>
+        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" line="83" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="83" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1ad049efe7db3c165e6a80c5d67b327bee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -87,14 +87,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" line="99" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" bodystart="99" bodyend="131"/>
+        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" line="99" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="99" bodyend="131"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>A prior for steepness based on natural mortality and recruitment variability (<ulink url="http://fishbull.noaa.gov/1043/he.pdf">He et al 2006</ulink>) </para>    </detaileddescription>
-    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" line="19" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness_he_2006.hpp" bodystart="19" bodyend="132"/>
+    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" line="19" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="19" bodyend="132"/>
     <listofallmembers>
       <member refid="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1a78c48824f05bffa395348994f8dfc36e" prot="public" virt="non-virtual"><scope>Fisl::Population::Recruitment::Priors::SteepnessHe2006</scope><name>densities</name></member>
       <member refid="classFisl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1a4cc2d49f12b894607721a4f4725e8b2f" prot="public" virt="non-virtual"><scope>Fisl::Population::Recruitment::Priors::SteepnessHe2006</scope><name>parameters</name></member>

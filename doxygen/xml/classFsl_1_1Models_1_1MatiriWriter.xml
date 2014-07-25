@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Models_1_1MatiriWriter" kind="class" prot="public">
+    <compoundname>Fsl::Models::MatiriWriter</compoundname>
+    <includes refid="matiri_8hpp" local="no">matiri.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1MatiriWriter_1ac8151c2f2eb76709b5dd2d9fbfdf8057" prot="public" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Fsl::Models::MatiriWriter::overall</definition>
+        <argsstring></argsstring>
+        <name>overall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="606" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1MatiriWriter_1ac297d35a8a4692154645144ed89eb533" prot="public" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Fsl::Models::MatiriWriter::sex</definition>
+        <argsstring></argsstring>
+        <name>sex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="607" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1MatiriWriter_1a2f7bb231b2fe8f6c60d926a80d65d827" prot="public" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Fsl::Models::MatiriWriter::sex_age</definition>
+        <argsstring></argsstring>
+        <name>sex_age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="608" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1MatiriWriter_1a501bb513561d571cdca9ea4f74fd55cf" prot="public" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Fsl::Models::MatiriWriter::sector</definition>
+        <argsstring></argsstring>
+        <name>sector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="609" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1MatiriWriter_1ac48dd53724463dd8a244bcbf671c12ad" prot="public" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Fsl::Models::MatiriWriter::sector_sex_age</definition>
+        <argsstring></argsstring>
+        <name>sector_sex_age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="610" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Models_1_1MatiriWriter_1a1fc1caa45488a17aab7f0ae3c587d560" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Models::MatiriWriter::MatiriWriter</definition>
+        <argsstring>(const std::string &amp;path=&quot;.&quot;)</argsstring>
+        <name>MatiriWriter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="612" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="612" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1MatiriWriter_1ad37d17426c9dfadc607b592249299183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Model</type>
+          </param>
+          <param>
+            <type>typename Tag</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Models::MatiriWriter::write</definition>
+        <argsstring>(const Model &amp;model, const Tag &amp;tag, uint time=0)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const Model &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>const Tag &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>time</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="630" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="630" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1MatiriWriter_1a85222148750025d28c568d6b53af7bc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Model</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Models::MatiriWriter::write</definition>
+        <argsstring>(Model &amp;model, const std::string &amp;tag, uint begin, uint end)</argsstring>
+        <name>write</name>
+        <param>
+          <type>Model &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="690" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="690" bodyend="695"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="603" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="603" bodyend="697"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1a1fc1caa45488a17aab7f0ae3c587d560" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>MatiriWriter</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1ac8151c2f2eb76709b5dd2d9fbfdf8057" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>overall</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1a501bb513561d571cdca9ea4f74fd55cf" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>sector</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1ac48dd53724463dd8a244bcbf671c12ad" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>sector_sex_age</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1ac297d35a8a4692154645144ed89eb533" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>sex</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1a2f7bb231b2fe8f6c60d926a80d65d827" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>sex_age</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1ad37d17426c9dfadc607b592249299183" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>write</name></member>
+      <member refid="classFsl_1_1Models_1_1MatiriWriter_1a85222148750025d28c568d6b53af7bc3" prot="public" virt="non-virtual"><scope>Fsl::Models::MatiriWriter</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Math_1_1Statistics" kind="namespace">
+    <compoundname>Fsl::Math::Statistics</compoundname>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate">Fsl::Math::Statistics::Univariate</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

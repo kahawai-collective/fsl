@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Estimation_1_1Samples_1_1Cell__" kind="struct" prot="private">
+    <compoundname>Fsl::Estimation::Samples::Cell_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a3e13e2bb5fb2ba88656071943fef20c7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref></type>
+        <definition>Values Fsl::Estimation::Samples::Cell_::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="259" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a21e404ead46c94da74cd039ec8bca466" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Samples::Cell_::likelihood</definition>
+        <argsstring></argsstring>
+        <name>likelihood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="260" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a5a14122334fbca9ed33d90f5e3cafa89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Samples::Cell_::Cell_</definition>
+        <argsstring>(const Values &amp;values, const double &amp;likelihood=NAN)</argsstring>
+        <name>Cell_</name>
+        <param>
+          <type>const <ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref> &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>likelihood</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="262" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="262" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="258" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="258" bodyend="266"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a5a14122334fbca9ed33d90f5e3cafa89" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Samples::Cell_</scope><name>Cell_</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a21e404ead46c94da74cd039ec8bca466" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Samples::Cell_</scope><name>likelihood</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a3e13e2bb5fb2ba88656071943fef20c7" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Samples::Cell_</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

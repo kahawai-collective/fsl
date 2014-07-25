@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1Multinomial" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::Multinomial</compoundname>
+    <includes refid="multinomial_8hpp" local="no">multinomial.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::proportion</definition>
+        <argsstring></argsstring>
+        <name>proportion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afd408e1e528354eeb5599d0a0221b643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::Multinomial::Multinomial</definition>
+        <argsstring>(const double &amp;proportion=NAN, const double &amp;size=NAN)</argsstring>
+        <name>Multinomial</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>proportion</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>size</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a3f08074ab22958c5bcfb8f05763182c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Probability::Multinomial::valid</definition>
+        <argsstring>(void) const </argsstring>
+        <name>valid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1abfd65c3a340b16b0519b176672573556" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::minimum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>minimum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a6b988d49ea5972cf0b3b717d416aa3ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::maximum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="28" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a70ff5a914f8dc6cd4b7cfa12bbc43914" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::mean</definition>
+        <argsstring>(void) const </argsstring>
+        <name>mean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="32" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a5134206b5d5a621282c41c85af4d93c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::sd</definition>
+        <argsstring>(void) const </argsstring>
+        <name>sd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="36" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afce28555bcded17aed090fec8dd8eede" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::pdf</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>pdf</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="40" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a055f8c0543f94917ab378d1375744e47" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::quantile</definition>
+        <argsstring>(const double &amp;p) const </argsstring>
+        <name>quantile</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="44" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1aeb1f4f4c71bbfb0e55fe679941014b0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Multinomial::random</definition>
+        <argsstring>(void) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="48" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a2f512dcf0be35144198bd9a675ff03bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Mirror</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Math::Probability::Multinomial::reflect</definition>
+        <argsstring>(Mirror &amp;mirror)</argsstring>
+        <name>reflect</name>
+        <param>
+          <type>Mirror &amp;</type>
+          <declname>mirror</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="53" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="53" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp" bodystart="9" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a6b988d49ea5972cf0b3b717d416aa3ba" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a70ff5a914f8dc6cd4b7cfa12bbc43914" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1abfd65c3a340b16b0519b176672573556" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afd408e1e528354eeb5599d0a0221b643" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>Multinomial</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afce28555bcded17aed090fec8dd8eede" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>pdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>proportion</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a055f8c0543f94917ab378d1375744e47" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>quantile</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1aeb1f4f4c71bbfb0e55fe679941014b0f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a2f512dcf0be35144198bd9a675ff03bc" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a5134206b5d5a621282c41c85af4d93c2" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>size</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a3f08074ab22958c5bcfb8f05763182c4" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Multinomial</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

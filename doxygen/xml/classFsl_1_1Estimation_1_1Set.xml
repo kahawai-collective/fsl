@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Set" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Set</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Reflector&lt; Derived &gt;</basecompoundref>
+    <derivedcompoundref refid="classFsl_1_1Estimation_1_1DataSet" prot="public" virt="non-virtual">Fsl::Estimation::DataSet&lt; Derived &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Estimation_1_1ParameterSet" prot="public" virt="non-virtual">Fsl::Estimation::ParameterSet&lt; Derived &gt;</derivedcompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1Count__" prot="private">Fsl::Estimation::Set::Count_</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter" prot="public">Fsl::Estimation::Set::FileWriter</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter" prot="public">Fsl::Estimation::Set::LikelihoodsWriter</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Set_1_1ListWriter" prot="public">Fsl::Estimation::Set::ListWriter</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1LoadSample__" prot="private">Fsl::Estimation::Set::LoadSample_</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1LoadVector__" prot="private">Fsl::Estimation::Set::LoadVector_</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1Names__" prot="private">Fsl::Estimation::Set::Names_</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Set_1_1PdfWriter" prot="public">Fsl::Estimation::Set::PdfWriter</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater" prot="public">Fsl::Estimation::Set::ProbabilityCalculater</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Set_1_1Reader" prot="public">Fsl::Estimation::Set::Reader</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1Restrict__" prot="private">Fsl::Estimation::Set::Restrict_</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1Sample__" prot="private">Fsl::Estimation::Set::Sample_</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror" prot="public">Fsl::Estimation::Set::SetMirror</innerclass>
+    <innerclass refid="structFsl_1_1Estimation_1_1Set_1_1Stream__" prot="public">Fsl::Estimation::Set::Stream_</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class Derived</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Set_1a72808e8038c81f4a6f2a2130f71fd590" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Set&lt; Derived &gt;::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <initializer>= &quot;.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="471" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Set_1adad25ab783fe64b6317627da2ceef1c2" prot="public" static="no" mutable="no">
+        <type>std::ostream *</type>
+        <definition>std::ostream* Fsl::Estimation::Set&lt; Derived &gt;::stream_</definition>
+        <argsstring></argsstring>
+        <name>stream_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="472" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a5ab300035cc49ae37589c95993d86857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Set&lt; Derived &gt;::Set</definition>
+        <argsstring>(const std::string &amp;path=&quot;.&quot;)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="474" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="474" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a83f12918fac01610a4313d79b5c8c4a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Set&lt; Derived &gt;::~Set</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="479" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="479" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a7bd6cc41acec8693e93d97c52ff02586" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint Fsl::Estimation::Set&lt; Derived &gt;::count</definition>
+        <argsstring>(void)</argsstring>
+        <name>count</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of variates in the <computeroutput><ref refid="classFsl_1_1Estimation_1_1Set" kindref="compound">Set</ref></computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="508" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="508" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a67b5cdcf390eb808bfb2c49583f6bb32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Fsl::Estimation::Set&lt; Derived &gt;::names</definition>
+        <argsstring>(bool all=true)</argsstring>
+        <name>names</name>
+        <param>
+          <type>bool</type>
+          <declname>all</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of variates in the <computeroutput><ref refid="classFsl_1_1Estimation_1_1Set" kindref="compound">Set</ref></computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="530" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="530" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1ab91958c192c50e98d87209b6cd485e4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Set&lt; Derived &gt;::load</definition>
+        <argsstring>(const Sample &amp;sample)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const <ref refid="classFsl_1_1Estimation_1_1Sample" kindref="compound">Sample</ref> &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the <computeroutput><ref refid="classFsl_1_1Estimation_1_1Set" kindref="compound">Set</ref></computeroutput> from a <computeroutput><ref refid="classFsl_1_1Estimation_1_1Sample" kindref="compound">Sample</ref></computeroutput> of variates</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <computeroutput><ref refid="classFsl_1_1Estimation_1_1Sample" kindref="compound">Sample</ref></computeroutput> to load variate values from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="558" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="558" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1afc1cc16ee862b8785cf62c1d593edf52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Set&lt; Derived &gt;::load</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vector)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the <computeroutput><ref refid="classFsl_1_1Estimation_1_1Set" kindref="compound">Set</ref></computeroutput> from a std::vector&lt;double&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <computeroutput><ref refid="classFsl_1_1Estimation_1_1Sample" kindref="compound">Sample</ref></computeroutput> to load variate values from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="594" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="594" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1ae1738095734f01412045cf20b28b80c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::read</definition>
+        <argsstring>(void)</argsstring>
+        <name>read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="622" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="622" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a8f55158fd9b70936c536d8daadd78255" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::write</definition>
+        <argsstring>(void)</argsstring>
+        <name>write</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="657" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="657" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a83f9b1dde6df488bf86aa0a89356ec04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::write_list</definition>
+        <argsstring>(void)</argsstring>
+        <name>write_list</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="664" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="664" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1ad2c96308bc9122702b31ff08f477dce0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::write_pdfs</definition>
+        <argsstring>(void)</argsstring>
+        <name>write_pdfs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="697" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="697" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a01e584deae2f055aa18ed1d89bb021dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::write_files</definition>
+        <argsstring>(void)</argsstring>
+        <name>write_files</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="742" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="742" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1ad063fba068876a902153d647f94137e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::write_likelihoods</definition>
+        <argsstring>(void)</argsstring>
+        <name>write_likelihoods</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="772" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="772" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1aed599e5fd336d5e2e29d96e6e4150f55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Set&lt; Derived &gt;::stream</definition>
+        <argsstring>(const std::string &amp;filename, const std::vector&lt; std::string &gt; &amp;prefixes)</argsstring>
+        <name>stream</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>prefixes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="799" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="799" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a12f3fe5097d5938b608497f15847b696" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Set&lt; Derived &gt;::stream</definition>
+        <argsstring>(Args...args)</argsstring>
+        <name>stream</name>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="807" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="807" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a9c6d81bd379f7d4813e96ffd6019f5fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Arg</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Set&lt; Derived &gt;::stream_prefixes_</definition>
+        <argsstring>(Arg arg, Args...args)</argsstring>
+        <name>stream_prefixes_</name>
+        <param>
+          <type>Arg</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="818" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="818" bodyend="820"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a94ced2b2ad0c884a2df932bb0fafb469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Set&lt; Derived &gt;::stream_prefixes_</definition>
+        <argsstring>(void)</argsstring>
+        <name>stream_prefixes_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="822" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="822" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1aacec7577ef4bf0e98b297198deec31dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Set&lt; Derived &gt;::likelihood</definition>
+        <argsstring>(void)</argsstring>
+        <name>likelihood</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="842" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="842" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a88c37f12fd4a01a0d5cef26b412b2b63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Fsl::Estimation::Set&lt; Derived &gt;::sample</definition>
+        <argsstring>(void)</argsstring>
+        <name>sample</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a <computeroutput><ref refid="classFsl_1_1Estimation_1_1Sample" kindref="compound">Sample</ref></computeroutput> of variate values from the <computeroutput><ref refid="classFsl_1_1Estimation_1_1Set" kindref="compound">Set</ref></computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="870" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="870" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1a2b14b1e09298bc2b48d1600745d04057" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Fsl::Estimation::Set&lt; Derived &gt;::restrict</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>restrict</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restrict variate values to their bounds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="892" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="892" bodyend="896"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="369">
+        <label>Fsl::Estimation::ParameterSet&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1ParameterSet"/>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>Fsl::Estimation::DataSet&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1DataSet"/>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>Reflector&lt; Derived &gt;</label>
+      </node>
+      <node id="366">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Set"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="371">
+        <label>Reflector&lt; Derived &gt;</label>
+      </node>
+      <node id="370">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Set"/>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="468" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="468" bodyend="917"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a7bd6cc41acec8693e93d97c52ff02586" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>count</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1aacec7577ef4bf0e98b297198deec31dc" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ab91958c192c50e98d87209b6cd485e4d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>load</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1afc1cc16ee862b8785cf62c1d593edf52" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>load</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a67b5cdcf390eb808bfb2c49583f6bb32" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>names</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a72808e8038c81f4a6f2a2130f71fd590" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>path</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ae1738095734f01412045cf20b28b80c0" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>read</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a2b14b1e09298bc2b48d1600745d04057" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a88c37f12fd4a01a0d5cef26b412b2b63" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>sample</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a5ab300035cc49ae37589c95993d86857" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>Set</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1aed599e5fd336d5e2e29d96e6e4150f55" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>stream</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a12f3fe5097d5938b608497f15847b696" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>stream</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1adad25ab783fe64b6317627da2ceef1c2" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>stream_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a9c6d81bd379f7d4813e96ffd6019f5fb" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>stream_prefixes_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a94ced2b2ad0c884a2df932bb0fafb469" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>stream_prefixes_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a8f55158fd9b70936c536d8daadd78255" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>write</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a01e584deae2f055aa18ed1d89bb021dd" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>write_files</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ad063fba068876a902153d647f94137e4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>write_likelihoods</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a83f9b1dde6df488bf86aa0a89356ec04" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>write_list</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ad2c96308bc9122702b31ff08f477dce0" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>write_pdfs</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a83f12918fac01610a4313d79b5c8c4a5" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set</scope><name>~Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

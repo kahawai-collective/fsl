@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="const_8hpp" kind="file">
+    <compoundname>const.hpp</compoundname>
+    <includes refid="procedure_8hpp" local="no">fsl/management/procedure.hpp</includes>
+    <incdepgraph>
+      <node id="117">
+        <label>const.hpp</label>
+        <link refid="const.hpp"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>fsl/management/procedure.hpp</label>
+        <link refid="procedure_8hpp"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classFsl_1_1Management_1_1Procedures_1_1CONST" prot="public">Fsl::Management::Procedures::CONST</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Management">Fsl::Management</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Management_1_1Procedures">Fsl::Management::Procedures</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="procedure_8hpp" kindref="compound">fsl/management/procedure.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Management<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Procedures<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Management_1_1Procedures_1_1CONST" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1Procedures_1_1CONST" kindref="compound">CONST</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure" kindref="compound">ControlProcedure</ref>&lt;double&gt;<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12" refid="classFsl_1_1Management_1_1Procedures_1_1CONST_1ab4b114a1397ed8b78abc4861edea7e6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedures_1_1CONST_1ab4b114a1397ed8b78abc4861edea7e6a" kindref="member">CONST</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kindref="member">control</ref>,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>=0):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure" kindref="compound">ControlProcedure</ref>(control,<ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Management_1_1Procedures_1_1CONST_1a6b8aae514ecdfc0604a5f8f5263a71ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classFsl_1_1Management_1_1Procedures_1_1CONST_1a6b8aae514ecdfc0604a5f8f5263a71ab" kindref="member">signature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::str(boost::format(</highlight><highlight class="stringliteral">&quot;CONST(%s)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%<ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Procedures</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp"/>
+  </compounddef>
+</doxygen>

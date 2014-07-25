@@ -4,88 +4,149 @@
     <compoundname>array.hpp</compoundname>
     <includes local="no">vector</includes>
     <includes local="no">algorithm</includes>
+    <includedby refid="metropolis_8hpp" local="no">metropolis.hpp</includedby>
     <includedby refid="function_8hpp" local="no">function.hpp</includedby>
     <includedby refid="aged_8hpp" local="no">aged.hpp</includedby>
     <includedby refid="gendered_8hpp" local="no">gendered.hpp</includedby>
     <incdepgraph>
-      <node id="15">
+      <node id="14">
         <label>array.hpp</label>
         <link refid="array.hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
       </node>
-      <node id="16">
+      <node id="15">
         <label>vector</label>
       </node>
-      <node id="17">
+      <node id="16">
         <label>algorithm</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="23">
-        <label>threshold.hpp</label>
-        <link refid="threshold_8hpp"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>cached.cxx</label>
-        <link refid="cached_8cxx"/>
-      </node>
-      <node id="18">
-        <label>array.hpp</label>
-        <link refid="array.hpp"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
+      <node id="26">
+        <label>model.hpp</label>
+        <link refid="model_8hpp"/>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
       </node>
+      <node id="20">
+        <label>evaluation-skeleton.cpp</label>
+        <link refid="evaluation-skeleton_8cpp"/>
+      </node>
       <node id="27">
-        <label>gendered.hpp</label>
-        <link refid="gendered_8hpp"/>
-        <childnode refid="26" relation="include">
+        <label>model.cxx</label>
+        <link refid="model_8cxx"/>
+      </node>
+      <node id="19">
+        <label>metropolis.cxx</label>
+        <link refid="metropolis_8cxx"/>
+      </node>
+      <node id="28">
+        <label>power.hpp</label>
+        <link refid="power_8hpp"/>
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="24">
+        <label>logistic.hpp</label>
+        <link refid="logistic_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>threshold.hpp</label>
+        <link refid="threshold_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>cached.cxx</label>
+        <link refid="cached_8cxx"/>
+      </node>
+      <node id="17">
+        <label>array.hpp</label>
+        <link refid="array.hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>gendered.hpp</label>
+        <link refid="gendered_8hpp"/>
+      </node>
+      <node id="23">
         <label>identity.hpp</label>
         <link refid="identity_8hpp"/>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="33">
         <label>aged.cxx</label>
         <link refid="aged_8cxx"/>
       </node>
-      <node id="22">
-        <label>functions.hpp</label>
-        <link refid="functions_8hpp"/>
-      </node>
-      <node id="26">
-        <label>gendered.cxx</label>
-        <link refid="gendered_8cxx"/>
-      </node>
-      <node id="24">
-        <label>aged.hpp</label>
-        <link refid="aged_8hpp"/>
-        <childnode refid="25" relation="include">
+      <node id="29">
+        <label>morphometry.hpp</label>
+        <link refid="morphometry_8hpp"/>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="31">
+        <label>von-bert.hpp</label>
+        <link refid="von-bert_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>metropolis.hpp</label>
+        <link refid="metropolis_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>maturity.hpp</label>
+        <link refid="maturity_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>aged.hpp</label>
+        <link refid="aged_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
         <label>function.hpp</label>
         <link refid="function_8hpp"/>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

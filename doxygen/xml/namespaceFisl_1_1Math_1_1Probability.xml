@@ -8,6 +8,7 @@
     <innerclass refid="classFisl_1_1Math_1_1Probability_1_1Fixed" prot="public">Fisl::Math::Probability::Fixed</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Probability_1_1Lognormal" prot="public">Fisl::Math::Probability::Lognormal</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Probability_1_1Normal" prot="public">Fisl::Math::Probability::Normal</innerclass>
+    <innerclass refid="classFisl_1_1Math_1_1Probability_1_1NormalCv" prot="public">Fisl::Math::Probability::NormalCv</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Probability_1_1Truncated" prot="public">Fisl::Math::Probability::Truncated</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Probability_1_1Uniform" prot="public">Fisl::Math::Probability::Uniform</innerclass>
       <sectiondef kind="var">

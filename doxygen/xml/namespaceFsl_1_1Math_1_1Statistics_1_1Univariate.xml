@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate" kind="namespace">
+    <compoundname>Fsl::Math::Statistics::Univariate</compoundname>
+    <innerclass refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean" prot="public">Fsl::Math::Statistics::Univariate::Geomean</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange" prot="public">Fsl::Math::Statistics::Univariate::MeanAbsoluteProportionChange</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate_1a77f57fe243eaf7a18a3fe539068e0d6d" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double Fsl::Math::Statistics::Univariate::Real</definition>
+        <argsstring></argsstring>
+        <name>Real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>temporary </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

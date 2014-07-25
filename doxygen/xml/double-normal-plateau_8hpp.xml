@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="double-normal-plateau_8hpp" kind="file">
+    <compoundname>double-normal-plateau.hpp</compoundname>
+    <includes refid="common_8hpp" local="no">fsl/common.hpp</includes>
+    <includes refid="function_8hpp" local="no">fsl/math/functions/function.hpp</includes>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <incdepgraph>
+      <node id="227">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="228">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>double-normal-plateau.hpp</label>
+        <link refid="double-normal-plateau.hpp"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="230">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>double-normal-plateau.hpp</label>
+        <link refid="double-normal-plateau.hpp"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" prot="public">Fsl::Math::Functions::DoubleNormalPlateau</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Functions">Fsl::Math::Functions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="common_8hpp" kindref="compound">fsl/common.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fsl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Functions<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" kindref="compound">DoubleNormalPlateau</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Function" kindref="compound">Function</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" kindref="member">inflection_1</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ab189ff595d4b0c2cfb9f433c29bcb230" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ab189ff595d4b0c2cfb9f433c29bcb230" kindref="member">inflection_2_delta</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a1a3eabacd1a649bad8594b88bd99b87a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a1a3eabacd1a649bad8594b88bd99b87a" kindref="member">steepness_1</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ac9217da8886521a8df0c758d4009fad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ac9217da8886521a8df0c758d4009fad8" kindref="member">steepness_2</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2740c907c802a7d60b616a5ae3dee4da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2740c907c802a7d60b616a5ae3dee4da" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(x&lt;=<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" kindref="member">inflection_1</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pow(2,-std::pow((x-<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" kindref="member">inflection_1</ref>)/<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a1a3eabacd1a649bad8594b88bd99b87a" kindref="member">steepness_1</ref>,2));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(x&gt;<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" kindref="member">inflection_1</ref>+<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ab189ff595d4b0c2cfb9f433c29bcb230" kindref="member">inflection_2_delta</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pow(2,-std::pow((x-(<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" kindref="member">inflection_1</ref>+<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ab189ff595d4b0c2cfb9f433c29bcb230" kindref="member">inflection_2_delta</ref>))/<ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ac9217da8886521a8df0c758d4009fad8" kindref="member">steepness_2</ref>,2));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>end<sp/>class<sp/>DoubleNormalPlateau</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp"/>
+  </compounddef>
+</doxygen>

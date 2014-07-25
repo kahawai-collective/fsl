@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1Threshold" kind="class" prot="public">
+    <compoundname>Fsl::Math::Functions::Threshold</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Functions_1_1Function" prot="public" virt="non-virtual">Fsl::Math::Functions::Function</basecompoundref>
+    <includes refid="threshold_8hpp" local="no">threshold.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Threshold::inflection_</definition>
+        <argsstring></argsstring>
+        <name>inflection_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Threshold_1acc76b2303f2755eac2bb4b25068306e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Threshold::inflection</definition>
+        <argsstring>(void) const </argsstring>
+        <name>inflection</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Threshold_1ae4cc217eadacb9a90ce05c5b7ba17fd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold" kindref="compound">Threshold</ref> &amp;</type>
+        <definition>Threshold&amp; Fsl::Math::Functions::Threshold::inflection</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>inflection</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Threshold_1aa11fce9c2b7785529155fa4945ff3b23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Threshold::operator()</definition>
+        <argsstring>(const double &amp;x)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="399">
+        <label>Fsl::Math::Functions::Threshold</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Threshold"/>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="401">
+        <label>Fsl::Math::Functions::Threshold</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Threshold"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/threshold.hpp" bodystart="10" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1acc76b2303f2755eac2bb4b25068306e3" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Threshold</scope><name>inflection</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1ae4cc217eadacb9a90ce05c5b7ba17fd7" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Threshold</scope><name>inflection</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1a37833881e566c88ac8763d13c5351a45" prot="private" virt="non-virtual"><scope>Fsl::Math::Functions::Threshold</scope><name>inflection_</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Threshold_1aa11fce9c2b7785529155fa4945ff3b23" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Threshold</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

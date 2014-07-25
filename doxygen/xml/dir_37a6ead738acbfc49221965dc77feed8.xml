@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_37a6ead738acbfc49221965dc77feed8" kind="dir">
+    <compoundname>matiri</compoundname>
+    <innerfile refid="matiri_8cxx">matiri.cxx</innerfile>
+    <innerfile refid="matiri_8hpp">matiri.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/"/>
+  </compounddef>
+</doxygen>

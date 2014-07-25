@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_a2b2eb2b5e9e6fef5ed7408086ebf378" kind="dir">
+    <compoundname>population</compoundname>
+    <innerdir refid="dir_201fd329de0e414b99260cadaf8a40a3">growth</innerdir>
+    <innerdir refid="dir_97213bbe8dc86a78e8fdd43ec352215a">maturity</innerdir>
+    <innerdir refid="dir_5dac78256afc6426e1339e187095c450">morphometry</innerdir>
+    <innerdir refid="dir_b59082a7bf9a981365c2bf2f0a65efbc">mortality</innerdir>
+    <innerdir refid="dir_5bbe6b02c198e2757b31ff72930b3ab2">recruitment</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/"/>
+  </compounddef>
+</doxygen>

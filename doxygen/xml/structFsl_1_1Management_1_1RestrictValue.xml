@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Management_1_1RestrictValue" kind="struct" prot="public">
+    <compoundname>Fsl::Management::RestrictValue</compoundname>
+    <includes refid="restrictors_8hpp" local="no">restrictors.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::RestrictValue::lower</definition>
+        <argsstring></argsstring>
+        <name>lower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="7" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::RestrictValue::upper</definition>
+        <argsstring></argsstring>
+        <name>upper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="8" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Management_1_1RestrictValue_1aef9b29cbf9f348106f5066dcd4b43767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Management::RestrictValue::RestrictValue</definition>
+        <argsstring>(const double &amp;lower, const double &amp;upper)</argsstring>
+        <name>RestrictValue</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Management::RestrictValue::restrict</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>restrict</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="6" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValue</scope><name>lower</name></member>
+      <member refid="structFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValue</scope><name>restrict</name></member>
+      <member refid="structFsl_1_1Management_1_1RestrictValue_1aef9b29cbf9f348106f5066dcd4b43767" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValue</scope><name>RestrictValue</name></member>
+      <member refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValue</scope><name>upper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

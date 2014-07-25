@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4" kind="class" prot="public">
+    <compoundname>Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</compoundname>
+    <includes refid="autocorrelated_8hpp" local="no">autocorrelated.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ab981bf97e183205bed88c9f8529204c3" prot="private" static="no" mutable="no">
+        <type><ref refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation" kindref="compound">Math::Series::Autocorrelation</ref></type>
+        <definition>Math::Series::Autocorrelation Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;::autocorrelation</definition>
+        <argsstring></argsstring>
+        <name>autocorrelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a3e6dbebf3046734421e93cdc27c87742" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;::sd</definition>
+        <argsstring></argsstring>
+        <name>sd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a7f9c63c98d7d9a9d42f31c2256ad3325" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;::autocor</definition>
+        <argsstring></argsstring>
+        <name>autocor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ad0a349bfa6273f7cf97bb95148cd9e34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;::random</definition>
+        <argsstring>(void)</argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="27" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" bodystart="27" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>Fsl::Math::Series::Autocorrelation</label>
+        <link refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation"/>
+      </node>
+      <node id="7">
+        <label>Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</label>
+        <link refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>autocorrelation</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" bodystart="17" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a7f9c63c98d7d9a9d42f31c2256ad3325" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</scope><name>autocor</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ab981bf97e183205bed88c9f8529204c3" prot="private" virt="non-virtual"><scope>Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</scope><name>autocorrelation</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ad0a349bfa6273f7cf97bb95148cd9e34" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</scope><name>random</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a3e6dbebf3046734421e93cdc27c87742" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</scope><name>sd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

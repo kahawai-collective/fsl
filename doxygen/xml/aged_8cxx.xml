@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/aged.cxx" line="13" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/aged.cxx" bodystart="13" bodyend="19"/>
+        <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/aged.cxx" line="13" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/aged.cxx" bodystart="13" bodyend="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -79,15 +79,17 @@
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal">using<sp/>namespace<sp/>Fisl::Population::Structure;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><ref refid="cached_8cxx_1ae37f3ec962483be3cc0d116ae4a2e76d" kindref="member">BOOST_AUTO_TEST_CASE</ref>(numbers){</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFisl_1_1Population_1_1Structure_1_1Aged" kindref="compound">Aged&lt;Numbers,10&gt;</ref><sp/>pop<sp/>=<sp/>{10,9,8,7,6,5,4,3,2,1};</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>pop.<ref refid="classFisl_1_1Population_1_1Structure_1_1Aged_1a998740a406fb22129c5a5aa75e4ffc34" kindref="member">ageing</ref>(20);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(pop(0),20);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(pop(1),10);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(pop(9),3);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal">BOOST_AUTO_TEST_SUITE_END()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="namespaceFisl_1_1Estimation_1_1Mcmc_1a4ca8d3e6d2f4e46db181252bb09caf14" kindref="member">BOOST_AUTO_TEST_CASE</ref>(numbers){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFisl_1_1Population_1_1Structure_1_1Aged" kindref="compound">Aged&lt;Numbers,10&gt;</ref><sp/>pop;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pop<sp/>=<sp/>{10,9,8,7,6,5,4,3,2,1};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>pop.<ref refid="classFisl_1_1Population_1_1Structure_1_1Aged_1a0d0bac8995649bd05faedaec178841a1" kindref="member">recruits</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pop.<ref refid="classFisl_1_1Population_1_1Structure_1_1Aged_1ad62252848739423d3508221f7496ae42" kindref="member">ageing</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(pop(0),20);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(pop(1),10);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(pop(9),3);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">BOOST_AUTO_TEST_SUITE_END()</highlight></codeline>
     </programlisting>
     <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/population/structure/aged.cxx"/>
   </compounddef>

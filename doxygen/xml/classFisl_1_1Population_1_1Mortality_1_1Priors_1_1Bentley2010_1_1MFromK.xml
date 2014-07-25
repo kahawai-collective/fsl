@@ -44,24 +44,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="59">
+      <node id="117">
         <label>Regression</label>
       </node>
-      <node id="58">
+      <node id="116">
         <label>Fisl::Population::Mortality::Priors::Bentley2010::MFromK</label>
         <link refid="classFisl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK"/>
-        <childnode refid="59" relation="public-inheritance">
+        <childnode refid="117" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="61">
+      <node id="119">
         <label>Regression</label>
       </node>
-      <node id="60">
+      <node id="118">
         <label>Fisl::Population::Mortality::Priors::Bentley2010::MFromK</label>
         <link refid="classFisl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="119" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

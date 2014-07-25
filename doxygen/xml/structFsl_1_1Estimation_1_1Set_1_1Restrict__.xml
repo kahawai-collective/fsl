@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Estimation_1_1Set_1_1Restrict__" kind="struct" prot="private">
+    <compoundname>Fsl::Estimation::Set::Restrict_</compoundname>
+    <basecompoundref refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror" prot="public" virt="non-virtual">Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Restrict_ &gt;</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1Restrict___1a809b6c921069abf64a671a029ec73e8d" prot="public" static="no" mutable="no">
+        <type>const std::vector&lt; double &gt; &amp;</type>
+        <definition>const std::vector&lt;double&gt;&amp; Fsl::Estimation::Set&lt; Derived &gt;::Restrict_::supplied</definition>
+        <argsstring></argsstring>
+        <name>supplied</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="901" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="901" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1Restrict___1af3e970ad916cc9faeceea0b9b412ddb5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Fsl::Estimation::Set&lt; Derived &gt;::Restrict_::restricted</definition>
+        <argsstring></argsstring>
+        <name>restricted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="902" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1Restrict___1a94298f8b2283ceaddbdda19c7061f161" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Estimation::Set&lt; Derived &gt;::Restrict_::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="903" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1Restrict___1adf03f9d23f5c6456f514d32b2f63d0cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Set&lt; Derived &gt;::Restrict_::Restrict_</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;supplied)</argsstring>
+        <name>Restrict_</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>supplied</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="905" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="905" bodyend="908"/>
+      </memberdef>
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1Restrict___1aee386975f1ee6b65cd3dfae33d5d02a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::Restrict_::variate</definition>
+        <argsstring>(Variate&lt; Distribution &gt; &amp;variate, const std::string &amp;name)</argsstring>
+        <name>variate</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variate" kindref="compound">Variate</ref>&lt; Distribution &gt; &amp;</type>
+          <declname>variate</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="911" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="911" bodyend="914"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="332">
+        <label>Mirror&lt; Restrict_ &gt;</label>
+      </node>
+      <node id="331">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Restrict_ &gt;</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::Restrict_</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1Restrict__"/>
+        <childnode refid="331" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="335">
+        <label>Mirror&lt; Restrict_ &gt;</label>
+      </node>
+      <node id="334">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Restrict_ &gt;</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
+        <childnode refid="335" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::Restrict_</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1Restrict__"/>
+        <childnode refid="334" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="900" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="900" bodyend="915"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror_1a2c5f83d30e2feb626ac09be85d123d45" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror_1a44c55c3ab94767866c29bfdfabda13fb" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1a94298f8b2283ceaddbdda19c7061f161" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>index</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1adf03f9d23f5c6456f514d32b2f63d0cf" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>Restrict_</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1af3e970ad916cc9faeceea0b9b412ddb5" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>restricted</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1a809b6c921069abf64a671a029ec73e8d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>supplied</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1aee386975f1ee6b65cd3dfae33d5d02a9" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Restrict_</scope><name>variate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

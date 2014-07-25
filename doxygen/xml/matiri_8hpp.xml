@@ -1,0 +1,901 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="matiri_8hpp" kind="file">
+    <compoundname>matiri.hpp</compoundname>
+    <includes local="no">stencila/array.hpp</includes>
+    <includes local="no">stencila/query.hpp</includes>
+    <includes refid="date_8hpp" local="no">fsl/date.hpp</includes>
+    <includes refid="function_8hpp" local="no">fsl/math/functions/function.hpp</includes>
+    <includes refid="constant_8hpp" local="no">fsl/math/functions/constant.hpp</includes>
+    <includes refid="identity_8hpp" local="no">fsl/math/functions/identity.hpp</includes>
+    <includes refid="line_8hpp" local="no">fsl/math/functions/line.hpp</includes>
+    <includes refid="power_8hpp" local="no">fsl/math/functions/power.hpp</includes>
+    <includes refid="logistic_8hpp" local="no">fsl/math/functions/logistic.hpp</includes>
+    <includes refid="double-logistic_8hpp" local="no">fsl/math/functions/double-logistic.hpp</includes>
+    <includes refid="double-normal-plateau_8hpp" local="no">fsl/math/functions/double-normal-plateau.hpp</includes>
+    <includes refid="autocorrelation_8hpp" local="no">fsl/math/series/autocorrelation.hpp</includes>
+    <includes refid="normal_8hpp" local="no">fsl/math/probability/normal.hpp</includes>
+    <includes refid="lognormal_8hpp" local="no">fsl/math/probability/lognormal.hpp</includes>
+    <includes refid="functional_8hpp" local="no">fsl/math/probability/functional.hpp</includes>
+    <includes refid="instantaneous_8hpp" local="no">fsl/population/mortality/instantaneous.hpp</includes>
+    <includes refid="von-bert_8hpp" local="no">fsl/population/growth/von-bert.hpp</includes>
+    <includes refid="morphometry_8hpp" local="no">fsl/population/morphometry/morphometry.hpp</includes>
+    <includes refid="maturity_8hpp" local="no">fsl/population/maturity/maturity.hpp</includes>
+    <includes refid="autocorrelated_8hpp" local="no">fsl/population/recruitment/autocorrelated.hpp</includes>
+    <includes refid="beverton-holt_8hpp" local="no">fsl/population/recruitment/beverton-holt.hpp</includes>
+    <includedby refid="matiri_8cxx" local="no">matiri.cxx</includedby>
+    <incdepgraph>
+      <node id="402">
+        <label>boost/random/variate_generator.hpp</label>
+      </node>
+      <node id="379">
+        <label>matiri.hpp</label>
+        <link refid="matiri.hpp"/>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>fsl/population/morphometry/morphometry.hpp</label>
+        <link refid="morphometry_8hpp"/>
+        <childnode refid="390" relation="include">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>fsl/math/series/autocorrelation.hpp</label>
+        <link refid="autocorrelation_8hpp"/>
+      </node>
+      <node id="386">
+        <label>fsl/math/functions/constant.hpp</label>
+        <link refid="constant_8hpp"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>fsl/population/growth/von-bert.hpp</label>
+        <link refid="von-bert_8hpp"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="392">
+        <label>fsl/math/functions/double-logistic.hpp</label>
+        <link refid="double-logistic_8hpp"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>stencila/array.hpp</label>
+      </node>
+      <node id="383">
+        <label>boost/date_time/gregorian/gregorian.hpp</label>
+      </node>
+      <node id="398">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="397">
+        <label>boost/random/normal_distribution.hpp</label>
+      </node>
+      <node id="389">
+        <label>cmath</label>
+      </node>
+      <node id="387">
+        <label>fsl/math/functions/identity.hpp</label>
+        <link refid="identity_8hpp"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>fsl/population/mortality/instantaneous.hpp</label>
+        <link refid="instantaneous_8hpp"/>
+        <childnode refid="410" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>boost/math/distributions/normal.hpp</label>
+      </node>
+      <node id="408">
+        <label>fsl/math/probability/functional.hpp</label>
+        <link refid="functional_8hpp"/>
+      </node>
+      <node id="403">
+        <label>boost/math/distributions/uniform.hpp</label>
+      </node>
+      <node id="384">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>boost/random/mersenne_twister.hpp</label>
+      </node>
+      <node id="395">
+        <label>fsl/math/probability/normal.hpp</label>
+        <link refid="normal_8hpp"/>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>rate.hpp</label>
+        <link refid="rate_8hpp"/>
+      </node>
+      <node id="415">
+        <label>fsl/population/recruitment/autocorrelated.hpp</label>
+        <link refid="autocorrelated_8hpp"/>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>ctime</label>
+      </node>
+      <node id="416">
+        <label>fsl/population/recruitment/beverton-holt.hpp</label>
+        <link refid="beverton-holt_8hpp"/>
+      </node>
+      <node id="413">
+        <label>fsl/population/maturity/maturity.hpp</label>
+        <link refid="maturity_8hpp"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>fsl/math/functions/line.hpp</label>
+        <link refid="line_8hpp"/>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>boost/math/distributions/lognormal.hpp</label>
+      </node>
+      <node id="382">
+        <label>fsl/date.hpp</label>
+        <link refid="date_8hpp"/>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>stencila/query.hpp</label>
+      </node>
+      <node id="390">
+        <label>fsl/math/functions/power.hpp</label>
+        <link refid="power_8hpp"/>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>fsl/math/probability/distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>fsl/math/functions/logistic.hpp</label>
+        <link refid="logistic_8hpp"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>fsl/math/functions/double-normal-plateau.hpp</label>
+        <link refid="double-normal-plateau_8hpp"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>boost/random/lognormal_distribution.hpp</label>
+      </node>
+      <node id="414">
+        <label>fsl/math/functions/threshold.hpp</label>
+        <link refid="threshold_8hpp"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>fsl/math/probability/lognormal.hpp</label>
+        <link refid="lognormal_8hpp"/>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>boost/random/uniform_01.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="417">
+        <label>matiri.hpp</label>
+        <link refid="matiri.hpp"/>
+        <childnode refid="418" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSwitch" prot="public">Switch</innerclass>
+    <innerclass refid="classFsl_1_1Models_1_1Matiri" prot="public">Fsl::Models::Matiri</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1Sex" prot="public">Fsl::Models::Matiri::Sex</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1Age" prot="public">Fsl::Models::Matiri::Age</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1Sector" prot="public">Fsl::Models::Matiri::Sector</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge" prot="public">Fsl::Models::Matiri::LengthAge</innerclass>
+    <innerclass refid="classFsl_1_1Models_1_1MatiriWriter" prot="public">Fsl::Models::MatiriWriter</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Models">Fsl::Models</innernamespace>
+    <innernamespace refid="namespaceStencila">Stencila</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846" prot="public" static="no">
+        <name>Binary</name>
+        <enumvalue id="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846a8fe4a05f1addc1b9a4aae17d7b166646" prot="public">
+          <name>no</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846aa447884a6b7ce069acc4b7eb98acdb92" prot="public">
+          <name>yes</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="60" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stencila/array.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stencila/query.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Stencila;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="date_8hpp" kindref="compound">fsl/date.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fsl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="constant_8hpp" kindref="compound">fsl/math/functions/constant.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Fsl::Math::Functions::Constant</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="identity_8hpp" kindref="compound">fsl/math/functions/identity.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Identity" kindref="compound">Fsl::Math::Functions::Identity</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="line_8hpp" kindref="compound">fsl/math/functions/line.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Line" kindref="compound">Fsl::Math::Functions::Line</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="power_8hpp" kindref="compound">fsl/math/functions/power.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceFsl_1_1Population_1_1Morphometry_1af434366c7c3fe3bd69b0e390d26a3854" kindref="member">Fsl::Math::Functions::Power</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="logistic_8hpp" kindref="compound">fsl/math/functions/logistic.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceFsl_1_1Population_1_1Maturity_1ab334431b961239ac2ef2dcdcfbccfdad" kindref="member">Fsl::Math::Functions::Logistic</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="double-logistic_8hpp" kindref="compound">fsl/math/functions/double-logistic.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleLogistic" kindref="compound">Fsl::Math::Functions::DoubleLogistic</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="double-normal-plateau_8hpp" kindref="compound">fsl/math/functions/double-normal-plateau.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" kindref="compound">Fsl::Math::Functions::DoubleNormalPlateau</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="autocorrelation_8hpp" kindref="compound">fsl/math/series/autocorrelation.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation" kindref="compound">Fsl::Math::Series::Autocorrelation</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="normal_8hpp" kindref="compound">fsl/math/probability/normal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Normal" kindref="compound">Fsl::Math::Probability::Normal</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1NormalCv" kindref="compound">Fsl::Math::Probability::NormalCv</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lognormal_8hpp" kindref="compound">fsl/math/probability/lognormal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" kindref="compound">Fsl::Math::Probability::Lognormal</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="functional_8hpp" kindref="compound">fsl/math/probability/functional.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Functional" kindref="compound">Fsl::Math::Probability::Functional</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="instantaneous_8hpp" kindref="compound">fsl/population/mortality/instantaneous.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="von-bert_8hpp" kindref="compound">fsl/population/growth/von-bert.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Growth_1_1VonBert" kindref="compound">Fsl::Population::Growth::VonBert</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="morphometry_8hpp" kindref="compound">fsl/population/morphometry/morphometry.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="maturity_8hpp" kindref="compound">fsl/population/maturity/maturity.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="autocorrelated_8hpp" kindref="compound">fsl/population/recruitment/autocorrelated.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" kindref="compound">Fsl::Population::Recruitment::Autocorrelated</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="beverton-holt_8hpp" kindref="compound">fsl/population/recruitment/beverton-holt.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" kindref="compound">Fsl::Population::Recruitment::BevertonHolt</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846aa447884a6b7ce069acc4b7eb98acdb92" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846" kindref="member">Binary</ref><sp/>{<ref refid="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846a8fe4a05f1addc1b9a4aae17d7b166646" kindref="member">no</ref>=1,<ref refid="matiri_8hpp_1adfad08373e37ddf3708906a4b066e846aa447884a6b7ce069acc4b7eb98acdb92" kindref="member">yes</ref>=1};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">On,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Off</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="66" refid="classSwitch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSwitch" kindref="compound">Switch</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>On,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Off<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68" refid="classSwitch_1af37844608434dc8b923944c0452c395d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSwitch_1af37844608434dc8b923944c0452c395d" kindref="member">state_</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71" refid="classSwitch_1a53224fb346919a18d2a433b15ac0d379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>bool(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">...<sp/>Args</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;</highlight></codeline>
+<codeline lineno="78" refid="classSwitch_1a4ddfb89944f56a3e7caf740ea6fcad59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSwitch_1a4ddfb89944f56a3e7caf740ea6fcad59" kindref="member">operator()</ref>(Args...<sp/>args){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state_?</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>On::operator()(args...):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Off::operator()(args...);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classSwitch_1ae4ecf25a28afa7e7634323818f7dece3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSwitch" kindref="compound">Switch</ref>&amp;<sp/><ref refid="classSwitch_1ae4ecf25a28afa7e7634323818f7dece3" kindref="member">on</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on=</highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_<sp/>=<sp/>on;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classSwitch_1a00d1ed512b194f9583d20d2e408a3a05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSwitch" kindref="compound">Switch</ref>&amp;<sp/><ref refid="classSwitch_1a00d1ed512b194f9583d20d2e408a3a05" kindref="member">off</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>off=</highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_<sp/>=<sp/>not<sp/>off;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="96" refid="namespaceFsl_1_1Models" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Models<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Derived,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>uint<sp/>Sexes,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>uint<sp/>Ages,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>uint<sp/>Sectors</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="109" refid="classFsl_1_1Models_1_1Matiri" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Models_1_1Matiri" kindref="compound">Matiri</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Polymorph&lt;Derived&gt;<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classFsl_1_1Models_1_1Matiri_1ae6791934dba2cd62fdf603ce9363e572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1ae6791934dba2cd62fdf603ce9363e572" kindref="member">Matiri</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structFsl_1_1Models_1_1Matiri_1_1Sex" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref><sp/>:<sp/>Dimension&lt;Sex,Sexes&gt;{</highlight></codeline>
+<codeline lineno="121" refid="structFsl_1_1Models_1_1Matiri_1_1Sex_1a76c576761cf980eceefb03ee1a5b60fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex_1a76c576761cf980eceefb03ee1a5b60fc" kindref="member">Sex</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">):Dimension&lt;<ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,Sexes&gt;(</highlight><highlight class="stringliteral">&quot;sex&quot;</highlight><highlight class="normal">){}</highlight></codeline>
+<codeline lineno="122" refid="structFsl_1_1Models_1_1Matiri_1_1Sex_1a3e706ae00f8403a035c85b9bc10331e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex_1a3e706ae00f8403a035c85b9bc10331e5" kindref="member">name</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;sex&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>sexes;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="structFsl_1_1Models_1_1Matiri_1_1Age" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref><sp/>:<sp/>Dimension&lt;Age,Ages&gt;{</highlight></codeline>
+<codeline lineno="126" refid="structFsl_1_1Models_1_1Matiri_1_1Age_1a21748ef4ca2303960018aed97a9d0747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Age_1a21748ef4ca2303960018aed97a9d0747" kindref="member">Age</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">):Dimension&lt;<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref>,Ages&gt;(</highlight><highlight class="stringliteral">&quot;age&quot;</highlight><highlight class="normal">){}</highlight></codeline>
+<codeline lineno="127" refid="structFsl_1_1Models_1_1Matiri_1_1Age_1ab85dad3f33c431dfe28318f7941c5250" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Age_1ab85dad3f33c431dfe28318f7941c5250" kindref="member">name</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;age&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>ages;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structFsl_1_1Models_1_1Matiri_1_1Sector" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref><sp/>:<sp/>Dimension&lt;Sector,Sectors&gt;{</highlight></codeline>
+<codeline lineno="131" refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1ad9b4a30378bb6aab4247e6c2674ad576" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1ad9b4a30378bb6aab4247e6c2674ad576" kindref="member">Sector</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">):Dimension&lt;<ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>,Sectors&gt;(</highlight><highlight class="stringliteral">&quot;sector&quot;</highlight><highlight class="normal">){}</highlight></codeline>
+<codeline lineno="132" refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1aecb4d03a4845793771823b7eaa9364cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1aecb4d03a4845793771823b7eaa9364cc" kindref="member">name</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;sector&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>sectors;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="classFsl_1_1Models_1_1Matiri_1ac8f93f20678fef2161213a947de7aa25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;double,Sex,Age&gt;<sp/>numbers<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classFsl_1_1Models_1_1Matiri_1aa15ea49236661f02a9b481223316f5ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>biomass<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classFsl_1_1Models_1_1Matiri_1adeba66763b9f027eadde4896a1e658fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>biomass_spawning<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classFsl_1_1Models_1_1Matiri_1a60fe4807f23a4d2e5889e9f1791c4cab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSwitch" kindref="compound">Switch&lt;BevertonHolt,Constant&gt;</ref><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a60fe4807f23a4d2e5889e9f1791c4cab" kindref="member">recruitment_relation</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classFsl_1_1Models_1_1Matiri_1a5c8751038506c05d6a875bb77622e4d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSwitch" kindref="compound">Switch&lt;Autocorrelated&lt;Lognormal&gt;</ref>,<ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Constant</ref>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a5c8751038506c05d6a875bb77622e4d0" kindref="member">recruitment_variation</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="classFsl_1_1Models_1_1Matiri_1a6bef15229f5f813198e4cc4db0fbf22b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recruitment_variation_random<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classFsl_1_1Models_1_1Matiri_1ac8a79e9623b78515f70605dd8952fa22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>recruits_determ<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="classFsl_1_1Models_1_1Matiri_1a6867eb4d0ddf3f52cc3ac32f00135284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>recruits_deviation<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classFsl_1_1Models_1_1Matiri_1a96ba3d8a9b5494cd50ff57a111b56fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>recruits<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198" refid="classFsl_1_1Models_1_1Matiri_1ae1ace4d65919dcbcbf34e29225715ae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sex_ratio<sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref></highlight></codeline>
+<codeline lineno="215" refid="classFsl_1_1Models_1_1Matiri_1aea64c4155b4c760c50f92fc44f31ae00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1aea64c4155b4c760c50f92fc44f31ae00" kindref="member">mortality</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref></highlight></codeline>
+<codeline lineno="223" refid="classFsl_1_1Models_1_1Matiri_1a34f12a5f58c743eb71b8b47bab8e0315" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a34f12a5f58c743eb71b8b47bab8e0315" kindref="member">mortalities</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref></highlight></codeline>
+<codeline lineno="231" refid="classFsl_1_1Models_1_1Matiri_1a493b149afceb56b27227395eb09628a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a493b149afceb56b27227395eb09628a0" kindref="member">mortality_survivals</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge" kindref="compound">LengthAge</ref><sp/>:<sp/><ref refid="classFsl_1_1Population_1_1Growth_1_1VonBert" kindref="compound">VonBert</ref><sp/>{</highlight></codeline>
+<codeline lineno="247" refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1aaf0c4d9d55bab3a5113c19f6aa24fa73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1aaf0c4d9d55bab3a5113c19f6aa24fa73" kindref="member">cv1</ref>;</highlight></codeline>
+<codeline lineno="248" refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1a70a8adbbf9771c3c4204831aab2f7731" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1a70a8adbbf9771c3c4204831aab2f7731" kindref="member">cv2</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1ad5b8a9b45f08b808f0b115bb0bf0013f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Normal" kindref="compound">Normal</ref><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1ad5b8a9b45f08b808f0b115bb0bf0013f" kindref="member">distribution</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>age){</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mean<sp/>=<sp/>VonBert::operator()(age);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sd<sp/>=<sp/>mean<sp/>*<sp/>cv1;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Normal" kindref="compound">Normal</ref>(mean,sd);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LengthAge,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sex</highlight></codeline>
+<codeline lineno="260" refid="classFsl_1_1Models_1_1Matiri_1af8bf3ed8f56c22e29313a02572715b79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1af8bf3ed8f56c22e29313a02572715b79" kindref="member">length_age</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Normal" kindref="compound">Normal</ref>,</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref></highlight></codeline>
+<codeline lineno="265" refid="classFsl_1_1Models_1_1Matiri_1aba07b40fbc7241472399a93e6290a821" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1aba07b40fbc7241472399a93e6290a821" kindref="member">lengths</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceFsl_1_1Population_1_1Morphometry_1af434366c7c3fe3bd69b0e390d26a3854" kindref="member">Power</ref>,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref></highlight></codeline>
+<codeline lineno="274" refid="classFsl_1_1Models_1_1Matiri_1aaab8b299148c0deefacb3ce8989b267f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1aaab8b299148c0deefacb3ce8989b267f" kindref="member">weight_length</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref></highlight></codeline>
+<codeline lineno="279" refid="classFsl_1_1Models_1_1Matiri_1a3298b85930d90451a18be148a441910f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a3298b85930d90451a18be148a441910f" kindref="member">weights</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceFsl_1_1Population_1_1Maturity_1ab334431b961239ac2ef2dcdcfbccfdad" kindref="member">Logistic</ref>,</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref></highlight></codeline>
+<codeline lineno="288" refid="classFsl_1_1Models_1_1Matiri_1a398a91a8cd419355f02cb4f4ef4dab18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a398a91a8cd419355f02cb4f4ef4dab18" kindref="member">maturity_age</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref></highlight></codeline>
+<codeline lineno="293" refid="classFsl_1_1Models_1_1Matiri_1a4ffdc65da2ce736bdc5975ed8cb4fcbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a4ffdc65da2ce736bdc5975ed8cb4fcbb" kindref="member">maturities</ref>;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref></highlight></codeline>
+<codeline lineno="302" refid="classFsl_1_1Models_1_1Matiri_1af625fa8aad37db08d36c6b5c21ccc907" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>selectivity_sex<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" kindref="compound">DoubleNormalPlateau</ref>,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref></highlight></codeline>
+<codeline lineno="307" refid="classFsl_1_1Models_1_1Matiri_1a81bc1dc6a4d40cb7b5a209fa4679db09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a81bc1dc6a4d40cb7b5a209fa4679db09" kindref="member">selectivity_age</ref>;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>,<ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref></highlight></codeline>
+<codeline lineno="312" refid="classFsl_1_1Models_1_1Matiri_1af895fbb430852599b23649ff5dac55f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/><ref refid="classFsl_1_1Models_1_1Matiri_1af895fbb430852599b23649ff5dac55f0" kindref="member">selectivities</ref>;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="classFsl_1_1Models_1_1Matiri_1aa79291b9b92923cbb8f0ff3b2084bf21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exploitation_on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="classFsl_1_1Models_1_1Matiri_1a526f2549f38e228295b9764b341a4ff2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>catches_on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="classFsl_1_1Models_1_1Matiri_1abfc6bded4720537d244b70bfc0bcc4df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;double,Sector&gt;<sp/>biomass_vulnerable<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="classFsl_1_1Models_1_1Matiri_1a80355a50ee7016425ce7c2be176c6948" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;double,Sector&gt;<sp/>catches<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="classFsl_1_1Models_1_1Matiri_1a6d1134550a24d5eac397d02ab125f4be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;double,Sector&gt;<sp/>exploitation_rate_max<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="classFsl_1_1Models_1_1Matiri_1ae86d7a40ebe6507d156a18e1b49ed21d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;double,Sector&gt;<sp/>exploitation_rate<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classFsl_1_1Models_1_1Matiri_1a4010ffcfac8084470b896c5a2c2f9f0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Array&lt;double,Sex,Age&gt;<sp/>exploitation_survivals<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="classFsl_1_1Models_1_1Matiri_1af2e857dd614b57fc6b8c2d28c7c12de5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1af2e857dd614b57fc6b8c2d28c7c12de5" kindref="member">biomass_update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass<sp/>+=<sp/>numbers(sex,age)<sp/>*<sp/>weights(sex,age);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass<sp/>*=<sp/>0.001;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>biomass;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="364" refid="classFsl_1_1Models_1_1Matiri_1ae5c1f5bc12b1676a8de71cac31030ad4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1ae5c1f5bc12b1676a8de71cac31030ad4" kindref="member">biomass_spawning_update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_spawning<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_spawning<sp/>+=<sp/>numbers(sex,age)<sp/>*<sp/>weights(sex,age)<sp/>*<sp/>maturities(sex,age);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_spawning<sp/>*=<sp/>0.001;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>biomass_spawning;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="classFsl_1_1Models_1_1Matiri_1a4eb08d11db2ef534569c323b09babf8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a4eb08d11db2ef534569c323b09babf8d" kindref="member">biomass_vulnerable_update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>sectors){</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>numbers(sex,age)<sp/>*<sp/>weights(sex,age)<sp/>*<sp/>selectivities(sector,sex,age);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_vulnerable(sector)<sp/>=<sp/>sum<sp/>*<sp/>0.001;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387" refid="classFsl_1_1Models_1_1Matiri_1a8379653d2502828e6599bdd3c89b0df4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a8379653d2502828e6599bdd3c89b0df4" kindref="member">exploitation_off</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_on<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catches_on<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_rate<sp/>=<sp/>0;<sp/><sp/></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397" refid="classFsl_1_1Models_1_1Matiri_1aea7f45c608f9f7695dad9c3f91742d10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1aea7f45c608f9f7695dad9c3f91742d10" kindref="member">exploitation_rate_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array&lt;double,Sector&gt;&amp;<sp/>values){</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catches_on<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_rate<sp/>=<sp/>values;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403" refid="classFsl_1_1Models_1_1Matiri_1a9e98a657f6e359302b85c34d5311d5cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a9e98a657f6e359302b85c34d5311d5cc" kindref="member">catches_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array&lt;double,Sector&gt;&amp;<sp/>values){</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catches_on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catches<sp/>=<sp/>values;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="classFsl_1_1Models_1_1Matiri_1aa24f4e56735d84dcc0a8b153d86bbee7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1aa24f4e56735d84dcc0a8b153d86bbee7" kindref="member">check</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.check();</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="414"></codeline>
+<codeline lineno="418" refid="classFsl_1_1Models_1_1Matiri_1a179839c91fb44067f54a6eecf6b9eb2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a179839c91fb44067f54a6eecf6b9eb2f" kindref="member">initialise</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Before<sp/>checking,<sp/>determine<sp/>if<sp/>parameterising<sp/>by<sp/>recruitment_relation.s0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>by<sp/>recruitment_relation.r0<sp/>and<sp/>set<sp/>other<sp/>accordingly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_r0<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recruitment_relation.r0&gt;0){</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>use_r0<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.s0<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recruitment_relation.s0&gt;0){</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>use_r0<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.r0<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(str(boost::format(</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Either<sp/>`Matiri::Model::recruitment_relation.s0`<sp/>&lt;%s&gt;<sp/>or<sp/>`Matiri::Model::recruitment_relation.r0`<sp/>&lt;%s&gt;<sp/>must<sp/>be<sp/>assigned<sp/>a<sp/>value<sp/>greater<sp/>than<sp/>0&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>%recruitment_relation.s0%recruitment_relation.r0));</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check();</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>age_<sp/>=<sp/>age.index();</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lengths(sex,age)<sp/>=<sp/>length_age(sex).distribution(age_);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weights(sex,age)<sp/>=<sp/>lengths(sex,age).integrate(weight_length(sex));</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maturities(sex,age)<sp/>=<sp/>maturity_age(sex)(age_);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mortalities(sex,age)<sp/>=<sp/>mortality(sex);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>sectors){</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectivities(sector,sex,age)<sp/>=<sp/>selectivity_sex(sector,sex)<sp/>*<sp/>selectivity_age(sector,sex)(age_);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mortality_survivals(sex,age)<sp/>=<sp/><ref refid="classFsl_1_1Population_1_1Mortality_1_1Rate" kindref="compound">Population::Mortality::Rate</ref>().<ref refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1a1f71bc78d4a0ca12080607085a577f4b" kindref="member">instantaneous</ref>(mortalities(sex,age)).survival();</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Seed<sp/>the<sp/>population<sp/>with<sp/>deterministic<sp/>equilibrium<sp/>numbers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>seed();</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Turn<sp/>off<sp/>recruitment<sp/>relationship,<sp/>variation<sp/>and<sp/>exploitation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.off();</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_on<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Go<sp/>to<sp/>equilibrium</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>equilibrium();</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Turn<sp/>on<sp/>recruitment<sp/>relationship<sp/>etc<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.on();</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_on<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(use_r0){</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.s0<sp/>=<sp/>biomass_spawning;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parameterised<sp/>by<sp/>B0<sp/>so<sp/>scale<sp/>everything<sp/>up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaler<sp/>=<sp/>recruitment_relation.s0/biomass_spawning;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_relation.r0<sp/>*=<sp/>scaler;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numbers(sex,age)<sp/>*=<sp/>scaler;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass<sp/>*=<sp/>scaler;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_spawning<sp/>*=<sp/>scaler;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500" refid="classFsl_1_1Models_1_1Matiri_1aa95d41af788f7f91cd7a1f08f5217285" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1aa95d41af788f7f91cd7a1f08f5217285" kindref="member">update</ref>(uint<sp/>time=0){</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>number<sp/>of<sp/>recruits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruits_determ<sp/>=<sp/>recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recruitment_variation)<sp/>{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recruitment_variation_random)<sp/>recruits_deviation<sp/>=<sp/>recruitment_variation.random();</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>recruits_deviation<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruits<sp/>=<sp/>recruits_determ<sp/>*<sp/>recruits_deviation;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ageing<sp/>and<sp/>recruitment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Oldest<sp/>age<sp/>class<sp/>accumulates<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numbers(sex,ages.size()-1)<sp/>+=<sp/>numbers(sex,ages.size()-2);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>most<sp/>ages<sp/>just<sp/>&quot;shuffle&quot;<sp/>along</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint<sp/>age=ages.size()-2;age&gt;0;age--){</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numbers(sex,age)<sp/>=<sp/>numbers(sex,age-1);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Recruits<sp/>are<sp/>split<sp/>between<sp/>sexes<sp/>according<sp/>to<sp/>the<sp/>sex<sp/>ratio</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numbers(sex,0)<sp/>=<sp/>recruits<sp/>*<sp/>sex_ratio;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>biomasses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_update();</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_spawning_update();</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_vulnerable_update();</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exploitation<sp/>rate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(exploitation_on){</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(catches_on){</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>sectors){</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>er<sp/>=<sp/>biomass_vulnerable(sector)&gt;0?(catches(sector)/biomass_vulnerable(sector)):1;</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_rate(sector)<sp/>=<sp/>(er&gt;exploitation_rate_max(sector))?exploitation_rate_max(sector):er;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>sectors){</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catches(sector)<sp/>=<sp/>exploitation_rate(sector)<sp/>*<sp/>biomass_vulnerable(sector);</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pre-calculate<sp/>the<sp/>exploitation_survivals<sp/>for<sp/>each<sp/>sex<sp/>and<sp/>age</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>prod<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>sectors){</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prod<sp/>*=<sp/>(1<sp/>-<sp/>exploitation_rate(sector)<sp/>*<sp/>selectivities(sector,sex,age));</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prod&lt;0)<sp/>prod<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_survivals(sex,age)<sp/>=<sp/>prod;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_vulnerable<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_rate<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exploitation_survivals<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mortality<sp/>and<sp/>exploitation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numbers(sex,age)<sp/>*=<sp/><sp/>mortality_survivals(sex,age)<sp/>*<sp/>exploitation_survivals(sex,age);</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="classFsl_1_1Models_1_1Matiri_1a9260266866796e67b61c52464363771a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a9260266866796e67b61c52464363771a" kindref="member">seed</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Seed<sp/>the<sp/>numbers<sp/>at<sp/>age</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>sexes){</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>surviving<sp/>=<sp/>recruitment_relation.r0<sp/>*<sp/>((sex==0)?sex_ratio:(1-sex_ratio));</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>ages){</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>surviving<sp/>*=<sp/>mortality_survivals(sex,age);</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numbers(sex,age)<sp/>=<sp/>surviving;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579" refid="classFsl_1_1Models_1_1Matiri_1a0339a73b1e7c0655a3f624e70f50c09b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1Matiri_1a0339a73b1e7c0655a3f624e70f50c09b" kindref="member">equilibrium</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Turn<sp/>off<sp/>recruitment<sp/>variation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recruitment_variation_on<sp/>=<sp/>recruitment_variation;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recruitment_variation.off();</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>until<sp/>there<sp/>is<sp/>a<sp/>very<sp/>minor<sp/>change<sp/>in<sp/>biomass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/>steps<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>steps_max<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>biomass_prev<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(steps&lt;steps_max){</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update();</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diff<sp/>=<sp/>fabs(biomass-biomass_prev)/biomass_prev;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(diff&lt;0.00001<sp/>and<sp/>steps&gt;ages.size())<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>biomass_prev<sp/>=<sp/>biomass;</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>steps++;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Throw<sp/>an<sp/>error<sp/>if<sp/>there<sp/>was<sp/>no<sp/>convergence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(steps&gt;steps_max)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Did<sp/>not<sp/>converge&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Turn<sp/>on<sp/>recruitment<sp/>deviation<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(recruitment_variation_on)<sp/>recruitment_variation.on();</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="601"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>Matiri</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603" refid="classFsl_1_1Models_1_1MatiriWriter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Models_1_1MatiriWriter" kindref="compound">MatiriWriter</ref><sp/>{</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606" refid="classFsl_1_1Models_1_1MatiriWriter_1ac8151c2f2eb76709b5dd2d9fbfdf8057" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1ac8151c2f2eb76709b5dd2d9fbfdf8057" kindref="member">overall</ref>;</highlight></codeline>
+<codeline lineno="607" refid="classFsl_1_1Models_1_1MatiriWriter_1ac297d35a8a4692154645144ed89eb533" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1ac297d35a8a4692154645144ed89eb533" kindref="member">sex</ref>;</highlight></codeline>
+<codeline lineno="608" refid="classFsl_1_1Models_1_1MatiriWriter_1a2f7bb231b2fe8f6c60d926a80d65d827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1a2f7bb231b2fe8f6c60d926a80d65d827" kindref="member">sex_age</ref>;</highlight></codeline>
+<codeline lineno="609" refid="classFsl_1_1Models_1_1MatiriWriter_1a501bb513561d571cdca9ea4f74fd55cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1a501bb513561d571cdca9ea4f74fd55cf" kindref="member">sector</ref>;</highlight></codeline>
+<codeline lineno="610" refid="classFsl_1_1Models_1_1MatiriWriter_1ac48dd53724463dd8a244bcbf671c12ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1ac48dd53724463dd8a244bcbf671c12ad" kindref="member">sector_sex_age</ref>;</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612" refid="classFsl_1_1Models_1_1MatiriWriter_1a1fc1caa45488a17aab7f0ae3c587d560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1a1fc1caa45488a17aab7f0ae3c587d560" kindref="member">MatiriWriter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path=</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>overall.open(path+</highlight><highlight class="stringliteral">&quot;/overall.tsv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>overall&lt;&lt;</highlight><highlight class="stringliteral">&quot;tag\ttime\tbiomass\tbiomass_spawning\trecruits_determ\trecruits_deviation\trecruits\tsex_ratio\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sex.open(path+</highlight><highlight class="stringliteral">&quot;/sex.tsv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sex&lt;&lt;</highlight><highlight class="stringliteral">&quot;tag\ttime\tsex\tmortality\tmaturity_age_inflection\tmaturity_age_steepness\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sex_age.open(path+</highlight><highlight class="stringliteral">&quot;/sex_age.tsv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sex_age&lt;&lt;</highlight><highlight class="stringliteral">&quot;tag\ttime\tsex\tage\tnumbers\tmortalities\tmortality_survivals\tlength_mean\tlength_sd\tweights\tmaturities\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sector.open(path+</highlight><highlight class="stringliteral">&quot;/sector.tsv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sector&lt;&lt;</highlight><highlight class="stringliteral">&quot;tag\ttime\tsector\tbiomass_vulnerable\tcatches\texploitation_rate_max\texploitation_rate\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sector_sex_age.open(path+</highlight><highlight class="stringliteral">&quot;/sector_sex_age.tsv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sector_sex_age&lt;&lt;</highlight><highlight class="stringliteral">&quot;tag\ttime\tsector\tsex\tage\tselectivities\n&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Model,</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag&gt;</highlight></codeline>
+<codeline lineno="630" refid="classFsl_1_1Models_1_1MatiriWriter_1ad37d17426c9dfadc607b592249299183" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1ad37d17426c9dfadc607b592249299183" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Model&amp;<sp/>model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Tag&amp;<sp/>tag,<sp/>uint<sp/>time=0){</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;overall</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;tag&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;time&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.biomass&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.biomass_spawning&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.recruits_determ&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.recruits_deviation&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.recruits&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.sex_ratio&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>model.sexes){</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sex</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;tag&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;time&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;sex&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.mortality(sex)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.length_age(sex).k&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.length_age(sex).linf&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.length_age(sex).cv1&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.length_age(sex).cv2&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.weight_length(sex).a&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.weight_length(sex).b&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.maturity_age(sex).inflection&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.maturity_age(sex).steepness&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>model.sexes){</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>model.ages){</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sex_age</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;tag&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;time&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;sex&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;age&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.numbers(sex,age)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.mortalities(sex,age)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.mortality_survivals(sex,age)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.lengths(sex,age).mean()&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.lengths(sex,age).sd()&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.weights(sex,age)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.maturities(sex,age)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>model.sectors){</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sector</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;tag&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;time&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;sector&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.biomass_vulnerable(sector)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.catches(sector)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.exploitation_rate_max(sector)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.exploitation_rate(sector)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sector<sp/>:<sp/>model.sectors){</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sex<sp/>:<sp/>model.sexes){</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>age<sp/>:<sp/>model.ages){</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sector_sex_age</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;tag&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;time&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;sector&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;sex&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;age&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;model.selectivities(sector,sex,age)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Model&gt;</highlight></codeline>
+<codeline lineno="690" refid="classFsl_1_1Models_1_1MatiriWriter_1a85222148750025d28c568d6b53af7bc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Models_1_1MatiriWriter_1a85222148750025d28c568d6b53af7bc3" kindref="member">write</ref>(Model&amp;<sp/>model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>tag,<sp/>uint<sp/>begin,<sp/>uint<sp/>end){</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint<sp/>time=begin;time&lt;end;time++){</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.update(time);</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write(model,tag,time);</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>MatiriWriter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Models</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp"/>
+  </compounddef>
+</doxygen>

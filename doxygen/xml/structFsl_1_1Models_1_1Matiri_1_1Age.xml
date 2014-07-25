@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Models_1_1Matiri_1_1Age" kind="struct" prot="public">
+    <compoundname>Fsl::Models::Matiri::Age</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Dimension&lt; Age, Ages &gt;</basecompoundref>
+    <includes refid="matiri_8hpp" local="no">matiri.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Models_1_1Matiri_1_1Age_1a21748ef4ca2303960018aed97a9d0747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Age::Age</definition>
+        <argsstring>(void)</argsstring>
+        <name>Age</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="126" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structFsl_1_1Models_1_1Matiri_1_1Age_1ab85dad3f33c431dfe28318f7941c5250" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Age::name</definition>
+        <argsstring>(void)</argsstring>
+        <name>name</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="127" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="127" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Age</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Age"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Dimension&lt; Age, Ages &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Age</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Age"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Dimension&lt; Age, Ages &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="125" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="125" bodyend="128"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1Age_1a21748ef4ca2303960018aed97a9d0747" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::Age</scope><name>Age</name></member>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1Age_1ab85dad3f33c431dfe28318f7941c5250" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::Age</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

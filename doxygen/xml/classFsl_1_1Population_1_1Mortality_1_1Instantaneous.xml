@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Mortality_1_1Instantaneous" kind="class" prot="public">
+    <compoundname>Fsl::Population::Mortality::Instantaneous</compoundname>
+    <basecompoundref refid="classFsl_1_1Population_1_1Mortality_1_1Rate" prot="public" virt="non-virtual">Fsl::Population::Mortality::Rate</basecompoundref>
+    <includes refid="instantaneous_8hpp" local="no">instantaneous.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adb7e3268638cfa5d5c86088d70598df7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Population::Mortality::Instantaneous::Instantaneous</definition>
+        <argsstring>(const double &amp;value=0)</argsstring>
+        <name>Instantaneous</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adf8c7fc1b353e4dfcdcc361205c7ad8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Population::Mortality::Instantaneous::operator double</definition>
+        <argsstring>(void) const </argsstring>
+        <name>operator double</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="160">
+        <label>Fsl::Population::Mortality::Rate</label>
+        <link refid="classFsl_1_1Population_1_1Mortality_1_1Rate"/>
+      </node>
+      <node id="159">
+        <label>Fsl::Population::Mortality::Instantaneous</label>
+        <link refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="162">
+        <label>Fsl::Population::Mortality::Rate</label>
+        <link refid="classFsl_1_1Population_1_1Mortality_1_1Rate"/>
+      </node>
+      <node id="161">
+        <label>Fsl::Population::Mortality::Instantaneous</label>
+        <link refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adb7e3268638cfa5d5c86088d70598df7" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>Instantaneous</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1a1f71bc78d4a0ca12080607085a577f4b" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>instantaneous</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1af86343cccf2f1776836223409dc63c2d" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>instantaneous</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adf8c7fc1b353e4dfcdcc361205c7ad8e" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>operator double</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1af1830e341ef6a7a946bfe37d10fb4c6b" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>rate</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1a3d027e854db408ae7fca1f0ad7b53bc2" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>rate</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1abb77e2acb1e2998f1d3ca5b7bb496a79" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>Rate</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1ab48a4380fea588ac53b509f3ad443930" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>survival</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1abac884e20b7ab8f284e6f52adbcb3995" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Instantaneous</scope><name>survival</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

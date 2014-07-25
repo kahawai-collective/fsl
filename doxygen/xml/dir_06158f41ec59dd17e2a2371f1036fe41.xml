@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_06158f41ec59dd17e2a2371f1036fe41" kind="dir">
+    <compoundname>procedures</compoundname>
+    <innerdir refid="dir_e2218d6cffc5d23ae986eae09d5486f0">parts</innerdir>
+    <innerfile refid="bipr_8hpp">bipr.hpp</innerfile>
+    <innerfile refid="btar_8hpp">btar.hpp</innerfile>
+    <innerfile refid="const_8hpp">const.hpp</innerfile>
+    <innerfile refid="tsar_8hpp">tsar.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/"/>
+  </compounddef>
+</doxygen>

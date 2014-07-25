@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012" kind="class" prot="public">
+    <compoundname>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Probability_1_1Truncated" prot="public" virt="non-virtual">Fsl::Math::Probability::Truncated&lt; Normal &gt;</basecompoundref>
+    <includes refid="autocorrelation-bentley-2012_8hpp" local="no">autocorrelation-bentley-2012.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012_1a4bf75129ba31cd2743fd72dde61fc1ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012::AutocorrelationBentley2012</definition>
+        <argsstring>(void)</argsstring>
+        <name>AutocorrelationBentley2012</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/autocorrelation-bentley-2012.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/autocorrelation-bentley-2012.hpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>Base</label>
+      </node>
+      <node id="11">
+        <label>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</label>
+        <link refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Fsl::Math::Probability::Truncated&lt; Normal &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Truncated"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>Base</label>
+      </node>
+      <node id="14">
+        <label>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</label>
+        <link refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Fsl::Math::Probability::Truncated&lt; Normal &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Truncated"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/autocorrelation-bentley-2012.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/autocorrelation-bentley-2012.hpp" bodystart="14" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1AutocorrelationBentley2012_1a4bf75129ba31cd2743fd72dde61fc1ab" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>AutocorrelationBentley2012</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a02003efb297f89398469f8a287763909" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>max</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a378e3bb4283f08ae884946cdd2aae03f" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a8bd0f303e0ccdb97620149171575285b" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>min</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a14a24c393b10597eded64e5afdfbea0d" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1a52362de74a44e26333f06fff7915899b" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Truncated_1aea6bc0a85a4c344d581ca9a5773af139" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::AutocorrelationBentley2012</scope><name>Truncated</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

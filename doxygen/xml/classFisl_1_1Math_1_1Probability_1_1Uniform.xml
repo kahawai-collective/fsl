@@ -111,25 +111,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="80">
+      <node id="187">
         <label>Fisl::Math::Probability::Uniform</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Uniform"/>
-        <childnode refid="81" relation="public-inheritance">
+        <childnode refid="188" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="81">
+      <node id="188">
         <label>Fisl::Math::Probability::Distribution&lt; Uniform &gt;</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="82">
+      <node id="189">
         <label>Fisl::Math::Probability::Uniform</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Uniform"/>
-        <childnode refid="83" relation="public-inheritance">
+        <childnode refid="190" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="83">
+      <node id="190">
         <label>Fisl::Math::Probability::Distribution&lt; Uniform &gt;</label>
         <link refid="classFisl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>

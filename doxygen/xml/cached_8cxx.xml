@@ -6,50 +6,50 @@
     <includes refid="function_8hpp" local="no">fisl/math/functions/function.hpp</includes>
     <includes refid="identity_8hpp" local="no">fisl/math/functions/identity.hpp</includes>
     <incdepgraph>
-      <node id="66">
+      <node id="102">
         <label>boost/test/unit_test.hpp</label>
       </node>
-      <node id="65">
+      <node id="101">
         <label>cached.cxx</label>
         <link refid="cached.cxx"/>
-        <childnode refid="66" relation="include">
+        <childnode refid="102" relation="include">
         </childnode>
-        <childnode refid="67" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
-        <childnode refid="72" relation="include">
+        <childnode refid="108" relation="include">
         </childnode>
       </node>
-      <node id="69">
+      <node id="105">
         <label>fisl/array.hpp</label>
         <link refid="array_8hpp"/>
-        <childnode refid="70" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="71" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
       </node>
-      <node id="72">
+      <node id="108">
         <label>fisl/math/functions/identity.hpp</label>
         <link refid="identity_8hpp"/>
-        <childnode refid="68" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="67" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
       </node>
-      <node id="70">
+      <node id="106">
         <label>vector</label>
       </node>
-      <node id="71">
+      <node id="107">
         <label>algorithm</label>
       </node>
-      <node id="67">
+      <node id="103">
         <label>fisl/math/functions/function.hpp</label>
         <link refid="function_8hpp"/>
-        <childnode refid="68" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="69" relation="include">
+        <childnode refid="105" relation="include">
         </childnode>
       </node>
-      <node id="68">
+      <node id="104">
         <label>fisl/common.hpp</label>
         <link refid="common_8hpp"/>
       </node>
@@ -137,18 +137,18 @@
 <codeline lineno="11"><highlight class="normal">using<sp/>namespace<sp/>Fisl::Math::Functions;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><ref refid="classFisl_1_1Math_1_1Functions_1_1Cached" kindref="compound" tooltip="Precalculated function values for greater computational efficiency.">Cached</ref>&lt;<ref refid="classFisl_1_1Math_1_1Functions_1_1Identity" kindref="compound">Identity</ref>,10&gt;<sp/><ref refid="cached_8cxx_1a12f7040d5663dbe86952e43aaa32a4e3" kindref="member">c1</ref>;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><ref refid="cached_8cxx_1ae37f3ec962483be3cc0d116ae4a2e76d" kindref="member">BOOST_AUTO_TEST_CASE</ref>(reset_plain){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="namespaceFisl_1_1Estimation_1_1Mcmc_1a4ca8d3e6d2f4e46db181252bb09caf14" kindref="member">BOOST_AUTO_TEST_CASE</ref>(reset_plain){</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>c1.<ref refid="classFisl_1_1Math_1_1Functions_1_1Cached_1adc75d4386a17cf539cdb2559a77099ed" kindref="member">reset</ref>();</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(<ref refid="cached_8cxx_1a12f7040d5663dbe86952e43aaa32a4e3" kindref="member">c1</ref>(3),3);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(c1.sum(),0+1+2+3+4+5+6+7+8+9);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="cached_8cxx_1ae37f3ec962483be3cc0d116ae4a2e76d" kindref="member">BOOST_AUTO_TEST_CASE</ref>(reset_base_step){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="namespaceFisl_1_1Estimation_1_1Mcmc_1a4ca8d3e6d2f4e46db181252bb09caf14" kindref="member">BOOST_AUTO_TEST_CASE</ref>(reset_base_step){</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>c1.<ref refid="classFisl_1_1Math_1_1Functions_1_1Cached_1adc75d4386a17cf539cdb2559a77099ed" kindref="member">reset</ref>(0.123,4.56);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(<ref refid="cached_8cxx_1a12f7040d5663dbe86952e43aaa32a4e3" kindref="member">c1</ref>(3),0.123+4.56*3);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><ref refid="cached_8cxx_1ae37f3ec962483be3cc0d116ae4a2e76d" kindref="member">BOOST_AUTO_TEST_CASE</ref>(reset_function){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="namespaceFisl_1_1Estimation_1_1Mcmc_1a4ca8d3e6d2f4e46db181252bb09caf14" kindref="member">BOOST_AUTO_TEST_CASE</ref>(reset_function){</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>c1.<ref refid="classFisl_1_1Math_1_1Functions_1_1Cached_1adc75d4386a17cf539cdb2559a77099ed" kindref="member">reset</ref>([](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)-&gt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>values[10]={</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10,9,8,7,6,5,4,3,2,1</highlight></codeline>

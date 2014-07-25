@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Population_1_1Maturity" kind="namespace">
+    <compoundname>Fsl::Population::Maturity</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceFsl_1_1Population_1_1Maturity_1afd4b2eecd29df7b043b52af32dc5fdae" prot="public" static="no">
+        <type><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold" kindref="compound">Math::Functions::Threshold</ref></type>
+        <definition>typedef Math::Functions::Threshold Fsl::Population::Maturity::Threshold</definition>
+        <argsstring></argsstring>
+        <name>Threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/maturity/maturity.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/maturity/maturity.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceFsl_1_1Population_1_1Maturity_1ab334431b961239ac2ef2dcdcfbccfdad" prot="public" static="no">
+        <type><ref refid="classFsl_1_1Math_1_1Functions_1_1Logistic" kindref="compound">Math::Functions::Logistic</ref></type>
+        <definition>typedef Math::Functions::Logistic Fsl::Population::Maturity::Logistic</definition>
+        <argsstring></argsstring>
+        <name>Logistic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/maturity/maturity.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/maturity/maturity.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/maturity/maturity.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

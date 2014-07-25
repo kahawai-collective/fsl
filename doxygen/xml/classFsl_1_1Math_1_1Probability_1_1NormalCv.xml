@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1NormalCv" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::NormalCv</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Probability_1_1Normal" prot="public" virt="non-virtual">Fsl::Math::Probability::Normal</basecompoundref>
+    <includes refid="normal_8hpp" local="no">normal.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1NormalCv_1af878fad08282d8f75ed305bd6f76fadc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::NormalCv::NormalCv</definition>
+        <argsstring>(const double &amp;mean=1, const double &amp;cv=1)</argsstring>
+        <name>NormalCv</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mean</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>cv</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/normal.hpp" line="68" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/normal.hpp" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="268">
+        <label>Fsl::Math::Probability::NormalCv</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1NormalCv"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>Fsl::Math::Probability::Normal</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Normal"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>Fsl::Math::Probability::Distribution&lt; Normal &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="271">
+        <label>Fsl::Math::Probability::NormalCv</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1NormalCv"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>Fsl::Math::Probability::Normal</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Normal"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>Fsl::Math::Probability::Distribution&lt; Normal &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/normal.hpp" line="66" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/normal.hpp" bodystart="66" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a23596b10a1a7d2a02a44d551a33438ac" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>boost_dist</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a9e94ccbe41aed99451a765036ab45cb0" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>cdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ababdc660ac4484fabda39d2ab110a48c" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>derived</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a727e773a1f28ba9fe5c785f04cd4f44a" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>integral</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1aaa904b9e32f5e0c0aa7a08a5e43b7158" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>integrate</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1aae7b19096d365089e8b9b12a83853874" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>integrate</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a27702e37a5dac645aecd3f7fc6813470" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>kurtosis</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ac0d9d73ea52b4fb214271c1391c0213a" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>kurtosis_excess</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a7cfb85769d5c6e6b31c8cab5c45ed767" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ab2ea5f1f9d130b60bfe4f4bbb0de7e63" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a9db1ee0b1ecd711b70a86a5f0988c157" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1ad8f7d138f3607928e5b1799970c9750a" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a34a14e15530a93c2df87df5d77140ac7" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>median</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a00caac6eac86cc44ccdc9720faaf5f78" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ac18258b38bbf9c27da0e48cbf770c1a3" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>mode</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a6b523077d1433999ed41d43f28be7d92" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>Normal</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1NormalCv_1af878fad08282d8f75ed305bd6f76fadc" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>NormalCv</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1aef52f307725cc37dab678052b46bb600" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>pdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a6b7c1340236cd4ce8f5804fb53eead3f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>quantile</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a5125f4767bba77002676565809366d07" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1ab8b1b3f3f6ca79abe8da24aa432f2f08" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a1537a7d05c692fcbf342578fa31ae235" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a8d548c43c23f9749fccfac666b0c7689" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a8047fe74e041edf1296f06581f246523" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1adb2fb0a7256051b5bf99c38d59d36fda" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>skewness</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Normal_1a89fbd95335559b66a7a65a171dcac3e2" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>valid</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a358614db8b80a2eae26f05295b12d341" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::NormalCv</scope><name>variance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

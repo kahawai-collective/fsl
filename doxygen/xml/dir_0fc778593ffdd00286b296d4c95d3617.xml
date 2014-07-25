@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_0fc778593ffdd00286b296d4c95d3617" kind="dir">
+    <compoundname>estimators</compoundname>
+    <innerfile refid="demc_8hpp">demc.hpp</innerfile>
+    <innerfile refid="estimator_8hpp">estimator.hpp</innerfile>
+    <innerfile refid="mcmc_8hpp">mcmc.hpp</innerfile>
+    <innerfile refid="metropolis_8cxx">metropolis.cxx</innerfile>
+    <innerfile refid="metropolis_8hpp">metropolis.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/"/>
+  </compounddef>
+</doxygen>

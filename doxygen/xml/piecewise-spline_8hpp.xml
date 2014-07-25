@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="piecewise-spline_8hpp" kind="file">
+    <compoundname>piecewise-spline.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cassert</includes>
+    <includes refid="common_8hpp" local="no">fsl/common.hpp</includes>
+    <includes refid="function_8hpp" local="no">fsl/math/functions/function.hpp</includes>
+    <incdepgraph>
+      <node id="500">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="499">
+        <label>cassert</label>
+      </node>
+      <node id="501">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>vector</label>
+      </node>
+      <node id="496">
+        <label>piecewise-spline.hpp</label>
+        <link refid="piecewise-spline.hpp"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline" prot="public">Fsl::Math::Functions::PiecewiseSpline</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Functions">Fsl::Math::Functions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="common_8hpp" kindref="compound">fsl/common.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="function_8hpp" kindref="compound">fsl/math/functions/function.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Functions<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline" kindref="compound">PiecewiseSpline</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" kindref="member">ys</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a3325801a0c0db799aa0457688e23e400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a3325801a0c0db799aa0457688e23e400" kindref="member">PiecewiseSpline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" kindref="member">ys</ref>):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xs(xs),ys(ys){}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a78df92b1ead81a127f8f3aa8936bddb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a78df92b1ead81a127f8f3aa8936bddb3" kindref="member">interpolate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint<sp/>index=0;index&lt;<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>.size()-1;index++){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>[index]&lt;=x<sp/>and<sp/>x&lt;<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>[index+1]){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" kindref="member">ys</ref>[index]<sp/>+<sp/>(x-<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>[index])<sp/>*<sp/>(<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" kindref="member">ys</ref>[index+1]-<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" kindref="member">ys</ref>[index])/(<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>[index+1]-<ref refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kindref="member">xs</ref>[index]);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Attempting<sp/>to<sp/>interpolate<sp/>outside<sp/>of<sp/>range<sp/>of<sp/>x<sp/>values&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>PiecewiseSpline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/piecewise-spline.hpp"/>
+  </compounddef>
+</doxygen>

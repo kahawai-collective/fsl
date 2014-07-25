@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_5bbe6b02c198e2757b31ff72930b3ab2" kind="dir">
+    <compoundname>recruitment</compoundname>
+    <innerdir refid="dir_6e7bbe9e4518fbbffc9de8022b5ceddc">priors</innerdir>
+    <innerfile refid="autocorrelated_8hpp">autocorrelated.hpp</innerfile>
+    <innerfile refid="beverton-holt_8cxx">beverton-holt.cxx</innerfile>
+    <innerfile refid="beverton-holt_8hpp">beverton-holt.hpp</innerfile>
+    <innerfile refid="stochastic_8hpp">stochastic.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/"/>
+  </compounddef>
+</doxygen>

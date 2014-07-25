@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Variables" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Variables</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Array&lt; Variate&lt; Distribution &gt;, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;</basecompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Distribution</declname>
+        <defname>Distribution</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D1</declname>
+        <defname>D1</defname>
+        <defval>Singular1</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D2</declname>
+        <defname>D2</defname>
+        <defval>Singular2</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D3</declname>
+        <defname>D3</defname>
+        <defval>Singular3</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D4</declname>
+        <defname>D4</defname>
+        <defval>Singular4</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D5</declname>
+        <defname>D5</defname>
+        <defval>Singular5</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D6</declname>
+        <defname>D6</defname>
+        <defval>Singular6</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D7</declname>
+        <defname>D7</defname>
+        <defval>Singular7</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D8</declname>
+        <defname>D8</defname>
+        <defval>Singular8</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D9</declname>
+        <defname>D9</defname>
+        <defval>Singular9</defval>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>D10</declname>
+        <defname>D10</defname>
+        <defval>Singular10</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classFsl_1_1Estimation_1_1Variables_1a2c253264f85903295bc592fce9553585" prot="private" static="no">
+        <type><ref refid="classFsl_1_1Estimation_1_1Variate" kindref="compound">Variate</ref>&lt; Distribution &gt;</type>
+        <definition>typedef Variate&lt;Distribution&gt; Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;::VariateType</definition>
+        <argsstring></argsstring>
+        <name>VariateType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="451" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classFsl_1_1Estimation_1_1Variables_1a85a81ba22236e6b1c87bf783a2e64cb8" prot="private" static="no">
+        <type>Array&lt; <ref refid="classFsl_1_1Estimation_1_1Variate" kindref="compound">Variate</ref>&lt; Distribution &gt;, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;</type>
+        <definition>typedef Array&lt;Variate&lt;Distribution&gt;,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10&gt; Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;::ArrayType</definition>
+        <argsstring></argsstring>
+        <name>ArrayType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="452" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Variables_1a479eaec2314e081f14414620472187c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;::likelihood</definition>
+        <argsstring>(void) const </argsstring>
+        <name>likelihood</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="456" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="456" bodyend="460"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="431">
+        <label>Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Variables"/>
+        <childnode refid="432" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>Array&lt;Variate&lt;Distribution&gt;,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="433">
+        <label>Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Variables"/>
+        <childnode refid="434" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>Array&lt;Variate&lt;Distribution&gt;,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="448" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="448" bodyend="462"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Variables_1a85a81ba22236e6b1c87bf783a2e64cb8" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Variables</scope><name>ArrayType</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variables_1a479eaec2314e081f14414620472187c4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variables</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variables_1a2c253264f85903295bc592fce9553585" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Variables</scope><name>VariateType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

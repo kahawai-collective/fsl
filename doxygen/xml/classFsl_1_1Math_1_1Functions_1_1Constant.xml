@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1Constant" kind="class" prot="public">
+    <compoundname>Fsl::Math::Functions::Constant</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Functions_1_1Function" prot="public" virt="non-virtual">Fsl::Math::Functions::Function</basecompoundref>
+    <includes refid="constant_8hpp" local="no">constant.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Constant::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Constant_1a07c11e08877b0f053e74ef22600ae50c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; Fsl::Math::Functions::Constant::value</definition>
+        <argsstring>(void) const </argsstring>
+        <name>value</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Constant_1a35d9a6a55efd5f5b11e5555f0f56e1f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Fsl::Math::Functions::Constant::value</definition>
+        <argsstring>(void)</argsstring>
+        <name>value</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Constant_1ab3a628c7ee0a5fecf92ed32b47d49e3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Constant</ref> &amp;</type>
+        <definition>Constant&amp; Fsl::Math::Functions::Constant::value</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>value</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Constant_1a4aacd0976c8090f6bbe98aceff4339c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Constant::operator()</definition>
+        <argsstring>(const double &amp;x)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="29" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>Fsl::Math::Functions::Constant</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Constant"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>Fsl::Math::Functions::Constant</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Constant"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" bodystart="9" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a4aacd0976c8090f6bbe98aceff4339c3" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Constant</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a07c11e08877b0f053e74ef22600ae50c" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Constant</scope><name>value</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Constant_1a35d9a6a55efd5f5b11e5555f0f56e1f2" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Constant</scope><name>value</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ab3a628c7ee0a5fecf92ed32b47d49e3f" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Constant</scope><name>value</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Constant_1ad1481541190735bd375977771f452613" prot="private" virt="non-virtual"><scope>Fsl::Math::Functions::Constant</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

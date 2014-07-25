@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Population_1_1Growth_1_1Priors" kind="namespace">
+    <compoundname>Fsl::Population::Growth::Priors</compoundname>
+    <innerclass refid="classFsl_1_1Population_1_1Growth_1_1Priors_1_1Linf" prot="public">Fsl::Population::Growth::Priors::Linf</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Growth_1_1Priors_1_1KFromLinf" prot="public">Fsl::Population::Growth::Priors::KFromLinf</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/priors/bentley_2010.hpp" line="12" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_ffdedecddc1faa0f91b331c4087f65dd" kind="dir">
+    <compoundname>math</compoundname>
+    <innerdir refid="dir_005c54b5edcabf12dd831af265e2addf">functions</innerdir>
+    <innerdir refid="dir_17489c9d99e0ca6892ac76ed8ebf3264">probability</innerdir>
+    <innerdir refid="dir_a55018e6ee6bf37d9716ac4cdb7ef44b">series</innerdir>
+    <innerdir refid="dir_b149cb693d1666b0715c0da1fbbfad31">statistics</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="beverton-holt_8hpp" kind="file">
+    <compoundname>beverton-holt.hpp</compoundname>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <includedby refid="beverton-holt_8cxx" local="no">beverton-holt.cxx</includedby>
+    <includedby refid="stochastic_8hpp" local="no">stochastic.hpp</includedby>
+    <invincdepgraph>
+      <node id="79">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>beverton-holt.hpp</label>
+        <link refid="beverton-holt.hpp"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>stochastic.hpp</label>
+        <link refid="stochastic_8hpp"/>
+      </node>
+      <node id="81">
+        <label>beverton-holt.cxx</label>
+        <link refid="beverton-holt_8cxx"/>
+      </node>
+      <node id="80">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" prot="public">Fsl::Population::Recruitment::BevertonHolt</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population">Fsl::Population</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Recruitment">Fsl::Population::Recruitment</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Population<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Recruitment<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" kindref="compound">BevertonHolt</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" kindref="member">r0</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a13eea5330bdee362e0a9c1e640e32676" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a13eea5330bdee362e0a9c1e640e32676" kindref="member">check</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/>std::isfinite(<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" kindref="member">r0</ref>)<sp/>or<sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" kindref="member">r0</ref><sp/>&lt;=<sp/>0)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(str(boost::format(</highlight><highlight class="stringliteral">&quot;`BevertonHolt::r0`<sp/>has<sp/>invalid<sp/>value<sp/>&lt;%s&gt;&quot;</highlight><highlight class="normal">)%<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" kindref="member">r0</ref>));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/>std::isfinite(<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref>)<sp/>or<sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref><sp/>&lt;=<sp/>0)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(str(boost::format(</highlight><highlight class="stringliteral">&quot;`BevertonHolt::s0`<sp/>has<sp/>invalid<sp/>value<sp/>&lt;%s&gt;&quot;</highlight><highlight class="normal">)%<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref>));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/>std::isfinite(<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>)<sp/>or<sp/>steepness&lt;=0.2<sp/>or<sp/>steepness&gt;1)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(str(boost::format(</highlight><highlight class="stringliteral">&quot;`BevertonHolt::steepness`<sp/>has<sp/>invalid<sp/>value<sp/>&lt;%s&gt;&quot;</highlight><highlight class="normal">)%<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a11013e8f22c456ba5f36e6ee623a01be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a11013e8f22c456ba5f36e6ee623a01be" kindref="member">alpha</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" kindref="member">r0</ref>*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>/(5*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>-1);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1aa2b0e85b2ef894cc9115895a8cb251d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1aa2b0e85b2ef894cc9115895a8cb251d1" kindref="member">beta</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-(<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref>*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>-<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref>)/(5*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>-1);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ac1b2b472a718aecdc8e70e35a9eb43e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ac1b2b472a718aecdc8e70e35a9eb43e1" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>stock)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" kindref="member">r0</ref>*stock/((5*<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>-1)*stock+<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" kindref="member">s0</ref>*(1-<ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" kindref="member">steepness</ref>));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp"/>
+  </compounddef>
+</doxygen>

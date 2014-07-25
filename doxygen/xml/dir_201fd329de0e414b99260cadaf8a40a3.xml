@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_201fd329de0e414b99260cadaf8a40a3" kind="dir">
+    <compoundname>growth</compoundname>
+    <innerdir refid="dir_a3cf1ec00613cc20b581d0dbfe1cc687">priors</innerdir>
+    <innerfile refid="von-bert_8hpp">von-bert.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Math_1_1Functions" kind="namespace">
+    <compoundname>Fsl::Math::Functions</compoundname>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Constant" prot="public">Fsl::Math::Functions::Constant</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1CubicSpline" prot="public">Fsl::Math::Functions::CubicSpline</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1DoubleLogistic" prot="public">Fsl::Math::Functions::DoubleLogistic</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" prot="public">Fsl::Math::Functions::DoubleNormalPlateau</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Function" prot="public">Fsl::Math::Functions::Function</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Identity" prot="public">Fsl::Math::Functions::Identity</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Line" prot="public">Fsl::Math::Functions::Line</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Logistic" prot="public">Fsl::Math::Functions::Logistic</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline" prot="public">Fsl::Math::Functions::PiecewiseSpline</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Power" prot="public">Fsl::Math::Functions::Power</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Functions_1_1Threshold" prot="public">Fsl::Math::Functions::Threshold</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Estimation_1_1Set_1_1Stream__" kind="struct" prot="public">
+    <compoundname>Fsl::Estimation::Set::Stream_</compoundname>
+    <basecompoundref refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror" prot="public" virt="non-virtual">Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Stream_ &gt;</basecompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1Stream___1a73e694f99beb83a6d66e8a2f85576126" prot="public" static="no" mutable="no">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Fsl::Estimation::Set&lt; Derived &gt;::Stream_::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="827" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1Stream___1acab0faf13837a9629125bdf381d2f877" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Set&lt; Derived &gt;::Stream_::prefixes</definition>
+        <argsstring></argsstring>
+        <name>prefixes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="828" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="828" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1Stream___1ad643ded5df5714c5291ab625b1486d9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Set&lt; Derived &gt;::Stream_::Stream_</definition>
+        <argsstring>(std::ostream &amp;stream, const std::string prefixes)</argsstring>
+        <name>Stream_</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>prefixes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="830" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="830" bodyend="833"/>
+      </memberdef>
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1Stream___1a27f8b67b5940f390877b4f2d6be7d7c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::Stream_::variate</definition>
+        <argsstring>(Variate&lt; Distribution &gt; &amp;variate, const std::string &amp;name)</argsstring>
+        <name>variate</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variate" kindref="compound">Variate</ref>&lt; Distribution &gt; &amp;</type>
+          <declname>variate</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="836" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="836" bodyend="838"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="387">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::Stream_</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1Stream__"/>
+        <childnode refid="388" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Stream_ &gt;</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>Mirror&lt; Stream_ &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="390">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::Stream_</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1Stream__"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Stream_ &gt;</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>Mirror&lt; Stream_ &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="826" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="826" bodyend="839"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror_1a2c5f83d30e2feb626ac09be85d123d45" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Stream_</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror_1a44c55c3ab94767866c29bfdfabda13fb" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Stream_</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Stream___1acab0faf13837a9629125bdf381d2f877" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Stream_</scope><name>prefixes</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Stream___1a73e694f99beb83a6d66e8a2f85576126" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Stream_</scope><name>stream</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Stream___1ad643ded5df5714c5291ab625b1486d9e" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Stream_</scope><name>Stream_</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Stream___1a27f8b67b5940f390877b4f2d6be7d7c3" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Stream_</scope><name>variate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

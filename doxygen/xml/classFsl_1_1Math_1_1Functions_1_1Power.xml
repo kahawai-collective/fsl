@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1Power" kind="class" prot="public">
+    <compoundname>Fsl::Math::Functions::Power</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Functions_1_1Function" prot="public" virt="non-virtual">Fsl::Math::Functions::Function</basecompoundref>
+    <includes refid="power_8hpp" local="no">power.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1Power_1abf4a4f8f2b9b2ecbbe483f735ee79b4c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Power::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value of function when x==1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1Power_1a9fcde797d372dab11108eb8ee7ae3ed5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Power::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exponent of power function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Power_1aa674cb5a60442a7831e908ba139909d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Power::operator()</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" line="27" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classFsl_1_1Math_1_1Functions_1_1Power" kindref="compound">Power</ref> function </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="294">
+        <label>Fsl::Math::Functions::Power</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Power"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="296">
+        <label>Fsl::Math::Functions::Power</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Power"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/power.hpp" bodystart="15" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Power_1abf4a4f8f2b9b2ecbbe483f735ee79b4c" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Power</scope><name>a</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Power_1a9fcde797d372dab11108eb8ee7ae3ed5" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Power</scope><name>b</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Power_1aa674cb5a60442a7831e908ba139909d3" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Power</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Function_1abedbded6739d5407896e0ef98249d114" prot="public" virt="non-virtual" ambiguityscope="Fsl::Math::Functions::Function::"><scope>Fsl::Math::Functions::Power</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

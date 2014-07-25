@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" kind="class" prot="public">
+    <compoundname>Fsl::Math::Functions::DoubleNormalPlateau</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Functions_1_1Function" prot="public" virt="non-virtual">Fsl::Math::Functions::Function</basecompoundref>
+    <includes refid="double-normal-plateau_8hpp" local="no">double-normal-plateau.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::DoubleNormalPlateau::inflection_1</definition>
+        <argsstring></argsstring>
+        <name>inflection_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ab189ff595d4b0c2cfb9f433c29bcb230" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::DoubleNormalPlateau::inflection_2_delta</definition>
+        <argsstring></argsstring>
+        <name>inflection_2_delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a1a3eabacd1a649bad8594b88bd99b87a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::DoubleNormalPlateau::steepness_1</definition>
+        <argsstring></argsstring>
+        <name>steepness_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ac9217da8886521a8df0c758d4009fad8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::DoubleNormalPlateau::steepness_2</definition>
+        <argsstring></argsstring>
+        <name>steepness_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2740c907c802a7d60b616a5ae3dee4da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::DoubleNormalPlateau::operator()</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>Fsl::Math::Functions::DoubleNormalPlateau</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="98">
+        <label>Fsl::Math::Functions::DoubleNormalPlateau</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/double-normal-plateau.hpp" bodystart="11" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2e01bfd3eadea62ce692686affe19bc0" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::DoubleNormalPlateau</scope><name>inflection_1</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ab189ff595d4b0c2cfb9f433c29bcb230" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::DoubleNormalPlateau</scope><name>inflection_2_delta</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a2740c907c802a7d60b616a5ae3dee4da" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::DoubleNormalPlateau</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Function_1abedbded6739d5407896e0ef98249d114" prot="public" virt="non-virtual" ambiguityscope="Fsl::Math::Functions::Function::"><scope>Fsl::Math::Functions::DoubleNormalPlateau</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1a1a3eabacd1a649bad8594b88bd99b87a" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::DoubleNormalPlateau</scope><name>steepness_1</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau_1ac9217da8886521a8df0c758d4009fad8" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::DoubleNormalPlateau</scope><name>steepness_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

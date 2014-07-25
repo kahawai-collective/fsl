@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="instantaneous_8hpp" kind="file">
+    <compoundname>instantaneous.hpp</compoundname>
+    <includes refid="rate_8hpp" local="yes">rate.hpp</includes>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <incdepgraph>
+      <node id="298">
+        <label>instantaneous.hpp</label>
+        <link refid="instantaneous.hpp"/>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>rate.hpp</label>
+        <link refid="rate_8hpp"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="301">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>instantaneous.hpp</label>
+        <link refid="instantaneous.hpp"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous" prot="public">Fsl::Population::Mortality::Instantaneous</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population">Fsl::Population</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Mortality">Fsl::Population::Mortality</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rate_8hpp" kindref="compound">rate.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Population<sp/>{</highlight></codeline>
+<codeline lineno="7" refid="namespaceFsl_1_1Population_1_1Mortality" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Mortality<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous" kindref="compound">Instantaneous</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Mortality_1_1Rate" kindref="compound">Rate</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adb7e3268638cfa5d5c86088d70598df7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adb7e3268638cfa5d5c86088d70598df7" kindref="member">Instantaneous</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value=0){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1a1f71bc78d4a0ca12080607085a577f4b" kindref="member">instantaneous</ref>(value);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adf8c7fc1b353e4dfcdcc361205c7ad8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>double(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1a1f71bc78d4a0ca12080607085a577f4b" kindref="member">instantaneous</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp"/>
+  </compounddef>
+</doxygen>

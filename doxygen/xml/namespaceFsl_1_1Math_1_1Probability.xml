@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Math_1_1Probability" kind="namespace">
+    <compoundname>Fsl::Math::Probability</compoundname>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Beta" prot="public">Fsl::Math::Probability::Beta</innerclass>
+    <innerclass refid="structFsl_1_1Math_1_1Probability_1_1Generator" prot="public">Fsl::Math::Probability::Generator</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Distribution" prot="public">Fsl::Math::Probability::Distribution</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Fixed" prot="public">Fsl::Math::Probability::Fixed</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal" prot="public">Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Functional" prot="public">Fsl::Math::Probability::Functional</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" prot="public">Fsl::Math::Probability::Lognormal</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Multinomial" prot="public">Fsl::Math::Probability::Multinomial</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Normal" prot="public">Fsl::Math::Probability::Normal</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1NormalCv" prot="public">Fsl::Math::Probability::NormalCv</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Positive" prot="public">Fsl::Math::Probability::Positive</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Truncated" prot="public">Fsl::Math::Probability::Truncated</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Uniform" prot="public">Fsl::Math::Probability::Uniform</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceFsl_1_1Math_1_1Probability_1a1f9a8ad0f9a58c25aa0a47c4c27aa594" prot="public" static="no" mutable="no">
+        <type><ref refid="structFsl_1_1Math_1_1Probability_1_1Generator" kindref="compound">Fsl::Math::Probability::Generator</ref></type>
+        <definition> Fsl::Math::Probability::Generator  Fsl::Math::Probability::Generator</definition>
+        <argsstring></argsstring>
+        <name>Generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/distribution.hpp" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/beta.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

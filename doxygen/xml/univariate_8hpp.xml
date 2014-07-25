@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="univariate_8hpp" kind="file">
+    <compoundname>univariate.hpp</compoundname>
+    <includes local="no">boost/accumulators/accumulators.hpp</includes>
+    <includes local="no">boost/accumulators/statistics/stats.hpp</includes>
+    <includes local="no">boost/accumulators/statistics/mean.hpp</includes>
+    <includes local="no">boost/accumulators/statistics/variance.hpp</includes>
+    <incdepgraph>
+      <node id="622">
+        <label>boost/accumulators/statistics/mean.hpp</label>
+      </node>
+      <node id="620">
+        <label>boost/accumulators/accumulators.hpp</label>
+      </node>
+      <node id="623">
+        <label>boost/accumulators/statistics/variance.hpp</label>
+      </node>
+      <node id="621">
+        <label>boost/accumulators/statistics/stats.hpp</label>
+      </node>
+      <node id="619">
+        <label>univariate.hpp</label>
+        <link refid="univariate.hpp"/>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="621" relation="include">
+        </childnode>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean" prot="public">Fsl::Math::Statistics::Univariate::Geomean</innerclass>
+    <innerclass refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange" prot="public">Fsl::Math::Statistics::Univariate::MeanAbsoluteProportionChange</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Statistics">Fsl::Math::Statistics</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate">Fsl::Math::Statistics::Univariate</innernamespace>
+    <innernamespace refid="namespaceboost_1_1accumulators">boost::accumulators</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="univariate_8hpp_1a7ab4dec0ad4a5738dbd4b16ceb98c66b" prot="public" static="no">
+        <name>LOCAL</name>
+        <param><defname>NAME</defname></param>
+        <param><defname>FUNC</defname></param>
+        <initializer>class NAME {\
+	private:\
+		accumulator_set&lt;double, stats&lt;tag::FUNC&gt;&gt; accumulator;\
+	public:\
+		void append(const double&amp; value){\
+			accumulator(value);\
+		}\
+		Real value(void) const {\
+			return FUNC(accumulator);\
+		}\
+	};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" line="18" column="9" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/accumulators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics/stats.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics/mean.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics/variance.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="10" refid="namespaceFsl_1_1Math_1_1Statistics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Statistics<sp/>{</highlight></codeline>
+<codeline lineno="11" refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Univariate<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate_1a77f57fe243eaf7a18a3fe539068e0d6d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate_1a77f57fe243eaf7a18a3fe539068e0d6d" kindref="member">Real</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">boost::accumulators;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="univariate_8hpp_1a7ab4dec0ad4a5738dbd4b16ceb98c66b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOCAL(NAME,FUNC)\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>class<sp/>NAME<sp/>{\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private:\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accumulator_set&lt;double,<sp/>stats&lt;tag::FUNC&gt;&gt;<sp/>accumulator;\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>public:\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>append(const<sp/>double&amp;<sp/>value){\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accumulator(value);\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Real<sp/>value(void)<sp/>const<sp/>{\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>FUNC(accumulator);\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="univariate_8hpp_1a7ab4dec0ad4a5738dbd4b16ceb98c66b" kindref="member">LOCAL</ref>(Mean,mean)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="univariate_8hpp_1a7ab4dec0ad4a5738dbd4b16ceb98c66b" kindref="member">LOCAL</ref>(Variance,variance)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOCAL</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean" kindref="compound">Geomean</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1af3b30f774f6ebd60d45138384fe34bec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accumulator_set&lt;double,<sp/>stats&lt;tag::mean&gt;&gt;<sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1af3b30f774f6ebd60d45138384fe34bec" kindref="member">accumulator</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1a1649f9c292659c23046ad7bd27222381" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1a1649f9c292659c23046ad7bd27222381" kindref="member">append</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accumulator(std::log(value));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1aa3e6d1678343e2a9cf48c6ec9e4fb566" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate_1a77f57fe243eaf7a18a3fe539068e0d6d" kindref="member">Real</ref><sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1aa3e6d1678343e2a9cf48c6ec9e4fb566" kindref="member">value</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::exp(mean(accumulator));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange" kindref="compound">MeanAbsoluteProportionChange</ref><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1a4e6125b2181548d1d329d6ec9628ed2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1a4e6125b2181548d1d329d6ec9628ed2b" kindref="member">last</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1a800cb79ccd01865b3df2f7727f1180af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accumulator_set&lt;double,<sp/>stats&lt;tag::mean&gt;&gt;<sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1a800cb79ccd01865b3df2f7727f1180af" kindref="member">accumulator</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1ae6152bcda2d1c385209c4d4af6bc02c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1ae6152bcda2d1c385209c4d4af6bc02c6" kindref="member">MeanAbsoluteProportionChange</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last(0){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1ae4259e78871f0e2007ae64687436ddaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1ae4259e78871f0e2007ae64687436ddaa" kindref="member">append</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(last!=0){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>proportional_change<sp/>=<sp/>std::fabs(value-last)/last;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accumulator(proportional_change);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1a164628d5f9d2385f12074f0d96d82832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceFsl_1_1Math_1_1Statistics_1_1Univariate_1a77f57fe243eaf7a18a3fe539068e0d6d" kindref="member">Real</ref><sp/><ref refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1MeanAbsoluteProportionChange_1a164628d5f9d2385f12074f0d96d82832" kindref="member">value</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mean(accumulator);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/statistics/univariate/univariate.hpp"/>
+  </compounddef>
+</doxygen>

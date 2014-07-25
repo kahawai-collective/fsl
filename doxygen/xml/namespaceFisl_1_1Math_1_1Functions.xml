@@ -5,6 +5,8 @@
     <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Function" prot="public">Fisl::Math::Functions::Function</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Cached" prot="public">Fisl::Math::Functions::Cached</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Identity" prot="public">Fisl::Math::Functions::Identity</innerclass>
+    <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Logistic" prot="public">Fisl::Math::Functions::Logistic</innerclass>
+    <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Power" prot="public">Fisl::Math::Functions::Power</innerclass>
     <innerclass refid="classFisl_1_1Math_1_1Functions_1_1Threshold" prot="public">Fisl::Math::Functions::Threshold</innerclass>
     <briefdescription>
     </briefdescription>

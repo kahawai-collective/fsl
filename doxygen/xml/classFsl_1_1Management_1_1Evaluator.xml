@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Management_1_1Evaluator" kind="class" prot="public">
+    <compoundname>Fsl::Management::Evaluator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Polymorph&lt; Derived &gt;</basecompoundref>
+    <includes refid="evaluator_8hpp" local="no">evaluator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class Derived</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Evaluator_1a16c163ef71d77c86fd045e48cd04cb6c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classFsl_1_1Management_1_1ProcedureAny" kindref="compound">ProcedureAny</ref> &gt;</type>
+        <definition>std::vector&lt;ProcedureAny&gt; Fsl::Management::Evaluator&lt; Derived &gt;::procedures</definition>
+        <argsstring></argsstring>
+        <name>procedures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of candidate procedures </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Evaluator_1ae958cf53cfe485b33b600817c0a7c697" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::Evaluator&lt; Derived &gt;::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Evaluator_1a9f05d140d3dd3b776cd7f4d89653ca30" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::Evaluator&lt; Derived &gt;::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Evaluator_1a6bee984f641fb6d7cadaf0faf644ee05" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::Evaluator&lt; Derived &gt;::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Evaluator_1a96ba9c54c90bd28b36e33c939c2b17d2" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::Evaluator&lt; Derived &gt;::replicates</definition>
+        <argsstring></argsstring>
+        <name>replicates</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Evaluator_1ade8ff44d83845d1d3c826dd8b9967482" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Management::Evaluator&lt; Derived &gt;::write</definition>
+        <argsstring>(void)</argsstring>
+        <name>write</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Evaluator_1a3225a486cfd5a4c5db5b604363e89ac5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Model</type>
+          </param>
+          <param>
+            <type>class Parameters</type>
+          </param>
+          <param>
+            <type>class Performance</type>
+          </param>
+        </templateparamlist>
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Management::Evaluator&lt; Derived &gt;::run</definition>
+        <argsstring>(const Model &amp;model, const Parameters &amp;parameters, const Samples &amp;samples, const Performance &amp;performance)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const Model &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>const Parameters &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const Samples &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>const Performance &amp;</type>
+          <declname>performance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="41" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="41" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="119">
+        <label>Fsl::Management::Evaluator&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Management_1_1Evaluator"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>Polymorph&lt; Derived &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="121">
+        <label>Fsl::Management::Evaluator&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Management_1_1Evaluator"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>Polymorph&lt; Derived &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" bodystart="10" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1ae958cf53cfe485b33b600817c0a7c697" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>first</name></member>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1a6bee984f641fb6d7cadaf0faf644ee05" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>last</name></member>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1a16c163ef71d77c86fd045e48cd04cb6c" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>procedures</name></member>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1a96ba9c54c90bd28b36e33c939c2b17d2" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>replicates</name></member>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1a3225a486cfd5a4c5db5b604363e89ac5" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>run</name></member>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1a9f05d140d3dd3b776cd7f4d89653ca30" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>start</name></member>
+      <member refid="classFsl_1_1Management_1_1Evaluator_1ade8ff44d83845d1d3c826dd8b9967482" prot="public" virt="non-virtual"><scope>Fsl::Management::Evaluator</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

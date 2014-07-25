@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="multinomial_8hpp" kind="file">
+    <compoundname>multinomial.hpp</compoundname>
+    <includes refid="distribution_8hpp" local="no">fsl/math/probability/distribution.hpp</includes>
+    <includedby refid="distributions_8hpp" local="no">distributions.hpp</includedby>
+    <incdepgraph>
+      <node id="462">
+        <label>boost/random/variate_generator.hpp</label>
+      </node>
+      <node id="458">
+        <label>multinomial.hpp</label>
+        <link refid="multinomial.hpp"/>
+        <childnode refid="459" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>boost/math/distributions/uniform.hpp</label>
+      </node>
+      <node id="461">
+        <label>boost/random/mersenne_twister.hpp</label>
+      </node>
+      <node id="460">
+        <label>ctime</label>
+      </node>
+      <node id="459">
+        <label>fsl/math/probability/distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>boost/random/uniform_01.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="465">
+        <label>multinomial.hpp</label>
+        <link refid="multinomial.hpp"/>
+        <childnode refid="466" relation="include">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>distributions.hpp</label>
+        <link refid="distributions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Multinomial" prot="public">Fsl::Math::Probability::Multinomial</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Probability">Fsl::Math::Probability</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="distribution_8hpp" kindref="compound">fsl/math/probability/distribution.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Probability<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial" kindref="compound">Multinomial</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afd408e1e528354eeb5599d0a0221b643" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afd408e1e528354eeb5599d0a0221b643" kindref="member">Multinomial</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref><sp/>=<sp/>NAN,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" kindref="member">size</ref><sp/>=<sp/>NAN):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref>(<ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref>),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" kindref="member">size</ref>(<ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" kindref="member">size</ref>){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a3f08074ab22958c5bcfb8f05763182c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a3f08074ab22958c5bcfb8f05763182c4" kindref="member">valid</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" kindref="member">size</ref>&gt;0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1abfd65c3a340b16b0519b176672573556" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1abfd65c3a340b16b0519b176672573556" kindref="member">minimum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a6b988d49ea5972cf0b3b717d416aa3ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a6b988d49ea5972cf0b3b717d416aa3ba" kindref="member">maximum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a70ff5a914f8dc6cd4b7cfa12bbc43914" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a70ff5a914f8dc6cd4b7cfa12bbc43914" kindref="member">mean</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a5134206b5d5a621282c41c85af4d93c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a5134206b5d5a621282c41c85af4d93c2" kindref="member">sd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref><sp/>*<sp/>(1-<ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afce28555bcded17aed090fec8dd8eede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1afce28555bcded17aed090fec8dd8eede" kindref="member">pdf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a055f8c0543f94917ab378d1375744e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a055f8c0543f94917ab378d1375744e47" kindref="member">quantile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1aeb1f4f4c71bbfb0e55fe679941014b0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1aeb1f4f4c71bbfb0e55fe679941014b0f" kindref="member">random</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Mirror&gt;</highlight></codeline>
+<codeline lineno="53" refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a2f512dcf0be35144198bd9a675ff03bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a2f512dcf0be35144198bd9a675ff03bc" kindref="member">reflect</ref>(Mirror&amp;<sp/>mirror)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mirror</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data(<ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1af0f6ddb611b4602c6dd6db4f0170c045" kindref="member">proportion</ref>,</highlight><highlight class="stringliteral">&quot;proportion&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data(<ref refid="classFsl_1_1Math_1_1Probability_1_1Multinomial_1a51c72a5e370b6472bf1a89def022b48f" kindref="member">size</ref>,</highlight><highlight class="stringliteral">&quot;size&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/multinomial.hpp"/>
+  </compounddef>
+</doxygen>

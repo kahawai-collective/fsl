@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1Lognormal" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::Lognormal</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Probability_1_1Distribution" prot="public" virt="non-virtual">Fsl::Math::Probability::Distribution&lt; Lognormal &gt;</basecompoundref>
+    <derivedcompoundref refid="classFsl_1_1Population_1_1Growth_1_1Priors_1_1Linf" prot="public" virt="non-virtual">Fsl::Population::Growth::Priors::Linf</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1VariationBentley2012" prot="public" virt="non-virtual">Fsl::Population::Recruitment::Priors::VariationBentley2012</derivedcompoundref>
+    <includes refid="lognormal_8hpp" local="no">lognormal.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a82ac8a65bc4eb1f7eb0230e47140dfb6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Lognormal::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a70467b10fcc254517a3c2b6d4f99d9ea" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Lognormal::dispersion</definition>
+        <argsstring></argsstring>
+        <name>dispersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a3d694f997144c6b88f933ed8617352fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::Lognormal::Lognormal</definition>
+        <argsstring>(const double &amp;location=NAN, const double &amp;dispersion=NAN)</argsstring>
+        <name>Lognormal</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>location</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>dispersion</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a2cd57b37ecdbf78c50c89454daef2f83" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Probability::Lognormal::valid</definition>
+        <argsstring>(void) const </argsstring>
+        <name>valid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a2bca4c87a99994aa16c0da595ed2860d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Lognormal::minimum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>minimum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="29" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a3cac4b73209242dc9b5e0b0797cb37a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Lognormal::mean</definition>
+        <argsstring>(void) const </argsstring>
+        <name>mean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="33" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a28fa78291f349f570e25511703cf7a69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" kindref="compound">Lognormal</ref> &amp;</type>
+        <definition>Lognormal&amp; Fsl::Math::Probability::Lognormal::mean</definition>
+        <argsstring>(const double &amp;mean)</argsstring>
+        <name>mean</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="37" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1adbc75ec74a94878bb2f0f0f47172c1e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Lognormal::sd</definition>
+        <argsstring>(void) const </argsstring>
+        <name>sd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="42" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a3de7dfa882336a21f129e9a3f7ab02b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" kindref="compound">Lognormal</ref> &amp;</type>
+        <definition>Lognormal&amp; Fsl::Math::Probability::Lognormal::sd</definition>
+        <argsstring>(const double &amp;sd)</argsstring>
+        <name>sd</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>sd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="46" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1adc80cb07d195cfbae44fe45f3d6f075d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::math::lognormal</type>
+        <definition>boost::math::lognormal Fsl::Math::Probability::Lognormal::boost_dist</definition>
+        <argsstring>(void) const </argsstring>
+        <name>boost_dist</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="51" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a85e74463d286c5404b0f82b378b515f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Lognormal::random</definition>
+        <argsstring>(void) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="55" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a1e92f8e72c400eb30c4862de68d8b511" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Mirror</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Math::Probability::Lognormal::reflect</definition>
+        <argsstring>(Mirror &amp;mirror)</argsstring>
+        <name>reflect</name>
+        <param>
+          <type>Mirror &amp;</type>
+          <declname>mirror</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="62" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="62" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="213">
+        <label>Fsl::Math::Probability::Lognormal</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Lognormal"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>Fsl::Population::Growth::Priors::Linf</label>
+        <link refid="classFsl_1_1Population_1_1Growth_1_1Priors_1_1Linf"/>
+        <childnode refid="213" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>Fsl::Math::Probability::Distribution&lt; Lognormal &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
+      </node>
+      <node id="216">
+        <label>Fsl::Population::Recruitment::Priors::VariationBentley2012</label>
+        <link refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1VariationBentley2012"/>
+        <childnode refid="213" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="217">
+        <label>Fsl::Math::Probability::Lognormal</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Lognormal"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>Fsl::Math::Probability::Distribution&lt; Lognormal &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/lognormal.hpp" bodystart="14" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1adc80cb07d195cfbae44fe45f3d6f075d" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>boost_dist</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a9e94ccbe41aed99451a765036ab45cb0" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>cdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ababdc660ac4484fabda39d2ab110a48c" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>derived</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a70467b10fcc254517a3c2b6d4f99d9ea" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>dispersion</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a727e773a1f28ba9fe5c785f04cd4f44a" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>integral</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1aaa904b9e32f5e0c0aa7a08a5e43b7158" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>integrate</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1aae7b19096d365089e8b9b12a83853874" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>integrate</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a27702e37a5dac645aecd3f7fc6813470" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>kurtosis</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ac0d9d73ea52b4fb214271c1391c0213a" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>kurtosis_excess</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a7cfb85769d5c6e6b31c8cab5c45ed767" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a82ac8a65bc4eb1f7eb0230e47140dfb6" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>location</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a3d694f997144c6b88f933ed8617352fe" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>Lognormal</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ab2ea5f1f9d130b60bfe4f4bbb0de7e63" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a3cac4b73209242dc9b5e0b0797cb37a7" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a28fa78291f349f570e25511703cf7a69" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a34a14e15530a93c2df87df5d77140ac7" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>median</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a2bca4c87a99994aa16c0da595ed2860d" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1ac18258b38bbf9c27da0e48cbf770c1a3" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>mode</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1aef52f307725cc37dab678052b46bb600" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>pdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a6b7c1340236cd4ce8f5804fb53eead3f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>quantile</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a85e74463d286c5404b0f82b378b515f2" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a1e92f8e72c400eb30c4862de68d8b511" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a1537a7d05c692fcbf342578fa31ae235" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1adbc75ec74a94878bb2f0f0f47172c1e6" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a3de7dfa882336a21f129e9a3f7ab02b4" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1adb2fb0a7256051b5bf99c38d59d36fda" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>skewness</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Lognormal_1a2cd57b37ecdbf78c50c89454daef2f83" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>valid</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Distribution_1a358614db8b80a2eae26f05295b12d341" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Lognormal</scope><name>variance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

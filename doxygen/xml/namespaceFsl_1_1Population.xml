@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Population" kind="namespace">
+    <compoundname>Fsl::Population</compoundname>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Growth">Fsl::Population::Growth</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Maturity">Fsl::Population::Maturity</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Morphometry">Fsl::Population::Morphometry</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Mortality">Fsl::Population::Mortality</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Recruitment">Fsl::Population::Recruitment</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/priors/bentley_2010.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

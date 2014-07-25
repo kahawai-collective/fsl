@@ -3,6 +3,7 @@
   <compounddef id="dir_08f75512ae9cce54882ef17faa2838d3" kind="dir">
     <compoundname>mortality</compoundname>
     <innerdir refid="dir_1a57b8a3ee7c0050ad1106fa1e5fc204">priors</innerdir>
+    <innerfile refid="rate_8hpp">rate.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

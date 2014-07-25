@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Monitoring_1_1Composition_1_1Samples" kind="class" prot="public">
+    <compoundname>Fsl::Monitoring::Composition::Samples</compoundname>
+    <includes refid="composition_8hpp" local="no">composition.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>Bins</declname>
+        <defname>Bins</defname>
+      </param>
+      <param>
+        <type>class Key</type>
+        <defval>int</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a6927918bc03e5be9910dcf2dc11590a6" prot="public" static="no">
+        <type><ref refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample" kindref="compound">Sample</ref>&lt; Bins &gt;</type>
+        <definition>typedef Sample&lt;Bins&gt; Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::SampleType</definition>
+        <argsstring></argsstring>
+        <name>SampleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="60" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a41cd5cc53c49048c495849be30fcba1b" prot="public" static="no" mutable="no">
+        <type>std::map&lt; Key, <ref refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a6927918bc03e5be9910dcf2dc11590a6" kindref="member">SampleType</ref> &gt;</type>
+        <definition>std::map&lt;Key,SampleType&gt; Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::samples</definition>
+        <argsstring></argsstring>
+        <name>samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="62" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1ab221d6b5c1c8b8c12bee85287025a23c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::observed</definition>
+        <argsstring>(const Key &amp;key, const int size, const std::vector&lt; double &gt; &amp;proportions)</argsstring>
+        <name>observed</name>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>proportions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="64" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aab726ce557d12fbe2df39b0ace7bec3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::observeds</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; Key, SampleType &gt;&gt; &amp;values)</argsstring>
+        <name>observeds</name>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; Key, <ref refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a6927918bc03e5be9910dcf2dc11590a6" kindref="member">SampleType</ref> &gt;&gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="69" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a483675e7a9053c533c16d3765f9aedce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::expected</definition>
+        <argsstring>(const Key &amp;key, const std::vector&lt; double &gt; &amp;proportions)</argsstring>
+        <name>expected</name>
+        <param>
+          <type>const Key &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>proportions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="73" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aa10e5bfceb5a86d72960299a2e5ace6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::likelihood</definition>
+        <argsstring>(void) const </argsstring>
+        <name>likelihood</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="77" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a8ba2ebc44515c75b695387571c8a5260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::observeds_output</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>observeds_output</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="83" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="83" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a2d5c00ff1b0493b5ed90ddaef1d9ce9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Monitoring::Composition::Samples&lt; Bins, Key &gt;::stream</definition>
+        <argsstring>(std::ostream &amp;stream, const std::string &amp;prefix=&quot;&quot;)</argsstring>
+        <name>stream</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="93" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="93" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="58" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" bodystart="58" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a483675e7a9053c533c16d3765f9aedce" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>expected</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aa10e5bfceb5a86d72960299a2e5ace6e" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1ab221d6b5c1c8b8c12bee85287025a23c" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>observed</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aab726ce557d12fbe2df39b0ace7bec3a" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>observeds</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a8ba2ebc44515c75b695387571c8a5260" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>observeds_output</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a41cd5cc53c49048c495849be30fcba1b" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>samples</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a6927918bc03e5be9910dcf2dc11590a6" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>SampleType</name></member>
+      <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a2d5c00ff1b0493b5ed90ddaef1d9ce9b" prot="public" virt="non-virtual"><scope>Fsl::Monitoring::Composition::Samples</scope><name>stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

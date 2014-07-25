@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</compoundname>
+    <includes refid="fournier-robustified-multivariate-normal_8hpp" local="no">fournier-robustified-multivariate-normal.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::proportion</definition>
+        <argsstring></argsstring>
+        <name>proportion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a7acc6eb6359cc6920faf29f4135d3f44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::FournierRobustifiedMultivariateNormal</definition>
+        <argsstring>(const double &amp;proportion=NAN, const double &amp;size=NAN)</argsstring>
+        <name>FournierRobustifiedMultivariateNormal</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>proportion</declname>
+          <defval>NAN</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>size</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a910eec0126c6f99d83ae3a6af5fefa5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::valid</definition>
+        <argsstring>(void) const </argsstring>
+        <name>valid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a2aa304afe2c1fbab0a41e7448e53db1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::minimum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>minimum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ab626e480028df410e6ac40bb348284be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::maximum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="28" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1afa2615cdfcc9398706cc98bc58d05a97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::mean</definition>
+        <argsstring>(void) const </argsstring>
+        <name>mean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="32" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a904ec49be9f69467e81db81845c121d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::sd</definition>
+        <argsstring>(void) const </argsstring>
+        <name>sd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="36" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ae0a548f04921a6f11e174a429b217ab0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::likelihood</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>likelihood</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="40" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ac8b75b8dde0bf471f5ae2d53d8c31f95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::pdf</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>pdf</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="47" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a15023ac17a5d5e850b21ca94de8405d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::quantile</definition>
+        <argsstring>(const double &amp;p) const </argsstring>
+        <name>quantile</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="51" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a983174057387ffd18c8063451cd8246a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::random</definition>
+        <argsstring>(void) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="55" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1aef20358176ac06555af551964591634d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Mirror</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Math::Probability::FournierRobustifiedMultivariateNormal::reflect</definition>
+        <argsstring>(Mirror &amp;mirror)</argsstring>
+        <name>reflect</name>
+        <param>
+          <type>Mirror &amp;</type>
+          <declname>mirror</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="60" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="60" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp" bodystart="9" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a7acc6eb6359cc6920faf29f4135d3f44" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>FournierRobustifiedMultivariateNormal</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ae0a548f04921a6f11e174a429b217ab0" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ab626e480028df410e6ac40bb348284be" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1afa2615cdfcc9398706cc98bc58d05a97" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a2aa304afe2c1fbab0a41e7448e53db1e" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ac8b75b8dde0bf471f5ae2d53d8c31f95" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>pdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>proportion</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a15023ac17a5d5e850b21ca94de8405d4" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>quantile</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a983174057387ffd18c8063451cd8246a" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1aef20358176ac06555af551964591634d" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a904ec49be9f69467e81db81845c121d0" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>size</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a910eec0126c6f99d83ae3a6af5fefa5c" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

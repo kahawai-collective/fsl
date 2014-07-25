@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema" kind="class" prot="public">
+    <compoundname>Fsl::Math::Series::Filters::Ema</compoundname>
+    <includes refid="ema_8hpp" local="no">ema.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1aab0f6430548b6ce88aeab7a144f4246c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Series::Filters::Ema::coefficient</definition>
+        <argsstring></argsstring>
+        <name>coefficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a2494932ac893036e596a438fdbe8d913" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Series::Filters::Ema::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a0a6fa94430bf371c3b6764f80e3fbc23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Series::Filters::Ema::Ema</definition>
+        <argsstring>(const double &amp;coefficient)</argsstring>
+        <name>Ema</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>coefficient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a2eaf2defb8389db64a3f85e462852802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Math::Series::Filters::Ema::operator=</definition>
+        <argsstring>(const double &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a1d51d2aa658faa0c9735844a6ff37180" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Series::Filters::Ema::operator double</definition>
+        <argsstring>(void) const </argsstring>
+        <name>operator double</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a0ca7552e93261a4a84ae9a9f10735abb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema" kindref="compound">Ema</ref> &amp;</type>
+        <definition>Ema&amp; Fsl::Math::Series::Filters::Ema::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="28" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1ad18c9c7902ea8ed4dece7d825b24eaef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Series::Filters::Ema::update</definition>
+        <argsstring>(const double &amp;current)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="33" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1aab0f6430548b6ce88aeab7a144f4246c" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>coefficient</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a0a6fa94430bf371c3b6764f80e3fbc23" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>Ema</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a1d51d2aa658faa0c9735844a6ff37180" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>operator double</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a2eaf2defb8389db64a3f85e462852802" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>operator=</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a0ca7552e93261a4a84ae9a9f10735abb" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1ad18c9c7902ea8ed4dece7d825b24eaef" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>update</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema_1a2494932ac893036e596a438fdbe8d913" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Filters::Ema</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_005c54b5edcabf12dd831af265e2addf" kind="dir">
+    <compoundname>functions</compoundname>
+    <innerfile refid="constant_8hpp">constant.hpp</innerfile>
+    <innerfile refid="cubic-spline_8hpp">cubic-spline.hpp</innerfile>
+    <innerfile refid="double-logistic_8hpp">double-logistic.hpp</innerfile>
+    <innerfile refid="double-normal-plateau_8hpp">double-normal-plateau.hpp</innerfile>
+    <innerfile refid="function_8hpp">function.hpp</innerfile>
+    <innerfile refid="identity_8hpp">identity.hpp</innerfile>
+    <innerfile refid="line_8hpp">line.hpp</innerfile>
+    <innerfile refid="logistic_8hpp">logistic.hpp</innerfile>
+    <innerfile refid="piecewise-spline_8hpp">piecewise-spline.hpp</innerfile>
+    <innerfile refid="power_8hpp">power.hpp</innerfile>
+    <innerfile refid="threshold_8hpp">threshold.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/"/>
+  </compounddef>
+</doxygen>

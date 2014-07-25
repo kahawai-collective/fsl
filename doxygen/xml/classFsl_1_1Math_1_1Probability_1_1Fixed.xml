@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1Fixed" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::Fixed</compoundname>
+    <includes refid="fixed_8hpp" local="no">fixed.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1a82693eda581d252c22b6ccc3a3b1364f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1ab1d9c313bd3f8af163f1d5fed3651ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::Fixed::Fixed</definition>
+        <argsstring>(double val=NAN)</argsstring>
+        <name>Fixed</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1a36fabbdd0653de048785fba3d727b9fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Probability::Fixed::valid</definition>
+        <argsstring>(void) const </argsstring>
+        <name>valid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1ae1611fd30034a01ecdea5bdb31894b80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::minimum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>minimum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1abc080169d8469207bb6afb231d99b3f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::maximum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1afc66659c3f1fc4b0dd5d71b33c160f2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::mean</definition>
+        <argsstring>(void) const </argsstring>
+        <name>mean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="28" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1aabf22ee7c67279e15e01b2281d6d579f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::sd</definition>
+        <argsstring>(void) const </argsstring>
+        <name>sd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="32" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1af14745abaf2980e1017f9c8fe041c70c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::random</definition>
+        <argsstring>(void) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="36" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1af09a34aa9df18f0549df6c19f61d0518" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::likelihood</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>likelihood</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="40" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1aaf1e47a99f497d08b177084562be96ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::pdf</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>pdf</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="44" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1a9f755de4c94f0c7cf6d8007de9ef8989" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Fixed::quantile</definition>
+        <argsstring>(const double &amp;p) const </argsstring>
+        <name>quantile</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="48" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Fixed_1aef69ee1e70102c8ed055e35464315699" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Mirror</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Math::Probability::Fixed::reflect</definition>
+        <argsstring>(Mirror &amp;mirror)</argsstring>
+        <name>reflect</name>
+        <param>
+          <type>Mirror &amp;</type>
+          <declname>mirror</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="53" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="53" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" line="7" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fixed.hpp" bodystart="7" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1ab1d9c313bd3f8af163f1d5fed3651ef5" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>Fixed</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1af09a34aa9df18f0549df6c19f61d0518" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1abc080169d8469207bb6afb231d99b3f3" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1afc66659c3f1fc4b0dd5d71b33c160f2c" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1ae1611fd30034a01ecdea5bdb31894b80" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1aaf1e47a99f497d08b177084562be96ed" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>pdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1a9f755de4c94f0c7cf6d8007de9ef8989" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>quantile</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1af14745abaf2980e1017f9c8fe041c70c" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1aef69ee1e70102c8ed055e35464315699" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1aabf22ee7c67279e15e01b2281d6d579f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1a36fabbdd0653de048785fba3d727b9fd" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>valid</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Fixed_1a82693eda581d252c22b6ccc3a3b1364f" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Fixed</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Management_1_1Procedures_1_1CONST" kind="class" prot="public">
+    <compoundname>Fsl::Management::Procedures::CONST</compoundname>
+    <basecompoundref refid="classFsl_1_1Management_1_1ControlProcedure" prot="public" virt="non-virtual">Fsl::Management::ControlProcedure&lt; double &gt;</basecompoundref>
+    <includes refid="const_8hpp" local="no">const.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1CONST_1ab4b114a1397ed8b78abc4861edea7e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Management::Procedures::CONST::CONST</definition>
+        <argsstring>(double *const control, const double &amp;value=0)</argsstring>
+        <name>CONST</name>
+        <param>
+          <type>double *const</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1CONST_1a6b8aae514ecdfc0604a5f8f5263a71ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Fsl::Management::Procedures::CONST::signature</definition>
+        <argsstring>(void)</argsstring>
+        <name>signature</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+      <node id="50">
+        <label>Fsl::Management::Procedures::CONST</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1CONST"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+      <node id="53">
+        <label>Fsl::Management::Procedures::CONST</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1CONST"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/const.hpp" bodystart="9" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1CONST_1ab4b114a1397ed8b78abc4861edea7e6a" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>CONST</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>control</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>ControlProcedure</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedure_1a13a5faf37289f3187fb147b248a7aa07" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1CONST_1a6b8aae514ecdfc0604a5f8f5263a71ab" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>signature</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::CONST</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

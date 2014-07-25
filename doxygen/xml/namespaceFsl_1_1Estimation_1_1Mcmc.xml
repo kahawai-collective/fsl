@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Estimation_1_1Mcmc" kind="namespace">
+    <compoundname>Fsl::Estimation::Mcmc</compoundname>
+    <innerclass refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcNormal" prot="public">Fsl::Estimation::Mcmc::McmcNormal</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Mcmc_1_1McmcRegress" prot="public">Fsl::Estimation::Mcmc::McmcRegress</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis" prot="public">Fsl::Estimation::Mcmc::Metropolis</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceFsl_1_1Estimation_1_1Mcmc_1a07fb589145b616d7bb8a93f19a397c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Mcmc::BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(test_1)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>test_1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="34" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceFsl_1_1Estimation_1_1Mcmc_1ab202a398bf52551075a3b144a188abba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Mcmc::BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(test_2)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>test_2</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" line="68" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/metropolis.cxx" bodystart="68" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Markov chain Monte Carlo methods</para><para>This modules implements MCMC algorithms. Currently only the very simple <ref refid="classFsl_1_1Estimation_1_1Mcmc_1_1Metropolis" kindref="compound">Metropolis</ref> algorithm is implemented. This algorithm requires tuning by setting the variance of the proposal distibution.</para><para>However, we a considering implementing adaptive MCMC algorithms which do not require tuning.</para><para>A good review of adaptive MCMC algorithms is available here: Roberts, G. O., &amp; Rosenthal, J. S. (2009). Examples of adaptive MCMC. Journal of Computational and Graphical Statistics, 18(2), 349-367.</para><para>The SCAM algorithm of Haario et al (2005) seems like a good option.</para><para>Haario, H., Saksman, E., &amp; Tamminen, J. (2005). Componentwise adaptation for high dimensional MCMC. Computational Statistics, 20(2), 265-273. Haario, H., Laine, M., Mira, A., &amp; Saksman, E. (2006). DRAM: efficient adaptive MCMC. Statistics and Computing, 16(4), 339-354. Christen, J. A., &amp; Fox, C. (2010). A general purpose sampling algorithm for continuous distributions (the t-walk). Bayesian Analysis, 5(2), 263-281. Available in C++ and C at <ulink url="http://www.cimat.mx/~jac/twalk">http://www.cimat.mx/~jac/twalk</ulink> </para>    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/mcmc.hpp" line="2" column="1"/>
+  </compounddef>
+</doxygen>

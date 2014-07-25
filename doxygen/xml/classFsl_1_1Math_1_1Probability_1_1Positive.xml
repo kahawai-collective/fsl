@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1Positive" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::Positive</compoundname>
+    <includes refid="positive_8hpp" local="no">positive.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Positive_1aab9dc6ecc63c1610331f66d5e58aa964" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="8" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1abd3ee6c513fadc87c6af36f367d8c758" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::Positive::Positive</definition>
+        <argsstring>(double value_=NAN)</argsstring>
+        <name>Positive</name>
+        <param>
+          <type>double</type>
+          <declname>value_</declname>
+          <defval>NAN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1aa567d90889d08d6a1557688afce76336" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Probability::Positive::valid</definition>
+        <argsstring>(void) const </argsstring>
+        <name>valid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1abc0cf3889890f4aa268ccdf45cab9eb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::minimum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>minimum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1ab052fc14d899401a6e5c033ce52a11d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::maximum</definition>
+        <argsstring>(void) const </argsstring>
+        <name>maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="22" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1ac950b64df5c0193f7eb76e44f6946f0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::mean</definition>
+        <argsstring>(void) const </argsstring>
+        <name>mean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1a955dddc7e09df07297628622a9b27244" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::sd</definition>
+        <argsstring>(void) const </argsstring>
+        <name>sd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="30" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1acaa18db80fa4b8d4c1e24f4ea279903b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::random</definition>
+        <argsstring>(void) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="34" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1ae79d599e27c615baf89b4a5125ec3892" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::likelihood</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>likelihood</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="38" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1abe534b4140572115f28fe62eeacbba07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::pdf</definition>
+        <argsstring>(const double &amp;x) const </argsstring>
+        <name>pdf</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="42" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1ab4631c4bb06b5e1011f9bee5bc7dc895" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Probability::Positive::quantile</definition>
+        <argsstring>(const double &amp;p) const </argsstring>
+        <name>quantile</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="46" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Positive_1a17d5874c7f6fbeeb454706f314a52251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Mirror</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Math::Probability::Positive::reflect</definition>
+        <argsstring>(Mirror &amp;mirror)</argsstring>
+        <name>reflect</name>
+        <param>
+          <type>Mirror &amp;</type>
+          <declname>mirror</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="51" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" line="5" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/positive.hpp" bodystart="5" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1ae79d599e27c615baf89b4a5125ec3892" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1ab052fc14d899401a6e5c033ce52a11d8" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>maximum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1ac950b64df5c0193f7eb76e44f6946f0d" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1abc0cf3889890f4aa268ccdf45cab9eb6" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>minimum</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1abe534b4140572115f28fe62eeacbba07" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>pdf</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1abd3ee6c513fadc87c6af36f367d8c758" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>Positive</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1ab4631c4bb06b5e1011f9bee5bc7dc895" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>quantile</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1acaa18db80fa4b8d4c1e24f4ea279903b" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>random</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1a17d5874c7f6fbeeb454706f314a52251" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1a955dddc7e09df07297628622a9b27244" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>sd</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1aa567d90889d08d6a1557688afce76336" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>valid</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Positive_1aab9dc6ecc63c1610331f66d5e58aa964" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Positive</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

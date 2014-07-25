@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Estimators::Estimator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Polymorph&lt; Derived &gt;</basecompoundref>
+    <includes refid="estimator_8hpp" local="no">estimator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Derived</declname>
+        <defname>Derived</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a7cb76d139bb3b76ed6b3560651c66dce" prot="public" static="no" mutable="no">
+        <type>std::function&lt; <ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref>(void)&gt;</type>
+        <definition>std::function&lt;Values (void)&gt; Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Problem definition</para><para>We use <ulink url="http://en.cppreference.com/w/cpp/utility/functional/function">std::function</ulink> because these are polymorphic and able to store normal functions as well as captured-lambdas amongst others </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3cd55c01ec17acc40ebbd702e0d81700" prot="public" static="no" mutable="no">
+        <type>std::function&lt; <ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref>(const <ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;Values (const Values&amp;)&gt; Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::restrict</definition>
+        <argsstring></argsstring>
+        <name>restrict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3708696f254ee822b2ca2379ca2e8e21" prot="public" static="no" mutable="no">
+        <type>std::function&lt; double(const <ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref> &amp;)&gt;</type>
+        <definition>std::function&lt;double (const Values&amp;)&gt; Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::likelihood</definition>
+        <argsstring></argsstring>
+        <name>likelihood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="27" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3a648bed89d47f8fa0933a92e2ceb5a3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::directory</definition>
+        <argsstring></argsstring>
+        <name>directory</name>
+        <initializer>= &quot;estimator&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Home directory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="36" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a78f233d1458d563e37e0a81e2e0c5e0c" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write log every <computeroutput>log</computeroutput> iterations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="41" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1af961fe95e99c0d27641145e8316aaeb4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::errors</definition>
+        <argsstring></argsstring>
+        <name>errors</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write errors to file? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="46" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3449e7932ddb92bcd463cdf8b9d0dd81" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::store</definition>
+        <argsstring></argsstring>
+        <name>store</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write samples every <computeroutput>store</computeroutput> iterations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="51" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a4af58b74ee5ff06b420f1aa186a766f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::Estimator</definition>
+        <argsstring>(const std::string &amp;directory=&quot;estimator&quot;)</argsstring>
+        <name>Estimator</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>directory</declname>
+          <defval>&quot;estimator&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="54" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a03ab1bf869f0eab85825df36e7e6a946" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::parameters</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;names)</argsstring>
+        <name>parameters</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="59" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a60134c2a3b8c23966a9033bc3f7b1746" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::read</definition>
+        <argsstring>(const std::string &amp;path=&quot;&quot;)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="64" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a63e8be204684ecf2056b365f61b44d89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Derived &amp;</type>
+        <definition>Derived&amp; Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::write</definition>
+        <argsstring>(const std::string &amp;path=&quot;&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="72" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="72" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a394d8ff5a9b3981d45d2372abae7feda" prot="public" static="no" mutable="no">
+        <type><ref refid="classFsl_1_1Estimation_1_1Samples" kindref="compound">Samples</ref></type>
+        <definition>Samples Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;::samples</definition>
+        <argsstring></argsstring>
+        <name>samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="111">
+        <label>Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>Polymorph&lt; Derived &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="118">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="115">
+        <label>Fsl::Estimation::Samples</label>
+        <link refid="classFsl_1_1Estimation_1_1Samples"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+        <childnode refid="117" relation="usage">
+          <edgelabel>sample_</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>Fsl::Estimation::Estimators::Estimator&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>samples</edgelabel>
+        </childnode>
+      </node>
+      <node id="116">
+        <label>std::vector&lt;Sample&gt;</label>
+      </node>
+      <node id="117">
+        <label>Fsl::Estimation::Sample</label>
+        <link refid="classFsl_1_1Estimation_1_1Sample"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>samples_</edgelabel>
+        </childnode>
+      </node>
+      <node id="114">
+        <label>Polymorph&lt; Derived &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" line="8" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/estimator.hpp" bodystart="8" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3a648bed89d47f8fa0933a92e2ceb5a3" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>directory</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1af961fe95e99c0d27641145e8316aaeb4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>errors</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a4af58b74ee5ff06b420f1aa186a766f0" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>Estimator</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a7cb76d139bb3b76ed6b3560651c66dce" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>initial</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3708696f254ee822b2ca2379ca2e8e21" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a78f233d1458d563e37e0a81e2e0c5e0c" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>log</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a03ab1bf869f0eab85825df36e7e6a946" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>parameters</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a60134c2a3b8c23966a9033bc3f7b1746" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>read</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3cd55c01ec17acc40ebbd702e0d81700" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a394d8ff5a9b3981d45d2372abae7feda" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>samples</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3449e7932ddb92bcd463cdf8b9d0dd81" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>store</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a63e8be204684ecf2056b365f61b44d89" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::Estimator</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

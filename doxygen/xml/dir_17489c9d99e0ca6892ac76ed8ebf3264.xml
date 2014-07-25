@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_17489c9d99e0ca6892ac76ed8ebf3264" kind="dir">
+    <compoundname>probability</compoundname>
+    <innerfile refid="beta_8hpp">beta.hpp</innerfile>
+    <innerfile refid="distribution_8hpp">distribution.hpp</innerfile>
+    <innerfile refid="distributions_8cxx">distributions.cxx</innerfile>
+    <innerfile refid="distributions_8hpp">distributions.hpp</innerfile>
+    <innerfile refid="fixed_8hpp">fixed.hpp</innerfile>
+    <innerfile refid="fournier-robustified-multivariate-normal_8hpp">fournier-robustified-multivariate-normal.hpp</innerfile>
+    <innerfile refid="functional_8hpp">functional.hpp</innerfile>
+    <innerfile refid="lognormal_8hpp">lognormal.hpp</innerfile>
+    <innerfile refid="multinomial_8hpp">multinomial.hpp</innerfile>
+    <innerfile refid="normal_8hpp">normal.hpp</innerfile>
+    <innerfile refid="positive_8hpp">positive.hpp</innerfile>
+    <innerfile refid="truncated_8hpp">truncated.hpp</innerfile>
+    <innerfile refid="uniform_8hpp">uniform.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/"/>
+  </compounddef>
+</doxygen>

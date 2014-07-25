@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classSwitch" kind="class" prot="public">
+    <compoundname>Switch</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">On</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Off</basecompoundref>
+    <includes refid="matiri_8hpp" local="no">matiri.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>On</declname>
+        <defname>On</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>Off</declname>
+        <defname>Off</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSwitch_1af37844608434dc8b923944c0452c395d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Switch&lt; On, Off &gt;::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="68" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSwitch_1a53224fb346919a18d2a433b15ac0d379" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Switch&lt; On, Off &gt;::operator bool</definition>
+        <argsstring>(void) const </argsstring>
+        <name>operator bool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="71" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classSwitch_1a4ddfb89944f56a3e7caf740ea6fcad59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Switch&lt; On, Off &gt;::operator()</definition>
+        <argsstring>(Args...args)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="78" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classSwitch_1ae4ecf25a28afa7e7634323818f7dece3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classSwitch" kindref="compound">Switch</ref> &amp;</type>
+        <definition>Switch&amp; Switch&lt; On, Off &gt;::on</definition>
+        <argsstring>(bool on=true)</argsstring>
+        <name>on</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="84" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classSwitch_1a00d1ed512b194f9583d20d2e408a3a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classSwitch" kindref="compound">Switch</ref> &amp;</type>
+        <definition>Switch&amp; Switch&lt; On, Off &gt;::off</definition>
+        <argsstring>(bool off=true)</argsstring>
+        <name>off</name>
+        <param>
+          <type>bool</type>
+          <declname>off</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="89" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="394">
+        <label>On</label>
+      </node>
+      <node id="393">
+        <label>Switch&lt; On, Off &gt;</label>
+        <link refid="classSwitch"/>
+        <childnode refid="394" relation="public-inheritance">
+        </childnode>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>Off</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="397">
+        <label>On</label>
+      </node>
+      <node id="396">
+        <label>Switch&lt; On, Off &gt;</label>
+        <link refid="classSwitch"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>Off</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="66" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="66" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classSwitch_1a00d1ed512b194f9583d20d2e408a3a05" prot="public" virt="non-virtual"><scope>Switch</scope><name>off</name></member>
+      <member refid="classSwitch_1ae4ecf25a28afa7e7634323818f7dece3" prot="public" virt="non-virtual"><scope>Switch</scope><name>on</name></member>
+      <member refid="classSwitch_1a53224fb346919a18d2a433b15ac0d379" prot="public" virt="non-virtual"><scope>Switch</scope><name>operator bool</name></member>
+      <member refid="classSwitch_1a4ddfb89944f56a3e7caf740ea6fcad59" prot="public" virt="non-virtual"><scope>Switch</scope><name>operator()</name></member>
+      <member refid="classSwitch_1af37844608434dc8b923944c0452c395d" prot="private" virt="non-virtual"><scope>Switch</scope><name>state_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Links_1_1Identity" kind="struct" prot="public">
+    <compoundname>Fsl::Estimation::Links::Identity</compoundname>
+    <includes refid="links_8hpp" local="no">links.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Identity_1af4c630a709f7cfd4f8aaa35591c13c84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Identity::to</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>to</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Identity_1abb5a9bcafb7997fdb192a6bec0c8117b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Identity::from</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>from</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Identity_1af4c630a709f7cfd4f8aaa35591c13c84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Identity::to</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>to</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Identity_1abb5a9bcafb7997fdb192a6bec0c8117b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Identity::from</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>from</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="7" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" bodystart="7" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1abb5a9bcafb7997fdb192a6bec0c8117b" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Identity</scope><name>from</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1abb5a9bcafb7997fdb192a6bec0c8117b" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Identity</scope><name>from</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1af4c630a709f7cfd4f8aaa35591c13c84" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Identity</scope><name>to</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1af4c630a709f7cfd4f8aaa35591c13c84" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Identity</scope><name>to</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

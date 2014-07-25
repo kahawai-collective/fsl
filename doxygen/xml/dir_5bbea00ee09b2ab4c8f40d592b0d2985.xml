@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_5bbea00ee09b2ab4c8f40d592b0d2985" kind="dir">
+    <compoundname>estimation</compoundname>
+    <innerdir refid="dir_0fc778593ffdd00286b296d4c95d3617">estimators</innerdir>
+    <innerfile refid="data_8hpp">data.hpp</innerfile>
+    <innerfile refid="estimation_8hpp">estimation.hpp</innerfile>
+    <innerfile refid="links_8hpp">links.hpp</innerfile>
+    <innerfile refid="parameters_8hpp">parameters.hpp</innerfile>
+    <innerfile refid="samples_8hpp">samples.hpp</innerfile>
+    <innerfile refid="variables_8hpp">variables.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/"/>
+  </compounddef>
+</doxygen>

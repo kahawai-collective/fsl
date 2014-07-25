@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Links_1_1Log" kind="struct" prot="public">
+    <compoundname>Fsl::Estimation::Links::Log</compoundname>
+    <includes refid="links_8hpp" local="no">links.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Log_1ac44e20603049167f834e5d3d8254b9d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Log::to</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>to</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform the parameter into a model variable</para><para>To avoid numerical overflow this function limits the results of the exponential to approximately 1e-20 to 1e20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Log_1a30272d6971ae22efe77d3e125f6a2803" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Log::from</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>from</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform the model variable into a parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="37" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Log_1ac44e20603049167f834e5d3d8254b9d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Log::to</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>to</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform the parameter into a model variable</para><para>To avoid numerical overflow this function limits the results of the exponential to approximately 1e-20 to 1e20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="31" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="31" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Links_1_1Log_1a30272d6971ae22efe77d3e125f6a2803" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Links::Log::from</definition>
+        <argsstring>(const double &amp;value) const </argsstring>
+        <name>from</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform the model variable into a parameter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="42" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" bodystart="17" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Log_1a30272d6971ae22efe77d3e125f6a2803" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Log</scope><name>from</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Log_1a30272d6971ae22efe77d3e125f6a2803" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Log</scope><name>from</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Log_1ac44e20603049167f834e5d3d8254b9d9" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Log</scope><name>to</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Links_1_1Log_1ac44e20603049167f834e5d3d8254b9d9" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Links::Log</scope><name>to</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

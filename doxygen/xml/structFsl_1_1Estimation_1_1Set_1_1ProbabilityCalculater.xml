@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater" kind="struct" prot="public">
+    <compoundname>Fsl::Estimation::Set::ProbabilityCalculater</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Mirror&lt; ProbabilityCalculater &gt;</basecompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater_1abb163ff8417d739e754ce7c782f20e0a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="849" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater_1ae778908dda9d880e4e22cb6287dc815c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater" kindref="compound">ProbabilityCalculater</ref> &amp;</type>
+        <definition>ProbabilityCalculater&amp; Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater::data</definition>
+        <argsstring>(Variable&lt; Distribution &gt; &amp;variable, const std::string &amp;name)</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variable" kindref="compound">Variable</ref>&lt; Distribution &gt; &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="852" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="852" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater_1aecad69e9ed040f5c737788509515f0cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Indices</declname>
+            <defname>Indices</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater" kindref="compound">ProbabilityCalculater</ref> &amp;</type>
+        <definition>ProbabilityCalculater&amp; Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater::data</definition>
+        <argsstring>(Variables&lt; Distribution, Indices...&gt; &amp;variables, const std::string &amp;name)</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variables" kindref="compound">Variables</ref>&lt; Distribution, Indices...&gt; &amp;</type>
+          <declname>variables</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="858" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="858" bodyend="861"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="299">
+        <label>Mirror&lt; ProbabilityCalculater &gt;</label>
+      </node>
+      <node id="298">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater"/>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="301">
+        <label>Mirror&lt; ProbabilityCalculater &gt;</label>
+      </node>
+      <node id="300">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater"/>
+        <childnode refid="301" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="847" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="847" bodyend="862"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater_1ae778908dda9d880e4e22cb6287dc815c" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::ProbabilityCalculater</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater_1aecad69e9ed040f5c737788509515f0cb" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::ProbabilityCalculater</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater_1abb163ff8417d739e754ce7c782f20e0a" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::ProbabilityCalculater</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

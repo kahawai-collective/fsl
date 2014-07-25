@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Population_1_1Mortality" kind="namespace">
+    <compoundname>Fsl::Population::Mortality</compoundname>
+    <innerclass refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous" prot="public">Fsl::Population::Mortality::Instantaneous</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Mortality_1_1Rate" prot="public">Fsl::Population::Mortality::Rate</innerclass>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Mortality_1_1Priors">Fsl::Population::Mortality::Priors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/instantaneous.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

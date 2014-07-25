@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Math_1_1Probability_1_1Generator" kind="struct" prot="public">
+    <compoundname>Fsl::Math::Probability::Generator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">mt19937</basecompoundref>
+    <includes refid="distribution_8hpp" local="no">distribution.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Math_1_1Probability_1_1Generator_1ab6a4500449b45276eb165901c7ab0bf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Probability::Generator::Generator</definition>
+        <argsstring>(void)</argsstring>
+        <name>Generator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Set random number generator seed using current time </para>        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/distribution.hpp" line="22" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/distribution.hpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A scaffolding object that holds the random number generator used in the random() methods </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="148">
+        <label>boost::mt19937</label>
+      </node>
+      <node id="147">
+        <label>Fsl::Math::Probability::Generator</label>
+        <link refid="structFsl_1_1Math_1_1Probability_1_1Generator"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="150">
+        <label>boost::mt19937</label>
+      </node>
+      <node id="149">
+        <label>Fsl::Math::Probability::Generator</label>
+        <link refid="structFsl_1_1Math_1_1Probability_1_1Generator"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/distribution.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/distribution.hpp" bodystart="21" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Math_1_1Probability_1_1Generator_1ab6a4500449b45276eb165901c7ab0bf1" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Generator</scope><name>Generator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="procedure_8hpp" kind="file">
+    <compoundname>procedure.hpp</compoundname>
+    <includedby refid="evaluator_8hpp" local="no">evaluator.hpp</includedby>
+    <includedby refid="bipr_8hpp" local="no">bipr.hpp</includedby>
+    <includedby refid="btar_8hpp" local="no">btar.hpp</includedby>
+    <includedby refid="const_8hpp" local="no">const.hpp</includedby>
+    <includedby refid="tsar_8hpp" local="no">tsar.hpp</includedby>
+    <invincdepgraph>
+      <node id="519">
+        <label>const.hpp</label>
+        <link refid="const_8hpp"/>
+      </node>
+      <node id="515">
+        <label>procedure.hpp</label>
+        <link refid="procedure.hpp"/>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>bipr.hpp</label>
+        <link refid="bipr_8hpp"/>
+      </node>
+      <node id="518">
+        <label>btar.hpp</label>
+        <link refid="btar_8hpp"/>
+      </node>
+      <node id="520">
+        <label>tsar.hpp</label>
+        <link refid="tsar_8hpp"/>
+      </node>
+      <node id="516">
+        <label>evaluator.hpp</label>
+        <link refid="evaluator_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Management_1_1Procedure" prot="public">Fsl::Management::Procedure</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureDynamic" prot="public">Fsl::Management::ProcedureDynamic</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4" prot="public">Fsl::Management::ProcedureDynamic&lt; void &gt;</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureDynamic" prot="public">Fsl::Management::ProcedureDynamic</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureAny" prot="public">Fsl::Management::ProcedureAny</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ControlProcedure" prot="public">Fsl::Management::ControlProcedure</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1DynamicControlProcedure" prot="public">Fsl::Management::DynamicControlProcedure</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Management">Fsl::Management</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Management<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classFsl_1_1Management_1_1Procedure" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1Procedure" kindref="compound">Procedure</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Management_1_1Procedure_1ae0c85e6d0c1fa3b0c690409fea24d282" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1ae0c85e6d0c1fa3b0c690409fea24d282" kindref="member">signature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Procedure<sp/>must<sp/>define<sp/>a<sp/>signature&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classFsl_1_1Management_1_1Procedure_1a13a5faf37289f3187fb147b248a7aa07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a13a5faf37289f3187fb147b248a7aa07" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" kindref="member">operate</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Procedure=</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;<sp/></highlight></codeline>
+<codeline lineno="21" refid="classFsl_1_1Management_1_1ProcedureDynamic" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="24" refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref>&lt;void&gt;<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" kindref="member">signature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kindref="member">operate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1Procedure" kindref="compound">Procedure</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref>&lt;void&gt;,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure" kindref="compound">Procedure</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;</highlight></codeline>
+<codeline lineno="40" refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac9554f05a8a4d50edfd377259ccf8855" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac9554f05a8a4d50edfd377259ccf8855" kindref="member">ProcedureDynamic</ref>(Args...<sp/>args):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedure" kindref="compound">Procedure</ref>(args...){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" kindref="member">signature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1ae0c85e6d0c1fa3b0c690409fea24d282" kindref="member">Procedure::signature</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47" refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a13a5faf37289f3187fb147b248a7aa07" kindref="member">Procedure::reset</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50" refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kindref="member">operate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" kindref="member">Procedure::operate</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classFsl_1_1Management_1_1ProcedureAny" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1ProcedureAny" kindref="compound">ProcedureAny</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57" refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic&lt;&gt;</ref>*<sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classFsl_1_1Management_1_1ProcedureAny_1acd8d989a21a59179f5ec87a97615b351" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1acd8d989a21a59179f5ec87a97615b351" kindref="member">ProcedureAny</ref>(<ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic&lt;&gt;</ref>*<sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref><sp/>=<sp/>0):</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>(<ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="classFsl_1_1Management_1_1ProcedureAny_1ae38a7194dda9e63292596266e63b7d91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny" kindref="compound">ProcedureAny</ref>&amp;<sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1ae38a7194dda9e63292596266e63b7d91" kindref="member">operator=</ref>(<ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic&lt;&gt;</ref>*<sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance<sp/>=<sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="classFsl_1_1Management_1_1ProcedureAny_1af12579d815113957a146034d244e02a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1af12579d815113957a146034d244e02a2" kindref="member">signature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>-&gt;<ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" kindref="member">signature</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="classFsl_1_1Management_1_1ProcedureAny_1a8b08be863432f587b3d2c2af1c143426" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a8b08be863432f587b3d2c2af1c143426" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>-&gt;<ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" kindref="member">operate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>-&gt;<ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kindref="member">operate</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type<sp/>=<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="87" refid="classFsl_1_1Management_1_1ControlProcedure" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1ControlProcedure" kindref="compound">ControlProcedure</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure" kindref="compound">Procedure</ref><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kindref="member">control</ref>;</highlight></codeline>
+<codeline lineno="90" refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" kindref="member">ControlProcedure</ref>(Type*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kindref="member">control</ref>,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Type&amp;<sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref><sp/>=<sp/>0):</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>control(control),</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>(<ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" kindref="member">operate</ref>(){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kindref="member">control</ref><sp/>=<sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type<sp/>=<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="108" refid="classFsl_1_1Management_1_1DynamicControlProcedure" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure" kindref="compound">DynamicControlProcedure</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure" kindref="compound">ControlProcedure</ref>&lt;Type&gt;<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110" refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" kindref="member">starting</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a2b0563700c48399bfc81ad07a7fdccdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a2b0563700c48399bfc81ad07a7fdccdf" kindref="member">DynamicControlProcedure</ref>(Type*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kindref="member">control</ref>,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Type&amp;<sp/><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" kindref="member">starting</ref><sp/>=<sp/>0):</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure" kindref="compound">ControlProcedure</ref>&lt;Type&gt;(control,<ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" kindref="member">starting</ref>),</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" kindref="member">starting</ref>(<ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" kindref="member">starting</ref>){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a74e76efc049b63b85ec80ecef369e86f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a74e76efc049b63b85ec80ecef369e86f" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure" kindref="compound">ControlProcedure&lt;Type&gt;::value</ref><sp/>=<sp/><ref refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" kindref="member">starting</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp"/>
+  </compounddef>
+</doxygen>

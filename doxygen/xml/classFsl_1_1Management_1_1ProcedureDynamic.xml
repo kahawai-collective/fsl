@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Management_1_1ProcedureDynamic" kind="class" prot="public">
+    <compoundname>Fsl::Management::ProcedureDynamic</compoundname>
+    <basecompoundref refid="classFsl_1_1Management_1_1Procedure" prot="public" virt="non-virtual">Fsl::Management::Procedure</basecompoundref>
+    <includes refid="procedure_8hpp" local="no">procedure.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Procedure</declname>
+        <defname>Procedure</defname>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureDynamic_1ac9554f05a8a4d50edfd377259ccf8855" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;::ProcedureDynamic</definition>
+        <argsstring>(Args...args)</argsstring>
+        <name>ProcedureDynamic</name>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="40" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Fsl::Management::ProcedureDynamic&lt; Procedure &gt;::signature</definition>
+        <argsstring>(void)</argsstring>
+        <name>signature</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="44" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Fsl::Management::ProcedureDynamic&lt; Procedure &gt;::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="47" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Fsl::Management::ProcedureDynamic&lt; Procedure &gt;::operate</definition>
+        <argsstring>(void)</argsstring>
+        <name>operate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="50" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="317">
+        <label>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ProcedureDynamic"/>
+        <childnode refid="318" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="319">
+        <label>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ProcedureDynamic"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="21" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" prot="public" virt="virtual"><scope>Fsl::Management::ProcedureDynamic</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac9554f05a8a4d50edfd377259ccf8855" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureDynamic</scope><name>ProcedureDynamic</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" prot="public" virt="virtual"><scope>Fsl::Management::ProcedureDynamic</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" prot="public" virt="virtual"><scope>Fsl::Management::ProcedureDynamic</scope><name>signature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

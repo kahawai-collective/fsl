@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Monitoring_1_1Composition" kind="namespace">
+    <compoundname>Fsl::Monitoring::Composition</compoundname>
+    <innerclass refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample" prot="public">Fsl::Monitoring::Composition::Sample</innerclass>
+    <innerclass refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples" prot="public">Fsl::Monitoring::Composition::Samples</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/monitoring/composition/composition.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

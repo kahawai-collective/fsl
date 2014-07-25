@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_6e7bbe9e4518fbbffc9de8022b5ceddc" kind="dir">
+    <compoundname>priors</compoundname>
+    <innerfile refid="autocorrelation-bentley-2012_8hpp">autocorrelation-bentley-2012.hpp</innerfile>
+    <innerfile refid="steepness-bentley-langley-2012_8hpp">steepness-bentley-langley-2012.hpp</innerfile>
+    <innerfile refid="steepness-he-others-2006_8cxx">steepness-he-others-2006.cxx</innerfile>
+    <innerfile refid="steepness-he-others-2006_8hpp">steepness-he-others-2006.hpp</innerfile>
+    <innerfile refid="variation-bentley-2012_8hpp">variation-bentley-2012.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/"/>
+  </compounddef>
+</doxygen>

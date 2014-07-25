@@ -44,24 +44,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="44">
+      <node id="72">
         <label>Regression</label>
       </node>
-      <node id="43">
+      <node id="71">
         <label>Fisl::Population::Growth::Priors::KFromLinf</label>
         <link refid="classFisl_1_1Population_1_1Growth_1_1Priors_1_1KFromLinf"/>
-        <childnode refid="44" relation="public-inheritance">
+        <childnode refid="72" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="46">
+      <node id="74">
         <label>Regression</label>
       </node>
-      <node id="45">
+      <node id="73">
         <label>Fisl::Population::Growth::Priors::KFromLinf</label>
         <link refid="classFisl_1_1Population_1_1Growth_1_1Priors_1_1KFromLinf"/>
-        <childnode refid="46" relation="public-inheritance">
+        <childnode refid="74" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

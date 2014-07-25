@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="maturity_8hpp" kind="file">
+    <compoundname>maturity.hpp</compoundname>
+    <includes refid="threshold_8hpp" local="no">fsl/math/functions/threshold.hpp</includes>
+    <includes refid="logistic_8hpp" local="no">fsl/math/functions/logistic.hpp</includes>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <incdepgraph>
+      <node id="421">
+        <label>fsl/common.hpp</label>
+        <link refid="common_8hpp"/>
+      </node>
+      <node id="422">
+        <label>fsl/math/functions/function.hpp</label>
+        <link refid="function_8hpp"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>maturity.hpp</label>
+        <link refid="maturity.hpp"/>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>fsl/math/functions/logistic.hpp</label>
+        <link refid="logistic_8hpp"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>fsl/math/functions/threshold.hpp</label>
+        <link refid="threshold_8hpp"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="425">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>maturity.hpp</label>
+        <link refid="maturity.hpp"/>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population">Fsl::Population</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Maturity">Fsl::Population::Maturity</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="threshold_8hpp" kindref="compound">fsl/math/functions/threshold.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="logistic_8hpp" kindref="compound">fsl/math/functions/logistic.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Population<sp/>{</highlight></codeline>
+<codeline lineno="8" refid="namespaceFsl_1_1Population_1_1Maturity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Maturity<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespaceFsl_1_1Population_1_1Maturity_1afd4b2eecd29df7b043b52af32dc5fdae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Threshold" kindref="compound">Math::Functions::Threshold</ref><sp/><ref refid="namespaceFsl_1_1Population_1_1Maturity_1afd4b2eecd29df7b043b52af32dc5fdae" kindref="member">Threshold</ref>;</highlight></codeline>
+<codeline lineno="11" refid="namespaceFsl_1_1Population_1_1Maturity_1ab334431b961239ac2ef2dcdcfbccfdad" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Functions_1_1Logistic" kindref="compound">Math::Functions::Logistic</ref><sp/><ref refid="namespaceFsl_1_1Population_1_1Maturity_1ab334431b961239ac2ef2dcdcfbccfdad" kindref="member">Logistic</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/maturity/maturity.hpp"/>
+  </compounddef>
+</doxygen>

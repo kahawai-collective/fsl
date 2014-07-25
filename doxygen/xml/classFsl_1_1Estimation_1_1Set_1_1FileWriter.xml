@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Set_1_1FileWriter" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Set::FileWriter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Mirror&lt; FileWriter &gt;</basecompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1aa69b6d3a2c2fe61c8a183f848f204962" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Set&lt; Derived &gt;::FileWriter::path_</definition>
+        <argsstring></argsstring>
+        <name>path_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="748" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="748" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a7624a21edcbd53211149f27cf757f6a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Fsl::Estimation::Set&lt; Derived &gt;::FileWriter::filename_</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>filename_</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="750" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="750" bodyend="752"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a4babae008d6857e58f61988726631e1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Set&lt; Derived &gt;::FileWriter::FileWriter</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>FileWriter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="755" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="755" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a86ccf9c4b6f3c2870468e1fd1e41d158" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter" kindref="compound">FileWriter</ref> &amp;</type>
+        <definition>FileWriter&amp; Fsl::Estimation::Set&lt; Derived &gt;::FileWriter::data</definition>
+        <argsstring>(Variable&lt; Distribution &gt; &amp;variable, const std::string &amp;name)</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variable" kindref="compound">Variable</ref>&lt; Distribution &gt; &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="760" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="760" bodyend="762"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a1af4ebf6755488e5c09b6557926e92e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Indices</declname>
+            <defname>Indices</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter" kindref="compound">FileWriter</ref> &amp;</type>
+        <definition>FileWriter&amp; Fsl::Estimation::Set&lt; Derived &gt;::FileWriter::data</definition>
+        <argsstring>(Variables&lt; Distribution, Indices...&gt; &amp;variables, const std::string &amp;name)</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variables" kindref="compound">Variables</ref>&lt; Distribution, Indices...&gt; &amp;</type>
+          <declname>variables</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="765" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="765" bodyend="769"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="124">
+        <label>Mirror&lt; FileWriter &gt;</label>
+      </node>
+      <node id="123">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::FileWriter</label>
+        <link refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="126">
+        <label>Mirror&lt; FileWriter &gt;</label>
+      </node>
+      <node id="125">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::FileWriter</label>
+        <link refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="746" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="746" bodyend="770"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a86ccf9c4b6f3c2870468e1fd1e41d158" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::FileWriter</scope><name>data</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a1af4ebf6755488e5c09b6557926e92e7" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::FileWriter</scope><name>data</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a7624a21edcbd53211149f27cf757f6a3" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Set::FileWriter</scope><name>filename_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1a4babae008d6857e58f61988726631e1a" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::FileWriter</scope><name>FileWriter</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1FileWriter_1aa69b6d3a2c2fe61c8a183f848f204962" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Set::FileWriter</scope><name>path_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

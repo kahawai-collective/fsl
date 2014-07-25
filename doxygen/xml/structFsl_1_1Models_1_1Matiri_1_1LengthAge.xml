@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Models_1_1Matiri_1_1LengthAge" kind="struct" prot="public">
+    <compoundname>Fsl::Models::Matiri::LengthAge</compoundname>
+    <basecompoundref refid="classFsl_1_1Population_1_1Growth_1_1VonBert" prot="public" virt="non-virtual">Fsl::Population::Growth::VonBert</basecompoundref>
+    <includes refid="matiri_8hpp" local="no">matiri.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1aaf0c4d9d55bab3a5113c19f6aa24fa73" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge::cv1</definition>
+        <argsstring></argsstring>
+        <name>cv1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="247" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1a70a8adbbf9771c3c4204831aab2f7731" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge::cv2</definition>
+        <argsstring></argsstring>
+        <name>cv2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="248" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1ad5b8a9b45f08b808f0b115bb0bf0013f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Probability_1_1Normal" kindref="compound">Normal</ref></type>
+        <definition>Normal Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge::distribution</definition>
+        <argsstring>(const double &amp;age)</argsstring>
+        <name>distribution</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>age</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="250" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="250" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Length at age </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="167">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge"/>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>Fsl::Population::Growth::VonBert</label>
+        <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="170">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge"/>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>Fsl::Population::Growth::VonBert</label>
+        <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="246" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="246" bodyend="255"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1aaf0c4d9d55bab3a5113c19f6aa24fa73" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>cv1</name></member>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1a70a8adbbf9771c3c4204831aab2f7731" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>cv2</name></member>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge_1ad5b8a9b45f08b808f0b115bb0bf0013f" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>distribution</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1ad4f315abcf7bccf28d974e152173768a" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>k</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1a2c0c3547824693ccead72b2ad8f781a1" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>linf</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1ad1f60ce7ff8bc381116f57e30ce9af46" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Function_1abedbded6739d5407896e0ef98249d114" prot="public" virt="non-virtual" ambiguityscope="Fsl::Math::Functions::Function::"><scope>Fsl::Models::Matiri::LengthAge</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1a59ac8530b20c0497e95d182d5610e583" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::LengthAge</scope><name>t0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

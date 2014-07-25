@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Models" kind="namespace">
+    <compoundname>Fsl::Models</compoundname>
+    <innerclass refid="classFsl_1_1Models_1_1Matiri" prot="public">Fsl::Models::Matiri</innerclass>
+    <innerclass refid="classFsl_1_1Models_1_1MatiriWriter" prot="public">Fsl::Models::MatiriWriter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="96" column="1"/>
+  </compounddef>
+</doxygen>

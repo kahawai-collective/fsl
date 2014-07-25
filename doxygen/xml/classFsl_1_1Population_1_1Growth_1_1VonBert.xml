@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Growth_1_1VonBert" kind="class" prot="public">
+    <compoundname>Fsl::Population::Growth::VonBert</compoundname>
+    <basecompoundref refid="classFsl_1_1Math_1_1Functions_1_1Function" prot="public" virt="non-virtual">Fsl::Math::Functions::Function</basecompoundref>
+    <derivedcompoundref refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge" prot="public" virt="non-virtual">Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge</derivedcompoundref>
+    <includes refid="von-bert_8hpp" local="no">von-bert.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Growth_1_1VonBert_1ad4f315abcf7bccf28d974e152173768a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Growth::VonBert::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Growth_1_1VonBert_1a2c0c3547824693ccead72b2ad8f781a1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Growth::VonBert::linf</definition>
+        <argsstring></argsstring>
+        <name>linf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Growth_1_1VonBert_1a59ac8530b20c0497e95d182d5610e583" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Growth::VonBert::t0</definition>
+        <argsstring></argsstring>
+        <name>t0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Growth_1_1VonBert_1ad1f60ce7ff8bc381116f57e30ce9af46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Population::Growth::VonBert::operator()</definition>
+        <argsstring>(const double &amp;age) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>age</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>von Bertallanfy growth function </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="450">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>Fsl::Population::Growth::VonBert</label>
+        <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="451">
+        <label>Fsl::Population::Growth::VonBert</label>
+        <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/growth/von-bert.hpp" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1ad4f315abcf7bccf28d974e152173768a" prot="public" virt="non-virtual"><scope>Fsl::Population::Growth::VonBert</scope><name>k</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1a2c0c3547824693ccead72b2ad8f781a1" prot="public" virt="non-virtual"><scope>Fsl::Population::Growth::VonBert</scope><name>linf</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1ad1f60ce7ff8bc381116f57e30ce9af46" prot="public" virt="non-virtual"><scope>Fsl::Population::Growth::VonBert</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Function_1abedbded6739d5407896e0ef98249d114" prot="public" virt="non-virtual" ambiguityscope="Fsl::Math::Functions::Function::"><scope>Fsl::Population::Growth::VonBert</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Population_1_1Growth_1_1VonBert_1a59ac8530b20c0497e95d182d5610e583" prot="public" virt="non-virtual"><scope>Fsl::Population::Growth::VonBert</scope><name>t0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

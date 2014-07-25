@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" kind="class" prot="public">
+    <compoundname>Fsl::Population::Recruitment::Autocorrelated</compoundname>
+    <includes refid="autocorrelated_8hpp" local="no">autocorrelated.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class Variation</type>
+        <defval><ref refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" kindref="compound">Math::Probability::Lognormal</ref></defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp" bodystart="14" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

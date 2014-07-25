@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Math_1_1Series_1_1Filters" kind="namespace">
+    <compoundname>Fsl::Math::Series::Filters</compoundname>
+    <innerclass refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema" prot="public">Fsl::Math::Series::Filters::Ema</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/filters/ema.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

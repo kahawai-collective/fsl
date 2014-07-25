@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Math" kind="namespace">
+    <compoundname>Fsl::Math</compoundname>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Functions">Fsl::Math::Functions</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Probability">Fsl::Math::Probability</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Series">Fsl::Math::Series</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Statistics">Fsl::Math::Statistics</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/constant.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

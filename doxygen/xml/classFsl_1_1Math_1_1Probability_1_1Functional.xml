@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Probability_1_1Functional" kind="class" prot="public">
+    <compoundname>Fsl::Math::Probability::Functional</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::array&lt; Distribution, Size &gt;</basecompoundref>
+    <includes refid="functional_8hpp" local="no">functional.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class <ref refid="classFsl_1_1Math_1_1Probability_1_1Distribution" kindref="compound">Distribution</ref></type>
+      </param>
+      <param>
+        <type>class Means</type>
+      </param>
+      <param>
+        <type>class Spreads</type>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>Size</declname>
+        <defname>Size</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Functional_1a9c1808832a770bb26eb60328899db730" prot="public" static="no" mutable="no">
+        <type>Means</type>
+        <definition>Means Fsl::Math::Probability::Functional&lt; Distribution, Means, Spreads, Size &gt;::means</definition>
+        <argsstring></argsstring>
+        <name>means</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Probability_1_1Functional_1ab2e29ffdcffbc7f52718fa7a131fa980" prot="public" static="no" mutable="no">
+        <type>Spreads</type>
+        <definition>Spreads Fsl::Math::Probability::Functional&lt; Distribution, Means, Spreads, Size &gt;::spreads</definition>
+        <argsstring></argsstring>
+        <name>spreads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Probability_1_1Functional_1a0d89192ef33afae65de3ffbf862e7fae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Math_1_1Probability_1_1Functional" kindref="compound">Functional</ref> &amp;</type>
+        <definition>Functional&amp; Fsl::Math::Probability::Functional&lt; Distribution, Means, Spreads, Size &gt;::initialise</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialise</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" bodystart="19" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="144">
+        <label>std::array&lt;Distribution,Size&gt;</label>
+      </node>
+      <node id="143">
+        <label>Fsl::Math::Probability::Functional&lt; Distribution, Means, Spreads, Size &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Functional"/>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="146">
+        <label>std::array&lt;Distribution,Size&gt;</label>
+      </node>
+      <node id="145">
+        <label>Fsl::Math::Probability::Functional&lt; Distribution, Means, Spreads, Size &gt;</label>
+        <link refid="classFsl_1_1Math_1_1Probability_1_1Functional"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" line="13" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/functional.hpp" bodystart="13" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Functional_1a0d89192ef33afae65de3ffbf862e7fae" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Functional</scope><name>initialise</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Functional_1a9c1808832a770bb26eb60328899db730" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Functional</scope><name>means</name></member>
+      <member refid="classFsl_1_1Math_1_1Probability_1_1Functional_1ab2e29ffdcffbc7f52718fa7a131fa980" prot="public" virt="non-virtual"><scope>Fsl::Math::Probability::Functional</scope><name>spreads</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

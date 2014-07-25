@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Management_1_1Procedures_1_1BTAR" kind="class" prot="public">
+    <compoundname>Fsl::Management::Procedures::BTAR</compoundname>
+    <basecompoundref refid="classFsl_1_1Management_1_1Procedures_1_1BIPR" prot="public" virt="non-virtual">Fsl::Management::Procedures::BIPR</basecompoundref>
+    <includes refid="btar_8hpp" local="no">btar.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1adb978e8558d2f7c93c4a8a2883609661" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a22adf71448690ef2be128802a4109b68" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a99bea36a4e9d5ca7541d76aac146e710" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="22" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ab3c045fbb049ccbf8974b099dfb9fd0a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Fsl::Management::Procedures::BTAR::step</definition>
+        <argsstring></argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ab1c74cd9e6416d02b8f64c38ecb8d1d5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::moderation</definition>
+        <argsstring></argsstring>
+        <name>moderation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a04033f07f4ad832f6658d9c7c07baea8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::asymmetry</definition>
+        <argsstring></argsstring>
+        <name>asymmetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="29" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a02b15c17d43e67073be4b5913bc9999f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::initial_value_</definition>
+        <argsstring></argsstring>
+        <name>initial_value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial value of trajectory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="36" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ac591d28b7c8b7e5a6af3e6dde582c653" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::rate_value_</definition>
+        <argsstring></argsstring>
+        <name>rate_value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Target value of trajectory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="41" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1aaa849611b5ced3ea13390607e4d8c10a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::BTAR::target_value_</definition>
+        <argsstring></argsstring>
+        <name>target_value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Target value of trajectory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="46" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1acac2470487de8e281971024edd5771a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Management::Procedures::BTAR::BTAR</definition>
+        <argsstring>(double *const control, const double &amp;starting, double *const index, const double &amp;responsiveness=1, const double &amp;multiplier=1, const double &amp;initial=1, const double &amp;rate=0.01, const double &amp;target=2, const double &amp;moderation=1, const double &amp;asymmetry=0, const double &amp;change_min=0, const double &amp;change_max=1, const double &amp;value_min=0, const double &amp;value_max=INFINITY)</argsstring>
+        <name>BTAR</name>
+        <param>
+          <type>double *const</type>
+          <declname>control</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>starting</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>responsiveness</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>multiplier</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>rate</declname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>target</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>moderation</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>asymmetry</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>change_min</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>change_max</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value_min</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value_max</declname>
+          <defval>INFINITY</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="50" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="50" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1aab70d14f7030157553a316975ea65d59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Fsl::Management::Procedures::BTAR::signature</definition>
+        <argsstring>(void)</argsstring>
+        <name>signature</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="68" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="68" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a40a4075b5f6c0549139c909e792de22e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Management_1_1Procedures_1_1BTAR" kindref="compound">BTAR</ref> &amp;</type>
+        <definition>BTAR&amp; Fsl::Management::Procedures::BTAR::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="81" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a70020de548e1529fa43c45384baad1ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Management_1_1Procedures_1_1BTAR" kindref="compound">BTAR</ref> &amp;</type>
+        <definition>BTAR&amp; Fsl::Management::Procedures::BTAR::operate</definition>
+        <argsstring>(void)</argsstring>
+        <name>operate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="87" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="87" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classFsl_1_1Management_1_1Procedures_1_1BTAR" kindref="compound">BTAR</ref> (Biomass Trajectory Asymmetric Restricted)</para><para>This management procedure </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+      <node id="36">
+        <label>Fsl::Management::Procedures::BIPR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1BIPR"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
+        <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Fsl::Management::Procedures::BTAR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1BTAR"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="45">
+        <label>Fsl::Math::Series::Filters::Ema</label>
+        <link refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema"/>
+      </node>
+      <node id="43">
+        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Fsl::Management::RestrictProportionalChange</label>
+        <link refid="structFsl_1_1Management_1_1RestrictProportionalChange"/>
+      </node>
+      <node id="44">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+      <node id="41">
+        <label>Fsl::Management::Procedures::BIPR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1BIPR"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>smoother</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>changes</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>values</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Fsl::Management::RestrictValue</label>
+        <link refid="structFsl_1_1Management_1_1RestrictValue"/>
+      </node>
+      <node id="42">
+        <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
+        <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Fsl::Management::Procedures::BTAR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1BTAR"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="16" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a04033f07f4ad832f6658d9c7c07baea8" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>asymmetry</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1ad0059d0e69f135e3af85d793e2b3060c" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>BIPR</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1acac2470487de8e281971024edd5771a8" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>BTAR</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1ae8a68b87cb763616bb7812e46a514bd6" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>changes</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>control</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>ControlProcedure</name></member>
+      <member refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a2b0563700c48399bfc81ad07a7fdccdf" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>DynamicControlProcedure</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a2dcc3b3a689fe942922168bd2229ae76" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>index</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1adb978e8558d2f7c93c4a8a2883609661" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>initial</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a02b15c17d43e67073be4b5913bc9999f" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>initial_value_</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ab1c74cd9e6416d02b8f64c38ecb8d1d5" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>moderation</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a94ef3e72833cc9a994f29975a308ed67" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>multiplier</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a70020de548e1529fa43c45384baad1ae" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a22adf71448690ef2be128802a4109b68" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>rate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ac591d28b7c8b7e5a6af3e6dde582c653" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>rate_value_</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a40a4075b5f6c0549139c909e792de22e" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1aab70d14f7030157553a316975ea65d59" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>signature</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a28298963296778cc0f98a1cd66de6324" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>smoother</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a9c00b85f6644b929b42e8b6bc600b11f" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>Smoother</name></member>
+      <member refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>starting</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ab3c045fbb049ccbf8974b099dfb9fd0a" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>step</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a99bea36a4e9d5ca7541d76aac146e710" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>target</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1aaa849611b5ced3ea13390607e4d8c10a" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>target_value_</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>value</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1aea91220eaa4173cf83e38d9c435b2fa7" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

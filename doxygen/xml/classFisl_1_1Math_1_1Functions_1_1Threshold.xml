@@ -20,11 +20,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classFisl_1_1Math_1_1Functions_1_1Threshold_1a0035c46bd425dbff867d31b4f666320b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFisl_1_1Math_1_1Functions_1_1Threshold_1a2b8971b9a21b0c31d02da3ff9cd0319a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
-        <definition>double Fisl::Math::Functions::Threshold::operator</definition>
+        <definition>double Fisl::Math::Functions::Threshold::operator()</definition>
         <argsstring>(const double &amp;x)</argsstring>
-        <name>operator</name>
+        <name>operator()</name>
         <param>
           <type>const double &amp;</type>
           <declname>x</declname>
@@ -43,34 +43,33 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="73">
+      <node id="179">
         <label>Fisl::Math::Functions::Function</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Function"/>
       </node>
-      <node id="72">
+      <node id="178">
         <label>Fisl::Math::Functions::Threshold</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Threshold"/>
-        <childnode refid="73" relation="public-inheritance">
+        <childnode refid="179" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="75">
+      <node id="181">
         <label>Fisl::Math::Functions::Function</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Function"/>
       </node>
-      <node id="74">
+      <node id="180">
         <label>Fisl::Math::Functions::Threshold</label>
         <link refid="classFisl_1_1Math_1_1Functions_1_1Threshold"/>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="181" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
     <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/math/functions/threshold.hpp" line="10" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/math/functions/threshold.hpp" bodystart="10" bodyend="17"/>
     <listofallmembers>
       <member refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a6186f09dc601a1469893bb641f504b1a" prot="public" virt="non-virtual"><scope>Fisl::Math::Functions::Threshold</scope><name>inflection</name></member>
-      <member refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a0035c46bd425dbff867d31b4f666320b" prot="public" virt="non-virtual"><scope>Fisl::Math::Functions::Threshold</scope><name>operator</name></member>
-      <member refid="classFisl_1_1Math_1_1Functions_1_1Function_1a9742fece50e56752eda60d467a7127ce" prot="public" virt="non-virtual"><scope>Fisl::Math::Functions::Threshold</scope><name>operator()</name></member>
+      <member refid="classFisl_1_1Math_1_1Functions_1_1Threshold_1a2b8971b9a21b0c31d02da3ff9cd0319a" prot="public" virt="non-virtual"><scope>Fisl::Math::Functions::Threshold</scope><name>operator()</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

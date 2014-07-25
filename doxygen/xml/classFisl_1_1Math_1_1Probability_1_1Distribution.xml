@@ -167,7 +167,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>implement Duple&lt;&gt; to provide for range and support </para></xrefdescription></xrefsect></para>        </detaileddescription>
+<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>implement Duple&lt;&gt; to provide for range and support </para></xrefdescription></xrefsect></para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/math/probability/distribution.hpp" line="94" bodyfile="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/math/probability/distribution.hpp" bodystart="94" bodyend="96"/>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Set::LikelihoodsWriter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Mirror&lt; LikelihoodsWriter &gt;</basecompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1ae49079323897597559e37da939e15dce" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Fsl::Estimation::Set&lt; Derived &gt;::LikelihoodsWriter::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="778" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="778" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1aeb88f29f5d4ac9ff6bd0042080bb32b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::Set&lt; Derived &gt;::LikelihoodsWriter::LikelihoodsWriter</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>LikelihoodsWriter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="780" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="780" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1a3842d59231b109ac28220f6bd5b1edf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter" kindref="compound">LikelihoodsWriter</ref> &amp;</type>
+        <definition>LikelihoodsWriter&amp; Fsl::Estimation::Set&lt; Derived &gt;::LikelihoodsWriter::data</definition>
+        <argsstring>(Variable&lt; Distribution &gt; &amp;variable, const std::string &amp;name)</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variable" kindref="compound">Variable</ref>&lt; Distribution &gt; &amp;</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="786" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="786" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1a413c00f2256b386b1ed5c125b22ca3a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Indices</declname>
+            <defname>Indices</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter" kindref="compound">LikelihoodsWriter</ref> &amp;</type>
+        <definition>LikelihoodsWriter&amp; Fsl::Estimation::Set&lt; Derived &gt;::LikelihoodsWriter::data</definition>
+        <argsstring>(Variables&lt; Distribution, Indices...&gt; &amp;variables, const std::string &amp;name)</argsstring>
+        <name>data</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variables" kindref="compound">Variables</ref>&lt; Distribution, Indices...&gt; &amp;</type>
+          <declname>variables</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="792" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="792" bodyend="795"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="174">
+        <label>Mirror&lt; LikelihoodsWriter &gt;</label>
+      </node>
+      <node id="173">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::LikelihoodsWriter</label>
+        <link refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="176">
+        <label>Mirror&lt; LikelihoodsWriter &gt;</label>
+      </node>
+      <node id="175">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::LikelihoodsWriter</label>
+        <link refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="776" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="776" bodyend="796"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1a3842d59231b109ac28220f6bd5b1edf4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::LikelihoodsWriter</scope><name>data</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1a413c00f2256b386b1ed5c125b22ca3a3" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::LikelihoodsWriter</scope><name>data</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1ae49079323897597559e37da939e15dce" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Set::LikelihoodsWriter</scope><name>file_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1_1LikelihoodsWriter_1aeb88f29f5d4ac9ff6bd0042080bb32b7" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::LikelihoodsWriter</scope><name>LikelihoodsWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

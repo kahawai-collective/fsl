@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Variable" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Variable</compoundname>
+    <basecompoundref refid="classFsl_1_1Estimation_1_1Variate" prot="public" virt="non-virtual">Fsl::Estimation::Variate&lt; Distribution &gt;</basecompoundref>
+    <includes refid="variables_8hpp" local="no">variables.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Distribution</declname>
+        <defname>Distribution</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Variable_1afe83d0ca3528f8edbbdf3ef808ad7708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Fsl::Estimation::Variable&lt; Distribution &gt;::Variable</definition>
+        <argsstring>(const Args &amp;...args)</argsstring>
+        <name>Variable</name>
+        <param>
+          <type>const Args &amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="429" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="429" bodyend="431"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="425">
+        <label>Distribution</label>
+      </node>
+      <node id="423">
+        <label>Fsl::Estimation::Variable&lt; Distribution &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Variable"/>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>Reflector&lt;Variate&lt;Distribution&gt; &gt;</label>
+      </node>
+      <node id="424">
+        <label>Fsl::Estimation::Variate&lt; Distribution &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Variate"/>
+        <childnode refid="425" relation="public-inheritance">
+        </childnode>
+        <childnode refid="426" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="429">
+        <label>Distribution</label>
+      </node>
+      <node id="427">
+        <label>Fsl::Estimation::Variable&lt; Distribution &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Variable"/>
+        <childnode refid="428" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>Reflector&lt;Variate&lt;Distribution&gt; &gt;</label>
+      </node>
+      <node id="428">
+        <label>Fsl::Estimation::Variate&lt; Distribution &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Variate"/>
+        <childnode refid="429" relation="public-inheritance">
+        </childnode>
+        <childnode refid="430" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="425" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="425" bodyend="433"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a6fb16e217238c44ce9f3ab5385f3d894" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>free</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1afe7007c8e0a01724dc76915811335863" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>free</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a87b443e852d28d030df1adc54e8589cf" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1ad450ae9e65d100ab8b2d26f5a9d340d8" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>operator double</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a2b2fd89e617feef773e0db2df5259e8b" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>operator=</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1aaf06b6d0c8a192dffc847bb7b7fd8fe1" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>reflect</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a55827f04595a49bf28f7749026a9efca" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a8863466c133b473d914daa71e560755b" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a303e499ad65ee5182a57b6835fab2319" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>valid</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a6601544af75235d332b46337b9c40546" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>value</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a483c75f3fe183fcb78b8140a93f09a2b" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>value</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1aad4a7c73bdc5d2a674b288754c843fa6" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>value</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variable_1afe83d0ca3528f8edbbdf3ef808ad7708" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>Variable</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a250b645ebec511956e20b359e92d2ca3" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>Variate</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a2583cae10773388bab5f467587ece35b" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>Variate</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a3a9486b89950a0e05710d1552c93352e" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>Variate</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Variate_1a98f8c8664004bc4b1aadeed5205c8fe8" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Variable</scope><name>Variate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

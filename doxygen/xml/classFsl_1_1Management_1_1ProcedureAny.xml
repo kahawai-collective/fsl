@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Management_1_1ProcedureAny" kind="class" prot="public">
+    <compoundname>Fsl::Management::ProcedureAny</compoundname>
+    <includes refid="procedure_8hpp" local="no">procedure.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" prot="private" static="no" mutable="no">
+        <type><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref> *</type>
+        <definition>ProcedureDynamic* Fsl::Management::ProcedureAny::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="57" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1acd8d989a21a59179f5ec87a97615b351" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Management::ProcedureAny::ProcedureAny</definition>
+        <argsstring>(ProcedureDynamic&lt;&gt; *instance=0)</argsstring>
+        <name>ProcedureAny</name>
+        <param>
+          <type><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref>&lt;&gt; *</type>
+          <declname>instance</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="61" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1ae38a7194dda9e63292596266e63b7d91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Management_1_1ProcedureAny" kindref="compound">ProcedureAny</ref> &amp;</type>
+        <definition>ProcedureAny&amp; Fsl::Management::ProcedureAny::operator=</definition>
+        <argsstring>(ProcedureDynamic&lt;&gt; *instance)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classFsl_1_1Management_1_1ProcedureDynamic" kindref="compound">ProcedureDynamic</ref>&lt;&gt; *</type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="65" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1af12579d815113957a146034d244e02a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Fsl::Management::ProcedureAny::signature</definition>
+        <argsstring>(void)</argsstring>
+        <name>signature</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="70" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1a8b08be863432f587b3d2c2af1c143426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Management::ProcedureAny::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="74" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Management::ProcedureAny::operate</definition>
+        <argsstring>(void)</argsstring>
+        <name>operate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="78" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="315">
+        <label>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ProcedureDynamic"/>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+      <node id="314">
+        <label>Fsl::Management::ProcedureAny</label>
+        <link refid="classFsl_1_1Management_1_1ProcedureAny"/>
+        <childnode refid="315" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="55" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="55" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" prot="private" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>instance</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1ae38a7194dda9e63292596266e63b7d91" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>operator=</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1acd8d989a21a59179f5ec87a97615b351" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>ProcedureAny</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1a8b08be863432f587b3d2c2af1c143426" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>reset</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1af12579d815113957a146034d244e02a2" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>signature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

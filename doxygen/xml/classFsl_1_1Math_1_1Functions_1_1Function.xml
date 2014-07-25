@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Functions_1_1Function" kind="class" prot="public">
+    <compoundname>Fsl::Math::Functions::Function</compoundname>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1Constant" prot="public" virt="non-virtual">Fsl::Math::Functions::Constant</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1DoubleLogistic" prot="public" virt="non-virtual">Fsl::Math::Functions::DoubleLogistic</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" prot="public" virt="non-virtual">Fsl::Math::Functions::DoubleNormalPlateau</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1Identity" prot="public" virt="non-virtual">Fsl::Math::Functions::Identity</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1Line" prot="public" virt="non-virtual">Fsl::Math::Functions::Line</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1Logistic" prot="public" virt="non-virtual">Fsl::Math::Functions::Logistic</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1Power" prot="public" virt="non-virtual">Fsl::Math::Functions::Power</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Math_1_1Functions_1_1Threshold" prot="public" virt="non-virtual">Fsl::Math::Functions::Threshold</derivedcompoundref>
+    <derivedcompoundref refid="classFsl_1_1Population_1_1Growth_1_1VonBert" prot="public" virt="non-virtual">Fsl::Population::Growth::VonBert</derivedcompoundref>
+    <includes refid="function_8hpp" local="no">function.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Functions_1_1Function_1abedbded6739d5407896e0ef98249d114" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Functions::Function::operator()</definition>
+        <argsstring>(const double &amp;x)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of the function <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point at which function is evaluated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value of function </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/function.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/function.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A base class for all functions</para><para>This class is not expected to be used but it defines the interface that all <ref refid="namespaceFsl_1_1Math_1_1Functions" kindref="compound">Functions</ref> are expected to have. <ref refid="namespaceFsl_1_1Math_1_1Functions" kindref="compound">Functions</ref> act as functors with a &quot;call operator&quot; which takes a double and returns a double. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="141">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>Fsl::Population::Growth::VonBert</label>
+        <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>Fsl::Math::Functions::Logistic</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Logistic"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>Fsl::Math::Functions::Line</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Line"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>Fsl::Math::Functions::Threshold</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Threshold"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>Fsl::Math::Functions::Power</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Power"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>Fsl::Math::Functions::DoubleLogistic</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1DoubleLogistic"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>Fsl::Math::Functions::DoubleNormalPlateau</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>Fsl::Math::Functions::Constant</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Constant"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>Fsl::Math::Functions::Identity</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Identity"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/function.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/functions/function.hpp" bodystart="16" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Functions_1_1Function_1abedbded6739d5407896e0ef98249d114" prot="public" virt="non-virtual"><scope>Fsl::Math::Functions::Function</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

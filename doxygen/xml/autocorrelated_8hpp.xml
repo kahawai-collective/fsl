@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="autocorrelated_8hpp" kind="file">
+    <compoundname>autocorrelated.hpp</compoundname>
+    <includes refid="normal_8hpp" local="no">fsl/math/probability/normal.hpp</includes>
+    <includes refid="lognormal_8hpp" local="no">fsl/math/probability/lognormal.hpp</includes>
+    <includes refid="autocorrelation_8hpp" local="no">fsl/math/series/autocorrelation.hpp</includes>
+    <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>boost/random/variate_generator.hpp</label>
+      </node>
+      <node id="14">
+        <label>fsl/math/series/autocorrelation.hpp</label>
+        <link refid="autocorrelation_8hpp"/>
+      </node>
+      <node id="4">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="3">
+        <label>boost/random/normal_distribution.hpp</label>
+      </node>
+      <node id="2">
+        <label>boost/math/distributions/normal.hpp</label>
+      </node>
+      <node id="9">
+        <label>boost/math/distributions/uniform.hpp</label>
+      </node>
+      <node id="7">
+        <label>boost/random/mersenne_twister.hpp</label>
+      </node>
+      <node id="1">
+        <label>fsl/math/probability/normal.hpp</label>
+        <link refid="normal_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>autocorrelated.hpp</label>
+        <link refid="autocorrelated.hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ctime</label>
+      </node>
+      <node id="12">
+        <label>boost/math/distributions/lognormal.hpp</label>
+      </node>
+      <node id="5">
+        <label>fsl/math/probability/distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>boost/random/lognormal_distribution.hpp</label>
+      </node>
+      <node id="11">
+        <label>fsl/math/probability/lognormal.hpp</label>
+        <link refid="lognormal_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>boost/random/uniform_01.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>matiri.hpp</label>
+        <link refid="matiri_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>autocorrelated.hpp</label>
+        <link refid="autocorrelated.hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>matiri.cxx</label>
+        <link refid="matiri_8cxx"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" prot="public">Fsl::Population::Recruitment::Autocorrelated</innerclass>
+    <innerclass refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4" prot="public">Fsl::Population::Recruitment::Autocorrelated&lt; Math::Probability::Lognormal &gt;</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population">Fsl::Population</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population_1_1Recruitment">Fsl::Population::Recruitment</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="normal_8hpp" kindref="compound">fsl/math/probability/normal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lognormal_8hpp" kindref="compound">fsl/math/probability/lognormal.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="autocorrelation_8hpp" kindref="compound">fsl/math/series/autocorrelation.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Population<sp/>{</highlight></codeline>
+<codeline lineno="9" refid="namespaceFsl_1_1Population_1_1Recruitment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Recruitment<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Variation<sp/>=<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" kindref="compound">Math::Probability::Lognormal</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="14" refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" kindref="compound">Autocorrelated</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="17" refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" kindref="compound">Autocorrelated</ref>&lt;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Math::Probability::Lognormal</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">&gt;<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ab981bf97e183205bed88c9f8529204c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation" kindref="compound">Math::Series::Autocorrelation</ref><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ab981bf97e183205bed88c9f8529204c3" kindref="member">autocorrelation</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a3e6dbebf3046734421e93cdc27c87742" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a3e6dbebf3046734421e93cdc27c87742" kindref="member">sd</ref>;</highlight></codeline>
+<codeline lineno="25" refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a7f9c63c98d7d9a9d42f31c2256ad3325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1a7f9c63c98d7d9a9d42f31c2256ad3325" kindref="member">autocor</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ad0a349bfa6273f7cf97bb95148cd9e34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated_3_01Math_1_1Probability_1_1Lognormal_01_4_1ad0a349bfa6273f7cf97bb95148cd9e34" kindref="member">random</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Normal<sp/>normal(0,sd);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deviation<sp/>=<sp/>normal.random();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deviation<sp/>=<sp/>autocorrelation(deviation);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiplier<sp/>=<sp/>std::exp(deviation-0.5*sd*sd);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>multiplier;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/autocorrelated.hpp"/>
+  </compounddef>
+</doxygen>

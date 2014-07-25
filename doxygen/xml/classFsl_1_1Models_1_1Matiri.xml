@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Models_1_1Matiri" kind="class" prot="public">
+    <compoundname>Fsl::Models::Matiri</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Polymorph&lt; Derived &gt;</basecompoundref>
+    <includes refid="matiri_8hpp" local="no">matiri.hpp</includes>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1Age" prot="public">Fsl::Models::Matiri::Age</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge" prot="public">Fsl::Models::Matiri::LengthAge</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1Sector" prot="public">Fsl::Models::Matiri::Sector</innerclass>
+    <innerclass refid="structFsl_1_1Models_1_1Matiri_1_1Sex" prot="public">Fsl::Models::Matiri::Sex</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class Derived</type>
+      </param>
+      <param>
+        <type>uint</type>
+        <declname>Sexes</declname>
+        <defname>Sexes</defname>
+      </param>
+      <param>
+        <type>uint</type>
+        <declname>Ages</declname>
+        <defname>Ages</defname>
+      </param>
+      <param>
+        <type>uint</type>
+        <declname>Sectors</declname>
+        <defname>Sectors</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Dimensions</header>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a322a3eb148c8a227bec3ac16cf0dcda7" prot="public" static="no" mutable="no">
+        <type><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Fsl::Models::Matiri::Sex</ref></type>
+        <definition> Fsl::Models::Matiri::Sex  Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::sexes</definition>
+        <argsstring></argsstring>
+        <name>sexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a7168a34dc0a06e7c08feaafefaa3c3d4" prot="public" static="no" mutable="no">
+        <type><ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Fsl::Models::Matiri::Age</ref></type>
+        <definition> Fsl::Models::Matiri::Age  Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::ages</definition>
+        <argsstring></argsstring>
+        <name>ages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1ad6dfede72b10bb2d5b4ca89d986d2b14" prot="public" static="no" mutable="no">
+        <type><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Fsl::Models::Matiri::Sector</ref></type>
+        <definition> Fsl::Models::Matiri::Sector  Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::sectors</definition>
+        <argsstring></argsstring>
+        <name>sectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="133" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Spawning</header>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1adeba66763b9f027eadde4896a1e658fc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::biomass_spawning</definition>
+        <argsstring></argsstring>
+        <name>biomass_spawning</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fish spawning biomass </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="155" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Recruitment</header>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a60fe4807f23a4d2e5889e9f1791c4cab" prot="public" static="no" mutable="no">
+        <type><ref refid="classSwitch" kindref="compound">Switch</ref>&lt; <ref refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" kindref="compound">BevertonHolt</ref>, <ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Constant</ref> &gt;</type>
+        <definition>Switch&lt;BevertonHolt,Constant&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::recruitment_relation</definition>
+        <argsstring></argsstring>
+        <name>recruitment_relation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BevertonHolt or Constant recruitment relation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="169" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a5c8751038506c05d6a875bb77622e4d0" prot="public" static="no" mutable="no">
+        <type><ref refid="classSwitch" kindref="compound">Switch</ref>&lt; <ref refid="classFsl_1_1Population_1_1Recruitment_1_1Autocorrelated" kindref="compound">Autocorrelated</ref>&lt; <ref refid="classFsl_1_1Math_1_1Probability_1_1Lognormal" kindref="compound">Lognormal</ref> &gt;, <ref refid="classFsl_1_1Math_1_1Functions_1_1Constant" kindref="compound">Constant</ref> &gt;</type>
+        <definition>Switch&lt;Autocorrelated&lt;Lognormal&gt;,Constant&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::recruitment_variation</definition>
+        <argsstring></argsstring>
+        <name>recruitment_variation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lognormal or Constant recruitment variation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="174" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a6bef15229f5f813198e4cc4db0fbf22b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::recruitment_variation_random</definition>
+        <argsstring></argsstring>
+        <name>recruitment_variation_random</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag for whether recruiment deviations are drawn randomly (otherwise they may be set in each time by the user) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="180" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1ac8a79e9623b78515f70605dd8952fa22" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::recruits_determ</definition>
+        <argsstring></argsstring>
+        <name>recruits_determ</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deterministic recruitment at time t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="185" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a6867eb4d0ddf3f52cc3ac32f00135284" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::recruits_deviation</definition>
+        <argsstring></argsstring>
+        <name>recruits_deviation</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recruitment deviation (multiplier) at time t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="190" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a96ba3d8a9b5494cd50ff57a111b56fcc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::recruits</definition>
+        <argsstring></argsstring>
+        <name>recruits</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of recruits at time t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="195" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1ae1ace4d65919dcbcbf34e29225715ae6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::sex_ratio</definition>
+        <argsstring></argsstring>
+        <name>sex_ratio</name>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="198" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Natural mortality</header>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1aea64c4155b4c760c50f92fc44f31ae00" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref> &gt;</type>
+        <definition>Array&lt; double, Sex &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::mortality</definition>
+        <argsstring></argsstring>
+        <name>mortality</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous rate of natural mortality for each sex </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="215" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a34f12a5f58c743eb71b8b47bab8e0315" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt; double, Sex,Age &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::mortalities</definition>
+        <argsstring></argsstring>
+        <name>mortalities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mortality at sex and age </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="223" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a493b149afceb56b27227395eb09628a0" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt; double, Sex,Age &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::mortality_survivals</definition>
+        <argsstring></argsstring>
+        <name>mortality_survivals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Survival at sex and age </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="231" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Weight, maturity at age</header>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1af8bf3ed8f56c22e29313a02572715b79" prot="public" static="no" mutable="no">
+        <type>Array&lt; <ref refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge" kindref="compound">LengthAge</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref> &gt;</type>
+        <definition>Array&lt; LengthAge, Sex &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::length_age</definition>
+        <argsstring></argsstring>
+        <name>length_age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="260" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1aba07b40fbc7241472399a93e6290a821" prot="public" static="no" mutable="no">
+        <type>Array&lt; <ref refid="classFsl_1_1Math_1_1Probability_1_1Normal" kindref="compound">Normal</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt; Normal, Sex,Age &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::lengths</definition>
+        <argsstring></argsstring>
+        <name>lengths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="265" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1aaab8b299148c0deefacb3ce8989b267f" prot="public" static="no" mutable="no">
+        <type>Array&lt; <ref refid="classFsl_1_1Math_1_1Functions_1_1Power" kindref="compound">Power</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref> &gt;</type>
+        <definition>Array&lt; Power, Sex &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::weight_length</definition>
+        <argsstring></argsstring>
+        <name>weight_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Weight at age </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="274" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a3298b85930d90451a18be148a441910f" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt; double, Sex,Age &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::weights</definition>
+        <argsstring></argsstring>
+        <name>weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="279" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a398a91a8cd419355f02cb4f4ef4dab18" prot="public" static="no" mutable="no">
+        <type>Array&lt; <ref refid="classFsl_1_1Math_1_1Functions_1_1Logistic" kindref="compound">Logistic</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref> &gt;</type>
+        <definition>Array&lt; Logistic, Sex &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::maturity_age</definition>
+        <argsstring></argsstring>
+        <name>maturity_age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maturity at age </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="288" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a4ffdc65da2ce736bdc5975ed8cb4fcbb" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt; double, Sex,Age &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::maturities</definition>
+        <argsstring></argsstring>
+        <name>maturities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="293" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1ac8f93f20678fef2161213a947de7aa25" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt;double,Sex,Age&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::numbers</definition>
+        <argsstring></argsstring>
+        <name>numbers</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fish numbers by age and sex </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="140" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1aa15ea49236661f02a9b481223316f5ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::biomass</definition>
+        <argsstring></argsstring>
+        <name>biomass</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fish biomass </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="145" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1af625fa8aad37db08d36c6b5c21ccc907" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref> &gt;</type>
+        <definition>Array&lt; double, Sector,Sex &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::selectivity_sex</definition>
+        <argsstring></argsstring>
+        <name>selectivity_sex</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="302" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a81bc1dc6a4d40cb7b5a209fa4679db09" prot="public" static="no" mutable="no">
+        <type>Array&lt; <ref refid="classFsl_1_1Math_1_1Functions_1_1DoubleNormalPlateau" kindref="compound">DoubleNormalPlateau</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref> &gt;</type>
+        <definition>Array&lt; DoubleNormalPlateau, Sector,Sex &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::selectivity_age</definition>
+        <argsstring></argsstring>
+        <name>selectivity_age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="307" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1af895fbb430852599b23649ff5dac55f0" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt; double, Sector,Sex,Age &gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::selectivities</definition>
+        <argsstring></argsstring>
+        <name>selectivities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="312" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1aa79291b9b92923cbb8f0ff3b2084bf21" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::exploitation_on</definition>
+        <argsstring></argsstring>
+        <name>exploitation_on</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A switch used to turn on/off exploitation dynamics (e.g turn off for virgin equilibrium) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="318" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a526f2549f38e228295b9764b341a4ff2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::catches_on</definition>
+        <argsstring></argsstring>
+        <name>catches_on</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A switch used to turn on/off the calculation of exploitation rates from catches. Used to specify a particular exploitation rate when calculation MSY/Bmsy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="325" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1abfc6bded4720537d244b70bfc0bcc4df" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref> &gt;</type>
+        <definition>Array&lt;double,Sector&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::biomass_vulnerable</definition>
+        <argsstring></argsstring>
+        <name>biomass_vulnerable</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vulnerable biomass by sector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="330" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a80355a50ee7016425ce7c2be176c6948" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref> &gt;</type>
+        <definition>Array&lt;double,Sector&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::catches</definition>
+        <argsstring></argsstring>
+        <name>catches</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Catches by sector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="335" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a6d1134550a24d5eac397d02ab125f4be" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref> &gt;</type>
+        <definition>Array&lt;double,Sector&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::exploitation_rate_max</definition>
+        <argsstring></argsstring>
+        <name>exploitation_rate_max</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="337" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1ae86d7a40ebe6507d156a18e1b49ed21d" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref> &gt;</type>
+        <definition>Array&lt;double,Sector&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::exploitation_rate</definition>
+        <argsstring></argsstring>
+        <name>exploitation_rate</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exploitation rate by region and method for current time step </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="342" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Models_1_1Matiri_1a4010ffcfac8084470b896c5a2c2f9f0d" prot="public" static="no" mutable="no">
+        <type>Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Age" kindref="compound">Age</ref> &gt;</type>
+        <definition>Array&lt;double,Sex,Age&gt; Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::exploitation_survivals</definition>
+        <argsstring></argsstring>
+        <name>exploitation_survivals</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exploitation survival by sex and age </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="347" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1ae6791934dba2cd62fdf603ce9363e572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Matiri</definition>
+        <argsstring>(void)</argsstring>
+        <name>Matiri</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="112" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="112" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1af2e857dd614b57fc6b8c2d28c7c12de5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::biomass_update</definition>
+        <argsstring>(void)</argsstring>
+        <name>biomass_update</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="353" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="353" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1ae5c1f5bc12b1676a8de71cac31030ad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::biomass_spawning_update</definition>
+        <argsstring>(void)</argsstring>
+        <name>biomass_spawning_update</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="364" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="364" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1a4eb08d11db2ef534569c323b09babf8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::biomass_vulnerable_update</definition>
+        <argsstring>(void)</argsstring>
+        <name>biomass_vulnerable_update</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="375" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="375" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1a8379653d2502828e6599bdd3c89b0df4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::exploitation_off</definition>
+        <argsstring>(void)</argsstring>
+        <name>exploitation_off</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="387" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="387" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1aea7f45c608f9f7695dad9c3f91742d10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::exploitation_rate_set</definition>
+        <argsstring>(const Array&lt; double, Sector &gt; &amp;values)</argsstring>
+        <name>exploitation_rate_set</name>
+        <param>
+          <type>const Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set exploitation rate. Used in testing and in equilibrium exploitation i.e. MSY/BMSY calculations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="397" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="397" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1a9e98a657f6e359302b85c34d5311d5cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::catches_set</definition>
+        <argsstring>(const Array&lt; double, Sector &gt; &amp;values)</argsstring>
+        <name>catches_set</name>
+        <param>
+          <type>const Array&lt; double, <ref refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kindref="compound">Sector</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="403" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="403" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1aa24f4e56735d84dcc0a8b153d86bbee7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::check</definition>
+        <argsstring>(void) const </argsstring>
+        <name>check</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="409" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="409" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1a179839c91fb44067f54a6eecf6b9eb2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::initialise</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialise</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise various model variables based on current parameter values </para>        </detaileddescription>
+        <inbodydescription>
+<para>The fish population is initialised to an unfished state by iterating with virgin recruitment until it reaches equibrium defined by less than 0.01% change in total biomass.</para><para>Once the population has converged to unfished equilibrium, the virgin spawning biomass, or the virgin recruitment, can be set.</para>        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="418" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="418" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1aa95d41af788f7f91cd7a1f08f5217285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::update</definition>
+        <argsstring>(uint time=0)</argsstring>
+        <name>update</name>
+        <param>
+          <type>uint</type>
+          <declname>time</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="500" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="500" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1a9260266866796e67b61c52464363771a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::seed</definition>
+        <argsstring>(void)</argsstring>
+        <name>seed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="565" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="565" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Models_1_1Matiri_1a0339a73b1e7c0655a3f624e70f50c09b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::equilibrium</definition>
+        <argsstring>(void)</argsstring>
+        <name>equilibrium</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the population to a deterministic equilibrium </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="579" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="579" bodyend="600"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structFsl_1_1Models_1_1Matiri_1_1Sex" kindref="compound">Sex</ref>, age and sector structured fishery model.</para><para><simplesect kind="author"><para>Nokome Bentley <ulink url="mailto:nokome.bentley@trophia.com">nokome.bentley@trophia.com</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="220">
+        <label>Polymorph&lt; Derived &gt;</label>
+      </node>
+      <node id="219">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;</label>
+        <link refid="classFsl_1_1Models_1_1Matiri"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="230">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sector</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Sector"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Autocorrelated&lt; Lognormal &gt;</label>
+      </node>
+      <node id="232">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Age</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Age"/>
+        <childnode refid="233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>Switch&lt; BevertonHolt, Constant &gt;</label>
+        <link refid="classSwitch"/>
+        <childnode refid="227" relation="public-inheritance">
+        </childnode>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>Switch&lt; Autocorrelated&lt; Lognormal &gt;, Constant &gt;</label>
+        <link refid="classSwitch"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>BevertonHolt</label>
+      </node>
+      <node id="222">
+        <label>Polymorph&lt; Derived &gt;</label>
+      </node>
+      <node id="231">
+        <label>Dimension&lt; Sector, Sectors &gt;</label>
+      </node>
+      <node id="225">
+        <label>Constant</label>
+      </node>
+      <node id="228">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sex</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Sex"/>
+        <childnode refid="229" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>Dimension&lt; Age, Ages &gt;</label>
+      </node>
+      <node id="221">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;</label>
+        <link refid="classFsl_1_1Models_1_1Matiri"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+        <childnode refid="223" relation="usage">
+          <edgelabel>recruitment_variation</edgelabel>
+        </childnode>
+        <childnode refid="226" relation="usage">
+          <edgelabel>recruitment_relation</edgelabel>
+        </childnode>
+        <childnode refid="228" relation="usage">
+          <edgelabel>sexes</edgelabel>
+        </childnode>
+        <childnode refid="230" relation="usage">
+          <edgelabel>sectors</edgelabel>
+        </childnode>
+        <childnode refid="232" relation="usage">
+          <edgelabel>ages</edgelabel>
+        </childnode>
+      </node>
+      <node id="229">
+        <label>Dimension&lt;Sex,Sexes&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="109" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="109" bodyend="601"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a7168a34dc0a06e7c08feaafefaa3c3d4" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>ages</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aa15ea49236661f02a9b481223316f5ff" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>biomass</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1adeba66763b9f027eadde4896a1e658fc" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>biomass_spawning</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ae5c1f5bc12b1676a8de71cac31030ad4" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>biomass_spawning_update</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1af2e857dd614b57fc6b8c2d28c7c12de5" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>biomass_update</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1abfc6bded4720537d244b70bfc0bcc4df" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>biomass_vulnerable</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a4eb08d11db2ef534569c323b09babf8d" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>biomass_vulnerable_update</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a80355a50ee7016425ce7c2be176c6948" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>catches</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a526f2549f38e228295b9764b341a4ff2" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>catches_on</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a9e98a657f6e359302b85c34d5311d5cc" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>catches_set</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aa24f4e56735d84dcc0a8b153d86bbee7" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>check</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a0339a73b1e7c0655a3f624e70f50c09b" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>equilibrium</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a8379653d2502828e6599bdd3c89b0df4" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>exploitation_off</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aa79291b9b92923cbb8f0ff3b2084bf21" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>exploitation_on</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ae86d7a40ebe6507d156a18e1b49ed21d" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>exploitation_rate</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a6d1134550a24d5eac397d02ab125f4be" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>exploitation_rate_max</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aea7f45c608f9f7695dad9c3f91742d10" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>exploitation_rate_set</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a4010ffcfac8084470b896c5a2c2f9f0d" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>exploitation_survivals</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a179839c91fb44067f54a6eecf6b9eb2f" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>initialise</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1af8bf3ed8f56c22e29313a02572715b79" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>length_age</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aba07b40fbc7241472399a93e6290a821" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>lengths</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ae6791934dba2cd62fdf603ce9363e572" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>Matiri</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a4ffdc65da2ce736bdc5975ed8cb4fcbb" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>maturities</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a398a91a8cd419355f02cb4f4ef4dab18" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>maturity_age</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a34f12a5f58c743eb71b8b47bab8e0315" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>mortalities</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aea64c4155b4c760c50f92fc44f31ae00" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>mortality</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a493b149afceb56b27227395eb09628a0" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>mortality_survivals</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ac8f93f20678fef2161213a947de7aa25" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>numbers</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a60fe4807f23a4d2e5889e9f1791c4cab" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>recruitment_relation</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a5c8751038506c05d6a875bb77622e4d0" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>recruitment_variation</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a6bef15229f5f813198e4cc4db0fbf22b" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>recruitment_variation_random</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a96ba3d8a9b5494cd50ff57a111b56fcc" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>recruits</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ac8a79e9623b78515f70605dd8952fa22" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>recruits_determ</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a6867eb4d0ddf3f52cc3ac32f00135284" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>recruits_deviation</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ad6dfede72b10bb2d5b4ca89d986d2b14" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>sectors</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a9260266866796e67b61c52464363771a" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>seed</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1af895fbb430852599b23649ff5dac55f0" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>selectivities</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a81bc1dc6a4d40cb7b5a209fa4679db09" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>selectivity_age</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1af625fa8aad37db08d36c6b5c21ccc907" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>selectivity_sex</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1ae1ace4d65919dcbcbf34e29225715ae6" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>sex_ratio</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a322a3eb148c8a227bec3ac16cf0dcda7" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>sexes</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aa95d41af788f7f91cd7a1f08f5217285" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>update</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1aaab8b299148c0deefacb3ce8989b267f" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>weight_length</name></member>
+      <member refid="classFsl_1_1Models_1_1Matiri_1a3298b85930d90451a18be148a441910f" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri</scope><name>weights</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

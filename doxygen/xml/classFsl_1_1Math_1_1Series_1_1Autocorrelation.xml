@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Math_1_1Series_1_1Autocorrelation" kind="class" prot="public">
+    <compoundname>Fsl::Math::Series::Autocorrelation</compoundname>
+    <includes refid="autocorrelation_8hpp" local="no">autocorrelation.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1a3b7428cc28ef93f7b894c52ab81eed14" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Fsl::Math::Series::Autocorrelation::started_</definition>
+        <argsstring></argsstring>
+        <name>started_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1a641aef3fc4d834aa207a2f3feeff7be1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Series::Autocorrelation::last_</definition>
+        <argsstring></argsstring>
+        <name>last_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1ada62cab66fcdf3d45e46b823d8a1bfc0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Math::Series::Autocorrelation::coefficient</definition>
+        <argsstring></argsstring>
+        <name>coefficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1ac66707a9557b9823186f32e65a79a3c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Math::Series::Autocorrelation::Autocorrelation</definition>
+        <argsstring>(void)</argsstring>
+        <name>Autocorrelation</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1a8e080a9594f5737ff95bbe7deb0e5d94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Math::Series::Autocorrelation::operator()</definition>
+        <argsstring>(const double &amp;deviation)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>deviation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" line="7" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/series/autocorrelation.hpp" bodystart="7" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1ac66707a9557b9823186f32e65a79a3c4" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Autocorrelation</scope><name>Autocorrelation</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1ada62cab66fcdf3d45e46b823d8a1bfc0" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Autocorrelation</scope><name>coefficient</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1a641aef3fc4d834aa207a2f3feeff7be1" prot="private" virt="non-virtual"><scope>Fsl::Math::Series::Autocorrelation</scope><name>last_</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1a8e080a9594f5737ff95bbe7deb0e5d94" prot="public" virt="non-virtual"><scope>Fsl::Math::Series::Autocorrelation</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation_1a3b7428cc28ef93f7b894c52ab81eed14" prot="private" virt="non-virtual"><scope>Fsl::Math::Series::Autocorrelation</scope><name>started_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

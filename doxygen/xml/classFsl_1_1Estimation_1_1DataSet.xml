@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1DataSet" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::DataSet</compoundname>
+    <basecompoundref refid="classFsl_1_1Estimation_1_1Set" prot="public" virt="non-virtual">Fsl::Estimation::Set&lt; Derived &gt;</basecompoundref>
+    <includes refid="data_8hpp" local="no">data.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class Derived</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1DataSet_1a349728492a7dd306e5a330a0b75faa69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Estimation::DataSet&lt; Derived &gt;::DataSet</definition>
+        <argsstring>(const std::string &amp;path=&quot;data&quot;)</argsstring>
+        <name>DataSet</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;data&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/data.hpp" line="17" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/data.hpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="74">
+        <label>Fsl::Estimation::DataSet&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1DataSet"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>Reflector&lt; Derived &gt;</label>
+      </node>
+      <node id="75">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Set"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="77">
+        <label>Fsl::Estimation::DataSet&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1DataSet"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>Reflector&lt; Derived &gt;</label>
+      </node>
+      <node id="78">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Set"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/data.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/data.hpp" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a7bd6cc41acec8693e93d97c52ff02586" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>count</name></member>
+      <member refid="classFsl_1_1Estimation_1_1DataSet_1a349728492a7dd306e5a330a0b75faa69" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>DataSet</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1aacec7577ef4bf0e98b297198deec31dc" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ab91958c192c50e98d87209b6cd485e4d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>load</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1afc1cc16ee862b8785cf62c1d593edf52" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>load</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a67b5cdcf390eb808bfb2c49583f6bb32" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>names</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a72808e8038c81f4a6f2a2130f71fd590" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>path</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ae1738095734f01412045cf20b28b80c0" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>read</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a2b14b1e09298bc2b48d1600745d04057" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a88c37f12fd4a01a0d5cef26b412b2b63" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>sample</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a5ab300035cc49ae37589c95993d86857" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>Set</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1aed599e5fd336d5e2e29d96e6e4150f55" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>stream</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a12f3fe5097d5938b608497f15847b696" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>stream</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1adad25ab783fe64b6317627da2ceef1c2" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>stream_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a9c6d81bd379f7d4813e96ffd6019f5fb" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>stream_prefixes_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a94ced2b2ad0c884a2df932bb0fafb469" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>stream_prefixes_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a8f55158fd9b70936c536d8daadd78255" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>write</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a01e584deae2f055aa18ed1d89bb021dd" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>write_files</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ad063fba068876a902153d647f94137e4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>write_likelihoods</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a83f9b1dde6df488bf86aa0a89356ec04" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>write_list</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1ad2c96308bc9122702b31ff08f477dce0" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>write_pdfs</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Set_1a83f12918fac01610a4313d79b5c8c4a5" prot="public" virt="non-virtual"><scope>Fsl::Estimation::DataSet</scope><name>~Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt" kind="class" prot="public">
+    <compoundname>Fsl::Population::Recruitment::BevertonHolt</compoundname>
+    <includes refid="beverton-holt_8hpp" local="no">beverton-holt.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::BevertonHolt::r0</definition>
+        <argsstring></argsstring>
+        <name>r0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::BevertonHolt::s0</definition>
+        <argsstring></argsstring>
+        <name>s0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::BevertonHolt::steepness</definition>
+        <argsstring></argsstring>
+        <name>steepness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a13eea5330bdee362e0a9c1e640e32676" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Population::Recruitment::BevertonHolt::check</definition>
+        <argsstring>(void) const </argsstring>
+        <name>check</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a11013e8f22c456ba5f36e6ee623a01be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::BevertonHolt::alpha</definition>
+        <argsstring>(void) const </argsstring>
+        <name>alpha</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1aa2b0e85b2ef894cc9115895a8cb251d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::BevertonHolt::beta</definition>
+        <argsstring>(void) const </argsstring>
+        <name>beta</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="28" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ac1b2b472a718aecdc8e70e35a9eb43e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::BevertonHolt::operator()</definition>
+        <argsstring>(const double &amp;stock)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>stock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="32" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Beverton-Holt stock recruitment relationship parameterised using steepness and pristine recruitment </para>    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/beverton-holt.hpp" bodystart="11" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a11013e8f22c456ba5f36e6ee623a01be" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>alpha</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1aa2b0e85b2ef894cc9115895a8cb251d1" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>beta</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a13eea5330bdee362e0a9c1e640e32676" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>check</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ac1b2b472a718aecdc8e70e35a9eb43e1" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>operator()</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1ab5e79137212fbc877c0de8a1ee5aa6a8" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>r0</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a2e18b326485d377de9b2033af2a5a71a" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>s0</name></member>
+      <member refid="classFsl_1_1Population_1_1Recruitment_1_1BevertonHolt_1a3205af5ab195529b045b5348d1cf68e7" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::BevertonHolt</scope><name>steepness</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

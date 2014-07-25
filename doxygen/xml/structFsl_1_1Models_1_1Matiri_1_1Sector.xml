@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Models_1_1Matiri_1_1Sector" kind="struct" prot="public">
+    <compoundname>Fsl::Models::Matiri::Sector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Dimension&lt; Sector, Sectors &gt;</basecompoundref>
+    <includes refid="matiri_8hpp" local="no">matiri.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Models_1_1Matiri_1_1Sector_1ad9b4a30378bb6aab4247e6c2674ad576" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sector::Sector</definition>
+        <argsstring>(void)</argsstring>
+        <name>Sector</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="131" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="131" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structFsl_1_1Models_1_1Matiri_1_1Sector_1aecb4d03a4845793771823b7eaa9364cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sector::name</definition>
+        <argsstring>(void)</argsstring>
+        <name>name</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="132" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="362">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sector</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Sector"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>Dimension&lt; Sector, Sectors &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="364">
+        <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sector</label>
+        <link refid="structFsl_1_1Models_1_1Matiri_1_1Sector"/>
+        <childnode refid="365" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>Dimension&lt; Sector, Sectors &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" line="130" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/models/matiri/matiri.hpp" bodystart="130" bodyend="133"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1aecb4d03a4845793771823b7eaa9364cc" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::Sector</scope><name>name</name></member>
+      <member refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1ad9b4a30378bb6aab4247e6c2674ad576" prot="public" virt="non-virtual"><scope>Fsl::Models::Matiri::Sector</scope><name>Sector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

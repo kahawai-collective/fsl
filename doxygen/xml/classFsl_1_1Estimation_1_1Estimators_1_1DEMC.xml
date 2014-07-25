@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC" kind="class" prot="public">
+    <compoundname>Fsl::Estimation::Estimators::DEMC</compoundname>
+    <basecompoundref refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator" prot="public" virt="non-virtual">Fsl::Estimation::Estimators::Estimator&lt; DEMC &gt;</basecompoundref>
+    <includes refid="demc_8hpp" local="no">demc.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a20dbdf8ee93438ffd64fdf98c5f1f250" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::outbreeding</definition>
+        <argsstring></argsstring>
+        <name>outbreeding</name>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a18aa9c8b83433d8cc76d6f42d1c9784d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::crossing</definition>
+        <argsstring></argsstring>
+        <name>crossing</name>
+        <initializer>= 0.9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="15" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1ac33bf3d0dd4c0c4fb262fb675ab04d17" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::blending</definition>
+        <argsstring></argsstring>
+        <name>blending</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="16" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1aea588cdccca364ef742cb9a798275677" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::best</definition>
+        <argsstring></argsstring>
+        <name>best</name>
+        <initializer>= -INFINITY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="18" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a8d7e5546492697a49ac8682f5cb75123" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::worst</definition>
+        <argsstring></argsstring>
+        <name>worst</name>
+        <initializer>= INFINITY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a9065ca5749a611c5a1dd98671fbc0b5d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::mean</definition>
+        <argsstring></argsstring>
+        <name>mean</name>
+        <initializer>= NAN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="20" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a39d19710e78cc044c61082ddf6b4313e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::acceptance</definition>
+        <argsstring></argsstring>
+        <name>acceptance</name>
+        <initializer>= NAN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1ad9abe2209c2a2fa466f0de8c7ec7ac97" prot="public" static="no" mutable="no">
+        <type>Uniform</type>
+        <definition>Uniform Fsl::Estimation::Estimators::DEMC::chance</definition>
+        <argsstring></argsstring>
+        <name>chance</name>
+        <initializer>= {0,1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a08fd8d718de66e69441660b295b7e141" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Estimators::DEMC::update_</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="27" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1afbfed8f780a793c1ad5ece5287e32b79" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFsl_1_1Estimation_1_1Sample" kindref="compound">Sample</ref></type>
+        <definition>Sample Fsl::Estimation::Estimators::DEMC::select_</definition>
+        <argsstring>(void)</argsstring>
+        <name>select_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select a sample to breed from in probability to its relative likelihood </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="44" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="44" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a9178a59fa6f5a878e29f460d95237395" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Estimation::Estimators::DEMC::likelihood_</definition>
+        <argsstring>(int trial, const Values &amp;candidate, std::ostream &amp;errors_file)</argsstring>
+        <name>likelihood_</name>
+        <param>
+          <type>int</type>
+          <declname>trial</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceFsl_1_1Estimation_1a96df0eeaea61bdee79cf5198289d1f2e" kindref="member">Values</ref> &amp;</type>
+          <declname>candidate</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>errors_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="58" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="58" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1adf9485bc540b5d3b9edd80c92a61f983" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fsl::Estimation::Estimators::DEMC::run</definition>
+        <argsstring>(uint size=1000, uint trials=1e6)</argsstring>
+        <name>run</name>
+        <param>
+          <type>uint</type>
+          <declname>size</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>trials</declname>
+          <defval>1e6</defval>
+        </param>
+        <briefdescription>
+<para>Create a set of replicates for evaluations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method must set both <emphasis>parameters</emphasis> and <emphasis>states</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="79" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="79" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="81">
+        <label>Fsl::Estimation::Estimators::Estimator&lt; DEMC &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Polymorph&lt;DEMC &gt;</label>
+      </node>
+      <node id="80">
+        <label>Fsl::Estimation::Estimators::DEMC</label>
+        <link refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="84">
+        <label>Fsl::Estimation::Estimators::Estimator&lt; DEMC &gt;</label>
+        <link refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>samples</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>Polymorph&lt;DEMC &gt;</label>
+      </node>
+      <node id="89">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="86">
+        <label>Fsl::Estimation::Samples</label>
+        <link refid="classFsl_1_1Estimation_1_1Samples"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>sample_</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>std::vector&lt;Sample&gt;</label>
+      </node>
+      <node id="83">
+        <label>Fsl::Estimation::Estimators::DEMC</label>
+        <link refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Fsl::Estimation::Sample</label>
+        <link refid="classFsl_1_1Estimation_1_1Sample"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>samples_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" bodystart="11" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a39d19710e78cc044c61082ddf6b4313e" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>acceptance</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1aea588cdccca364ef742cb9a798275677" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>best</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1ac33bf3d0dd4c0c4fb262fb675ab04d17" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>blending</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1ad9abe2209c2a2fa466f0de8c7ec7ac97" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>chance</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a18aa9c8b83433d8cc76d6f42d1c9784d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>crossing</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3a648bed89d47f8fa0933a92e2ceb5a3" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>directory</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1af961fe95e99c0d27641145e8316aaeb4" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>errors</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a4af58b74ee5ff06b420f1aa186a766f0" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>Estimator</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a7cb76d139bb3b76ed6b3560651c66dce" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>initial</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3708696f254ee822b2ca2379ca2e8e21" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>likelihood</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a9178a59fa6f5a878e29f460d95237395" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>likelihood_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a78f233d1458d563e37e0a81e2e0c5e0c" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>log</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a9065ca5749a611c5a1dd98671fbc0b5d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>mean</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a20dbdf8ee93438ffd64fdf98c5f1f250" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>outbreeding</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a03ab1bf869f0eab85825df36e7e6a946" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>parameters</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a60134c2a3b8c23966a9033bc3f7b1746" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>read</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3cd55c01ec17acc40ebbd702e0d81700" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1adf9485bc540b5d3b9edd80c92a61f983" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>run</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a394d8ff5a9b3981d45d2372abae7feda" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>samples</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1afbfed8f780a793c1ad5ece5287e32b79" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>select_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a3449e7932ddb92bcd463cdf8b9d0dd81" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>store</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a08fd8d718de66e69441660b295b7e141" prot="private" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>update_</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC_1a8d7e5546492697a49ac8682f5cb75123" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>worst</name></member>
+      <member refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator_1a63e8be204684ecf2056b365f61b44d89" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Estimators::DEMC</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

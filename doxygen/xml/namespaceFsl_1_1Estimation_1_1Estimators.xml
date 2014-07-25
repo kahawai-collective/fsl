@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Estimation_1_1Estimators" kind="namespace">
+    <compoundname>Fsl::Estimation::Estimators</compoundname>
+    <innerclass refid="classFsl_1_1Estimation_1_1Estimators_1_1DEMC" prot="public">Fsl::Estimation::Estimators::DEMC</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Estimators_1_1Estimator" prot="public">Fsl::Estimation::Estimators::Estimator</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/estimators/demc.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

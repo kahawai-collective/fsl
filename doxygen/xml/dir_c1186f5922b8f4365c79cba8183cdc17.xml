@@ -5,6 +5,7 @@
     <innerfile refid="beta_8hpp">beta.hpp</innerfile>
     <innerfile refid="distribution_8hpp">distribution.hpp</innerfile>
     <innerfile refid="distributions_8cxx">distributions.cxx</innerfile>
+    <innerfile refid="distributions_8hpp">distributions.hpp</innerfile>
     <innerfile refid="fixed_8hpp">fixed.hpp</innerfile>
     <innerfile refid="lognormal_8hpp">lognormal.hpp</innerfile>
     <innerfile refid="normal_8hpp">normal.hpp</innerfile>

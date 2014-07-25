@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK" kind="class" prot="public">
+    <compoundname>Fsl::Population::Mortality::Priors::Bentley2010::MFromK</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Regression</basecompoundref>
+    <includes refid="mortality_2priors_2bentley__2010_8hpp" local="no">bentley_2010.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK_1a18e6b3ba64ba1d7d2a2b3dfcba9b8d7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Population::Mortality::Priors::Bentley2010::MFromK::MFromK</definition>
+        <argsstring>(void)</argsstring>
+        <name>MFromK</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/priors/bentley_2010.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/priors/bentley_2010.hpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK_1af300ec9ed7fe3961a8e293b84a4c7a77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Population::Mortality::Priors::Bentley2010::MFromK::random</definition>
+        <argsstring>(const double &amp;k) const </argsstring>
+        <name>random</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/priors/bentley_2010.hpp" line="22" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/priors/bentley_2010.hpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="251">
+        <label>Regression</label>
+      </node>
+      <node id="250">
+        <label>Fsl::Population::Mortality::Priors::Bentley2010::MFromK</label>
+        <link refid="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK"/>
+        <childnode refid="251" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="253">
+        <label>Regression</label>
+      </node>
+      <node id="252">
+        <label>Fsl::Population::Mortality::Priors::Bentley2010::MFromK</label>
+        <link refid="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK"/>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/priors/bentley_2010.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/mortality/priors/bentley_2010.hpp" bodystart="14" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK_1a18e6b3ba64ba1d7d2a2b3dfcba9b8d7b" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Priors::Bentley2010::MFromK</scope><name>MFromK</name></member>
+      <member refid="classFsl_1_1Population_1_1Mortality_1_1Priors_1_1Bentley2010_1_1MFromK_1af300ec9ed7fe3961a8e293b84a4c7a77" prot="public" virt="non-virtual"><scope>Fsl::Population::Mortality::Priors::Bentley2010::MFromK</scope><name>random</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -5,7 +5,10 @@
     <innerclass refid="classFisl_1_1Array_3_01Type_01_4" prot="public">Fisl::Array&lt; Type &gt;</innerclass>
     <innerclass refid="classFisl_1_1Array_3_01Type_00_01Dimension1_01_4" prot="public">Fisl::Array&lt; Type, Dimension1 &gt;</innerclass>
     <innerclass refid="classFisl_1_1Array_3_01Type_00_01Dimension1_00_01Dimension2_01_4" prot="public">Fisl::Array&lt; Type, Dimension1, Dimension2 &gt;</innerclass>
+    <innernamespace refid="namespaceFisl_1_1Estimation">Fisl::Estimation</innernamespace>
+    <innernamespace refid="namespaceFisl_1_1Management">Fisl::Management</innernamespace>
     <innernamespace refid="namespaceFisl_1_1Math">Fisl::Math</innernamespace>
+    <innernamespace refid="namespaceFisl_1_1Monitoring">Fisl::Monitoring</innernamespace>
     <innernamespace refid="namespaceFisl_1_1Population">Fisl::Population</innernamespace>
     <briefdescription>
     </briefdescription>

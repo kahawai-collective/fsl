@@ -3,6 +3,7 @@
   <compounddef id="dir_082b94fc48075437a420b8f783a80677" kind="dir">
     <compoundname>growth</compoundname>
     <innerdir refid="dir_455f4a0cc8933606ba1152d1f0cb90eb">priors</innerdir>
+    <innerfile refid="von-bert_8hpp">von-bert.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Estimation_1_1Links" kind="namespace">
+    <compoundname>Fsl::Estimation::Links</compoundname>
+    <innerclass refid="classFsl_1_1Estimation_1_1Links_1_1Identity" prot="public">Fsl::Estimation::Links::Identity</innerclass>
+    <innerclass refid="classFsl_1_1Estimation_1_1Links_1_1Log" prot="public">Fsl::Estimation::Links::Log</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/links.hpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

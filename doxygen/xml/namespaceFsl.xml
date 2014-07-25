@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl" kind="namespace">
+    <compoundname>Fsl</compoundname>
+    <innernamespace refid="namespaceFsl_1_1Estimation">Fsl::Estimation</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Management">Fsl::Management</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Models">Fsl::Models</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Monitoring">Fsl::Monitoring</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Population">Fsl::Population</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceFsl_1a3e7425b7cb85a0e2f569fdbc3eb7ce18" prot="public" static="no">
+        <type>boost::gregorian::date</type>
+        <definition>typedef boost::gregorian::date Fsl::Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" line="7" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceFsl_1a2df0b7704a5cdf60e24dae6f8a68d84e" prot="public" static="no">
+        <type>boost::gregorian::days</type>
+        <definition>typedef boost::gregorian::days Fsl::Days</definition>
+        <argsstring></argsstring>
+        <name>Days</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" line="9" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceFsl_1a2f5a5a8d909056cf799f04f4de2f351d" prot="public" static="no">
+        <type>boost::gregorian::weeks</type>
+        <definition>typedef boost::gregorian::weeks Fsl::Weeks</definition>
+        <argsstring></argsstring>
+        <name>Weeks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" line="10" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceFsl_1a28548f0359fad300092d677cef76663b" prot="public" static="no">
+        <type>boost::gregorian::months</type>
+        <definition>typedef boost::gregorian::months Fsl::Months</definition>
+        <argsstring></argsstring>
+        <name>Months</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" line="11" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceFsl_1ab29aa4fd10087747c05346cff5aa11e1" prot="public" static="no">
+        <type>boost::gregorian::years</type>
+        <definition>typedef boost::gregorian::years Fsl::Years</definition>
+        <argsstring></argsstring>
+        <name>Years</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" line="12" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceFsl_1ab8e33d59028fbee187036c58da1d0802" prot="public" static="no">
+        <type>boost::gregorian::year_iterator</type>
+        <definition>typedef boost::gregorian::year_iterator Fsl::YearIterator</definition>
+        <argsstring></argsstring>
+        <name>YearIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/date.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Priors based on analysis of Fishbase </para>    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/common.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

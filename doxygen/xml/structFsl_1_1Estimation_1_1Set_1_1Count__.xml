@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Estimation_1_1Set_1_1Count__" kind="struct" prot="private">
+    <compoundname>Fsl::Estimation::Set::Count_</compoundname>
+    <basecompoundref refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror" prot="public" virt="non-virtual">Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Count_ &gt;</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Estimation_1_1Set_1_1Count___1a002e4a93dee18357621b2419b99d8d4d" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Estimation::Set&lt; Derived &gt;::Count_::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="517" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structFsl_1_1Estimation_1_1Set_1_1Count___1a836b861d946bf8c5bedfbe0c4762eb85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Distribution</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Fsl::Estimation::Set&lt; Derived &gt;::Count_::variate</definition>
+        <argsstring>(Variate&lt; Distribution &gt; &amp;variate, const std::string &amp;name)</argsstring>
+        <name>variate</name>
+        <param>
+          <type><ref refid="classFsl_1_1Estimation_1_1Variate" kindref="compound">Variate</ref>&lt; Distribution &gt; &amp;</type>
+          <declname>variate</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="520" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="520" bodyend="522"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="66">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::Count_</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1Count__"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Count_ &gt;</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>Mirror&lt; Count_ &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="69">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::Count_</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1Count__"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Count_ &gt;</label>
+        <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Mirror&lt; Count_ &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" line="516" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/estimation/variables.hpp" bodystart="516" bodyend="523"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Count___1a002e4a93dee18357621b2419b99d8d4d" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Count_</scope><name>count</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror_1a2c5f83d30e2feb626ac09be85d123d45" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Count_</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror_1a44c55c3ab94767866c29bfdfabda13fb" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Count_</scope><name>data</name></member>
+      <member refid="structFsl_1_1Estimation_1_1Set_1_1Count___1a836b861d946bf8c5bedfbe0c4762eb85" prot="public" virt="non-virtual"><scope>Fsl::Estimation::Set::Count_</scope><name>variate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

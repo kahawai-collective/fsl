@@ -1,90 +1,98 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
   <compounddef id="uniform_8hpp" kind="file">
     <compoundname>uniform.hpp</compoundname>
     <includes local="no">boost/math/distributions/uniform.hpp</includes>
     <includes local="no">boost/random/uniform_real.hpp</includes>
-    <includes refid="distribution_8hpp" local="no">fisl/math/probability/distribution.hpp</includes>
+    <includes refid="distribution_8hpp" local="no">fsl/math/probability/distribution.hpp</includes>
+    <includedby refid="metropolis_8hpp" local="no">metropolis.hpp</includedby>
     <includedby refid="distributions_8cxx" local="no">distributions.cxx</includedby>
-    <includedby refid="steepness__he__2006_8hpp" local="no">steepness_he_2006.hpp</includedby>
+    <includedby refid="distributions_8hpp" local="no">distributions.hpp</includedby>
+    <includedby refid="steepness-he-others-2006_8hpp" local="no">steepness-he-others-2006.hpp</includedby>
     <incdepgraph>
-      <node id="248">
+      <node id="611">
         <label>boost/random/variate_generator.hpp</label>
       </node>
-      <node id="242">
-        <label>uniform.hpp</label>
-        <link refid="uniform.hpp"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-        <childnode refid="244" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="244">
+      <node id="607">
         <label>boost/random/uniform_real.hpp</label>
       </node>
-      <node id="243">
+      <node id="606">
         <label>boost/math/distributions/uniform.hpp</label>
       </node>
-      <node id="247">
+      <node id="610">
         <label>boost/random/mersenne_twister.hpp</label>
       </node>
-      <node id="246">
+      <node id="609">
         <label>ctime</label>
       </node>
-      <node id="245">
-        <label>fisl/math/probability/distribution.hpp</label>
+      <node id="608">
+        <label>fsl/math/probability/distribution.hpp</label>
         <link refid="distribution_8hpp"/>
-        <childnode refid="246" relation="include">
+        <childnode refid="609" relation="include">
         </childnode>
-        <childnode refid="247" relation="include">
+        <childnode refid="610" relation="include">
         </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="611" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
+        <childnode refid="606" relation="include">
         </childnode>
-        <childnode refid="249" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
+        <childnode refid="612" relation="include">
         </childnode>
       </node>
-      <node id="249">
+      <node id="612">
         <label>boost/random/uniform_01.hpp</label>
       </node>
-      <node id="250">
-        <label>fisl/common.hpp</label>
-        <link refid="common_8hpp"/>
+      <node id="605">
+        <label>uniform.hpp</label>
+        <link refid="uniform.hpp"/>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="251">
-        <label>uniform.hpp</label>
-        <link refid="uniform.hpp"/>
-        <childnode refid="252" relation="include">
-        </childnode>
-        <childnode refid="253" relation="include">
-        </childnode>
+      <node id="618">
+        <label>steepness-he-others-2006.cxx</label>
+        <link refid="steepness-he-others-2006_8cxx"/>
       </node>
-      <node id="253">
-        <label>steepness_he_2006.hpp</label>
-        <link refid="steepness__he__2006_8hpp"/>
-        <childnode refid="254" relation="include">
+      <node id="617">
+        <label>steepness-he-others-2006.hpp</label>
+        <link refid="steepness-he-others-2006_8hpp"/>
+        <childnode refid="618" relation="include">
         </childnode>
       </node>
-      <node id="254">
-        <label>steepness_he_2006.cxx</label>
-        <link refid="steepness__he__2006_8cxx"/>
+      <node id="616">
+        <label>distributions.hpp</label>
+        <link refid="distributions_8hpp"/>
       </node>
-      <node id="252">
+      <node id="615">
         <label>distributions.cxx</label>
         <link refid="distributions_8cxx"/>
       </node>
+      <node id="614">
+        <label>metropolis.hpp</label>
+        <link refid="metropolis_8hpp"/>
+      </node>
+      <node id="613">
+        <label>uniform.hpp</label>
+        <link refid="uniform.hpp"/>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
     </invincdepgraph>
-    <innerclass refid="classFisl_1_1Math_1_1Probability_1_1Uniform" prot="public">Fisl::Math::Probability::Uniform</innerclass>
-    <innernamespace refid="namespaceFisl">Fisl</innernamespace>
-    <innernamespace refid="namespaceFisl_1_1Math">Fisl::Math</innernamespace>
-    <innernamespace refid="namespaceFisl_1_1Math_1_1Probability">Fisl::Math::Probability</innernamespace>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1Uniform" prot="public">Fsl::Math::Probability::Uniform</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Probability">Fsl::Math::Probability</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -95,42 +103,75 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/math/distributions/uniform.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/random/uniform_real.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="distribution_8hpp" kindref="compound">fisl/math/probability/distribution.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="distribution_8hpp" kindref="compound">fsl/math/probability/distribution.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fisl<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Probability<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Fisl;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Fsl;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="classFisl_1_1Math_1_1Probability_1_1Uniform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform" kindref="compound">Uniform</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Distribution" kindref="compound">Distribution</ref>&lt;Uniform&gt;<sp/>{</highlight></codeline>
+<codeline lineno="14" refid="classFsl_1_1Math_1_1Probability_1_1Uniform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform" kindref="compound">Uniform</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Distribution" kindref="compound">Distribution</ref>&lt;Uniform&gt;<sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="16" refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a928e8bf8e373b4a077394b2c85f86d65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a928e8bf8e373b4a077394b2c85f86d65" kindref="member">lower</ref>;</highlight></codeline>
-<codeline lineno="17" refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a61e00b9b784bcfe47e26dbc8ba744588" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a61e00b9b784bcfe47e26dbc8ba744588" kindref="member">upper</ref>;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1aa670c113e2bf16f28d8348be55f569ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1aa670c113e2bf16f28d8348be55f569ba" kindref="member">lower</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a658820e09775aac563d894709f768837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a658820e09775aac563d894709f768837" kindref="member">upper</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a5457b2d67db14b7e0f0085937c409e4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a5457b2d67db14b7e0f0085937c409e4d" kindref="member">Uniform</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lower_=0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upper_=1){</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower<sp/>=<sp/>lower_;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upper<sp/>=<sp/>upper_;</highlight></codeline>
+<codeline lineno="20" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a814f5ae4f91228815ef307c64d8b314d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a814f5ae4f91228815ef307c64d8b314d" kindref="member">Uniform</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lower<sp/>=<sp/>NAN,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upper<sp/>=<sp/>NAN):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower(lower),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upper(upper){</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="25" refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1ab1354d6c1bfb7bd886e24d49afb158da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::math::uniform<sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1ab1354d6c1bfb7bd886e24d49afb158da" kindref="member">boost_dist</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::math::uniform(lower,upper);</highlight></codeline>
+<codeline lineno="25" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1ab536c794fc03b0dafe66a13efc359e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1ab536c794fc03b0dafe66a13efc359e50" kindref="member">valid</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::isfinite(lower)<sp/>and<sp/>std::isfinite(upper)<sp/>and<sp/>lower&lt;upper;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="29" refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a460257bb612374043bd9d9b5b87ed65c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1a460257bb612374043bd9d9b5b87ed65c" kindref="member">random</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::uniform_real&lt;&gt;<sp/>distr(lower,upper);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::variate_generator&lt;boost::mt19937&amp;,decltype(distr)&gt;<sp/>randomVariate(<ref refid="structFisl_1_1Math_1_1Probability_1_1Generator" kindref="compound">Generator</ref>,distr);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>randomVariate();</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1aae73d926f4671c84d10ff28c6d8bdca8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFisl_1_1Math_1_1Probability_1_1Uniform_1aae73d926f4671c84d10ff28c6d8bdca8" kindref="member">accept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value&gt;=lower<sp/>and<sp/>value&lt;=upper;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal">}}}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1ae3d4e477fb4a99deef680cac806165a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::math::uniform<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1ae3d4e477fb4a99deef680cac806165a9" kindref="member">boost_dist</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::math::uniform(lower,upper);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a4127351e43feee392487c8b6ec18f788" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a4127351e43feee392487c8b6ec18f788" kindref="member">minimum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lower;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a12116a2ee801d509885f52b276361f5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a12116a2ee801d509885f52b276361f5e" kindref="member">maximum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>upper;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1addbbc0d7ef11e96ff37c5bcfb18250b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1addbbc0d7ef11e96ff37c5bcfb18250b4" kindref="member">mean</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(lower+upper)/2;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a9efaae8f3bed9fc8dced1dcff3555429" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a9efaae8f3bed9fc8dced1dcff3555429" kindref="member">sd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::sqrt(std::pow(upper-lower,2)/12.0);<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a88f5228b7fcba8258ccd2c66f19e28b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a88f5228b7fcba8258ccd2c66f19e28b9" kindref="member">random</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>lower<sp/>and<sp/>upper<sp/>are<sp/>equal<sp/>then<sp/>boost<sp/>random<sp/>number<sp/>generator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>will<sp/>loop<sp/>endlessly<sp/>attempting<sp/>to<sp/>create<sp/>a<sp/>valid<sp/>value.<sp/>So<sp/>escape<sp/>that<sp/>condition...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lower==upper)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lower;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::uniform_real&lt;&gt;<sp/>distr(lower,upper);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::variate_generator&lt;boost::mt19937&amp;,decltype(distr)&gt;<sp/>randomVariate(<ref refid="structFsl_1_1Math_1_1Probability_1_1Generator" kindref="compound">Generator</ref>,distr);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>randomVariate();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a98f862af6cb4ada54632e32aa5dbfe18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1a98f862af6cb4ada54632e32aa5dbfe18" kindref="member">accept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value&gt;=lower<sp/>and<sp/>value&lt;=upper;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Mirror&gt;</highlight></codeline>
+<codeline lineno="65" refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1ab8a5e70771cae1a384ec00eb8b2f13b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1ab8a5e70771cae1a384ec00eb8b2f13b0" kindref="member">reflect</ref>(Mirror&amp;<sp/>mirror)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mirror</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data(lower,</highlight><highlight class="stringliteral">&quot;lower&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data(upper,</highlight><highlight class="stringliteral">&quot;upper&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}}}</highlight></codeline>
     </programlisting>
-    <location file="/media/Data/Trophia/P12013_Trident/Code/fisl/fisl/math/probability/uniform.hpp"/>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/uniform.hpp"/>
   </compounddef>
 </doxygen>

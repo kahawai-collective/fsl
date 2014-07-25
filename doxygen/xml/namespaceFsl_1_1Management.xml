@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceFsl_1_1Management" kind="namespace">
+    <compoundname>Fsl::Management</compoundname>
+    <innerclass refid="classFsl_1_1Management_1_1Evaluator" prot="public">Fsl::Management::Evaluator</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1PerformanceSet" prot="public">Fsl::Management::PerformanceSet</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1Procedure" prot="public">Fsl::Management::Procedure</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureDynamic" prot="public">Fsl::Management::ProcedureDynamic</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4" prot="public">Fsl::Management::ProcedureDynamic&lt; void &gt;</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ProcedureAny" prot="public">Fsl::Management::ProcedureAny</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1ControlProcedure" prot="public">Fsl::Management::ControlProcedure</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1DynamicControlProcedure" prot="public">Fsl::Management::DynamicControlProcedure</innerclass>
+    <innerclass refid="structFsl_1_1Management_1_1RestrictValue" prot="public">Fsl::Management::RestrictValue</innerclass>
+    <innerclass refid="structFsl_1_1Management_1_1RestrictProportionalChange" prot="public">Fsl::Management::RestrictProportionalChange</innerclass>
+    <innernamespace refid="namespaceFsl_1_1Management_1_1Procedures">Fsl::Management::Procedures</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/evaluator.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

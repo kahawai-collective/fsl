@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters" kind="struct" prot="public">
+    <compoundname>Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters</compoundname>
+    <includes refid="steepness-he-others-2006_8hpp" local="no">steepness-he-others-2006.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters_1a68466590eea860b7db5c2b83c90bbfc1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters::Omega1</definition>
+        <argsstring></argsstring>
+        <name>Omega1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters_1a940a31832bd457ed3f317c7ad876a5db" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters::Omega2</definition>
+        <argsstring></argsstring>
+        <name>Omega2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters_1a8813b003b82f84c5ddc1a6d6fc772e99" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters::Omega3</definition>
+        <argsstring></argsstring>
+        <name>Omega3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/population/recruitment/priors/steepness-he-others-2006.hpp" bodystart="23" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters_1a68466590eea860b7db5c2b83c90bbfc1" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters</scope><name>Omega1</name></member>
+      <member refid="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters_1a940a31832bd457ed3f317c7ad876a5db" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters</scope><name>Omega2</name></member>
+      <member refid="structFsl_1_1Population_1_1Recruitment_1_1Priors_1_1SteepnessHe2006_1_1Parameters_1a8813b003b82f84c5ddc1a6d6fc772e99" prot="public" virt="non-virtual"><scope>Fsl::Population::Recruitment::Priors::SteepnessHe2006::Parameters</scope><name>Omega3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

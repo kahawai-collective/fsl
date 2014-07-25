@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="fournier-robustified-multivariate-normal_8hpp" kind="file">
+    <compoundname>fournier-robustified-multivariate-normal.hpp</compoundname>
+    <includes refid="distribution_8hpp" local="no">fsl/math/probability/distribution.hpp</includes>
+    <includedby refid="distributions_8hpp" local="no">distributions.hpp</includedby>
+    <incdepgraph>
+      <node id="265">
+        <label>boost/random/variate_generator.hpp</label>
+      </node>
+      <node id="266">
+        <label>boost/math/distributions/uniform.hpp</label>
+      </node>
+      <node id="264">
+        <label>boost/random/mersenne_twister.hpp</label>
+      </node>
+      <node id="263">
+        <label>ctime</label>
+      </node>
+      <node id="262">
+        <label>fsl/math/probability/distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>fournier-robustified-multivariate-normal.hpp</label>
+        <link refid="fournier-robustified-multivariate-normal.hpp"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>boost/random/uniform_01.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="269">
+        <label>distributions.hpp</label>
+        <link refid="distributions_8hpp"/>
+      </node>
+      <node id="268">
+        <label>fournier-robustified-multivariate-normal.hpp</label>
+        <link refid="fournier-robustified-multivariate-normal.hpp"/>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal" prot="public">Fsl::Math::Probability::FournierRobustifiedMultivariateNormal</innerclass>
+    <innernamespace refid="namespaceFsl">Fsl</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math">Fsl::Math</innernamespace>
+    <innernamespace refid="namespaceFsl_1_1Math_1_1Probability">Fsl::Math::Probability</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="distribution_8hpp" kindref="compound">fsl/math/probability/distribution.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Math<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Probability<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal" kindref="compound">FournierRobustifiedMultivariateNormal</ref><sp/></highlight><highlight class="comment">/*:<sp/>public<sp/>Distribution&lt;FournierRobustifiedMultivariateNormal&gt;<sp/>*/</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a7acc6eb6359cc6920faf29f4135d3f44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a7acc6eb6359cc6920faf29f4135d3f44" kindref="member">FournierRobustifiedMultivariateNormal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref><sp/>=<sp/>NAN,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref><sp/>=<sp/>NAN):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>(<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref>(<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref>){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a910eec0126c6f99d83ae3a6af5fefa5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a910eec0126c6f99d83ae3a6af5fefa5c" kindref="member">valid</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::isfinite(<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>)<sp/>and<sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref>&gt;0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a2aa304afe2c1fbab0a41e7448e53db1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a2aa304afe2c1fbab0a41e7448e53db1e" kindref="member">minimum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ab626e480028df410e6ac40bb348284be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ab626e480028df410e6ac40bb348284be" kindref="member">maximum</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1afa2615cdfcc9398706cc98bc58d05a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1afa2615cdfcc9398706cc98bc58d05a97" kindref="member">mean</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a904ec49be9f69467e81db81845c121d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a904ec49be9f69467e81db81845c121d0" kindref="member">sd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref><sp/>*<sp/>(1-<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ae0a548f04921a6f11e174a429b217ab0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ae0a548f04921a6f11e174a429b217ab0" kindref="member">likelihood</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>x*<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>n_apos<sp/>=<sp/>std::min(size,1000.0);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e_apos<sp/>=<sp/>(1-x)*x+0.1/n;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::exp(-std::pow(<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>-x,2)/(2*e_apos/n_apos)+0.01)-0.5*e_apos;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ac8b75b8dde0bf471f5ae2d53d8c31f95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1ac8b75b8dde0bf471f5ae2d53d8c31f95" kindref="member">pdf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a15023ac17a5d5e850b21ca94de8405d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a15023ac17a5d5e850b21ca94de8405d4" kindref="member">quantile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a983174057387ffd18c8063451cd8246a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a983174057387ffd18c8063451cd8246a" kindref="member">random</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Mirror&gt;</highlight></codeline>
+<codeline lineno="60" refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1aef20358176ac06555af551964591634d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1aef20358176ac06555af551964591634d" kindref="member">reflect</ref>(Mirror&amp;<sp/>mirror)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mirror</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data(<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1af88eedb79e2731fd7b9c6512320a22d7" kindref="member">proportion</ref>,</highlight><highlight class="stringliteral">&quot;proportion&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.data(<ref refid="classFsl_1_1Math_1_1Probability_1_1FournierRobustifiedMultivariateNormal_1a3213fbf9491ddf4819c51f5da90b1463" kindref="member">size</ref>,</highlight><highlight class="stringliteral">&quot;size&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}}}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/math/probability/fournier-robustified-multivariate-normal.hpp"/>
+  </compounddef>
+</doxygen>
