@@ -1,5 +1,6 @@
 #pragma once
 
+#include <fsl/management/performance.hpp>
 #include <fsl/management/procedure.hpp>
 
 namespace Fsl {

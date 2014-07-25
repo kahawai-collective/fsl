@@ -2,7 +2,7 @@
 
 #include <functional>
 
-#include <boost/container/flat_set.hpp>
+#include <fsl/estimation/estimators/estimator.hpp>
 
 namespace Fsl {
 namespace Estimation {
