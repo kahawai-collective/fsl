@@ -9,7 +9,7 @@ namespace Management {
 namespace Procedures {
 
 /**
- * Trajectory Status Assymetric Restricted
+ * Trajectory Status Assymetric Restricted (TSAR)
  */
 class TSAR : public DynamicControlProcedure<> {
 public:
@@ -25,7 +25,7 @@ public:
     double target;
     int step;
 
-    double trigger;
+    double asymmetry;
     
     RestrictProportionalChange changes;
     RestrictValue values;
@@ -47,8 +47,6 @@ private:
      */
     double target_value_;
 
-    double status_last_;
-
     double multiplier_;
 
 public:
@@ -59,14 +57,14 @@ public:
         double* const index, 
         const double& responsiveness=1,
         const double& initial=1, const double& rate=0.01,const double& target=2,
-        const double& trigger=1,
+        const double& asymmetry=1,
         const double& change_min=0,const double& change_max=1,
         const double& value_min=0,const double& value_max=INFINITY):
         DynamicControlProcedure(control,starting),
         index(index),
         smoother(responsiveness),
         initial(initial),rate(rate),target(target),
-        trigger(trigger),
+        asymmetry(asymmetry),
         changes(change_min,change_max),
         values(value_min,value_max){
         reset();
@@ -77,7 +75,7 @@ public:
             %starting
             %smoother.coefficient
             %initial%rate%target
-            %trigger
+            %asymmetry
             %changes.lower%changes.upper
             %values.lower%values.upper
         );
@@ -101,27 +99,23 @@ public:
             target_value_ = smooth * target;
             multiplier_ = value*1/initial;
         }
-        // Calculate trajectory index and status relative to it
+        // Calculate trajectory
         double trajectory;
         if(rate>0) trajectory = std::min(initial_value_+rate_value_*step,target_value_);
         else trajectory = std::max(initial_value_+rate_value_*step,target_value_);
+        // Calculate status relative to trajectory
         double status = smooth/trajectory;
-        if(step==0){
-            status_last_ = status;
-        }
-        // If greater than x% change in since last time a change was made
-        // then adjust accordingly
-        double change = std::log(status/status_last_);
-        if(std::fabs(change)>=trigger){
-            value = status * multiplier_;
-        }
+        // Calculate assymetric response
+        double response;
+        double log_status = std::log(status);
+        if(asymmetry>0 and log_status>0) response = std::exp(log_status*asymmetry);
+        else if(asymmetry<0 and log_status<0) response = std::exp(log_status*std::fabs(asymmetry));
+        else response = status;
+        // Calculate control value using multiplier
+        value = response * multiplier_;
         // Restrict change and range of values
         value = changes.restrict(value,last);
         value = values.restrict(value);
-        // Now check to see if there has been a change
-        if(value!=last){
-            status_last_ = status;
-        }
         // Do `DynamicControlProcedure::operate()` to actually change the control
         DynamicControlProcedure::operate();
         // Increment step
