@@ -21,7 +21,7 @@ public:
     
     // Definition of trajectory
     double initial;
-    double rate;
+    double slope;
     double target;
     int step;
 
@@ -30,24 +30,7 @@ public:
     RestrictProportionalChange changes;
     RestrictValue values;
 
-private:
-
-    /**
-     * Initial value of trajectory.
-     */
-    double initial_value_;
-
-    /**
-     * Target value of trajectory.
-     */
-    double rate_value_;
-
-    /**
-     * Target value of trajectory.
-     */
-    double target_value_;
-
-    double multiplier_;
+    double multiplier;
 
 public:
     
@@ -56,14 +39,14 @@ public:
         const double& starting, 
         double* const index, 
         const double& responsiveness=1,
-        const double& initial=1, const double& rate=0.01,const double& target=2,
+        const double& initial=1, const double& slope=0.01,const double& target=2,
         const double& asymmetry=1,
         const double& change_min=0,const double& change_max=1,
         const double& value_min=0,const double& value_max=INFINITY):
         DynamicControlProcedure(control,starting),
         index(index),
         smoother(responsiveness),
-        initial(initial),rate(rate),target(target),
+        initial(initial),slope(slope),target(target),
         asymmetry(asymmetry),
         changes(change_min,change_max),
         values(value_min,value_max){
@@ -74,7 +57,7 @@ public:
         return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
             %starting
             %smoother.coefficient
-            %initial%rate%target
+            %initial%slope%target
             %asymmetry
             %changes.lower%changes.upper
             %values.lower%values.upper
@@ -92,17 +75,10 @@ public:
         double last = value;
         double current = *index;
         double smooth = smoother.update(current);
-        // In the first step do some intitialisation
-        if(step==0){
-            initial_value_ = smooth * initial;
-            rate_value_ = smooth * rate;
-            target_value_ = smooth * target;
-            multiplier_ = value*1/initial;
-        }
         // Calculate trajectory
         double trajectory;
-        if(rate>0) trajectory = std::min(initial_value_+rate_value_*step,target_value_);
-        else trajectory = std::max(initial_value_+rate_value_*step,target_value_);
+        if(slope>0) trajectory = std::min(initial+slope*step,target);
+        else trajectory = std::max(initial+slope*step,target);
         // Calculate status relative to trajectory
         double status = smooth/trajectory;
         // Calculate assymetric response
@@ -111,8 +87,13 @@ public:
         if(asymmetry>0 and log_status>0) response = std::exp(log_status*asymmetry);
         else if(asymmetry<0 and log_status<0) response = std::exp(log_status*std::fabs(asymmetry));
         else response = status;
+        // In the first time step the multiplier is set so that the procedures
+        // results in the current control value in the first step. ie. their will be no change in the the control (e.g. TAC)
+        // This is intentional, as the procedures is intended to change the control gradually
+        // in response to status relative to the trajectory.
+        if(step==0) multiplier = value/response;
         // Calculate control value using multiplier
-        value = response * multiplier_;
+        value = response * multiplier;
         // Restrict change and range of values
         value = changes.restrict(value,last);
         value = values.restrict(value);
