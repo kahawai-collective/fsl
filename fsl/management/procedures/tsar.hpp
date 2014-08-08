@@ -23,13 +23,21 @@ public:
     double initial;
     double slope;
     double target;
-    int step;
 
+    /**
+     * Starting point for trajectory
+     */
+    uint starting = 0;
+
+    /**
+     * Asymmetry of response
+     */
     double asymmetry;
     
     RestrictProportionalChange changes;
     RestrictValue values;
 
+    int step;
     double multiplier;
 
 public:
@@ -54,10 +62,10 @@ public:
     }
     
     std::string signature(void){
-        return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
+        return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
             %starting
             %smoother.coefficient
-            %initial%slope%target
+            %initial%slope%target%starting
             %asymmetry
             %changes.lower%changes.upper
             %values.lower%values.upper
@@ -76,9 +84,9 @@ public:
         double current = *index;
         double smooth = smoother.update(current);
         // Calculate trajectory
-        double trajectory;
-        if(slope>0) trajectory = std::min(initial+slope*step,target);
-        else trajectory = std::max(initial+slope*step,target);
+        double trajectory = initial+slope*(starting+step);
+        if(slope>0) trajectory = std::min(trajectory,target);
+        else trajectory = std::max(trajectory,target);
         // Calculate status relative to trajectory
         double status = smooth/trajectory;
         // Calculate assymetric response
