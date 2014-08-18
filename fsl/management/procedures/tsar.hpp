@@ -25,9 +25,9 @@ public:
     double target;
 
     /**
-     * Starting point for trajectory
+     * Start point for trajectory
      */
-    uint starting = 0;
+    uint start = 0;
 
     /**
      * Asymmetry of response
@@ -47,14 +47,14 @@ public:
         const double& starting, 
         double* const index, 
         const double& responsiveness=1,
-        const double& initial=1, const double& slope=0.01,const double& target=2,
+        const double& initial=1, const double& slope=0.01,const double& target=2, const uint& start=0,
         const double& asymmetry=1,
         const double& change_min=0,const double& change_max=1,
         const double& value_min=0,const double& value_max=INFINITY):
         DynamicControlProcedure(control,starting),
         index(index),
         smoother(responsiveness),
-        initial(initial),slope(slope),target(target),
+        initial(initial),slope(slope),target(target),start(start),
         asymmetry(asymmetry),
         changes(change_min,change_max),
         values(value_min,value_max){
@@ -65,7 +65,7 @@ public:
         return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
             %starting
             %smoother.coefficient
-            %initial%slope%target%starting
+            %initial%slope%target%start
             %asymmetry
             %changes.lower%changes.upper
             %values.lower%values.upper
@@ -84,7 +84,7 @@ public:
         double current = *index;
         double smooth = smoother.update(current);
         // Calculate trajectory
-        double trajectory = initial+slope*(starting+step);
+        double trajectory = initial+slope*(start+step);
         if(slope>0) trajectory = std::min(trajectory,target);
         else trajectory = std::max(trajectory,target);
         // Calculate status relative to trajectory
@@ -96,12 +96,10 @@ public:
         else if(asymmetry<0 and log_status<0) response = std::exp(log_status*std::fabs(asymmetry));
         else response = status;
         // In the first time step the multiplier is set so that the procedures
-        // results in the current control value in the first step. ie. their will be no change in the the control (e.g. TAC)
-        // This is intentional, as the procedures is intended to change the control gradually
-        // in response to status relative to the trajectory.
-        if(step==0) multiplier = value/response;
+        // results in the current control value if on trajectory
+        if(step==0) multiplier = value;
         // Calculate control value using multiplier
-        value = response * multiplier;
+        value = multiplier * response;
         // Restrict change and range of values
         value = changes.restrict(value,last);
         value = values.restrict(value);
