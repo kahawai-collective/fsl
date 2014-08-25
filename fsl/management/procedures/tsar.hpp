@@ -35,7 +35,7 @@ public:
     double asymmetry;
     
     RestrictProportionalChange changes;
-    RestrictValue values;
+    RestrictValuePeriods values;
 
     int step;
     double multiplier;
@@ -48,16 +48,12 @@ public:
         double* const index, 
         const double& responsiveness=1,
         const double& initial=1, const double& slope=0.01,const double& target=2, const uint& start=0,
-        const double& asymmetry=1,
-        const double& change_min=0,const double& change_max=1,
-        const double& value_min=0,const double& value_max=INFINITY):
+        const double& asymmetry=1):
         DynamicControlProcedure(control,starting),
         index(index),
         smoother(responsiveness),
         initial(initial),slope(slope),target(target),start(start),
-        asymmetry(asymmetry),
-        changes(change_min,change_max),
-        values(value_min,value_max){
+        asymmetry(asymmetry){
         reset();
     }
     
@@ -79,7 +75,7 @@ public:
         return *this;
     }
     
-    TSAR& operate(void){
+    TSAR& operate(uint time){
         double last = value;
         double current = *index;
         double smooth = smoother.update(current);
@@ -102,9 +98,9 @@ public:
         value = multiplier * response;
         // Restrict change and range of values
         value = changes.restrict(value,last);
-        value = values.restrict(value);
+        value = values.restrict(value,time);
         // Do `DynamicControlProcedure::operate()` to actually change the control
-        DynamicControlProcedure::operate();
+        DynamicControlProcedure::operate(time);
         // Increment step
         step++;
         return *this;

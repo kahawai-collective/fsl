@@ -25,7 +25,7 @@ class ProcedureDynamic<void> {
 public:
     virtual std::string signature(void) = 0;
     virtual void reset(void) = 0;
-    virtual void operate(void) = 0;
+    virtual void operate(uint time) = 0;
 };
 
 template<
@@ -47,8 +47,8 @@ public:
     virtual void reset(void){
         Procedure::reset();
     }
-    virtual void operate(void){
-        Procedure::operate();
+    virtual void operate(uint time){
+        Procedure::operate(time);
     }
 };
 
@@ -75,8 +75,8 @@ public:
         instance->reset();
     }
     
-    void operate(void){
-        instance->operate();
+    void operate(uint time){
+        instance->operate(time);
     }
 
 };
@@ -94,7 +94,7 @@ public:
         value(value){
     }
 
-    void operate(){
+    void operate(uint time){
         *control = value;
     }
 };

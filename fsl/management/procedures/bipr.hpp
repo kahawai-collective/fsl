@@ -56,7 +56,7 @@ public:
         return *this;
     }
     
-    BIPR& operate(void){
+    BIPR& operate(uint time){
         double last = value;
         double current = *index;
         double smooth = smoother.update(current);
@@ -64,7 +64,7 @@ public:
         value = changes.restrict(value,last);
         value = values.restrict(value);
 
-        DynamicControlProcedure::operate();
+        DynamicControlProcedure::operate(time);
         return *this;
     }
 

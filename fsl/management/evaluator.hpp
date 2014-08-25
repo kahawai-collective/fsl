@@ -99,7 +99,7 @@ public:
                     //... do `before()` method
                     derived().before(replicate,candidate,time,model_);
                     //... operate the procedure
-                    procedure.operate();
+                    procedure.operate(time);
                     //... do `after()` method
                     derived().after(replicate,candidate,time,model_);
                     //... update the model
