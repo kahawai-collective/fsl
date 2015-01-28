@@ -4,10 +4,7 @@
 FSL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 
 # Include directories
-FSL_INCLUDE_DIRS := -I$(FSL_HOME) -I$(FSL_HOME)/requirements/include
-
-# Library directories 
-FSL_LIB_DIRS := -L$(FSL_HOME)/requirements/lib
+FSL_INCLUDE_DIRS := -I$(FSL_HOME) -I$(FSL_HOME)/requires
 
 # Libraries that need to be included 
 FSL_LIBS := -lboost_system -lboost_filesystem -lboost_regex
