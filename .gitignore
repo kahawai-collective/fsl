@@ -1,6 +1,13 @@
 #Ignore dependencies
 /requires
 
+#Ignore generated Doxyfile
+/docs/doxygen/Doxyfile
+
+#Ignore html and xml build directorys
+/docs/doxygen/html
+/docs/doxygen/xml
+
 #Ignore published documentation
 /docs/published
 
