@@ -1,8 +1,11 @@
 #Ignore dependencies
-requires
+/requires
+
+#Ignore published documentation
+/docs/published
 
 #Ignore the sandbox directory
-sandbox
+/sandbox
 
 #Ignore object files
 *.o
