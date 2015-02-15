@@ -4,7 +4,7 @@
 FSL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 
 # Include directories
-FSL_INCLUDE_DIRS := -I$(FSL_HOME) -I$(FSL_HOME)/requires
+FSL_INCLUDE_DIRS := -I$(FSL_HOME) -I$(FSL_HOME)/requires/boost -I$(FSL_HOME)/requires/stencila
 
 # Libraries that need to be included 
 FSL_LIBS := -lboost_system -lboost_filesystem -lboost_regex
