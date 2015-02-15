@@ -1,0 +1,56 @@
+#title TSAR (Trajectory Status Adjustment Restricted) Management Procedure
+
+The TSAR class of management procedure defines a rebuild trajectory for CPUE. The trajectory is defined by three control parameters, _initial_ (|dot i|), _slope_ (|dot s|) and _target_ (|dot t|).
+
+|T_t = min(dot i + dot s . t,dot t)|
+
+In each year, a smoothed CPUE (|S_t|) is calculated using an exponential moving average with the control parameter _responsiveness_ (|dot r|):
+
+|S_t = I_t.dot r + I_{t-1} (1-dot r)|
+
+As an indicator of current status relative to the trajectory, the ratio of the smoothed CPUE to the trajectory is calculated,
+
+Values of   indicate that the smoothed CPUE is below the trajectory, suggesting TAC reductions are necessary to maintain the trajectory. Conversely,  suggest that TAC increases may be possible while maintaining a rate of rebuild in line, or better than that, defined by the trajectory.
+
+TSAR allows for asymmetry in the response to a status above or below the trajectory. A negative value for the control parameter Asymmetry (A) means that TAC is more severely reduced when status is below one,
+
+The TACC is the calculated by multiplying the response by the initial TACC,
+
+
+and restricting both the change and the absolute value of TACC based on the control parameters Minimum change, Minim Maximum um change, Minimum TACC, Maximum TACC. If the smoothed CPUE stays on the trajectory the whole time then there will be no changes to the TACC.
+
+An initial value for the trajectory was taken as a CPUE index of  0.5, the nadir of the standaridsed CPUE index in 2011. The target value for the trajectory was taken as 1, i.e twice the initial value at the nadir. We evaluated alternative values of the Slope attribute which react the target between 10 and 25 years (0.02 = 0.5/25, 0.05 = 0.5/10)
+
+table
+	caption
+		Parameters of the TSAR management procedure
+	tr
+		th Parameter
+		th Description
+	
+	tr
+		td Responsiveness
+		td Controls the degree of exponential smoothing of the biomass index. A responsiveness of one means that only the latest year’s value is used. A responsiveness of 0.2 means that the latest year’s value contributes 20% to the moving average.
+
+Initial
+Controls the initial value of the trajectory.
+0.5
+Slope
+Controls the rate of the trajectory.
+{0.02,0.03,0.04,0.05}
+Target
+Controls the maximum (or minimum) value for the trajectory.
+1
+Minimum change
+The minimum change in TAC. Allows for small changes in TAC to be ignored. If the recommended change in TAC is less than this amount, no change will be made. 
+5%
+Maximum change
+The maximum change in TAC. Places a cap on the amount that TAC can change from one year to the next.
+40%
+Minimum TAC
+Level below which TAC cannot fall no matter how low the biomass index.
+0
+Maximum TAC
+Level above which TAC cannot rise no matter how high the biomass index.
+{1500,1750,2000}t
+
