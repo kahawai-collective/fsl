@@ -10,7 +10,7 @@
 # Remember to use parallel builds for speedy compilation and running of all tests
 #    make -j 5 clean tests
 
-include fsl/Makefile.include
+include Makefile.include
 
 all: tests
 
@@ -82,9 +82,6 @@ tests : $(FSL_TESTS_OUT)
 FSL_CILA_SRC := $(shell find fsl -name "*.cila")
 FSL_CILA_HTML := $(patsubst %.cila,%.html,$(FSL_CILA_SRC))
 
-docss:
-	@echo $(FSL_DOCS_CILA)
-
 %/index.html: %/stencil.cila
 	cd $(dir $<) && Rscript -e "require(stencila); Stencil('.')$$ render()$$ export('index.html')"
 
@@ -102,7 +99,8 @@ doxygen:
 # Aggregates alternative documentation into a single place for publishing using Github pages 
 # Requires the a branch called "gh-pages" and the "ghp-import" script
 publish: doxygen
-	mkdir -p docs/published
-	cp -f docs/index.html docs/published
-	cp -fr docs/doxygen docs/published
+	cd docs ;\
+		mkdir -p published ;\
+		cp -f index.html published ;\
+		cp -fr doxygen published
 	ghp-import -m "Updated documentation" -p docs/published
