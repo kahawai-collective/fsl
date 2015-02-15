@@ -7,28 +7,28 @@
     <includes local="no">boost/accumulators/statistics/mean.hpp</includes>
     <includes local="no">boost/accumulators/statistics/variance.hpp</includes>
     <incdepgraph>
-      <node id="622">
+      <node id="634">
         <label>boost/accumulators/statistics/mean.hpp</label>
       </node>
-      <node id="620">
+      <node id="632">
         <label>boost/accumulators/accumulators.hpp</label>
       </node>
-      <node id="623">
+      <node id="635">
         <label>boost/accumulators/statistics/variance.hpp</label>
       </node>
-      <node id="621">
+      <node id="633">
         <label>boost/accumulators/statistics/stats.hpp</label>
       </node>
-      <node id="619">
+      <node id="631">
         <label>univariate.hpp</label>
         <link refid="univariate.hpp"/>
-        <childnode refid="620" relation="include">
+        <childnode refid="632" relation="include">
         </childnode>
-        <childnode refid="621" relation="include">
+        <childnode refid="633" relation="include">
         </childnode>
-        <childnode refid="622" relation="include">
+        <childnode refid="634" relation="include">
         </childnode>
-        <childnode refid="623" relation="include">
+        <childnode refid="635" relation="include">
         </childnode>
       </node>
     </incdepgraph>

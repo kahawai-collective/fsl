@@ -4,19 +4,19 @@
     <compoundname>functional.hpp</compoundname>
     <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
     <invincdepgraph>
-      <node id="290">
+      <node id="291">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>functional.hpp</label>
+        <link refid="functional.hpp"/>
         <childnode refid="291" relation="include">
         </childnode>
       </node>
-      <node id="289">
-        <label>functional.hpp</label>
-        <link refid="functional.hpp"/>
-        <childnode refid="290" relation="include">
-        </childnode>
-      </node>
-      <node id="291">
+      <node id="292">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>

@@ -6,6 +6,7 @@
     <innerfile refid="bipr_8hpp">bipr.hpp</innerfile>
     <innerfile refid="btar_8hpp">btar.hpp</innerfile>
     <innerfile refid="const_8hpp">const.hpp</innerfile>
+    <innerfile refid="tsar_8cxx">tsar.cxx</innerfile>
     <innerfile refid="tsar_8hpp">tsar.hpp</innerfile>
     <briefdescription>
     </briefdescription>

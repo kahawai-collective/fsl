@@ -70,31 +70,31 @@
     <detaileddescription>
 <para>von Bertallanfy growth function </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="450">
+      <node id="463">
         <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::LengthAge</label>
         <link refid="structFsl_1_1Models_1_1Matiri_1_1LengthAge"/>
-        <childnode refid="448" relation="public-inheritance">
+        <childnode refid="461" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="448">
+      <node id="461">
         <label>Fsl::Population::Growth::VonBert</label>
         <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
-        <childnode refid="449" relation="public-inheritance">
+        <childnode refid="462" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="449">
+      <node id="462">
         <label>Fsl::Math::Functions::Function</label>
         <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="451">
+      <node id="464">
         <label>Fsl::Population::Growth::VonBert</label>
         <link refid="classFsl_1_1Population_1_1Growth_1_1VonBert"/>
-        <childnode refid="452" relation="public-inheritance">
+        <childnode refid="465" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="452">
+      <node id="465">
         <label>Fsl::Math::Functions::Function</label>
         <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
       </node>

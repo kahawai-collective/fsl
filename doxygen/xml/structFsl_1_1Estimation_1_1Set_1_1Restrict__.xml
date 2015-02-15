@@ -95,36 +95,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="332">
+      <node id="336">
         <label>Mirror&lt; Restrict_ &gt;</label>
       </node>
-      <node id="331">
+      <node id="335">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Restrict_ &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="332" relation="public-inheritance">
+        <childnode refid="336" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="330">
+      <node id="334">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Restrict_</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1Restrict__"/>
-        <childnode refid="331" relation="public-inheritance">
+        <childnode refid="335" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="335">
+      <node id="339">
         <label>Mirror&lt; Restrict_ &gt;</label>
       </node>
-      <node id="334">
+      <node id="338">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Restrict_ &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="335" relation="public-inheritance">
+        <childnode refid="339" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="333">
+      <node id="337">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Restrict_</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1Restrict__"/>
-        <childnode refid="334" relation="public-inheritance">
+        <childnode refid="338" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

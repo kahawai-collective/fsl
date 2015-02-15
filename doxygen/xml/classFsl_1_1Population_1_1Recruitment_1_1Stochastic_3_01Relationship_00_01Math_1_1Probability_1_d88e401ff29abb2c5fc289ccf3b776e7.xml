@@ -147,14 +147,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="385">
+      <node id="396">
         <label>Fsl::Population::Recruitment::Stochastic&lt; Relationship, Math::Probability::Lognormal, Math::Series::Autocorrelation &gt;</label>
         <link refid="classFsl_1_1Population_1_1Recruitment_1_1Stochastic_3_01Relationship_00_01Math_1_1Probability_1_d88e401ff29abb2c5fc289ccf3b776e7"/>
-        <childnode refid="386" relation="usage">
+        <childnode refid="397" relation="usage">
           <edgelabel>autocorrelation</edgelabel>
         </childnode>
       </node>
-      <node id="386">
+      <node id="397">
         <label>Fsl::Math::Series::Autocorrelation</label>
         <link refid="classFsl_1_1Math_1_1Series_1_1Autocorrelation"/>
       </node>

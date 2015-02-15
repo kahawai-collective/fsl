@@ -14,44 +14,42 @@
     <includedby refid="autocorrelation-bentley-2012_8hpp" local="no">autocorrelation-bentley-2012.hpp</includedby>
     <includedby refid="stochastic_8hpp" local="no">stochastic.hpp</includedby>
     <incdepgraph>
-      <node id="474">
+      <node id="475">
         <label>boost/random/variate_generator.hpp</label>
       </node>
-      <node id="470">
+      <node id="471">
         <label>boost/format.hpp</label>
       </node>
-      <node id="469">
+      <node id="470">
         <label>boost/random/normal_distribution.hpp</label>
       </node>
-      <node id="468">
+      <node id="469">
         <label>boost/math/distributions/normal.hpp</label>
       </node>
-      <node id="475">
+      <node id="476">
         <label>boost/math/distributions/uniform.hpp</label>
       </node>
-      <node id="473">
+      <node id="474">
         <label>boost/random/mersenne_twister.hpp</label>
       </node>
-      <node id="467">
+      <node id="468">
         <label>normal.hpp</label>
         <link refid="normal.hpp"/>
-        <childnode refid="468" relation="include">
-        </childnode>
         <childnode refid="469" relation="include">
         </childnode>
         <childnode refid="470" relation="include">
         </childnode>
         <childnode refid="471" relation="include">
         </childnode>
-      </node>
-      <node id="472">
-        <label>ctime</label>
-      </node>
-      <node id="471">
-        <label>fsl/math/probability/distribution.hpp</label>
-        <link refid="distribution_8hpp"/>
         <childnode refid="472" relation="include">
         </childnode>
+      </node>
+      <node id="473">
+        <label>ctime</label>
+      </node>
+      <node id="472">
+        <label>fsl/math/probability/distribution.hpp</label>
+        <link refid="distribution_8hpp"/>
         <childnode refid="473" relation="include">
         </childnode>
         <childnode refid="474" relation="include">
@@ -60,63 +58,65 @@
         </childnode>
         <childnode refid="476" relation="include">
         </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
       </node>
-      <node id="476">
+      <node id="477">
         <label>boost/random/uniform_01.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="481">
+      <node id="482">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
-        <childnode refid="482" relation="include">
+        <childnode refid="483" relation="include">
         </childnode>
       </node>
-      <node id="480">
+      <node id="481">
         <label>distributions.hpp</label>
         <link refid="distributions_8hpp"/>
       </node>
-      <node id="477">
+      <node id="478">
         <label>normal.hpp</label>
         <link refid="normal.hpp"/>
-        <childnode refid="478" relation="include">
-        </childnode>
         <childnode refid="479" relation="include">
         </childnode>
         <childnode refid="480" relation="include">
         </childnode>
         <childnode refid="481" relation="include">
         </childnode>
-        <childnode refid="483" relation="include">
+        <childnode refid="482" relation="include">
         </childnode>
         <childnode refid="484" relation="include">
         </childnode>
         <childnode refid="485" relation="include">
         </childnode>
-      </node>
-      <node id="483">
-        <label>autocorrelated.hpp</label>
-        <link refid="autocorrelated_8hpp"/>
-        <childnode refid="481" relation="include">
+        <childnode refid="486" relation="include">
         </childnode>
       </node>
-      <node id="479">
+      <node id="484">
+        <label>autocorrelated.hpp</label>
+        <link refid="autocorrelated_8hpp"/>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
         <label>distributions.cxx</label>
         <link refid="distributions_8cxx"/>
       </node>
-      <node id="485">
+      <node id="486">
         <label>stochastic.hpp</label>
         <link refid="stochastic_8hpp"/>
       </node>
-      <node id="484">
+      <node id="485">
         <label>autocorrelation-bentley-2012.hpp</label>
         <link refid="autocorrelation-bentley-2012_8hpp"/>
       </node>
-      <node id="478">
+      <node id="479">
         <label>metropolis.hpp</label>
         <link refid="metropolis_8hpp"/>
       </node>
-      <node id="482">
+      <node id="483">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>

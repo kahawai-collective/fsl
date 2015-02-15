@@ -122,24 +122,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="431">
+      <node id="444">
         <label>Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;</label>
         <link refid="classFsl_1_1Estimation_1_1Variables"/>
-        <childnode refid="432" relation="public-inheritance">
+        <childnode refid="445" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="432">
+      <node id="445">
         <label>Array&lt;Variate&lt;Distribution&gt;,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10&gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="433">
+      <node id="446">
         <label>Fsl::Estimation::Variables&lt; Distribution, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10 &gt;</label>
         <link refid="classFsl_1_1Estimation_1_1Variables"/>
-        <childnode refid="434" relation="public-inheritance">
+        <childnode refid="447" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="434">
+      <node id="447">
         <label>Array&lt;Variate&lt;Distribution&gt;,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10&gt;</label>
       </node>
     </collaborationgraph>

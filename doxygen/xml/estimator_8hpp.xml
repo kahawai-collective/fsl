@@ -4,14 +4,14 @@
     <compoundname>estimator.hpp</compoundname>
     <includedby refid="demc_8hpp" local="no">demc.hpp</includedby>
     <invincdepgraph>
-      <node id="248">
+      <node id="249">
         <label>demc.hpp</label>
         <link refid="demc_8hpp"/>
       </node>
-      <node id="247">
+      <node id="248">
         <label>estimator.hpp</label>
         <link refid="estimator.hpp"/>
-        <childnode refid="248" relation="include">
+        <childnode refid="249" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

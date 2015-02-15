@@ -5,18 +5,18 @@
     <includes local="no">boost/test/unit_test.hpp</includes>
     <includes local="no">fsl/estimation/mcmc/metropolis.hpp</includes>
     <incdepgraph>
-      <node id="430">
+      <node id="431">
         <label>boost/test/unit_test.hpp</label>
       </node>
-      <node id="431">
+      <node id="432">
         <label>fsl/estimation/mcmc/metropolis.hpp</label>
       </node>
-      <node id="429">
+      <node id="430">
         <label>metropolis.cxx</label>
         <link refid="metropolis.cxx"/>
-        <childnode refid="430" relation="include">
-        </childnode>
         <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
         </childnode>
       </node>
     </incdepgraph>

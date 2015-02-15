@@ -86,13 +86,14 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="74" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="74" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureAny_1aab16e8fd6d92319a483c68782cf91e55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Fsl::Management::ProcedureAny::operate</definition>
-        <argsstring>(void)</argsstring>
+        <argsstring>(uint time)</argsstring>
         <name>operate</name>
         <param>
-          <type>void</type>
+          <type>uint</type>
+          <declname>time</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -108,20 +109,20 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="315">
+      <node id="319">
         <label>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;</label>
         <link refid="classFsl_1_1Management_1_1ProcedureDynamic"/>
-        <childnode refid="316" relation="public-inheritance">
+        <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="316">
+      <node id="320">
         <label>Fsl::Management::Procedure</label>
         <link refid="classFsl_1_1Management_1_1Procedure"/>
       </node>
-      <node id="314">
+      <node id="318">
         <label>Fsl::Management::ProcedureAny</label>
         <link refid="classFsl_1_1Management_1_1ProcedureAny"/>
-        <childnode refid="315" relation="usage">
+        <childnode refid="319" relation="usage">
           <edgelabel>instance</edgelabel>
         </childnode>
       </node>
@@ -129,7 +130,7 @@
     <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="55" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="55" bodyend="82"/>
     <listofallmembers>
       <member refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" prot="private" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>instance</name></member>
-      <member refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureAny_1aab16e8fd6d92319a483c68782cf91e55" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>operate</name></member>
       <member refid="classFsl_1_1Management_1_1ProcedureAny_1ae38a7194dda9e63292596266e63b7d91" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>operator=</name></member>
       <member refid="classFsl_1_1Management_1_1ProcedureAny_1acd8d989a21a59179f5ec87a97615b351" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>ProcedureAny</name></member>
       <member refid="classFsl_1_1Management_1_1ProcedureAny_1a8b08be863432f587b3d2c2af1c143426" prot="public" virt="non-virtual"><scope>Fsl::Management::ProcedureAny</scope><name>reset</name></member>

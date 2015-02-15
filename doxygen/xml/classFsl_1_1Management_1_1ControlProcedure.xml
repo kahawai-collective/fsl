@@ -64,11 +64,15 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="92" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="92" bodyend="95"/>
       </memberdef>
-      <memberdef kind="function" id="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ControlProcedure_1aeae3f2612d3ccf50eca6b5d1253b2c3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Fsl::Management::ControlProcedure&lt; Type &gt;::operate</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(uint time)</argsstring>
         <name>operate</name>
+        <param>
+          <type>uint</type>
+          <declname>time</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -123,7 +127,8 @@
     <listofallmembers>
       <member refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>control</name></member>
       <member refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>ControlProcedure</name></member>
-      <member refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1ControlProcedure_1aeae3f2612d3ccf50eca6b5d1253b2c3f" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" prot="public" virt="non-virtual" ambiguityscope="Fsl::Management::Procedure::"><scope>Fsl::Management::ControlProcedure</scope><name>operate</name></member>
       <member refid="classFsl_1_1Management_1_1Procedure_1a13a5faf37289f3187fb147b248a7aa07" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>reset</name></member>
       <member refid="classFsl_1_1Management_1_1Procedure_1ae0c85e6d0c1fa3b0c690409fea24d282" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>signature</name></member>
       <member refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" prot="public" virt="non-virtual"><scope>Fsl::Management::ControlProcedure</scope><name>value</name></member>

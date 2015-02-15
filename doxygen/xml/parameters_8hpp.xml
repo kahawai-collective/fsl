@@ -5,41 +5,41 @@
     <includes refid="variables_8hpp" local="no">fsl/estimation/variables.hpp</includes>
     <includedby refid="estimation_8hpp" local="no">estimation.hpp</includedby>
     <incdepgraph>
-      <node id="486">
+      <node id="487">
         <label>parameters.hpp</label>
         <link refid="parameters.hpp"/>
-        <childnode refid="487" relation="include">
-        </childnode>
-      </node>
-      <node id="489">
-        <label>stencila/reflector.hpp</label>
-      </node>
-      <node id="487">
-        <label>fsl/estimation/variables.hpp</label>
-        <link refid="variables_8hpp"/>
         <childnode refid="488" relation="include">
         </childnode>
+      </node>
+      <node id="490">
+        <label>stencila/reflector.hpp</label>
+      </node>
+      <node id="488">
+        <label>fsl/estimation/variables.hpp</label>
+        <link refid="variables_8hpp"/>
         <childnode refid="489" relation="include">
         </childnode>
         <childnode refid="490" relation="include">
         </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
       </node>
-      <node id="488">
+      <node id="489">
         <label>boost/regex.hpp</label>
       </node>
-      <node id="490">
+      <node id="491">
         <label>fsl/math/probability/fixed.hpp</label>
         <link refid="fixed_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="491">
+      <node id="492">
         <label>parameters.hpp</label>
         <link refid="parameters.hpp"/>
-        <childnode refid="492" relation="include">
+        <childnode refid="493" relation="include">
         </childnode>
       </node>
-      <node id="492">
+      <node id="493">
         <label>estimation.hpp</label>
         <link refid="estimation_8hpp"/>
       </node>

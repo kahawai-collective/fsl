@@ -6,31 +6,39 @@
     <includedby refid="btar_8hpp" local="no">btar.hpp</includedby>
     <includedby refid="tsar_8hpp" local="no">tsar.hpp</includedby>
     <invincdepgraph>
-      <node id="527">
+      <node id="529">
         <label>restrictors.hpp</label>
         <link refid="restrictors.hpp"/>
-        <childnode refid="528" relation="include">
-        </childnode>
-        <childnode refid="529" relation="include">
-        </childnode>
         <childnode refid="530" relation="include">
         </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
       </node>
-      <node id="528">
+      <node id="530">
         <label>bipr.hpp</label>
         <link refid="bipr_8hpp"/>
       </node>
-      <node id="529">
+      <node id="533">
+        <label>tsar.cxx</label>
+        <link refid="tsar_8cxx"/>
+      </node>
+      <node id="531">
         <label>btar.hpp</label>
         <link refid="btar_8hpp"/>
       </node>
-      <node id="530">
+      <node id="532">
         <label>tsar.hpp</label>
         <link refid="tsar_8hpp"/>
+        <childnode refid="533" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="structFsl_1_1Management_1_1RestrictValue" prot="public">Fsl::Management::RestrictValue</innerclass>
-    <innerclass refid="structFsl_1_1Management_1_1RestrictProportionalChange" prot="public">Fsl::Management::RestrictProportionalChange</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1RestrictValue" prot="public">Fsl::Management::RestrictValue</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1RestrictValuePeriods" prot="public">Fsl::Management::RestrictValuePeriods</innerclass>
+    <innerclass refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period" prot="public">Fsl::Management::RestrictValuePeriods::Period</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1RestrictProportionalChange" prot="public">Fsl::Management::RestrictProportionalChange</innerclass>
     <innernamespace refid="namespaceFsl">Fsl</innernamespace>
     <innernamespace refid="namespaceFsl_1_1Management">Fsl::Management</innernamespace>
     <briefdescription>
@@ -43,40 +51,61 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Fsl<sp/>{</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Management<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="structFsl_1_1Management_1_1RestrictValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref><sp/>{</highlight></codeline>
-<codeline lineno="7" refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>;</highlight></codeline>
-<codeline lineno="8" refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>;</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="structFsl_1_1Management_1_1RestrictValue_1aef9b29cbf9f348106f5066dcd4b43767" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Management_1_1RestrictValue_1aef9b29cbf9f348106f5066dcd4b43767" kindref="member">RestrictValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>):</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower(lower),</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upper(upper){</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="structFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" kindref="member">restrict</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value){</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(value&lt;<ref refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>)?(<ref refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>):(value&gt;<ref refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>?<ref refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>:value);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="structFsl_1_1Management_1_1RestrictProportionalChange" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange" kindref="compound">RestrictProportionalChange</ref><sp/>{</highlight></codeline>
-<codeline lineno="21" refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kindref="member">lower</ref>;</highlight></codeline>
-<codeline lineno="22" refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a4352224c1a3a9d0175d83d8604433664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a4352224c1a3a9d0175d83d8604433664" kindref="member">RestrictProportionalChange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kindref="member">lower</ref>,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>):</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower(lower),</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upper(upper){</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="6" refid="classFsl_1_1Management_1_1RestrictValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8" refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>;</highlight></codeline>
+<codeline lineno="9" refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classFsl_1_1Management_1_1RestrictValue_1a1feecc3b60f92874ffa6fc131ce31135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1a1feecc3b60f92874ffa6fc131ce31135" kindref="member">RestrictValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>=0,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>=INFINITY):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>(<ref refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>(<ref refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" kindref="member">restrict</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(value&lt;<ref refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>)?(<ref refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kindref="member">lower</ref>):(value&gt;<ref refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>?<ref refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kindref="member">upper</ref>:value);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classFsl_1_1Management_1_1RestrictValuePeriods" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1RestrictValuePeriods" kindref="compound">RestrictValuePeriods</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period" kindref="compound">Period</ref><sp/>:<sp/><ref refid="classFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1a6bbb6300ebbc89995bad7af89ba7673e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1a6bbb6300ebbc89995bad7af89ba7673e" kindref="member">start</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25" refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1afb326ee61936d7777f0679512c4e82b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint<sp/><ref refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1afb326ee61936d7777f0679512c4e82b8" kindref="member">finish</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="27" refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a97ac3c40a61ef3d78356f67ee0399812" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period" kindref="compound">Period</ref><sp/><ref refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a97ac3c40a61ef3d78356f67ee0399812" kindref="member">periods</ref>[10];</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" kindref="member">restrict</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>last){</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>change<sp/>=<sp/>value/last-1;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>delta<sp/>=<sp/>std::fabs(change);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sign<sp/>=<sp/>change/delta;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>change_restricted<sp/>=<sp/><sp/>(delta&lt;lower)?0:(delta&gt;<ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>?(sign*<ref refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>):change);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>last<sp/>*<sp/>(1+change_restricted);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight></codeline>
+<codeline lineno="29" refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a4ee34a4fdb068dae908bb911470bda09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a4ee34a4fdb068dae908bb911470bda09" kindref="member">restrict</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value,<sp/>uint<sp/>time){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>period<sp/>:<sp/><ref refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a97ac3c40a61ef3d78356f67ee0399812" kindref="member">periods</ref>){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(period.start==0<sp/>and<sp/>period.finish==0)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(time&gt;=period.start<sp/>and<sp/>time&lt;=period.finish){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>period.restrict(value);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" kindref="member">RestrictValue::restrict</ref>(value);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classFsl_1_1Management_1_1RestrictProportionalChange" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange" kindref="compound">RestrictProportionalChange</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kindref="member">lower</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a315fa49ec092cad7b1b3c5c021b5e97d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a315fa49ec092cad7b1b3c5c021b5e97d" kindref="member">RestrictProportionalChange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kindref="member">lower</ref>=0,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>=INFINITY):</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kindref="member">lower</ref>(<ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kindref="member">lower</ref>),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>(<ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" kindref="member">restrict</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>last){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>change<sp/>=<sp/>value/last-1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>delta<sp/>=<sp/>std::fabs(change);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sign<sp/>=<sp/>change/delta;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>change_restricted<sp/>=<sp/><sp/>(delta&lt;lower)?0:(delta&gt;<ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>?(sign*<ref refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kindref="member">upper</ref>):change);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>last<sp/>*<sp/>(1+change_restricted);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Fsl</highlight></codeline>
     </programlisting>
     <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp"/>
   </compounddef>

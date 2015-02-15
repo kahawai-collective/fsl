@@ -8,15 +8,13 @@
     <includedby refid="const_8hpp" local="no">const.hpp</includedby>
     <includedby refid="tsar_8hpp" local="no">tsar.hpp</includedby>
     <invincdepgraph>
-      <node id="519">
+      <node id="520">
         <label>const.hpp</label>
         <link refid="const_8hpp"/>
       </node>
-      <node id="515">
+      <node id="516">
         <label>procedure.hpp</label>
         <link refid="procedure.hpp"/>
-        <childnode refid="516" relation="include">
-        </childnode>
         <childnode refid="517" relation="include">
         </childnode>
         <childnode refid="518" relation="include">
@@ -25,20 +23,28 @@
         </childnode>
         <childnode refid="520" relation="include">
         </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
       </node>
-      <node id="517">
+      <node id="518">
         <label>bipr.hpp</label>
         <link refid="bipr_8hpp"/>
       </node>
-      <node id="518">
+      <node id="522">
+        <label>tsar.cxx</label>
+        <link refid="tsar_8cxx"/>
+      </node>
+      <node id="519">
         <label>btar.hpp</label>
         <link refid="btar_8hpp"/>
       </node>
-      <node id="520">
+      <node id="521">
         <label>tsar.hpp</label>
         <link refid="tsar_8hpp"/>
+        <childnode refid="522" relation="include">
+        </childnode>
       </node>
-      <node id="516">
+      <node id="517">
         <label>evaluator.hpp</label>
         <link refid="evaluator_8hpp"/>
       </node>
@@ -84,7 +90,7 @@
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" kindref="member">signature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kindref="member">operate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" kindref="member">operate</ref>(uint<sp/>time)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight></codeline>
@@ -106,8 +112,8 @@
 <codeline lineno="47" refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a13a5faf37289f3187fb147b248a7aa07" kindref="member">Procedure::reset</ref>();</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="50" refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kindref="member">operate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" kindref="member">Procedure::operate</ref>();</highlight></codeline>
+<codeline lineno="50" refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac32ac4a170bf8375f7d1533852a294d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac32ac4a170bf8375f7d1533852a294d1" kindref="member">operate</ref>(uint<sp/>time){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" kindref="member">Procedure::operate</ref>(time);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
@@ -134,8 +140,8 @@
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>-&gt;<ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kindref="member">reset</ref>();</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="78" refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" kindref="member">operate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>-&gt;<ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kindref="member">operate</ref>();</highlight></codeline>
+<codeline lineno="78" refid="classFsl_1_1Management_1_1ProcedureAny_1aab16e8fd6d92319a483c68782cf91e55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1aab16e8fd6d92319a483c68782cf91e55" kindref="member">operate</ref>(uint<sp/>time){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ProcedureAny_1a0fb42fd959cb66ac8d610f5c35f19c76" kindref="member">instance</ref>-&gt;<ref refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac32ac4a170bf8375f7d1533852a294d1" kindref="member">operate</ref>(time);</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal">};</highlight></codeline>
@@ -153,7 +159,7 @@
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>(<ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>){</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97" refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" kindref="member">operate</ref>(){</highlight></codeline>
+<codeline lineno="97" refid="classFsl_1_1Management_1_1ControlProcedure_1aeae3f2612d3ccf50eca6b5d1253b2c3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1aeae3f2612d3ccf50eca6b5d1253b2c3f" kindref="member">operate</ref>(uint<sp/>time){</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kindref="member">control</ref><sp/>=<sp/><ref refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kindref="member">value</ref>;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal">};</highlight></codeline>

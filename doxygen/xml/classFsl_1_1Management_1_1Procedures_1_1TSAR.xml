@@ -59,11 +59,11 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="23" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab36ee91c73a2e1fc499100e177387c0d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a54b18d410b683a5b1262d0b6c0c14923" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::rate</definition>
+        <definition>double Fsl::Management::Procedures::TSAR::slope</definition>
         <argsstring></argsstring>
-        <name>rate</name>
+        <name>slope</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -85,6 +85,59 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="25" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a3625dcb202724f4d3a8adb73b35a83e7" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::Procedures::TSAR::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start point for trajectory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="30" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1af2bdd8a4d1412f3c5b563cc8c4dbfa59" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::Procedures::TSAR::asymmetry</definition>
+        <argsstring></argsstring>
+        <name>asymmetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asymmetry of response </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="35" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4b25517ae470ea87c49d5c5b4468d1c1" prot="public" static="no" mutable="no">
+        <type><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange" kindref="compound">RestrictProportionalChange</ref></type>
+        <definition>RestrictProportionalChange Fsl::Management::Procedures::TSAR::changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="37" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a605b3805d1a627d4e76a49ab38c355e5" prot="public" static="no" mutable="no">
+        <type><ref refid="classFsl_1_1Management_1_1RestrictValuePeriods" kindref="compound">RestrictValuePeriods</ref></type>
+        <definition>RestrictValuePeriods Fsl::Management::Procedures::TSAR::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="38" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a8d2758f161bcf3edbc539255e83e11a7" prot="public" static="no" mutable="no">
         <type>int</type>
         <definition>int Fsl::Management::Procedures::TSAR::step</definition>
@@ -96,120 +149,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="26" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="26" bodyend="-1"/>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="40" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4d2f530e16a9f42bb86bc39326449bec" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a3fc4ee31caef66f264669c263d04def2" prot="public" static="no" mutable="no">
         <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::trigger</definition>
+        <definition>double Fsl::Management::Procedures::TSAR::multiplier</definition>
         <argsstring></argsstring>
-        <name>trigger</name>
+        <name>multiplier</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="28" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4b25517ae470ea87c49d5c5b4468d1c1" prot="public" static="no" mutable="no">
-        <type><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange" kindref="compound">RestrictProportionalChange</ref></type>
-        <definition>RestrictProportionalChange Fsl::Management::Procedures::TSAR::changes</definition>
-        <argsstring></argsstring>
-        <name>changes</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="30" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="30" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1aef6e3ea5702e9eabac496f3dc2835e36" prot="public" static="no" mutable="no">
-        <type><ref refid="structFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref></type>
-        <definition>RestrictValue Fsl::Management::Procedures::TSAR::values</definition>
-        <argsstring></argsstring>
-        <name>values</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="31" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="31" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a802198a7e96c33111e54c7b8df8ebb28" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::initial_value_</definition>
-        <argsstring></argsstring>
-        <name>initial_value_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Initial value of trajectory. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="38" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="38" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a9206b037cec7ba234ab4bfcb983d9f0b" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::rate_value_</definition>
-        <argsstring></argsstring>
-        <name>rate_value_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Target value of trajectory. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="43" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a1dc628fbe377a569b3dac14cf2a91e11" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::target_value_</definition>
-        <argsstring></argsstring>
-        <name>target_value_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Target value of trajectory. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="48" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="48" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a75e5a2ebe9611a66bcaa9535509a88da" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::status_last_</definition>
-        <argsstring></argsstring>
-        <name>status_last_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="50" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="50" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a58c85a62234d3af3088648bd13020738" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Fsl::Management::Procedures::TSAR::multiplier_</definition>
-        <argsstring></argsstring>
-        <name>multiplier_</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="52" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="41" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab4b39810ccf8a3fd812b2884289567d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a27d5207c7e69cdeda85660b3c4f764f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>Fsl::Management::Procedures::TSAR::TSAR</definition>
-        <argsstring>(double *const control, const double &amp;starting, double *const index, const double &amp;responsiveness=1, const double &amp;initial=1, const double &amp;rate=0.01, const double &amp;target=2, const double &amp;trigger=1, const double &amp;change_min=0, const double &amp;change_max=1, const double &amp;value_min=0, const double &amp;value_max=INFINITY)</argsstring>
+        <argsstring>(double *const control, const double &amp;starting, double *const index, const double &amp;responsiveness=1, const double &amp;initial=1, const double &amp;slope=0.01, const double &amp;target=2, const uint &amp;start=0, const double &amp;asymmetry=1)</argsstring>
         <name>TSAR</name>
         <param>
           <type>double *const</type>
@@ -235,7 +195,7 @@
         </param>
         <param>
           <type>const double &amp;</type>
-          <declname>rate</declname>
+          <declname>slope</declname>
           <defval>0.01</defval>
         </param>
         <param>
@@ -244,29 +204,14 @@
           <defval>2</defval>
         </param>
         <param>
-          <type>const double &amp;</type>
-          <declname>trigger</declname>
-          <defval>1</defval>
-        </param>
-        <param>
-          <type>const double &amp;</type>
-          <declname>change_min</declname>
+          <type>const uint &amp;</type>
+          <declname>start</declname>
           <defval>0</defval>
         </param>
         <param>
           <type>const double &amp;</type>
-          <declname>change_max</declname>
+          <declname>asymmetry</declname>
           <defval>1</defval>
-        </param>
-        <param>
-          <type>const double &amp;</type>
-          <declname>value_min</declname>
-          <defval>0</defval>
-        </param>
-        <param>
-          <type>const double &amp;</type>
-          <declname>value_max</declname>
-          <defval>INFINITY</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -274,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="56" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="56" bodyend="73"/>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="45" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="45" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ac3dae21d2d84f5a53119200ff6480cdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -290,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="75" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="75" bodyend="84"/>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="60" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="60" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ae92f8527a488cd160186cc777e0909e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classFsl_1_1Management_1_1Procedures_1_1TSAR" kindref="compound">TSAR</ref> &amp;</type>
@@ -306,15 +251,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="86" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="86" bodyend="91"/>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="71" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="71" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a974d38609cda08a7da4cbc38e72ff430" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ad4c4429ff8a34c3493fe7e5614196ee0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classFsl_1_1Management_1_1Procedures_1_1TSAR" kindref="compound">TSAR</ref> &amp;</type>
         <definition>TSAR&amp; Fsl::Management::Procedures::TSAR::operate</definition>
-        <argsstring>(void)</argsstring>
+        <argsstring>(uint time)</argsstring>
         <name>operate</name>
         <param>
-          <type>void</type>
+          <type>uint</type>
+          <declname>time</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -322,108 +268,121 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="93" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="93" bodyend="130"/>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="78" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="78" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Trajectory Status Assymetric Restricted </para>    </detaileddescription>
+<para>Trajectory Status Assymetric Restricted (<ref refid="classFsl_1_1Management_1_1Procedures_1_1TSAR" kindref="compound">TSAR</ref>) </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="410">
+      <node id="421">
         <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
         <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
-        <childnode refid="411" relation="public-inheritance">
+        <childnode refid="422" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="411">
+      <node id="422">
         <label>Fsl::Management::Procedure</label>
         <link refid="classFsl_1_1Management_1_1Procedure"/>
       </node>
-      <node id="408">
+      <node id="419">
         <label>Fsl::Management::Procedures::TSAR</label>
         <link refid="classFsl_1_1Management_1_1Procedures_1_1TSAR"/>
-        <childnode refid="409" relation="public-inheritance">
+        <childnode refid="420" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="409">
+      <node id="420">
         <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
         <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
-        <childnode refid="410" relation="public-inheritance">
+        <childnode refid="421" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="416">
+      <node id="427">
         <label>Fsl::Math::Series::Filters::Ema</label>
         <link refid="classFsl_1_1Math_1_1Series_1_1Filters_1_1Ema"/>
       </node>
-      <node id="414">
-        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
-        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
-        <childnode refid="415" relation="public-inheritance">
+      <node id="431">
+        <label>Fsl::Management::RestrictValuePeriods::Period</label>
+        <link refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period"/>
+        <childnode refid="430" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="417">
-        <label>Fsl::Management::RestrictProportionalChange</label>
-        <link refid="structFsl_1_1Management_1_1RestrictProportionalChange"/>
+      <node id="425">
+        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
+        <childnode refid="426" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="415">
+      <node id="428">
+        <label>Fsl::Management::RestrictProportionalChange</label>
+        <link refid="classFsl_1_1Management_1_1RestrictProportionalChange"/>
+      </node>
+      <node id="426">
         <label>Fsl::Management::Procedure</label>
         <link refid="classFsl_1_1Management_1_1Procedure"/>
       </node>
-      <node id="412">
+      <node id="429">
+        <label>Fsl::Management::RestrictValuePeriods</label>
+        <link refid="classFsl_1_1Management_1_1RestrictValuePeriods"/>
+        <childnode refid="430" relation="public-inheritance">
+        </childnode>
+        <childnode refid="431" relation="usage">
+          <edgelabel>periods</edgelabel>
+        </childnode>
+      </node>
+      <node id="423">
         <label>Fsl::Management::Procedures::TSAR</label>
         <link refid="classFsl_1_1Management_1_1Procedures_1_1TSAR"/>
-        <childnode refid="413" relation="public-inheritance">
+        <childnode refid="424" relation="public-inheritance">
         </childnode>
-        <childnode refid="416" relation="usage">
+        <childnode refid="427" relation="usage">
           <edgelabel>smoother</edgelabel>
         </childnode>
-        <childnode refid="417" relation="usage">
+        <childnode refid="428" relation="usage">
           <edgelabel>changes</edgelabel>
         </childnode>
-        <childnode refid="418" relation="usage">
+        <childnode refid="429" relation="usage">
           <edgelabel>values</edgelabel>
         </childnode>
       </node>
-      <node id="418">
+      <node id="430">
         <label>Fsl::Management::RestrictValue</label>
-        <link refid="structFsl_1_1Management_1_1RestrictValue"/>
+        <link refid="classFsl_1_1Management_1_1RestrictValue"/>
       </node>
-      <node id="413">
+      <node id="424">
         <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
         <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
-        <childnode refid="414" relation="public-inheritance">
+        <childnode refid="425" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="14" bodyend="132"/>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" line="14" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.hpp" bodystart="14" bodyend="109"/>
     <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1af2bdd8a4d1412f3c5b563cc8c4dbfa59" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>asymmetry</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4b25517ae470ea87c49d5c5b4468d1c1" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>changes</name></member>
       <member refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>control</name></member>
       <member refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>ControlProcedure</name></member>
       <member refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a2b0563700c48399bfc81ad07a7fdccdf" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>DynamicControlProcedure</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a1ffb34b05bc367adfae97f86021c7129" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>index</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a7591ff6356a25f4ace8ea83421af6fc9" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>initial</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a802198a7e96c33111e54c7b8df8ebb28" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>initial_value_</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a58c85a62234d3af3088648bd13020738" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>multiplier_</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a974d38609cda08a7da4cbc38e72ff430" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>operate</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab36ee91c73a2e1fc499100e177387c0d" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>rate</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a9206b037cec7ba234ab4bfcb983d9f0b" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>rate_value_</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a3fc4ee31caef66f264669c263d04def2" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>multiplier</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ad4c4429ff8a34c3493fe7e5614196ee0" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" prot="public" virt="non-virtual" ambiguityscope="Fsl::Management::Procedure::"><scope>Fsl::Management::Procedures::TSAR</scope><name>operate</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ae92f8527a488cd160186cc777e0909e8" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>reset</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ac3dae21d2d84f5a53119200ff6480cdf" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>signature</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a54b18d410b683a5b1262d0b6c0c14923" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>slope</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab3ce6de9c6f517a21d16b90ba2715397" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>Smoother</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a5c75b1b2e0f6ea43281987b26320883e" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>smoother</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a3625dcb202724f4d3a8adb73b35a83e7" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>start</name></member>
       <member refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a3e5b10f00d55b8505cceb710bbc8eed8" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>starting</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a75e5a2ebe9611a66bcaa9535509a88da" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>status_last_</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a8d2758f161bcf3edbc539255e83e11a7" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>step</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ae4c10dfdfaffdf5947176596cf553ce0" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>target</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a1dc628fbe377a569b3dac14cf2a91e11" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>target_value_</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4d2f530e16a9f42bb86bc39326449bec" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>trigger</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab4b39810ccf8a3fd812b2884289567d6" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>TSAR</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a27d5207c7e69cdeda85660b3c4f764f1" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>TSAR</name></member>
       <member refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>value</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1aef6e3ea5702e9eabac496f3dc2835e36" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>values</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a605b3805d1a627d4e76a49ab38c355e5" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::TSAR</scope><name>values</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

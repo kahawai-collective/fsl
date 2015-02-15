@@ -16,60 +16,58 @@
     <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
     <includedby refid="von-bert_8hpp" local="no">von-bert.hpp</includedby>
     <incdepgraph>
-      <node id="271">
+      <node id="272">
         <label>fsl/common.hpp</label>
         <link refid="common_8hpp"/>
       </node>
-      <node id="270">
+      <node id="271">
         <label>function.hpp</label>
         <link refid="function.hpp"/>
-        <childnode refid="271" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="274">
+      <node id="275">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>morphometry.hpp</label>
+        <link refid="morphometry_8hpp"/>
         <childnode refid="275" relation="include">
         </childnode>
       </node>
-      <node id="285">
-        <label>morphometry.hpp</label>
-        <link refid="morphometry_8hpp"/>
-        <childnode refid="274" relation="include">
+      <node id="274">
+        <label>constant.hpp</label>
+        <link refid="constant_8hpp"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>von-bert.hpp</label>
+        <link refid="von-bert_8hpp"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>double-logistic.hpp</label>
+        <link refid="double-logistic_8hpp"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>identity.hpp</label>
+        <link refid="identity_8hpp"/>
+        <childnode refid="275" relation="include">
         </childnode>
       </node>
       <node id="273">
-        <label>constant.hpp</label>
-        <link refid="constant_8hpp"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-      </node>
-      <node id="287">
-        <label>von-bert.hpp</label>
-        <link refid="von-bert_8hpp"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-      </node>
-      <node id="277">
-        <label>double-logistic.hpp</label>
-        <link refid="double-logistic_8hpp"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-      </node>
-      <node id="279">
-        <label>identity.hpp</label>
-        <link refid="identity_8hpp"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-      </node>
-      <node id="272">
         <label>function.hpp</label>
         <link refid="function.hpp"/>
-        <childnode refid="273" relation="include">
-        </childnode>
-        <childnode refid="276" relation="include">
+        <childnode refid="274" relation="include">
         </childnode>
         <childnode refid="277" relation="include">
         </childnode>
@@ -81,66 +79,68 @@
         </childnode>
         <childnode refid="281" relation="include">
         </childnode>
-        <childnode refid="283" relation="include">
+        <childnode refid="282" relation="include">
         </childnode>
         <childnode refid="284" relation="include">
         </childnode>
-        <childnode refid="286" relation="include">
-        </childnode>
-        <childnode refid="274" relation="include">
+        <childnode refid="285" relation="include">
         </childnode>
         <childnode refid="287" relation="include">
         </childnode>
-      </node>
-      <node id="282">
-        <label>maturity.hpp</label>
-        <link refid="maturity_8hpp"/>
-        <childnode refid="274" relation="include">
+        <childnode refid="275" relation="include">
         </childnode>
-      </node>
-      <node id="280">
-        <label>line.hpp</label>
-        <link refid="line_8hpp"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-      </node>
-      <node id="284">
-        <label>power.hpp</label>
-        <link refid="power_8hpp"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-        <childnode refid="285" relation="include">
+        <childnode refid="288" relation="include">
         </childnode>
       </node>
       <node id="283">
+        <label>maturity.hpp</label>
+        <link refid="maturity_8hpp"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>line.hpp</label>
+        <link refid="line_8hpp"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>power.hpp</label>
+        <link refid="power_8hpp"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
         <label>piecewise-spline.hpp</label>
         <link refid="piecewise-spline_8hpp"/>
       </node>
-      <node id="276">
+      <node id="277">
         <label>cubic-spline.hpp</label>
         <link refid="cubic-spline_8hpp"/>
       </node>
-      <node id="281">
+      <node id="282">
         <label>logistic.hpp</label>
         <link refid="logistic_8hpp"/>
-        <childnode refid="274" relation="include">
+        <childnode refid="275" relation="include">
         </childnode>
-        <childnode refid="282" relation="include">
+        <childnode refid="283" relation="include">
         </childnode>
       </node>
-      <node id="278">
+      <node id="279">
         <label>double-normal-plateau.hpp</label>
         <link refid="double-normal-plateau_8hpp"/>
-        <childnode refid="274" relation="include">
+        <childnode refid="275" relation="include">
         </childnode>
       </node>
-      <node id="286">
+      <node id="287">
         <label>threshold.hpp</label>
         <link refid="threshold_8hpp"/>
-        <childnode refid="282" relation="include">
+        <childnode refid="283" relation="include">
         </childnode>
       </node>
-      <node id="275">
+      <node id="276">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>

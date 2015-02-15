@@ -75,24 +75,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="373">
+      <node id="384">
         <label>Mirror&lt; DerivedMirror &gt;</label>
       </node>
-      <node id="372">
+      <node id="383">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; DerivedMirror &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="373" relation="public-inheritance">
+        <childnode refid="384" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="375">
+      <node id="386">
         <label>Mirror&lt; DerivedMirror &gt;</label>
       </node>
-      <node id="374">
+      <node id="385">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; DerivedMirror &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="375" relation="public-inheritance">
+        <childnode refid="386" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

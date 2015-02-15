@@ -51,36 +51,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="349">
+      <node id="360">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Sample_ &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="350" relation="public-inheritance">
+        <childnode refid="361" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="350">
+      <node id="361">
         <label>Mirror&lt; Sample_ &gt;</label>
       </node>
-      <node id="348">
+      <node id="359">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Sample_</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1Sample__"/>
-        <childnode refid="349" relation="public-inheritance">
+        <childnode refid="360" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="352">
+      <node id="363">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Sample_ &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="353" relation="public-inheritance">
+        <childnode refid="364" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="353">
+      <node id="364">
         <label>Mirror&lt; Sample_ &gt;</label>
       </node>
-      <node id="351">
+      <node id="362">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Sample_</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1Sample__"/>
-        <childnode refid="352" relation="public-inheritance">
+        <childnode refid="363" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

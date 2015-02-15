@@ -58,62 +58,62 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="310">
+      <node id="314">
         <label>Fsl::Management::DynamicControlProcedure&lt; Type &gt;</label>
         <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
-        <childnode refid="309" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="303">
-        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
-        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
-        <childnode refid="302" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="311">
-        <label>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;</label>
-        <link refid="classFsl_1_1Management_1_1ProcedureDynamic"/>
-        <childnode refid="302" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="302">
-        <label>Fsl::Management::Procedure</label>
-        <link refid="classFsl_1_1Management_1_1Procedure"/>
-      </node>
-      <node id="305">
-        <label>Fsl::Management::Procedures::BIPR</label>
-        <link refid="classFsl_1_1Management_1_1Procedures_1_1BIPR"/>
-        <childnode refid="304" relation="public-inheritance">
+        <childnode refid="313" relation="public-inheritance">
         </childnode>
       </node>
       <node id="307">
-        <label>Fsl::Management::Procedures::TSAR</label>
-        <link refid="classFsl_1_1Management_1_1Procedures_1_1TSAR"/>
-        <childnode refid="304" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="309">
-        <label>Fsl::Management::ControlProcedure&lt; Type &gt;</label>
+        <label>Fsl::Management::ControlProcedure&lt; double &gt;</label>
         <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
-        <childnode refid="302" relation="public-inheritance">
+        <childnode refid="306" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="304">
-        <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
-        <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
-        <childnode refid="303" relation="public-inheritance">
+      <node id="315">
+        <label>Fsl::Management::ProcedureDynamic&lt; Procedure &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ProcedureDynamic"/>
+        <childnode refid="306" relation="public-inheritance">
         </childnode>
       </node>
       <node id="306">
-        <label>Fsl::Management::Procedures::BTAR</label>
-        <link refid="classFsl_1_1Management_1_1Procedures_1_1BTAR"/>
-        <childnode refid="305" relation="public-inheritance">
+        <label>Fsl::Management::Procedure</label>
+        <link refid="classFsl_1_1Management_1_1Procedure"/>
+      </node>
+      <node id="309">
+        <label>Fsl::Management::Procedures::BIPR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1BIPR"/>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>Fsl::Management::Procedures::TSAR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1TSAR"/>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>Fsl::Management::ControlProcedure&lt; Type &gt;</label>
+        <link refid="classFsl_1_1Management_1_1ControlProcedure"/>
+        <childnode refid="306" relation="public-inheritance">
         </childnode>
       </node>
       <node id="308">
+        <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
+        <link refid="classFsl_1_1Management_1_1DynamicControlProcedure"/>
+        <childnode refid="307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>Fsl::Management::Procedures::BTAR</label>
+        <link refid="classFsl_1_1Management_1_1Procedures_1_1BTAR"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="312">
         <label>Fsl::Management::Procedures::CONST</label>
         <link refid="classFsl_1_1Management_1_1Procedures_1_1CONST"/>
-        <childnode refid="303" relation="public-inheritance">
+        <childnode refid="307" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

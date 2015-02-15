@@ -28,6 +28,18 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="153">
+        <label>Fsl::Math::Functions::Identity</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Identity"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>Fsl::Math::Functions::Function</label>
+        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="155">
         <label>Fsl::Math::Functions::Identity</label>
         <link refid="classFsl_1_1Math_1_1Functions_1_1Identity"/>
@@ -35,18 +47,6 @@
         </childnode>
       </node>
       <node id="156">
-        <label>Fsl::Math::Functions::Function</label>
-        <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="157">
-        <label>Fsl::Math::Functions::Identity</label>
-        <link refid="classFsl_1_1Math_1_1Functions_1_1Identity"/>
-        <childnode refid="158" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="158">
         <label>Fsl::Math::Functions::Function</label>
         <link refid="classFsl_1_1Math_1_1Functions_1_1Function"/>
       </node>

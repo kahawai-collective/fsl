@@ -7,47 +7,47 @@
     <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
     <includedby refid="maturity_8hpp" local="no">maturity.hpp</includedby>
     <incdepgraph>
-      <node id="313">
+      <node id="314">
         <label>fsl/common.hpp</label>
         <link refid="common_8hpp"/>
       </node>
-      <node id="314">
+      <node id="315">
         <label>fsl/math/functions/function.hpp</label>
         <link refid="function_8hpp"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="314" relation="include">
         </childnode>
       </node>
-      <node id="312">
+      <node id="313">
         <label>logistic.hpp</label>
         <link refid="logistic.hpp"/>
-        <childnode refid="313" relation="include">
-        </childnode>
         <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="316">
+      <node id="317">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
-        <childnode refid="317" relation="include">
-        </childnode>
-      </node>
-      <node id="318">
-        <label>maturity.hpp</label>
-        <link refid="maturity_8hpp"/>
-        <childnode refid="316" relation="include">
-        </childnode>
-      </node>
-      <node id="315">
-        <label>logistic.hpp</label>
-        <link refid="logistic.hpp"/>
-        <childnode refid="316" relation="include">
-        </childnode>
         <childnode refid="318" relation="include">
         </childnode>
       </node>
-      <node id="317">
+      <node id="319">
+        <label>maturity.hpp</label>
+        <link refid="maturity_8hpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>logistic.hpp</label>
+        <link refid="logistic.hpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>

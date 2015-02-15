@@ -10,8 +10,9 @@
     <innerclass refid="classFsl_1_1Management_1_1ProcedureAny" prot="public">Fsl::Management::ProcedureAny</innerclass>
     <innerclass refid="classFsl_1_1Management_1_1ControlProcedure" prot="public">Fsl::Management::ControlProcedure</innerclass>
     <innerclass refid="classFsl_1_1Management_1_1DynamicControlProcedure" prot="public">Fsl::Management::DynamicControlProcedure</innerclass>
-    <innerclass refid="structFsl_1_1Management_1_1RestrictValue" prot="public">Fsl::Management::RestrictValue</innerclass>
-    <innerclass refid="structFsl_1_1Management_1_1RestrictProportionalChange" prot="public">Fsl::Management::RestrictProportionalChange</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1RestrictValue" prot="public">Fsl::Management::RestrictValue</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1RestrictValuePeriods" prot="public">Fsl::Management::RestrictValuePeriods</innerclass>
+    <innerclass refid="classFsl_1_1Management_1_1RestrictProportionalChange" prot="public">Fsl::Management::RestrictProportionalChange</innerclass>
     <innernamespace refid="namespaceFsl_1_1Management_1_1Procedures">Fsl::Management::Procedures</innernamespace>
     <briefdescription>
     </briefdescription>

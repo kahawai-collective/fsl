@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="tsar_8cxx" kind="file">
+    <compoundname>tsar.cxx</compoundname>
+    <includes local="no">boost/test/unit_test.hpp</includes>
+    <includes refid="tsar_8hpp" local="no">fsl/management/procedures/tsar.hpp</includes>
+    <incdepgraph>
+      <node id="603">
+        <label>boost/test/unit_test.hpp</label>
+      </node>
+      <node id="608">
+        <label>cmath</label>
+      </node>
+      <node id="606">
+        <label>fsl/management/procedures/parts/restrictors.hpp</label>
+        <link refid="restrictors_8hpp"/>
+      </node>
+      <node id="605">
+        <label>fsl/management/procedure.hpp</label>
+        <link refid="procedure_8hpp"/>
+      </node>
+      <node id="607">
+        <label>fsl/math/series/filters/ema.hpp</label>
+        <link refid="ema_8hpp"/>
+        <childnode refid="608" relation="include">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>tsar.cxx</label>
+        <link refid="tsar.cxx"/>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+      </node>
+      <node id="604">
+        <label>fsl/management/procedures/tsar.hpp</label>
+        <link refid="tsar_8hpp"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tsar_8cxx_1a66d6c3d16f15aea58d158fc0ab2a2f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(construct)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>construct</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.cxx" line="8" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.cxx" bodystart="8" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;boost/test/unit_test.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tsar_8hpp" kindref="compound">fsl/management/procedures/tsar.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classFsl_1_1Management_1_1Procedures_1_1TSAR" kindref="compound">Fsl::Management::Procedures::TSAR</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">BOOST_AUTO_TEST_SUITE(tsar)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="tsar_8cxx_1a66d6c3d16f15aea58d158fc0ab2a2f96" kindref="member">BOOST_AUTO_TEST_CASE</ref>(construct){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFsl_1_1Management_1_1Procedures_1_1TSAR" kindref="compound">TSAR</ref><sp/>i;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">BOOST_AUTO_TEST_SUITE_END()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/tsar.cxx"/>
+  </compounddef>
+</doxygen>

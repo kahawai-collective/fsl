@@ -238,13 +238,14 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" line="81" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/btar.hpp" bodystart="81" bodyend="85"/>
       </memberdef>
-      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a70020de548e1529fa43c45384baad1ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BTAR_1afd8cd58392e628aedef9e51838ac9aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classFsl_1_1Management_1_1Procedures_1_1BTAR" kindref="compound">BTAR</ref> &amp;</type>
         <definition>BTAR&amp; Fsl::Management::Procedures::BTAR::operate</definition>
-        <argsstring>(void)</argsstring>
+        <argsstring>(uint time)</argsstring>
         <name>operate</name>
         <param>
-          <type>void</type>
+          <type>uint</type>
+          <declname>time</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -302,7 +303,7 @@
       </node>
       <node id="46">
         <label>Fsl::Management::RestrictProportionalChange</label>
-        <link refid="structFsl_1_1Management_1_1RestrictProportionalChange"/>
+        <link refid="classFsl_1_1Management_1_1RestrictProportionalChange"/>
       </node>
       <node id="44">
         <label>Fsl::Management::Procedure</label>
@@ -325,7 +326,7 @@
       </node>
       <node id="47">
         <label>Fsl::Management::RestrictValue</label>
-        <link refid="structFsl_1_1Management_1_1RestrictValue"/>
+        <link refid="classFsl_1_1Management_1_1RestrictValue"/>
       </node>
       <node id="42">
         <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
@@ -354,7 +355,8 @@
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a02b15c17d43e67073be4b5913bc9999f" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>initial_value_</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ab1c74cd9e6416d02b8f64c38ecb8d1d5" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>moderation</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a94ef3e72833cc9a994f29975a308ed67" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>multiplier</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a70020de548e1529fa43c45384baad1ae" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1afd8cd58392e628aedef9e51838ac9aa4" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" prot="public" virt="non-virtual" ambiguityscope="Fsl::Management::Procedure::"><scope>Fsl::Management::Procedures::BTAR</scope><name>operate</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a22adf71448690ef2be128802a4109b68" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>rate</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1ac591d28b7c8b7e5a6af3e6dde582c653" prot="private" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>rate_value_</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a40a4075b5f6c0549139c909e792de22e" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BTAR</scope><name>reset</name></member>

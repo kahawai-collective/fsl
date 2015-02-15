@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFsl_1_1Management_1_1RestrictProportionalChange" kind="class" prot="public">
+    <compoundname>Fsl::Management::RestrictProportionalChange</compoundname>
+    <includes refid="restrictors_8hpp" local="no">restrictors.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::RestrictProportionalChange::lower</definition>
+        <argsstring></argsstring>
+        <name>lower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="42" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Fsl::Management::RestrictProportionalChange::upper</definition>
+        <argsstring></argsstring>
+        <name>upper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="43" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1RestrictProportionalChange_1a315fa49ec092cad7b1b3c5c021b5e97d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fsl::Management::RestrictProportionalChange::RestrictProportionalChange</definition>
+        <argsstring>(const double &amp;lower=0, const double &amp;upper=INFINITY)</argsstring>
+        <name>RestrictProportionalChange</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lower</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>upper</declname>
+          <defval>INFINITY</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="45" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Fsl::Management::RestrictProportionalChange::restrict</definition>
+        <argsstring>(const double &amp;value, const double &amp;last)</argsstring>
+        <name>restrict</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="50" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="40" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="40" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictProportionalChange</scope><name>lower</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictProportionalChange</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a315fa49ec092cad7b1b3c5c021b5e97d" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictProportionalChange</scope><name>RestrictProportionalChange</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictProportionalChange</scope><name>upper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -86,36 +86,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="387">
+      <node id="398">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Stream_</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1Stream__"/>
-        <childnode refid="388" relation="public-inheritance">
+        <childnode refid="399" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="388">
+      <node id="399">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Stream_ &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="389" relation="public-inheritance">
+        <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="389">
+      <node id="400">
         <label>Mirror&lt; Stream_ &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="390">
+      <node id="401">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Stream_</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1Stream__"/>
-        <childnode refid="391" relation="public-inheritance">
+        <childnode refid="402" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="391">
+      <node id="402">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::SetMirror&lt; Stream_ &gt;</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1SetMirror"/>
-        <childnode refid="392" relation="public-inheritance">
+        <childnode refid="403" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="392">
+      <node id="403">
         <label>Mirror&lt; Stream_ &gt;</label>
       </node>
     </collaborationgraph>

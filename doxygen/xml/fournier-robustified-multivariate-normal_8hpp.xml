@@ -5,23 +5,21 @@
     <includes refid="distribution_8hpp" local="no">fsl/math/probability/distribution.hpp</includes>
     <includedby refid="distributions_8hpp" local="no">distributions.hpp</includedby>
     <incdepgraph>
-      <node id="265">
+      <node id="266">
         <label>boost/random/variate_generator.hpp</label>
       </node>
-      <node id="266">
+      <node id="267">
         <label>boost/math/distributions/uniform.hpp</label>
       </node>
-      <node id="264">
+      <node id="265">
         <label>boost/random/mersenne_twister.hpp</label>
       </node>
-      <node id="263">
+      <node id="264">
         <label>ctime</label>
       </node>
-      <node id="262">
+      <node id="263">
         <label>fsl/math/probability/distribution.hpp</label>
         <link refid="distribution_8hpp"/>
-        <childnode refid="263" relation="include">
-        </childnode>
         <childnode refid="264" relation="include">
         </childnode>
         <childnode refid="265" relation="include">
@@ -30,26 +28,28 @@
         </childnode>
         <childnode refid="267" relation="include">
         </childnode>
-      </node>
-      <node id="261">
-        <label>fournier-robustified-multivariate-normal.hpp</label>
-        <link refid="fournier-robustified-multivariate-normal.hpp"/>
-        <childnode refid="262" relation="include">
+        <childnode refid="268" relation="include">
         </childnode>
       </node>
-      <node id="267">
+      <node id="262">
+        <label>fournier-robustified-multivariate-normal.hpp</label>
+        <link refid="fournier-robustified-multivariate-normal.hpp"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
         <label>boost/random/uniform_01.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="269">
+      <node id="270">
         <label>distributions.hpp</label>
         <link refid="distributions_8hpp"/>
       </node>
-      <node id="268">
+      <node id="269">
         <label>fournier-robustified-multivariate-normal.hpp</label>
         <link refid="fournier-robustified-multivariate-normal.hpp"/>
-        <childnode refid="269" relation="include">
+        <childnode refid="270" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

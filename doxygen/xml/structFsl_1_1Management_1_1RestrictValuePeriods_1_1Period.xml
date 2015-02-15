@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period" kind="struct" prot="public">
+    <compoundname>Fsl::Management::RestrictValuePeriods::Period</compoundname>
+    <basecompoundref refid="classFsl_1_1Management_1_1RestrictValue" prot="public" virt="non-virtual">Fsl::Management::RestrictValue</basecompoundref>
+    <includes refid="restrictors_8hpp" local="no">restrictors.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1a6bbb6300ebbc89995bad7af89ba7673e" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::RestrictValuePeriods::Period::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1afb326ee61936d7777f0679512c4e82b8" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Fsl::Management::RestrictValuePeriods::Period::finish</definition>
+        <argsstring></argsstring>
+        <name>finish</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="25" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="290">
+        <label>Fsl::Management::RestrictValuePeriods::Period</label>
+        <link refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>Fsl::Management::RestrictValue</label>
+        <link refid="classFsl_1_1Management_1_1RestrictValue"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="292">
+        <label>Fsl::Management::RestrictValuePeriods::Period</label>
+        <link refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period"/>
+        <childnode refid="293" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>Fsl::Management::RestrictValue</label>
+        <link refid="classFsl_1_1Management_1_1RestrictValue"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" line="23" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/parts/restrictors.hpp" bodystart="23" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1afb326ee61936d7777f0679512c4e82b8" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValuePeriods::Period</scope><name>finish</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValuePeriods::Period</scope><name>lower</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValuePeriods::Period</scope><name>restrict</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictValue_1a1feecc3b60f92874ffa6fc131ce31135" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValuePeriods::Period</scope><name>RestrictValue</name></member>
+      <member refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1a6bbb6300ebbc89995bad7af89ba7673e" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValuePeriods::Period</scope><name>start</name></member>
+      <member refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" prot="public" virt="non-virtual"><scope>Fsl::Management::RestrictValuePeriods::Period</scope><name>upper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

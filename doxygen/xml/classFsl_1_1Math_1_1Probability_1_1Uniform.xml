@@ -213,25 +213,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="419">
+      <node id="432">
         <label>Fsl::Math::Probability::Uniform</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Uniform"/>
-        <childnode refid="420" relation="public-inheritance">
+        <childnode refid="433" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="420">
+      <node id="433">
         <label>Fsl::Math::Probability::Distribution&lt; Uniform &gt;</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="421">
+      <node id="434">
         <label>Fsl::Math::Probability::Uniform</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Uniform"/>
-        <childnode refid="422" relation="public-inheritance">
+        <childnode refid="435" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="422">
+      <node id="435">
         <label>Fsl::Math::Probability::Distribution&lt; Uniform &gt;</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>

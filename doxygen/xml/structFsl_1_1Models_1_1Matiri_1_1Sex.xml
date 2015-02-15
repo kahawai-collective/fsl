@@ -45,24 +45,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="376">
+      <node id="387">
         <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sex</label>
         <link refid="structFsl_1_1Models_1_1Matiri_1_1Sex"/>
-        <childnode refid="377" relation="public-inheritance">
+        <childnode refid="388" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="377">
+      <node id="388">
         <label>Dimension&lt;Sex,Sexes&gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="378">
+      <node id="389">
         <label>Fsl::Models::Matiri&lt; Derived, Sexes, Ages, Sectors &gt;::Sex</label>
         <link refid="structFsl_1_1Models_1_1Matiri_1_1Sex"/>
-        <childnode refid="379" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="379">
+      <node id="390">
         <label>Dimension&lt;Sex,Sexes&gt;</label>
       </node>
     </collaborationgraph>

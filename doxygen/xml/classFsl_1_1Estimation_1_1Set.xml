@@ -417,36 +417,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="369">
+      <node id="380">
         <label>Fsl::Estimation::ParameterSet&lt; Derived &gt;</label>
         <link refid="classFsl_1_1Estimation_1_1ParameterSet"/>
-        <childnode refid="366" relation="public-inheritance">
+        <childnode refid="377" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="368">
+      <node id="379">
         <label>Fsl::Estimation::DataSet&lt; Derived &gt;</label>
         <link refid="classFsl_1_1Estimation_1_1DataSet"/>
-        <childnode refid="366" relation="public-inheritance">
+        <childnode refid="377" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="367">
+      <node id="378">
         <label>Reflector&lt; Derived &gt;</label>
       </node>
-      <node id="366">
+      <node id="377">
         <label>Fsl::Estimation::Set&lt; Derived &gt;</label>
         <link refid="classFsl_1_1Estimation_1_1Set"/>
-        <childnode refid="367" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="371">
+      <node id="382">
         <label>Reflector&lt; Derived &gt;</label>
       </node>
-      <node id="370">
+      <node id="381">
         <label>Fsl::Estimation::Set&lt; Derived &gt;</label>
         <link refid="classFsl_1_1Estimation_1_1Set"/>
-        <childnode refid="371" relation="public-inheritance">
+        <childnode refid="382" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

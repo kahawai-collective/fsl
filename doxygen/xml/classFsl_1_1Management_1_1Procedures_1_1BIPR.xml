@@ -61,7 +61,7 @@
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" line="19" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BIPR_1ae8a68b87cb763616bb7812e46a514bd6" prot="public" static="no" mutable="no">
-        <type><ref refid="structFsl_1_1Management_1_1RestrictProportionalChange" kindref="compound">RestrictProportionalChange</ref></type>
+        <type><ref refid="classFsl_1_1Management_1_1RestrictProportionalChange" kindref="compound">RestrictProportionalChange</ref></type>
         <definition>RestrictProportionalChange Fsl::Management::Procedures::BIPR::changes</definition>
         <argsstring></argsstring>
         <name>changes</name>
@@ -74,7 +74,7 @@
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" line="21" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFsl_1_1Management_1_1Procedures_1_1BIPR_1aea91220eaa4173cf83e38d9c435b2fa7" prot="public" static="no" mutable="no">
-        <type><ref refid="structFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref></type>
+        <type><ref refid="classFsl_1_1Management_1_1RestrictValue" kindref="compound">RestrictValue</ref></type>
         <definition>RestrictValue Fsl::Management::Procedures::BIPR::values</definition>
         <argsstring></argsstring>
         <name>values</name>
@@ -175,13 +175,14 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" line="51" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedures/bipr.hpp" bodystart="51" bodyend="57"/>
       </memberdef>
-      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a7f948dfbe11b220e5ffe3f02035264fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a9f6e667d09db7377c32841aa9f19a7ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classFsl_1_1Management_1_1Procedures_1_1BIPR" kindref="compound">BIPR</ref> &amp;</type>
         <definition>BIPR&amp; Fsl::Management::Procedures::BIPR::operate</definition>
-        <argsstring>(void)</argsstring>
+        <argsstring>(uint time)</argsstring>
         <name>operate</name>
         <param>
-          <type>void</type>
+          <type>uint</type>
+          <declname>time</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -239,7 +240,7 @@
       </node>
       <node id="33">
         <label>Fsl::Management::RestrictProportionalChange</label>
-        <link refid="structFsl_1_1Management_1_1RestrictProportionalChange"/>
+        <link refid="classFsl_1_1Management_1_1RestrictProportionalChange"/>
       </node>
       <node id="31">
         <label>Fsl::Management::Procedure</label>
@@ -262,7 +263,7 @@
       </node>
       <node id="34">
         <label>Fsl::Management::RestrictValue</label>
-        <link refid="structFsl_1_1Management_1_1RestrictValue"/>
+        <link refid="classFsl_1_1Management_1_1RestrictValue"/>
       </node>
       <node id="29">
         <label>Fsl::Management::DynamicControlProcedure&lt;&gt;</label>
@@ -280,7 +281,8 @@
       <member refid="classFsl_1_1Management_1_1DynamicControlProcedure_1a2b0563700c48399bfc81ad07a7fdccdf" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>DynamicControlProcedure</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a2dcc3b3a689fe942922168bd2229ae76" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>index</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a94ef3e72833cc9a994f29975a308ed67" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>multiplier</name></member>
-      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a7f948dfbe11b220e5ffe3f02035264fc" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a9f6e667d09db7377c32841aa9f19a7ab" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1Procedure_1a2a905056458cab347c73ee5f5d9454cd" prot="public" virt="non-virtual" ambiguityscope="Fsl::Management::Procedure::"><scope>Fsl::Management::Procedures::BIPR</scope><name>operate</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1abb9346af8ef8c44ccdc96e1fd07bfe98" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>reset</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a3a583c9b85bc31775281174055d95b9f" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>signature</name></member>
       <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a9c00b85f6644b929b42e8b6bc600b11f" prot="public" virt="non-virtual"><scope>Fsl::Management::Procedures::BIPR</scope><name>Smoother</name></member>

@@ -48,7 +48,7 @@
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1ad0059d0e69f135e3af85d793e2b3060c" kind="function"><name>BIPR</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a3a583c9b85bc31775281174055d95b9f" kind="function"><name>signature</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1abb9346af8ef8c44ccdc96e1fd07bfe98" kind="function"><name>reset</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a7f948dfbe11b220e5ffe3f02035264fc" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1BIPR_1a9f6e667d09db7377c32841aa9f19a7ab" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="classFsl_1_1Management_1_1Procedures_1_1BTAR" kind="class"><name>Fsl::Management::Procedures::BTAR</name>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1adb978e8558d2f7c93c4a8a2883609661" kind="variable"><name>initial</name></member>
@@ -63,7 +63,7 @@
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1acac2470487de8e281971024edd5771a8" kind="function"><name>BTAR</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1aab70d14f7030157553a316975ea65d59" kind="function"><name>signature</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a40a4075b5f6c0549139c909e792de22e" kind="function"><name>reset</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1a70020de548e1529fa43c45384baad1ae" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1BTAR_1afd8cd58392e628aedef9e51838ac9aa4" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="structFsl_1_1Estimation_1_1Samples_1_1Cell__" kind="struct"><name>Fsl::Estimation::Samples::Cell_</name>
     <member refid="structFsl_1_1Estimation_1_1Samples_1_1Cell___1a3e13e2bb5fb2ba88656071943fef20c7" kind="variable"><name>values</name></member>
@@ -85,7 +85,7 @@
     <member refid="classFsl_1_1Management_1_1ControlProcedure_1a835ceb7bb9d9adeece98787427515f61" kind="variable"><name>control</name></member>
     <member refid="classFsl_1_1Management_1_1ControlProcedure_1a0d9ec9a561cc13a9a2624d8cb82eaa16" kind="variable"><name>value</name></member>
     <member refid="classFsl_1_1Management_1_1ControlProcedure_1a29901ee14866a1646aa58105edafd093" kind="function"><name>ControlProcedure</name></member>
-    <member refid="classFsl_1_1Management_1_1ControlProcedure_1a658d04ca76ece52ce12d189a50c8f831" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1ControlProcedure_1aeae3f2612d3ccf50eca6b5d1253b2c3f" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="structFsl_1_1Estimation_1_1Set_1_1Count__" kind="struct"><name>Fsl::Estimation::Set::Count_</name>
     <member refid="structFsl_1_1Estimation_1_1Set_1_1Count___1a002e4a93dee18357621b2419b99d8d4d" kind="variable"><name>count</name></member>
@@ -258,14 +258,14 @@
     <member refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1a1649f9c292659c23046ad7bd27222381" kind="function"><name>append</name></member>
     <member refid="classFsl_1_1Math_1_1Statistics_1_1Univariate_1_1Geomean_1aa3e6d1678343e2a9cf48c6ec9e4fb566" kind="function"><name>value</name></member>
   </compound>
+  <compound refid="classFsl_1_1Math_1_1Functions_1_1Identity" kind="class"><name>Fsl::Math::Functions::Identity</name>
+    <member refid="classFsl_1_1Math_1_1Functions_1_1Identity_1acd44ef4090edb15d6b68f1fe7d3d3ece" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="classFsl_1_1Estimation_1_1Links_1_1Identity" kind="struct"><name>Fsl::Estimation::Links::Identity</name>
     <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1af4c630a709f7cfd4f8aaa35591c13c84" kind="function"><name>to</name></member>
     <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1abb5a9bcafb7997fdb192a6bec0c8117b" kind="function"><name>from</name></member>
     <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1af4c630a709f7cfd4f8aaa35591c13c84" kind="function"><name>to</name></member>
     <member refid="classFsl_1_1Estimation_1_1Links_1_1Identity_1abb5a9bcafb7997fdb192a6bec0c8117b" kind="function"><name>from</name></member>
-  </compound>
-  <compound refid="classFsl_1_1Math_1_1Functions_1_1Identity" kind="class"><name>Fsl::Math::Functions::Identity</name>
-    <member refid="classFsl_1_1Math_1_1Functions_1_1Identity_1acd44ef4090edb15d6b68f1fe7d3d3ece" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous" kind="class"><name>Fsl::Population::Mortality::Instantaneous</name>
     <member refid="classFsl_1_1Population_1_1Mortality_1_1Instantaneous_1adb7e3268638cfa5d5c86088d70598df7" kind="function"><name>Instantaneous</name></member>
@@ -481,6 +481,10 @@
   </compound>
   <compound refid="classFsl_1_1Management_1_1PerformanceSet" kind="class"><name>Fsl::Management::PerformanceSet</name>
   </compound>
+  <compound refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period" kind="struct"><name>Fsl::Management::RestrictValuePeriods::Period</name>
+    <member refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1a6bbb6300ebbc89995bad7af89ba7673e" kind="variable"><name>start</name></member>
+    <member refid="structFsl_1_1Management_1_1RestrictValuePeriods_1_1Period_1afb326ee61936d7777f0679512c4e82b8" kind="variable"><name>finish</name></member>
+  </compound>
   <compound refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline" kind="class"><name>Fsl::Math::Functions::PiecewiseSpline</name>
     <member refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1a713f992c18c16482197be44b96ad9bd4" kind="variable"><name>xs</name></member>
     <member refid="classFsl_1_1Math_1_1Functions_1_1PiecewiseSpline_1ad9c547c9345480f462cc37bd7a5d3150" kind="variable"><name>ys</name></member>
@@ -522,18 +526,18 @@
     <member refid="classFsl_1_1Management_1_1ProcedureAny_1ae38a7194dda9e63292596266e63b7d91" kind="function"><name>operator=</name></member>
     <member refid="classFsl_1_1Management_1_1ProcedureAny_1af12579d815113957a146034d244e02a2" kind="function"><name>signature</name></member>
     <member refid="classFsl_1_1Management_1_1ProcedureAny_1a8b08be863432f587b3d2c2af1c143426" kind="function"><name>reset</name></member>
-    <member refid="classFsl_1_1Management_1_1ProcedureAny_1a7de09d19f9ca2ca152836e03e8af414b" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1ProcedureAny_1aab16e8fd6d92319a483c68782cf91e55" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="classFsl_1_1Management_1_1ProcedureDynamic" kind="class"><name>Fsl::Management::ProcedureDynamic</name>
     <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac9554f05a8a4d50edfd377259ccf8855" kind="function"><name>ProcedureDynamic</name></member>
     <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1ab3ffd3e475bf28449c76e8b42fc20c98" kind="function"><name>signature</name></member>
     <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1a8bb57158e5e9abefd69dec5700e321e7" kind="function"><name>reset</name></member>
-    <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1af775d78aa680a7070f1018f48a05d6bc" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1ProcedureDynamic_1ac32ac4a170bf8375f7d1533852a294d1" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4" kind="class"><name>Fsl::Management::ProcedureDynamic&lt; void &gt;</name>
     <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1ad5ef7bb544a737dedc675bc768fa6803" kind="function"><name>signature</name></member>
     <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1a40814484d08835b16970d6be606d2db2" kind="function"><name>reset</name></member>
-    <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1a06e5c102d88f759846c7e6b94f266603" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1ac99c903626acc2949eaf83d490c90a26" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="classFsl_1_1Population_1_1Mortality_1_1Rate" kind="class"><name>Fsl::Population::Mortality::Rate</name>
     <member refid="classFsl_1_1Population_1_1Mortality_1_1Rate_1a8de2ca9c142a330197e252a837a398fb" kind="variable"><name>rate_</name></member>
@@ -560,27 +564,21 @@
     <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1adf03f9d23f5c6456f514d32b2f63d0cf" kind="function"><name>Restrict_</name></member>
     <member refid="structFsl_1_1Estimation_1_1Set_1_1Restrict___1aee386975f1ee6b65cd3dfae33d5d02a9" kind="function"><name>variate</name></member>
   </compound>
-  <compound refid="structFsl_1_1Management_1_1RestrictProportionalChange" kind="struct"><name>Fsl::Management::RestrictProportionalChange</name>
-    <member refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kind="variable"><name>lower</name></member>
-    <member refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kind="variable"><name>upper</name></member>
-    <member refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a4352224c1a3a9d0175d83d8604433664" kind="function"><name>RestrictProportionalChange</name></member>
-    <member refid="structFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" kind="function"><name>restrict</name></member>
+  <compound refid="classFsl_1_1Management_1_1RestrictProportionalChange" kind="class"><name>Fsl::Management::RestrictProportionalChange</name>
+    <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a23fed81c64912d9bc5beee9679c87b1a" kind="variable"><name>lower</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a490124171f73ee9de6c7ac5cbedb0c9c" kind="variable"><name>upper</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a315fa49ec092cad7b1b3c5c021b5e97d" kind="function"><name>RestrictProportionalChange</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictProportionalChange_1a7a8eab3760914da5621ba9948b5be7c6" kind="function"><name>restrict</name></member>
   </compound>
-  <compound refid="structFsl_1_1Management_1_1RestrictValue" kind="struct"><name>Fsl::Management::RestrictValue</name>
-    <member refid="structFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kind="variable"><name>lower</name></member>
-    <member refid="structFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kind="variable"><name>upper</name></member>
-    <member refid="structFsl_1_1Management_1_1RestrictValue_1aef9b29cbf9f348106f5066dcd4b43767" kind="function"><name>RestrictValue</name></member>
-    <member refid="structFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" kind="function"><name>restrict</name></member>
+  <compound refid="classFsl_1_1Management_1_1RestrictValue" kind="class"><name>Fsl::Management::RestrictValue</name>
+    <member refid="classFsl_1_1Management_1_1RestrictValue_1ae5d0f6c45d08e9cd6880a962de75cc9a" kind="variable"><name>lower</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictValue_1a0b45f75ac0c62bc1311309b76753666a" kind="variable"><name>upper</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictValue_1a1feecc3b60f92874ffa6fc131ce31135" kind="function"><name>RestrictValue</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictValue_1ab53b7f4a664d0972c5b267348b81d4f2" kind="function"><name>restrict</name></member>
   </compound>
-  <compound refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample" kind="class"><name>Fsl::Monitoring::Composition::Sample</name>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a05a8d7cc327b35a90ecf6e159ebbe965" kind="variable"><name>bins</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a18575c5da5e9f61aa1f0c6fbc0521eb9" kind="variable"><name>size</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a153919085e80b3cbecd805de97522460" kind="variable"><name>observeds</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1aa195354712a01e71eb4df912e003f101" kind="variable"><name>expecteds</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a7f94384610772cc0974e09503065884c" kind="function"><name>Sample</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a23604f5f74942ac32ef860cf132573ce" kind="function"><name>Sample</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a3040018d4815acc17eb494a58daeafdf" kind="function"><name>expected</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a25166947f938f065b2df7af5b322f3ef" kind="function"><name>likelihood</name></member>
+  <compound refid="classFsl_1_1Management_1_1RestrictValuePeriods" kind="class"><name>Fsl::Management::RestrictValuePeriods</name>
+    <member refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a97ac3c40a61ef3d78356f67ee0399812" kind="variable"><name>periods</name></member>
+    <member refid="classFsl_1_1Management_1_1RestrictValuePeriods_1a4ee34a4fdb068dae908bb911470bda09" kind="function"><name>restrict</name></member>
   </compound>
   <compound refid="classFsl_1_1Estimation_1_1Sample" kind="class"><name>Fsl::Estimation::Sample</name>
     <member refid="classFsl_1_1Estimation_1_1Sample_1a9b92b8497bccdd72b0f92f8be7db8ef4" kind="function"><name>operator*</name></member>
@@ -600,19 +598,19 @@
     <member refid="classFsl_1_1Estimation_1_1Sample_1aedbfcd1758bf77161b07c55d7700080e" kind="function"><name>likelihood</name></member>
     <member refid="classFsl_1_1Estimation_1_1Sample_1af9585a226139377c96cf616222798cab" kind="function"><name>operator[]</name></member>
   </compound>
+  <compound refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample" kind="class"><name>Fsl::Monitoring::Composition::Sample</name>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a05a8d7cc327b35a90ecf6e159ebbe965" kind="variable"><name>bins</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a18575c5da5e9f61aa1f0c6fbc0521eb9" kind="variable"><name>size</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a153919085e80b3cbecd805de97522460" kind="variable"><name>observeds</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1aa195354712a01e71eb4df912e003f101" kind="variable"><name>expecteds</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a7f94384610772cc0974e09503065884c" kind="function"><name>Sample</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a23604f5f74942ac32ef860cf132573ce" kind="function"><name>Sample</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a3040018d4815acc17eb494a58daeafdf" kind="function"><name>expected</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Sample_1a25166947f938f065b2df7af5b322f3ef" kind="function"><name>likelihood</name></member>
+  </compound>
   <compound refid="structFsl_1_1Estimation_1_1Set_1_1Sample__" kind="struct"><name>Fsl::Estimation::Set::Sample_</name>
     <member refid="structFsl_1_1Estimation_1_1Set_1_1Sample___1ad806340197e9c781a53b4fb92c33d9ce" kind="variable"><name>sample</name></member>
     <member refid="structFsl_1_1Estimation_1_1Set_1_1Sample___1a911b2402430174051b83056735150c19" kind="function"><name>variate</name></member>
-  </compound>
-  <compound refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples" kind="class"><name>Fsl::Monitoring::Composition::Samples</name>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a6927918bc03e5be9910dcf2dc11590a6" kind="typedef"><name>SampleType</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a41cd5cc53c49048c495849be30fcba1b" kind="variable"><name>samples</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1ab221d6b5c1c8b8c12bee85287025a23c" kind="function"><name>observed</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aab726ce557d12fbe2df39b0ace7bec3a" kind="function"><name>observeds</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a483675e7a9053c533c16d3765f9aedce" kind="function"><name>expected</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aa10e5bfceb5a86d72960299a2e5ace6e" kind="function"><name>likelihood</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a8ba2ebc44515c75b695387571c8a5260" kind="function"><name>observeds_output</name></member>
-    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a2d5c00ff1b0493b5ed90ddaef1d9ce9b" kind="function"><name>stream</name></member>
   </compound>
   <compound refid="classFsl_1_1Estimation_1_1Samples" kind="class"><name>Fsl::Estimation::Samples</name>
     <member refid="classFsl_1_1Estimation_1_1Samples_1aafec710b6aabd5e15f66e706ae831bc1" kind="variable"><name>labels_</name></member>
@@ -644,6 +642,16 @@
     <member refid="classFsl_1_1Estimation_1_1Samples_1aa180178764484c26c34eeb308ca5c6fb" kind="function"><name>remove</name></member>
     <member refid="classFsl_1_1Estimation_1_1Samples_1af1c2bef393290c87d10f5c2a2b47350e" kind="function"><name>read</name></member>
     <member refid="classFsl_1_1Estimation_1_1Samples_1a2e4f1e93287023c9683232579e34ad77" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples" kind="class"><name>Fsl::Monitoring::Composition::Samples</name>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a6927918bc03e5be9910dcf2dc11590a6" kind="typedef"><name>SampleType</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a41cd5cc53c49048c495849be30fcba1b" kind="variable"><name>samples</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1ab221d6b5c1c8b8c12bee85287025a23c" kind="function"><name>observed</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aab726ce557d12fbe2df39b0ace7bec3a" kind="function"><name>observeds</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a483675e7a9053c533c16d3765f9aedce" kind="function"><name>expected</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1aa10e5bfceb5a86d72960299a2e5ace6e" kind="function"><name>likelihood</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a8ba2ebc44515c75b695387571c8a5260" kind="function"><name>observeds_output</name></member>
+    <member refid="classFsl_1_1Monitoring_1_1Composition_1_1Samples_1a2d5c00ff1b0493b5ed90ddaef1d9ce9b" kind="function"><name>stream</name></member>
   </compound>
   <compound refid="structFsl_1_1Models_1_1Matiri_1_1Sector" kind="struct"><name>Fsl::Models::Matiri::Sector</name>
     <member refid="structFsl_1_1Models_1_1Matiri_1_1Sector_1ad9b4a30378bb6aab4247e6c2674ad576" kind="function"><name>Sector</name></member>
@@ -731,21 +739,18 @@
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a1ffb34b05bc367adfae97f86021c7129" kind="variable"><name>index</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a5c75b1b2e0f6ea43281987b26320883e" kind="variable"><name>smoother</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a7591ff6356a25f4ace8ea83421af6fc9" kind="variable"><name>initial</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab36ee91c73a2e1fc499100e177387c0d" kind="variable"><name>rate</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a54b18d410b683a5b1262d0b6c0c14923" kind="variable"><name>slope</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ae4c10dfdfaffdf5947176596cf553ce0" kind="variable"><name>target</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a8d2758f161bcf3edbc539255e83e11a7" kind="variable"><name>step</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4d2f530e16a9f42bb86bc39326449bec" kind="variable"><name>trigger</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a3625dcb202724f4d3a8adb73b35a83e7" kind="variable"><name>start</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1af2bdd8a4d1412f3c5b563cc8c4dbfa59" kind="variable"><name>asymmetry</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a4b25517ae470ea87c49d5c5b4468d1c1" kind="variable"><name>changes</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1aef6e3ea5702e9eabac496f3dc2835e36" kind="variable"><name>values</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a802198a7e96c33111e54c7b8df8ebb28" kind="variable"><name>initial_value_</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a9206b037cec7ba234ab4bfcb983d9f0b" kind="variable"><name>rate_value_</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a1dc628fbe377a569b3dac14cf2a91e11" kind="variable"><name>target_value_</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a75e5a2ebe9611a66bcaa9535509a88da" kind="variable"><name>status_last_</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a58c85a62234d3af3088648bd13020738" kind="variable"><name>multiplier_</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ab4b39810ccf8a3fd812b2884289567d6" kind="function"><name>TSAR</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a605b3805d1a627d4e76a49ab38c355e5" kind="variable"><name>values</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a8d2758f161bcf3edbc539255e83e11a7" kind="variable"><name>step</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a3fc4ee31caef66f264669c263d04def2" kind="variable"><name>multiplier</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a27d5207c7e69cdeda85660b3c4f764f1" kind="function"><name>TSAR</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ac3dae21d2d84f5a53119200ff6480cdf" kind="function"><name>signature</name></member>
     <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ae92f8527a488cd160186cc777e0909e8" kind="function"><name>reset</name></member>
-    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1a974d38609cda08a7da4cbc38e72ff430" kind="function"><name>operate</name></member>
+    <member refid="classFsl_1_1Management_1_1Procedures_1_1TSAR_1ad4c4429ff8a34c3493fe7e5614196ee0" kind="function"><name>operate</name></member>
   </compound>
   <compound refid="classFsl_1_1Math_1_1Probability_1_1Uniform" kind="class"><name>Fsl::Math::Probability::Uniform</name>
     <member refid="classFsl_1_1Math_1_1Probability_1_1Uniform_1aa670c113e2bf16f28d8348be55f569ba" kind="variable"><name>lower</name></member>
@@ -1009,6 +1014,9 @@
   <compound refid="threshold_8hpp" kind="file"><name>threshold.hpp</name>
   </compound>
   <compound refid="truncated_8hpp" kind="file"><name>truncated.hpp</name>
+  </compound>
+  <compound refid="tsar_8cxx" kind="file"><name>tsar.cxx</name>
+    <member refid="tsar_8cxx_1a66d6c3d16f15aea58d158fc0ab2a2f96" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
   </compound>
   <compound refid="tsar_8hpp" kind="file"><name>tsar.hpp</name>
   </compound>

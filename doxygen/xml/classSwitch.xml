@@ -115,34 +115,34 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="394">
+      <node id="405">
         <label>On</label>
       </node>
-      <node id="393">
+      <node id="404">
         <label>Switch&lt; On, Off &gt;</label>
         <link refid="classSwitch"/>
-        <childnode refid="394" relation="public-inheritance">
+        <childnode refid="405" relation="public-inheritance">
         </childnode>
-        <childnode refid="395" relation="public-inheritance">
+        <childnode refid="406" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="395">
+      <node id="406">
         <label>Off</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="397">
+      <node id="408">
         <label>On</label>
       </node>
-      <node id="396">
+      <node id="407">
         <label>Switch&lt; On, Off &gt;</label>
         <link refid="classSwitch"/>
-        <childnode refid="397" relation="public-inheritance">
+        <childnode refid="408" relation="public-inheritance">
         </childnode>
-        <childnode refid="398" relation="public-inheritance">
+        <childnode refid="409" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="398">
+      <node id="409">
         <label>Off</label>
       </node>
     </collaborationgraph>

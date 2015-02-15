@@ -84,24 +84,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="299">
+      <node id="303">
         <label>Mirror&lt; ProbabilityCalculater &gt;</label>
       </node>
-      <node id="298">
+      <node id="302">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater"/>
-        <childnode refid="299" relation="public-inheritance">
+        <childnode refid="303" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="301">
+      <node id="305">
         <label>Mirror&lt; ProbabilityCalculater &gt;</label>
       </node>
-      <node id="300">
+      <node id="304">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::ProbabilityCalculater</label>
         <link refid="structFsl_1_1Estimation_1_1Set_1_1ProbabilityCalculater"/>
-        <childnode refid="301" relation="public-inheritance">
+        <childnode refid="305" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

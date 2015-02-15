@@ -4,13 +4,13 @@
     <compoundname>truncated.hpp</compoundname>
     <includedby refid="autocorrelation-bentley-2012_8hpp" local="no">autocorrelation-bentley-2012.hpp</includedby>
     <invincdepgraph>
-      <node id="597">
+      <node id="600">
         <label>truncated.hpp</label>
         <link refid="truncated.hpp"/>
-        <childnode refid="598" relation="include">
+        <childnode refid="601" relation="include">
         </childnode>
       </node>
-      <node id="598">
+      <node id="601">
         <label>autocorrelation-bentley-2012.hpp</label>
         <link refid="autocorrelation-bentley-2012_8hpp"/>
       </node>

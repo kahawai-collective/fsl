@@ -302,38 +302,38 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="343">
+      <node id="352">
         <label>std::vector&lt; double &gt;</label>
       </node>
-      <node id="342">
+      <node id="351">
         <label>Fsl::Estimation::Sample</label>
         <link refid="classFsl_1_1Estimation_1_1Sample"/>
-        <childnode refid="343" relation="public-inheritance">
+        <childnode refid="352" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="345">
+      <node id="354">
         <label>std::vector&lt; double &gt;</label>
       </node>
-      <node id="346">
+      <node id="355">
         <label>Fsl::Estimation::Samples</label>
         <link refid="classFsl_1_1Estimation_1_1Samples"/>
-        <childnode refid="347" relation="public-inheritance">
+        <childnode refid="356" relation="public-inheritance">
         </childnode>
-        <childnode refid="344" relation="usage">
+        <childnode refid="353" relation="usage">
           <edgelabel>sample_</edgelabel>
         </childnode>
       </node>
-      <node id="347">
+      <node id="356">
         <label>std::vector&lt;Sample&gt;</label>
       </node>
-      <node id="344">
+      <node id="353">
         <label>Fsl::Estimation::Sample</label>
         <link refid="classFsl_1_1Estimation_1_1Sample"/>
-        <childnode refid="345" relation="public-inheritance">
+        <childnode refid="354" relation="public-inheritance">
         </childnode>
-        <childnode refid="346" relation="usage">
+        <childnode refid="355" relation="usage">
           <edgelabel>samples_</edgelabel>
         </childnode>
       </node>

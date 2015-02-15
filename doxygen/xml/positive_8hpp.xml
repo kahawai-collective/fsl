@@ -4,13 +4,13 @@
     <compoundname>positive.hpp</compoundname>
     <includedby refid="distributions_8hpp" local="no">distributions.hpp</includedby>
     <invincdepgraph>
-      <node id="504">
+      <node id="505">
         <label>positive.hpp</label>
         <link refid="positive.hpp"/>
-        <childnode refid="505" relation="include">
+        <childnode refid="506" relation="include">
         </childnode>
       </node>
-      <node id="505">
+      <node id="506">
         <label>distributions.hpp</label>
         <link refid="distributions_8hpp"/>
       </node>

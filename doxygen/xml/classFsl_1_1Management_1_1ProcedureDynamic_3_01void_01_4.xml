@@ -38,13 +38,14 @@
         </inbodydescription>
         <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="27" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1a06e5c102d88f759846c7e6b94f266603" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1ac99c903626acc2949eaf83d490c90a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void Fsl::Management::ProcedureDynamic&lt; void &gt;::operate</definition>
-        <argsstring>(void)=0</argsstring>
+        <argsstring>(uint time)=0</argsstring>
         <name>operate</name>
         <param>
-          <type>void</type>
+          <type>uint</type>
+          <declname>time</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -61,7 +62,7 @@
     </detaileddescription>
     <location file="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" line="24" column="1" bodyfile="/home/nbentley/Trophia/P12013_Trident/Code/fsl/fsl/management/procedure.hpp" bodystart="24" bodyend="29"/>
     <listofallmembers>
-      <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1a06e5c102d88f759846c7e6b94f266603" prot="public" virt="pure-virtual"><scope>Fsl::Management::ProcedureDynamic&lt; void &gt;</scope><name>operate</name></member>
+      <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1ac99c903626acc2949eaf83d490c90a26" prot="public" virt="pure-virtual"><scope>Fsl::Management::ProcedureDynamic&lt; void &gt;</scope><name>operate</name></member>
       <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1a40814484d08835b16970d6be606d2db2" prot="public" virt="pure-virtual"><scope>Fsl::Management::ProcedureDynamic&lt; void &gt;</scope><name>reset</name></member>
       <member refid="classFsl_1_1Management_1_1ProcedureDynamic_3_01void_01_4_1ad5ef7bb544a737dedc675bc768fa6803" prot="public" virt="pure-virtual"><scope>Fsl::Management::ProcedureDynamic&lt; void &gt;</scope><name>signature</name></member>
     </listofallmembers>

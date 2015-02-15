@@ -5,31 +5,31 @@
     <includes refid="rate_8hpp" local="yes">rate.hpp</includes>
     <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
     <incdepgraph>
-      <node id="298">
+      <node id="299">
         <label>instantaneous.hpp</label>
         <link refid="instantaneous.hpp"/>
-        <childnode refid="299" relation="include">
+        <childnode refid="300" relation="include">
         </childnode>
       </node>
-      <node id="299">
+      <node id="300">
         <label>rate.hpp</label>
         <link refid="rate_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="301">
+      <node id="302">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>instantaneous.hpp</label>
+        <link refid="instantaneous.hpp"/>
         <childnode refid="302" relation="include">
         </childnode>
       </node>
-      <node id="300">
-        <label>instantaneous.hpp</label>
-        <link refid="instantaneous.hpp"/>
-        <childnode refid="301" relation="include">
-        </childnode>
-      </node>
-      <node id="302">
+      <node id="303">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>

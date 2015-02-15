@@ -119,24 +119,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="326">
+      <node id="330">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Reader</label>
         <link refid="classFsl_1_1Estimation_1_1Set_1_1Reader"/>
-        <childnode refid="327" relation="public-inheritance">
+        <childnode refid="331" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="327">
+      <node id="331">
         <label>Mirror&lt; Reader &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="328">
+      <node id="332">
         <label>Fsl::Estimation::Set&lt; Derived &gt;::Reader</label>
         <link refid="classFsl_1_1Estimation_1_1Set_1_1Reader"/>
-        <childnode refid="329" relation="public-inheritance">
+        <childnode refid="333" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="329">
+      <node id="333">
         <label>Mirror&lt; Reader &gt;</label>
       </node>
     </collaborationgraph>

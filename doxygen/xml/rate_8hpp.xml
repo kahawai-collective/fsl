@@ -4,25 +4,25 @@
     <compoundname>rate.hpp</compoundname>
     <includedby refid="instantaneous_8hpp" local="yes">instantaneous.hpp</includedby>
     <invincdepgraph>
-      <node id="524">
+      <node id="526">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
-        <childnode refid="525" relation="include">
-        </childnode>
-      </node>
-      <node id="523">
-        <label>instantaneous.hpp</label>
-        <link refid="instantaneous_8hpp"/>
-        <childnode refid="524" relation="include">
-        </childnode>
-      </node>
-      <node id="522">
-        <label>rate.hpp</label>
-        <link refid="rate.hpp"/>
-        <childnode refid="523" relation="include">
+        <childnode refid="527" relation="include">
         </childnode>
       </node>
       <node id="525">
+        <label>instantaneous.hpp</label>
+        <link refid="instantaneous_8hpp"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>rate.hpp</label>
+        <link refid="rate.hpp"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>

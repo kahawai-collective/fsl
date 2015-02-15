@@ -27,38 +27,38 @@
     <detaileddescription>
 <para>A prior for the standard deviation of recruitment variation </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="443">
+      <node id="456">
         <label>Fsl::Math::Probability::Lognormal</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Lognormal"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="457" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="444">
+      <node id="457">
         <label>Fsl::Math::Probability::Distribution&lt; Lognormal &gt;</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>
-      <node id="442">
+      <node id="455">
         <label>Fsl::Population::Recruitment::Priors::VariationBentley2012</label>
         <link refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1VariationBentley2012"/>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="456" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="446">
+      <node id="459">
         <label>Fsl::Math::Probability::Lognormal</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Lognormal"/>
-        <childnode refid="447" relation="public-inheritance">
+        <childnode refid="460" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="447">
+      <node id="460">
         <label>Fsl::Math::Probability::Distribution&lt; Lognormal &gt;</label>
         <link refid="classFsl_1_1Math_1_1Probability_1_1Distribution"/>
       </node>
-      <node id="445">
+      <node id="458">
         <label>Fsl::Population::Recruitment::Priors::VariationBentley2012</label>
         <link refid="classFsl_1_1Population_1_1Recruitment_1_1Priors_1_1VariationBentley2012"/>
-        <childnode refid="446" relation="public-inheritance">
+        <childnode refid="459" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

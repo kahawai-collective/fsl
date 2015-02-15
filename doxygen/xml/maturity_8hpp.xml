@@ -6,55 +6,55 @@
     <includes refid="logistic_8hpp" local="no">fsl/math/functions/logistic.hpp</includes>
     <includedby refid="matiri_8hpp" local="no">matiri.hpp</includedby>
     <incdepgraph>
-      <node id="421">
+      <node id="422">
         <label>fsl/common.hpp</label>
         <link refid="common_8hpp"/>
       </node>
-      <node id="422">
+      <node id="423">
         <label>fsl/math/functions/function.hpp</label>
         <link refid="function_8hpp"/>
-        <childnode refid="421" relation="include">
-        </childnode>
-      </node>
-      <node id="419">
-        <label>maturity.hpp</label>
-        <link refid="maturity.hpp"/>
-        <childnode refid="420" relation="include">
-        </childnode>
-        <childnode refid="423" relation="include">
-        </childnode>
-      </node>
-      <node id="423">
-        <label>fsl/math/functions/logistic.hpp</label>
-        <link refid="logistic_8hpp"/>
-        <childnode refid="421" relation="include">
-        </childnode>
         <childnode refid="422" relation="include">
         </childnode>
       </node>
       <node id="420">
-        <label>fsl/math/functions/threshold.hpp</label>
-        <link refid="threshold_8hpp"/>
+        <label>maturity.hpp</label>
+        <link refid="maturity.hpp"/>
         <childnode refid="421" relation="include">
         </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>fsl/math/functions/logistic.hpp</label>
+        <link refid="logistic_8hpp"/>
         <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>fsl/math/functions/threshold.hpp</label>
+        <link refid="threshold_8hpp"/>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="425">
+      <node id="426">
         <label>matiri.hpp</label>
         <link refid="matiri_8hpp"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>maturity.hpp</label>
+        <link refid="maturity.hpp"/>
         <childnode refid="426" relation="include">
         </childnode>
       </node>
-      <node id="424">
-        <label>maturity.hpp</label>
-        <link refid="maturity.hpp"/>
-        <childnode refid="425" relation="include">
-        </childnode>
-      </node>
-      <node id="426">
+      <node id="427">
         <label>matiri.cxx</label>
         <link refid="matiri_8cxx"/>
       </node>
