@@ -55,6 +55,15 @@ requires/stencila: requires/stencila-$(STENCILA_VERSION).tar.gz
 	@touch $@
 
 ###################################################################################################
+# Check modules
+# 
+# e.g.
+#    make management/procedures/btar.module
+
+%.module:
+	python module/module.py $@
+
+###################################################################################################
 # Testing
 
 # Get a list of tests (files with extension *.cxx)
