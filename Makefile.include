@@ -1,7 +1,7 @@
 # A Makefile for including when building FSL tests or projects
 
 # Home  directory is the one above this
-FSL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST)))/..)
+FSL_HOME := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 
 # Include directories
 FSL_INCLUDE_DIRS := -I$(FSL_HOME) -I$(FSL_HOME)/requires/boost -I$(FSL_HOME)/requires/stencila
