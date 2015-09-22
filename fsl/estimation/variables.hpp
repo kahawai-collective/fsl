@@ -1,8 +1,12 @@
 #pragma once
 
 #include <boost/regex.hpp>
+#include <boost/filesystem.hpp>
 
-#include <stencila/reflector.hpp>
+#include <stencila/structure.hpp>
+#include <stencila/mirror.hpp>
+using Stencila::Structure;
+using Stencila::Mirrors::Mirror;
 
 #include <fsl/math/probability/fixed.hpp>
 
@@ -49,7 +53,7 @@ struct Log {
 template<
     class Distribution
 >
-class Variate : public Distribution, public Reflector<Variate<Distribution>> {
+class Variate : public Distribution, public Structure<Variate<Distribution>> {
 private:
     double value_ = NAN;
 
@@ -465,7 +469,7 @@ public:
 template<
 	class Derived
 >
-class Set : public Reflector<Derived> {
+class Set : public Structure<Derived> {
 public:
 
     std::string path = ".";
@@ -561,6 +565,12 @@ public:
         return derived();
     }
 
+    Derived& read(const Frame& frame){
+        ReadFrame_ mirror(frame);
+        derived().reflect(mirror);
+        return derived();
+    }
+
 private:
 
     struct LoadSample_ : SetMirror<LoadSample_> {
@@ -575,6 +585,27 @@ private:
             try {
                 if(sample.has(name)){
                     double value = sample.get(name);
+                    if(not std::isfinite(value)) throw std::runtime_error("`Set::load` : When loading variate <"+name+"> from sample, value was not finite");
+                    variate = value;
+                }
+            } catch(const std::exception& exc){
+                throw std::runtime_error("`Set::load` : Error when loading variate <"+name+"> from sample : "+exc.what());
+            }
+        }       
+    };
+
+    struct ReadFrame_ : SetMirror<ReadFrame_> {
+        const Frame& sample;
+
+        ReadFrame_(const Frame& sample):
+            sample(sample){
+        }
+
+        template<class Distribution>
+        void variate(Variate<Distribution>& variate, const std::string& name){
+            try {
+                if(sample.has(name)){
+                    double value = sample(0,name);
                     if(not std::isfinite(value)) throw std::runtime_error("`Set::load` : When loading variate <"+name+"> from sample, value was not finite");
                     variate = value;
                 }

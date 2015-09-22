@@ -29,7 +29,7 @@ requires: requires/boost requires/stencila
 # Boost
 # For unit testing, filesystem etc
 
-BOOST_VERSION := 1_57_0
+BOOST_VERSION := 1_58_0
 
 requires/boost_$(BOOST_VERSION).tar.bz2:
 	@mkdir -p requires
@@ -38,7 +38,7 @@ requires/boost_$(BOOST_VERSION).tar.bz2:
 requires/boost: requires/boost_$(BOOST_VERSION).tar.bz2
 	tar --bzip2 -xf $< -C requires
 	mv requires/boost_$(BOOST_VERSION) requires/boost
-	cd requires/boost && ./bootstrap.sh --with-libraries=filesystem,system,test && ./b2
+	cd requires/boost && ./bootstrap.sh --with-libraries=filesystem,regex,system,test && ./b2 --prefix=. link=static install
 
 #################################################
 # Stencila
