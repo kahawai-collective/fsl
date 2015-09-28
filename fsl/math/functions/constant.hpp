@@ -26,7 +26,7 @@ public:
 		return *this;
 	}
 
-    double operator()(const double& x){
+    double value(const double& x){
         return value_;
     }
 

@@ -21,7 +21,7 @@ public:
      * @param  x Point at which function is evaluated
      * @return   Value of function
      */
-    double operator()(const double& x){
+    double value(const double& x){
         return 0;
     }
 };

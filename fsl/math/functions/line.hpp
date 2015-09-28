@@ -15,7 +15,7 @@ public:
     double a;
     double b;
 
-    double operator()(const double& x){
+    double value(const double& x){
         return a+x*b;
     }
 

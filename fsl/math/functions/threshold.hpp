@@ -23,7 +23,7 @@ public:
 		return *this;
 	};
     
-    double operator()(const double& x){
+    double value(const double& x){
         return (x<inflection_)?0:1;
     }
 }; // class Threshold

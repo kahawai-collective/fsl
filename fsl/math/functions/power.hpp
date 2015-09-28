@@ -24,7 +24,7 @@ public:
      */
     double b;
 
-    double operator()(const double& x) const {
+    double value(const double& x) const {
         return a*std::pow(x,b);
     }
 

@@ -17,7 +17,7 @@ public:
     double steepness_1;
     double steepness_2;
 
-    double operator()(const double& x) const {
+    double value(const double& x) const {
         double a = 1.0/(1.0+std::pow(19,(inflection_1-x)/steepness_1));
         double b = 1.0/(1.0+std::pow(19,(x-(inflection_1+inflection_2_delta))/steepness_2));
         double c = 1.0/(1.0+std::pow(19,

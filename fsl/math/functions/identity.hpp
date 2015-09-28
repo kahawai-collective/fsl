@@ -10,7 +10,7 @@ namespace Functions {
 class Identity : public Function {
 public:
     
-    double operator()(const double& x) const {
+    double value(const double& x) const {
         return x;
     }
 }; // end class Identity
