@@ -12,7 +12,7 @@ namespace Functions {
 /**
  * Power function
  */
-class Power : public Function {
+class Power : public Function<Power> {
 public:
     /**
      * Value of function when x==1

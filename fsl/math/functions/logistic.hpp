@@ -11,7 +11,7 @@ namespace Functions {
  * Logistic function parameterised with inflection and
  * steepness parameters
  */ 
-class Logistic : public Function {
+class Logistic : public Function<Logistic> {
 public:
     
     /**

@@ -13,6 +13,9 @@ namespace Functions {
  * that all Functions are expected to have. Functions act as functors with
  * a "call operator" which takes a double and returns a double.
  */
+template<
+	class Derived
+>
 class Function {
 public:
     
@@ -23,6 +26,16 @@ public:
      */
     double value(const double& x){
         return 0;
+    }
+
+    /**
+     * Overloading of `()` operator.
+     * 
+     * This is used for some functions that can accept either
+     * a normal function or a `Function` instance. e.g. `Distribution::integrate()`
+     */
+    double operator()(const double& x){
+        return static_cast<Derived&>(*this).value(x);
     }
 };
 

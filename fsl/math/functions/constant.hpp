@@ -6,7 +6,7 @@ namespace Fsl {
 namespace Math {
 namespace Functions {
 
-class Constant : public Function {
+class Constant : public Function<Constant> {
 private:
 
 	double value_;

@@ -7,7 +7,7 @@ namespace Fsl {
 namespace Math {
 namespace Functions {
     
-class Identity : public Function {
+class Identity : public Function<Identity> {
 public:
     
     double value(const double& x) const {

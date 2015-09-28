@@ -9,7 +9,7 @@ namespace Math {
 namespace Functions {
 
 //! Double-logistic function
-class DoubleLogistic : public Function {
+class DoubleLogistic : public Function<DoubleLogistic> {
 public:
 
     double inflection_1;

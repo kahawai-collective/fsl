@@ -9,7 +9,7 @@ namespace Fsl {
 namespace Math {
 namespace Functions {
 
-class Line : public Function {
+class Line : public Function<Line> {
 public:
 
     double a;

@@ -7,7 +7,7 @@ namespace Fsl {
 namespace Math {
 namespace Functions {
     
-class Threshold : public Function {
+class Threshold : public Function<Threshold> {
 private:
 
 	double inflection_;

@@ -8,7 +8,7 @@ namespace Fsl {
 namespace Math {
 namespace Functions {
 
-class DoubleNormalPlateau : public Function {
+class DoubleNormalPlateau : public Function<DoubleNormalPlateau> {
 public:
 
     double inflection_1;
