@@ -11,6 +11,9 @@
 //For default random number generation...
 #include <boost/random/uniform_01.hpp>
 
+#include <stencila/structure.hpp>
+using Stencila::Structure;
+
 namespace Fsl {
 namespace Math {
 namespace Probability {
@@ -40,7 +43,7 @@ these are wrapped into methods.
 template<
 	typename Derived
 >
-class Distribution {
+class Distribution : public Structure<Derived> {
 public:
 	
 	void reset(void){
