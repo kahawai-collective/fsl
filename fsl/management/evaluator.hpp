@@ -71,10 +71,10 @@ public:
                 parameters_.set(starting,time);
                 //... do `before()` method
                 derived().before(replicate,-1,time,starting);
-                //... update the model
-                starting.update(time);
                 //... do `after()` method
                 derived().after(replicate,-1,time,starting);
+                //... update the model
+                starting.update(time);
             }
             // Create a random generator seed to be used to ensure the same
             // process and observation error realisations for each candidate

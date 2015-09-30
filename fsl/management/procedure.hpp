@@ -6,8 +6,10 @@ namespace Management {
 class Procedure {
 public:
 
-    void signature(void){
-        std::runtime_error("Procedure must define a signature");
+    std::string flags;
+
+    std::string signature(void){
+        return flags;
     }
 
     void reset(void){

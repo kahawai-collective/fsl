@@ -57,7 +57,7 @@ using Fsl::Population::Recruitment::Autocorrelated;
 #include <fsl/population/recruitment/beverton-holt.hpp>
 using Fsl::Population::Recruitment::BevertonHolt;
 
-enum Binary {no=1,yes=1};
+enum Binary {no=0,yes=1};
 
 template<
     class On,
@@ -330,6 +330,11 @@ public:
     Array<double,Sector> biomass_vulnerable = 0;
 
     /**
+     * Vulnerable biomass that is spawners by sector
+     */
+    Array<double,Sector> biomass_vulnerable_spawning = 0;
+
+    /**
      * Catches by sector
      */
     Array<double,Sector> catches = 0;
@@ -381,6 +386,18 @@ public:
                 }
             }
             biomass_vulnerable(sector) = sum * 0.001;
+        }
+    }
+
+    void biomass_vulnerable_spawning_update(void){
+        for(auto sector : sectors){
+            double sum = 0;
+            for(auto sex : sexes){
+                for(auto age : ages){
+                    sum += numbers(sex,age) * weights(sex,age) * maturities(sex,age) * selectivities(sector,sex,age);
+                }
+            }
+            biomass_vulnerable_spawning(sector) = sum * 0.001;
         }
     }
 
@@ -438,7 +455,7 @@ public:
 
         for(auto sex : sexes){
             for(auto age : ages){
-                double age_ = age.index();
+                double age_ = age.index() + 0.5;
 
                 lengths(sex,age) = length_age(sex).distribution(age_);
 
@@ -523,6 +540,7 @@ public:
         biomass_update();
         biomass_spawning_update();
         biomass_vulnerable_update();
+        biomass_vulnerable_spawning_update();
 
         // Exploitation rate
         if(exploitation_on){

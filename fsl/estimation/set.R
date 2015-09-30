@@ -1,6 +1,11 @@
 require(stringr)
 require(ggplot2)
 
+#' A set of samples
+#' 
+#' @export Dimension
+#' @exportClass Dimension
+#' @field label A label to use for this dimension
 Dimension <- setRefClass(
   "Dimension",
   fields = list(

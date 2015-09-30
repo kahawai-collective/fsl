@@ -58,13 +58,14 @@ public:
     }
     
     std::string signature(void){
-        return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
+        return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
             %starting
             %smoother.coefficient
             %initial%slope%target%start
             %asymmetry
             %changes.lower%changes.upper
             %values.lower%values.upper
+            %flags
         );
     }
     

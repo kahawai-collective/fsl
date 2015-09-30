@@ -10,7 +10,8 @@ However, the main purpose for FSL is as a library for fisheries management proce
 FSL provides C++ classes that can be composed in alternative ways to 
 provides for alternative types of MPE range from simple to complex.
 
-## Modules
+
+## Documentation
 
 `fsl/<grandparent>/<parent>/<module>`
 
@@ -34,10 +35,6 @@ fsl/population/recruitment/ricker/
 └── ricker.hpp
 ```
 
-## Testing
-
-
-
 ## Documentation
 
 ### Doxygen
@@ -56,8 +53,10 @@ make doxygen
 
 Currently, documentation is published to a [Github Project Page](http:http://pages.github.com/) using the 
 `gh-pages` branch and is available at <a href="http://trident-systems.github.com/fsl/index.html">http://trident-systems.github.com/fsl/</a>.
+
 To publish documentation (requires that [`ghp-import`](https://pypi.python.org/pypi/ghp-import) is installed):
 
 ```sh
+cd  docs
 make publish
 ```
