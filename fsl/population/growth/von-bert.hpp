@@ -1,22 +1,25 @@
 #pragma once
 
-#include <fsl/math/functions/function.hpp>
+#include <stencila/structure.hpp>
+using Stencila::Structure;
+
 
 namespace Fsl {
 namespace Population {
 namespace Growth {
 
-using Fsl::Math::Functions::Function; 
-
 /*!
 von Bertallanfy growth function
 */
-class VonBert : public Function {
+class VonBert : public Structure<VonBert> {
 public:
 
     double k;
     double linf;
     double t0;
+
+    VonBert(){
+    }
 
     VonBert(double k, double linf, double t0=0):
     	k(k),
@@ -24,8 +27,17 @@ public:
     	t0(t0){
 	}
 
-    double operator()(const double& age) const {
+    double value(const double& age) const {
         return linf*(1-std::exp(-k*(age-t0)));
+    }
+
+    template<class Mirror>
+    void reflect(Mirror& mirror){
+        mirror
+            .data(k,"k")
+            .data(linf,"linf")
+            .data(t0,"t0")
+        ;
     }
 };
 
