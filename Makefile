@@ -29,7 +29,7 @@ requires: requires/boost requires/stencila
 # Boost
 # For unit testing, filesystem etc
 
-BOOST_VERSION := 1_58_0
+BOOST_VERSION := 1_62_0
 
 requires/boost_$(BOOST_VERSION).tar.bz2:
 	@mkdir -p requires
@@ -38,21 +38,26 @@ requires/boost_$(BOOST_VERSION).tar.bz2:
 requires/boost: requires/boost_$(BOOST_VERSION).tar.bz2
 	tar --bzip2 -xf $< -C requires
 	mv requires/boost_$(BOOST_VERSION) requires/boost
-	cd requires/boost && ./bootstrap.sh --with-libraries=filesystem,regex,system,test && ./b2 --prefix=. link=static install
+	cd requires/boost && ./bootstrap.sh --with-libraries=filesystem,system,test && ./b2 --prefix=. link=static install
 
 #################################################
 # Stencila
 # For arrays and frames etc
 
-STENCILA_VERSION := 0.9
+STENCILA_VERSION := 0.2
 
-requires/stencila-$(STENCILA_VERSION).tar.gz:
+requires/stencila-cpp-$(STENCILA_VERSION).zip:
 	@mkdir -p requires
-	wget --no-check-certificate -O $@ https://github.com/stencila/stencila/releases/download/$(STENCILA_VERSION)/stencila-linux-x86_64-$(STENCILA_VERSION).tar.gz
+	wget --no-check-certificate -O $@ https://github.com/stencila/cpp/archive/$(STENCILA_VERSION).zip
 
-requires/stencila: requires/stencila-$(STENCILA_VERSION).tar.gz
-	tar -xf $< -C requires
-	@touch $@
+requires/stencila: requires/stencila-cpp-$(STENCILA_VERSION).zip
+	rm -rf requires/stencila
+	unzip -o $< -d requires
+	mv requires/cpp-$(STENCILA_VERSION)/ requires/stencila/
+	touch $@
+
+
+requires: requires/boost requires/stencila
 
 ###################################################################################################
 # Check modules
