@@ -16,7 +16,7 @@ namespace Functions {
 template<
 	class Derived
 >
-class Function {
+class Function : public Structure<Derived> {
 public:
     
     /**
