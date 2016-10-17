@@ -24,9 +24,18 @@ public:
      */
     double b;
 
+    template<class Mirror>
+    void reflect(Mirror& mirror){
+        mirror
+            .data(a, "a")
+            .data(b, "b")
+        ;
+    }
+
     double value(const double& x) const {
         return a*std::pow(x,b);
     }
+
 
 }; // end class Power
 
