@@ -39,7 +39,7 @@ template<class Sexes, class Ages>
 class SexAge : public Structure< SexAge<Sexes, Ages> > {
   public:
 
-    const int age_max = Ages::levels.size();
+    const unsigned int age_max = Ages::levels.size();
 
     /**
      * @name State
@@ -74,7 +74,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     /**
      * Spawning biomass at last update
      */
-    double spawning_biomass = 0;
+    double biomass_spawning_last = 0;
 
     /**
      * Should the number of recruits be related to the number of spawners?
@@ -106,12 +106,6 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
      * Total number of recruits at last update
      */
     double recruits = 0;
-
-
-    /**
-     * Sex ratio at birth
-     */
-    double sex_ratio = 0.5;
 
     /**
      * @}
@@ -213,6 +207,18 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
 
 
     /**
+     * @name Exploitaitons
+     * @{
+     */
+    
+    bool exploitation_on = true;
+
+    /**
+     * @}
+     */
+
+
+    /**
      * Reflection
      */
     template<class Mirror>
@@ -220,7 +226,6 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         mirror
             .data(numbers, "numbers")
             .data(stock_recruits, "stock_recruits")
-            .data(sex_ratio, "sex_ratio")
             .data(mortality_sex, "mortality_sex")
             .data(mortalities, "mortalities")
             .data(length_age, "length_age")
@@ -257,10 +262,10 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     void update(void) {
 
         // Spawning biomass
-        spawning_biomass = biomass_spawning();
+        biomass_spawning_last = biomass_spawning();
 
         // Recruits
-        recruits_determ = recruits_related ? stock_recruits(spawning_biomass) : stock_recruits.r0;
+        recruits_determ = recruits_related ? stock_recruits(biomass_spawning_last) : stock_recruits.r0;
         recruits_deviation = recruits_vary ? recruits_variation.random() : 1;
         recruits = recruits_determ * recruits_deviation;
 
@@ -272,15 +277,16 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
             for(uint age = age_max-1; age > 0; age--){
                 numbers(sex, age) = numbers(sex, age-1);
             }
-            // Recruits are split between sexes according to the sex ratio
-            numbers(sex, 0) = recruits * sex_ratio;
+            // Recruits are split evenly between sexes
+            numbers(0, 0) = recruits * 1.0/(Sexes::levels.size());
         }
     }
 
     void seed(void){
         // Seed the numbers at age
+        auto sex_ratio = 1/Sexes::levels.size();
         for (auto sex : Sexes::levels) {
-            double surviving = stock_recruits.r0 * ((sex==0)?sex_ratio:(1-sex_ratio));
+            double surviving = stock_recruits.r0 * sex_ratio;
             for (auto age : Ages::levels) {
                 surviving *= mortality_survivals(sex, age);
                 numbers(sex, age) = surviving;
@@ -294,16 +300,16 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     void equilibrium(void){
         // Turn off recruitment variation
         recruits_vary = false;
-        // Iterate until there is a very minor change in spawning_biomass
+        // Iterate until there is a very minor change in biomass_spawning_last
         uint steps = 0;
         const uint steps_max = 10000;
-        double spawning_biomass_prev = 1;
+        double biomass_spawning_prev = 1;
         while(steps<steps_max){
             update();
 
-            double diff = fabs(spawning_biomass-spawning_biomass_prev)/spawning_biomass_prev;
-            if(diff<0.00001 and steps>ages.size()) break;
-            spawning_biomass_prev = spawning_biomass;
+            double diff = fabs(biomass_spawning_last-biomass_spawning_prev)/biomass_spawning_prev;
+            if(diff<0.000001 and steps>age_max) break;
+            biomass_spawning_prev = biomass_spawning_last;
 
             steps++;
         }
@@ -311,6 +317,39 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         if(steps>steps_max) throw std::runtime_error("Did not converge");
         // Turn on recruitment variation again
         recruits_vary = true;
+    }
+
+    void pristine(void){
+        /**
+         * The fish population is initialised to an unfished state
+         * by iterating with virgin recruitment until it reaches equibrium
+         * defined by less than 0.01% change in total biomass.
+         */
+        
+        stock_recruits.r0 = 1;
+
+        // Turn off recruitment relationship and exploitation
+        recruits_related = false;
+        exploitation_on = false;
+        // Go to equilibrium
+        equilibrium();
+        // Turn on recruitment relationship and exploitation again
+        recruits_related = true;
+        exploitation_on = true;
+
+        /**
+         * Once the population has converged to unfished equilibrium, the virgin
+         * spawning biomass, or the virgin recruitment, can be set.
+         */
+        // Parameterised by B0 so scale everything up
+        double scaler = stock_recruits.s0/biomass_spawning_last;
+        stock_recruits.r0 *= scaler;
+        for(auto sex : Sexes::levels){
+            for(auto age : Ages::levels){
+                numbers(sex, age) *= scaler;
+            }
+        }
+        biomass_spawning_last *= scaler;
     }
 
     /**
@@ -341,7 +380,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         double biomass = 0;
         for(auto sex : Sexes::levels){
             for(auto age : Ages::levels){
-                biomass += numbers(sex, age) * weights(sex, age) * maturity(sex, age);
+                biomass += numbers(sex, age) * weights(sex, age) * maturities(sex, age);
             }
         }
         biomass *= 0.001;
