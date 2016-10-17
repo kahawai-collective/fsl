@@ -5,6 +5,12 @@
 
 #pragma once
 
+#include <stencila/structure.hpp>
+using Stencila::Structure;
+
+#include <stencila/array.hpp>
+using Stencila::Array;
+
 namespace Fsl {
 	
 }
