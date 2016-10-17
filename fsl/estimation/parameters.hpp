@@ -1,22 +1,32 @@
 #pragma once
 
-#include <fsl/estimation/variables.hpp>
-
 namespace Fsl {
 namespace Estimation {
-
-template<class Distribution> using Parameter = Variable<Distribution>;
-template<class Distribution, class... Indices> using Parameters = Variables<Distribution,Indices...>;
 
 template<
     class Derived
 >
-class ParameterSet : public Set<Derived> {
+class Parameters : public Structure<Derived> {
 public:
 
-    ParameterSet(const std::string& path="parameters"):
-        Set<Derived>(path){
+    typedef Structure<Derived> Base;
+
+    void startup(void){
+        read();
     }
+
+    void shutdown(void){
+        write();
+    }
+
+    void read(const std::string& path = "input/parameters.json"){
+        //Base::read(path);
+    }
+
+    void write(const std::string& path = "output/parameters.json"){
+        //Base::write(path);
+    }
+
 };
 
 } // namespace Estimation
