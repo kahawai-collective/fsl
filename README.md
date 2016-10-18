@@ -1,4 +1,4 @@
-# FSL : Fisheries Simuation Library
+# FSL : Fisheries Simulation Library
 
 FSL is a C++ library for fisheries simulation.
 It aims to be highly modular library without compromising speed.
@@ -9,7 +9,6 @@ Because FSL is modular it can be used for general fisheries simulation.
 However, the main purpose for FSL is as a library for fisheries management procedure evaluation (MPE).
 FSL provides C++ classes that can be composed in alternative ways to 
 provides for alternative types of MPE range from simple to complex.
-
 
 ## Documentation
 
