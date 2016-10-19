@@ -30,7 +30,7 @@ public:
 		Base::write(path);
 	}
 
-	void run(void){
+	void update(void){
 	}
 };
 
