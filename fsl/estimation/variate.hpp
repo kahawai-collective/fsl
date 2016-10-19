@@ -15,7 +15,7 @@ namespace Estimation {
 template<
     class Distribution
 >
-class Variate : public Distribution, public Structure<Variate<Distribution>> {
+class Variate : public Distribution {
 public:
 
     double value;

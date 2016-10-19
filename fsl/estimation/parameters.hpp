@@ -1,38 +1,5 @@
 #pragma once
 
-namespace Fsl {
-namespace Estimation {
-
-template<
-    class Derived
->
-class Parameters : public Structure<Derived> {
-public:
-
-    typedef Structure<Derived> Base;
-
-    void startup(void){
-        read();
-    }
-
-    void shutdown(void){
-        write();
-    }
-
-    void read(const std::string& path = "input/parameters.json"){
-        //Base::read(path);
-    }
-
-    void write(const std::string& path = "output/parameters.json"){
-        //Base::write(path);
-    }
-
-};
-
-} // namespace Estimation
-} // namespace Fsl
-
-
 #if 0
 #include <boost/algorithm/string.hpp>
 #include <boost/regex.hpp>
