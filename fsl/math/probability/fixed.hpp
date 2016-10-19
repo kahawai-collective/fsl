@@ -1,10 +1,12 @@
 #pragma once
 
+#include <stencila/structure.hpp>
+
 namespace Fsl {
 namespace Math {
 namespace Probability {
 
-class Fixed {    
+class Fixed : public Structure<Fixed> {    
 public:
     
     double value;
