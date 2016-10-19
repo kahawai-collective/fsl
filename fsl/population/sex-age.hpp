@@ -33,12 +33,13 @@ using Fsl::Math::Functions::Logistic;
 
 namespace Fsl {
 namespace Population {
-namespace Partioned {
 
 template<class Sexes, class Ages>
 class SexAge : public Structure< SexAge<Sexes, Ages> > {
   public:
 
+    const Sexes sexes = Sexes::levels;
+    const Ages ages = Ages::levels;
     const unsigned int age_max = Ages::levels.size();
 
     /**
@@ -125,7 +126,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     /**
      * Survivals at sex and age
      */
-    Array<double, Sexes, Ages> mortalities;
+    Array<double, Sexes, Ages> survivals;
 
     /**
      * @}
@@ -227,7 +228,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
             .data(numbers, "numbers")
             .data(stock_recruits, "stock_recruits")
             .data(mortality_sex, "mortality_sex")
-            .data(mortalities, "mortalities")
+            .data(survivals, "survivals")
             .data(length_age, "length_age")
             .data(lengths, "lengths")
             .data(weight_length, "weight_length")
@@ -251,7 +252,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
 
                 maturities(sex, age) = maturity_age(sex).value(years);
 
-                mortalities(sex, age) = mortality_sex(sex);
+                survivals(sex, age) = std::exp(-mortality_sex(sex));
             }
         }
     }
@@ -270,7 +271,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         recruits = recruits_determ * recruits_deviation;
 
         // Ageing and recruitment
-        for(auto sex : Sexes::levels){
+        for(auto sex : sexes){
             // Oldest age class accumulates 
             numbers(sex, age_max) += numbers(sex, age_max-1);
             // For most ages just "shuffle" along
@@ -280,6 +281,13 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
             // Recruits are split evenly between sexes
             numbers(0, 0) = recruits * 1.0/(Sexes::levels.size());
         }
+
+        // Natural mortality
+        for(auto sex : sexes){
+            for(auto age : ages){
+                numbers(sex,age) *=  survivals(sex, age);
+            }
+        }
     }
 
     void seed(void){
@@ -288,7 +296,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         for (auto sex : Sexes::levels) {
             double surviving = stock_recruits.r0 * sex_ratio;
             for (auto age : Ages::levels) {
-                surviving *= mortality_survivals(sex, age);
+                surviving *= survivals(sex, age);
                 numbers(sex, age) = surviving;
             }
         }
@@ -389,6 +397,5 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
 
 };
 
-}
 }
 }
