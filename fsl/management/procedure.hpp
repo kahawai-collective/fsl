@@ -88,10 +88,10 @@ template<
 >
 class ControlProcedure : public Procedure {
 public:
-    Type* const control;
+    Type* control;
     Type value;
 
-    ControlProcedure(Type* const control,const Type& value = 0):
+    ControlProcedure(Type* control,const Type& value = 0):
         control(control),
         value(value){
     }
