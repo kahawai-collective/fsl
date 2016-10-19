@@ -12,7 +12,7 @@ public:
     double coefficient;
     double value;
     
-    Ema(const double& coefficient):
+    Ema(const double& coefficient = 0.5):
         coefficient(coefficient){
         reset();
     }
