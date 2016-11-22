@@ -8,79 +8,15 @@ public:
 
     std::string flags;
 
-    std::string signature(void){
+    virtual std::string signature(void) const {
         return flags;
     }
 
-    void reset(void){
-    }
-
-    void operate(){
-    }
-};
-
-template<class Procedure=void> 
-class ProcedureDynamic;
-
-template<>
-class ProcedureDynamic<void> {
-public:
-    virtual std::string signature(void) = 0;
-    virtual void reset(void) = 0;
-    virtual void operate(uint time) = 0;
-};
-
-template<
-    class Procedure
->
-class ProcedureDynamic : public ProcedureDynamic<void>, public Procedure {
-public:
-
-    template<
-        typename... Args
-    >
-    ProcedureDynamic(Args... args):
-        Procedure(args...){
-    }
-
-    virtual std::string signature(void){
-        return Procedure::signature();
-    }
     virtual void reset(void){
-        Procedure::reset();
     }
+
     virtual void operate(uint time){
-        Procedure::operate(time);
     }
-};
-
-class ProcedureAny {
-private:
-    ProcedureDynamic<>* instance;
-    
-public:
-
-    ProcedureAny(ProcedureDynamic<>* instance = 0):
-        instance(instance){
-    }
-    
-    ProcedureAny& operator=(ProcedureDynamic<>* instance){
-        instance = instance;
-        return *this;
-    }
-    
-    std::string signature(void){
-        return instance->signature();
-    }
-    
-    void reset(void){
-        instance->reset();
-    }
-    
-    void operate(uint time){
-        instance->operate(time);
-    }
-
 };
 
 template<
@@ -96,7 +32,7 @@ public:
         value(value){
     }
 
-    void operate(uint time){
+    virtual void operate(uint time){
         *control = value;
     }
 };
@@ -116,7 +52,7 @@ public:
         starting(starting){
     }
     
-    void reset(void){
+    virtual void reset(void){
         ControlProcedure<Type>::value = starting;
     }
 };
