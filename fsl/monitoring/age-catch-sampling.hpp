@@ -4,6 +4,7 @@
 
 #include <fsl/population/sex-age.hpp>
 #include <fsl/harvesting/sex-age.hpp>
+#include <fsl/monitoring/distribution-summary.hpp>
 
 namespace Fsl {
 namespace Monitoring {
@@ -13,11 +14,13 @@ class AgeCatchSampling : public Structure< AgeCatchSampling<Time, Age> > {
 public:
 
 	Array<double, Time, Age> proportions;
+	Array<DistributionSummary, Time> summaries;
 
 	template<class Mirror>
     void reflect(Mirror& mirror) {
         mirror
             .data(proportions, "proportions")
+            .data(summaries, "summaries")
         ;
     }
 
@@ -38,6 +41,7 @@ public:
 		}
 		sample /= sum;
 		for (auto age : Age::levels) proportions(time, age) = sample(age);
+		summaries(time).calculate(sample);
 	}
 
 };
