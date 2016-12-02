@@ -4,44 +4,10 @@
 
 #include <fsl/population/sex-age.hpp>
 #include <fsl/harvesting/sex-age.hpp>
+#include <fsl/monitoring/distribution-summary.hpp>
 
 namespace Fsl {
 namespace Monitoring {
-
-class DistributionSummary : public Structure <DistributionSummary> {
-public:
-
-	double mean;
-	double median;
-
-	template<class Mirror>
-    void reflect(Mirror& mirror) {
-        mirror
-            .data(mean, "mean")
-            .data(median, "median")
-        ;
-    }
-
-    template<class Dimension>
-    void calculate(Array<double, Dimension> array) {
-    	double cumul = 0;
-    	double sum = 0;
-    	double sumprod = 0;
-    	uint n = 0;
-    	median = 0;
-    	for (auto level : Dimension::levels) {
-    		auto value = level.index();
-    		auto prop = array(level);
-    		cumul += prop;
-    		sum += prop;
-    		sumprod += prop * value;
-    		if (median == 0 and cumul >= 0.5) median = value;
-    		n++;
-    	}
-    	mean = sumprod/sum;
-    }
-
-};
 
 template<class Time, class Length>
 class LengthCatchSampling : public Structure< LengthCatchSampling<Time, Length> > {
@@ -49,6 +15,12 @@ public:
 
 	Array<double, Time, Length> proportions;
 	Array<DistributionSummary, Time> summaries;
+
+	/**
+	 * An array of the proportion of fish of each sex and age in 
+	 * each length bin. See initialias() and update() for it's usage
+	 */
+	Array<double> fractions;
 
 	template<class Mirror>
     void reflect(Mirror& mirror) {
@@ -58,21 +30,33 @@ public:
         ;
     }
 
-	void initialise() {
-
+	template<class Sex, class Age>
+	void initialise(const Population::SexAge<Sex, Age>& population) {
+		fractions.size(Sex::size() * Age::size() * Length::size());
+		uint index = 0;
+		for (auto length : Length::levels) {
+			double l = length.index();
+			for (auto sex : Sex::levels) {
+				for (auto age : Age::levels) {
+					fractions[index] = population.lengths(sex, age).integral(l, l+1);
+					index++;
+				}
+			}
+		}
 	}
 
 	template<class Sex, class Age>
 	void update(uint time, const Population::SexAge<Sex, Age>& population, const Harvesting::SexAge<Sex, Age>& harvesting) {
 		Array<double, Length> sample = 0;
 		double sum = 0;
+		uint index = 0;
 		for (auto length : Length::levels) {
-			double l = length.index();
 			for (auto sex : Sex::levels) {
 				for (auto age : Age::levels) {
 					sample(length) += population.numbers(sex, age) * 
-									population.lengths(sex, age).integral(l, l+1) * 
+									fractions[index] * 
 									harvesting.selectivities(sex, age);
+					index++;
 				}
 			}
 			sum += sample(length);
