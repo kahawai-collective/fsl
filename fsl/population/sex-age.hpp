@@ -233,6 +233,8 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
             .data(lengths, "lengths")
             .data(weight_length, "weight_length")
             .data(weights, "weights")
+            .data(maturity_age, "maturity_age")
+            .data(maturities, "maturities")
         ;
     }
 
@@ -384,7 +386,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     /**
      * Spawning biomass
      */
-    double biomass_spawning(void){
+    double biomass_spawning(void) const {
         double biomass = 0;
         for(auto sex : Sexes::levels){
             for(auto age : Ages::levels){
@@ -393,6 +395,13 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         }
         biomass *= 0.001;
         return biomass;
+    }
+
+    /**
+     * Stock depletion
+     */
+    double depletion (void) const {
+        return biomass_spawning()/stock_recruits.s0;
     }
 
 };

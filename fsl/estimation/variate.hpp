@@ -46,15 +46,15 @@ public:
         Distribution::reflect(mirror);
     }
 
-    double get(int method = 0) {
-        switch (method) {
-            case 0: return value;
-            default: return value;
-        }
+    operator double (void) const {
+        return value;
+    }
+
+    void randomize (void) {
+        value = Distribution::random();
     }
 
 }; // class Variate
-
 
 } // namespace Estimation
 } // namespace Fsl

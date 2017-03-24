@@ -22,10 +22,12 @@ public:
 
     double target;
     double buffer;
-    double reaction = 2;
+    double reaction = 1;
    
     uint wait;
     uint time_last = 0;
+
+    double max = 1e50;
 
 public:
 
@@ -33,7 +35,7 @@ public:
         DynamicControlProcedure<>(control, starting){}
     
     virtual std::string signature(void) const {
-        return boost::str(boost::format("LMAR\t%s\t%s\t%s\t%s\t%s\t%s")
+        return boost::str(boost::format("LMAR\t%s\t%s\t%s\t%s\t%s\t%s\t0\t0\t0\t0")
             %starting
             %smoother.coefficient
             %target
@@ -63,6 +65,7 @@ public:
                 time_last = time;
             }
         }
+        if (value > max) value = max;
         // Do `DynamicControlProcedure::operate()` to actually change the control
         DynamicControlProcedure::operate(time);
     }

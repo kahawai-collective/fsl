@@ -27,6 +27,8 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     double quantity = 0;
     double rate = 0;
 
+    double rate_max = 0.9999;    
+
     double biomass_selected_last = 0;
     /**
      * @}
@@ -83,7 +85,10 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     void update(uint time, Population* population) {
         biomass_selected_last = biomass_selected(*population);
         rate = quantity/biomass_selected_last;
-        if (rate > 1) rate = 1;
+        if (rate > rate_max) {
+            rate = rate_max;
+            quantity = rate * biomass_selected_last;
+        }
         for(auto sex : sexes){
             for(auto age : ages){
                 population->numbers(sex, age) *= 1 - selectivities(sex, age) * rate;

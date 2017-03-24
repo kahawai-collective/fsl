@@ -25,6 +25,14 @@ public:
      */
     double steepness;
 
+    template<class Mirror>
+    void reflect(Mirror& mirror){
+        mirror
+            .data(inflection, "inflection")
+            .data(steepness, "steepness")
+        ;
+    }
+
     double value(const double& x) const {
         return 1.0/(1.0+std::pow(19,(inflection-x)/steepness));
     }

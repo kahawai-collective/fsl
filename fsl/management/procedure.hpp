@@ -1,22 +1,47 @@
 #pragma once
 
+#include <fstream>
+
 namespace Fsl {
 namespace Management {
 
 class Procedure {
 public:
 
-    std::string flags;
+    std::string tag = "";
 
     virtual std::string signature(void) const {
-        return flags;
+        return "";
     }
 
-    virtual void reset(void){
+    virtual void reset(void) {
     }
 
-    virtual void operate(uint time){
+    virtual void operate(uint time) {
     }
+
+    virtual std::string record(uint time) const {
+        return "";
+    }
+
+    /*
+    void stream(uint time, const std::string& path = "") const {
+        if (path.length() and not stream_) {
+            stream_ = new std::ofstream(path);
+        }
+        if (not stream_) {
+            throw Exception ("You need to call stream with a file path at least once");
+        }
+        stream_ << record(time);
+    }
+    */
+    virtual ~Procedure (void) {
+        delete stream_;
+    }
+
+private:
+
+    std::ofstream* stream_ = nullptr;
 };
 
 template<
