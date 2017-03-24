@@ -10,6 +10,10 @@ However, the main purpose for FSL is as a library for fisheries management proce
 FSL provides C++ classes that can be composed in alternative ways to 
 provides for alternative types of MPE range from simple to complex.
 
+## Organisation
+
+
+
 ## Documentation
 
 `fsl/<grandparent>/<parent>/<module>`
@@ -43,6 +47,8 @@ It has the advantage of auto-documentation: it parses the C++ code and produces
 a large volume of documentation from it. Whilst the documentation that Doxygen produces is
 very comprehensive it can be a bit daunting to non-programmers.
 To generate doxygen (requires that [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) is installed):
+
+You can download Doxygen [here](http://www.stack.nl/~dimitri/doxygen/download.html#latestsrc).
 
 ```sh
 make doxygen
