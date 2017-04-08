@@ -40,7 +40,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
 
     const Sexes sexes = Sexes::levels;
     const Ages ages = Ages::levels;
-    const unsigned int age_max = Ages::levels.size();
+    const unsigned int age_max = Ages::levels.size() - 1;
 
     /**
      * @name State
@@ -208,18 +208,6 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
 
 
     /**
-     * @name Exploitaitons
-     * @{
-     */
-    
-    bool exploitation_on = true;
-
-    /**
-     * @}
-     */
-
-
-    /**
      * Reflection
      */
     template<class Mirror>
@@ -281,13 +269,13 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
                 numbers(sex, age) = numbers(sex, age-1);
             }
             // Recruits are split evenly between sexes
-            numbers(0, 0) = recruits * 1.0/(Sexes::levels.size());
+            numbers(sex, 0) = recruits * 1.0/(Sexes::levels.size());
         }
 
         // Natural mortality
         for(auto sex : sexes){
             for(auto age : ages){
-                numbers(sex,age) *=  survivals(sex, age);
+                numbers(sex,age) *= survivals(sex, age);
             }
         }
     }
@@ -309,24 +297,27 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
      */
     void equilibrium(void){
         // Turn off recruitment variation
+        auto recruits_vary_current = recruits_vary;
         recruits_vary = false;
         // Iterate until there is a very minor change in biomass_spawning_last
         uint steps = 0;
-        const uint steps_max = 10000;
+        const uint steps_max = 1e6;
         double biomass_spawning_prev = 1;
         while(steps<steps_max){
             update();
 
             double diff = fabs(biomass_spawning_last-biomass_spawning_prev)/biomass_spawning_prev;
-            if(diff<0.000001 and steps>age_max) break;
+            if(diff<1e-6 and steps > age_max) break;
             biomass_spawning_prev = biomass_spawning_last;
+
+            //std::cout << steps << "\t" << biomass_spawning_last << "\t" << diff << std::endl;
 
             steps++;
         }
         // Throw an error if there was no convergence
-        if(steps>steps_max) throw std::runtime_error("Did not converge");
+        if(steps>=steps_max) throw std::runtime_error("Did not converge");
         // Turn on recruitment variation again
-        recruits_vary = true;
+        recruits_vary = recruits_vary_current;
     }
 
     void pristine(void){
@@ -336,16 +327,15 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
          * defined by less than 0.01% change in total biomass.
          */
         
-        stock_recruits.r0 = 1;
+        stock_recruits.r0 = 1e6;
 
-        // Turn off recruitment relationship and exploitation
+        // Turn off recruitment relationship
+        auto recruits_related_current = recruits_related;
         recruits_related = false;
-        exploitation_on = false;
         // Go to equilibrium
         equilibrium();
-        // Turn on recruitment relationship and exploitation again
-        recruits_related = true;
-        exploitation_on = true;
+        // Turn on recruitment relationship again
+        recruits_related = recruits_related_current;
 
         /**
          * Once the population has converged to unfished equilibrium, the virgin
