@@ -14,7 +14,7 @@ namespace Procedures {
 class TSAR : public DynamicControlProcedure<> {
 public:
 
-    double* const index;
+    double* index;
 
     typedef Fsl::Math::Series::Filters::Ema Smoother;
     Smoother smoother;
@@ -57,26 +57,24 @@ public:
         reset();
     }
     
-    std::string signature(void){
-        return boost::str(boost::format("TSAR(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
+    std::string signature(void) const {
+        return boost::str(boost::format("TSAR,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s")
             %starting
             %smoother.coefficient
             %initial%slope%target%start
             %asymmetry
             %changes.lower%changes.upper
             %values.lower%values.upper
-            %flags
         );
     }
     
-    TSAR& reset(void){
+    void reset(void){
         smoother.reset();
         step = 0;
         DynamicControlProcedure::reset();
-        return *this;
     }
     
-    TSAR& operate(uint time){
+    void operate(uint time){
         double last = value;
         double current = *index;
         double smooth = smoother.update(current);
@@ -104,7 +102,6 @@ public:
         DynamicControlProcedure::operate(time);
         // Increment step
         step++;
-        return *this;
     }
 
 };

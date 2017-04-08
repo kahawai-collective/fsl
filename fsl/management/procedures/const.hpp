@@ -13,8 +13,8 @@ public:
         ControlProcedure(control,value){
     }
     
-    std::string signature(void){
-        return boost::str(boost::format("CONST(%s)")
+    std::string signature(void) const {
+        return boost::str(boost::format("CONST,%s")
             %value
         );
     }
