@@ -14,10 +14,10 @@ public:
 
     double coefficient;
     
-    Autocorrelation(void):
+    Autocorrelation(double coefficient_ = 0):
         started_(false),
         last_(0),
-        coefficient(0){
+        coefficient(coefficient_){
     }
 
     double operator()(const double& deviation) {

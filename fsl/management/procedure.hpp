@@ -20,7 +20,7 @@ public:
     virtual void operate(uint time) {
     }
 
-    virtual std::string record(uint time) const {
+    virtual std::string record(void) const {
         return "";
     }
 

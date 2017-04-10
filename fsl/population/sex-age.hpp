@@ -12,6 +12,9 @@ using Stencila::sum;
 #include <fsl/population/recruitment/beverton-holt.hpp>
 using Fsl::Population::Recruitment::BevertonHolt;
 
+#include <fsl/population/recruitment/autocorrelated.hpp>
+using Fsl::Population::Recruitment::Autocorrelated;
+
 #include <fsl/population/growth/von-bert.hpp>
 using Fsl::Population::Growth::VonBert;
 
@@ -70,7 +73,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
     /**
      * Lognormal recruitment variation
      */
-    Lognormal recruits_variation = {1, 0.6};
+    Autocorrelated<Lognormal> recruits_variation = {0.6, 0};
 
     /**
      * Spawning biomass at last update

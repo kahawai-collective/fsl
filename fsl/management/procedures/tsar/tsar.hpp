@@ -19,15 +19,25 @@ public:
     typedef Fsl::Math::Series::Filters::Ema Smoother;
     Smoother smoother;
     
-    // Definition of trajectory
+    /**
+     * Initial value of trajectory
+     */
     double initial;
+    
+    /**
+     * Slope of trajectory
+     */
     double slope;
+
+    /**
+     * Target for trajectory (defines plateau of trajectory)
+     */
     double target;
 
     /**
-     * Start point for trajectory
+     * Start time for trajectory e.g. 2014
      */
-    uint start = 0;
+    uint start;
 
     /**
      * Asymmetry of response
@@ -36,6 +46,12 @@ public:
     
     RestrictProportionalChange changes;
     RestrictValuePeriods values;
+
+    // Values used in operation.
+    // Members for recording
+    double smooth;
+    double trajectory;
+    double status;
 
     int step;
     double multiplier;
@@ -68,22 +84,22 @@ public:
         );
     }
     
-    void reset(void){
+    void reset(void) {
         smoother.reset();
         step = 0;
         DynamicControlProcedure::reset();
     }
     
-    void operate(uint time){
+    void operate(uint time) {
         double last = value;
         double current = *index;
-        double smooth = smoother.update(current);
+        smooth = smoother.update(current);
         // Calculate trajectory
-        double trajectory = initial+slope*(start+step);
+        trajectory = initial+slope*(time-start);
         if(slope>0) trajectory = std::min(trajectory,target);
         else trajectory = std::max(trajectory,target);
         // Calculate status relative to trajectory
-        double status = smooth/trajectory;
+        status = smooth/trajectory;
         // Calculate assymetric response
         double response;
         double log_status = std::log(status);
@@ -104,6 +120,15 @@ public:
         step++;
     }
 
+    static std::string record_header(void) {
+        return "index\tsmooth\ttrajectory\tstatus\tvalue";
+    }
+
+    virtual std::string record(void) const {
+        return boost::str(boost::format("%s\t%s\t%s\t%s\t%s") % 
+            *index % smooth % trajectory % status % value
+        );
+    }
 };
 
 } // namespace Procedures

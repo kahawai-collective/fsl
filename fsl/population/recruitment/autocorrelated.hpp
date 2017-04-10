@@ -24,8 +24,12 @@ public:
     double sd;
     double autocor;
 
+    Autocorrelated(double sd_, double autocor_):
+        sd(sd_),
+        autocor(autocor_){}
+
     double random(void) {
-        Normal normal(0,sd);
+        Math::Probability::Normal normal(0,sd);
         double deviation = normal.random();
         deviation = autocorrelation(deviation);
         double multiplier = std::exp(deviation-0.5*sd*sd);
