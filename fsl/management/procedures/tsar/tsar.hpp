@@ -86,6 +86,10 @@ public:
     
     void reset(void) {
         smoother.reset();
+        smooth = NAN;
+        trajectory = NAN;
+        status = NAN;
+        value = NAN;
         step = 0;
         DynamicControlProcedure::reset();
     }
