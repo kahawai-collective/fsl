@@ -8,7 +8,7 @@ namespace Management {
 class Procedure {
 public:
 
-    std::string tag = "";
+    std::string tag = "-";
 
     virtual std::string signature(void) const {
         return "";

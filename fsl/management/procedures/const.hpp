@@ -14,7 +14,7 @@ public:
     }
     
     std::string signature(void) const {
-        return boost::str(boost::format("CONST(%s)")
+        return boost::str(boost::format("CONST\t%s\t0\t0\t0\t0\t0\t0\t0\t0\t0")
             %value
         );
     }
