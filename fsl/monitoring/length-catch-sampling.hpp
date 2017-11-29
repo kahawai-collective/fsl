@@ -1,7 +1,7 @@
 #pragma once
 
 #include <fsl/common.hpp>
-
+#include <fsl/math/probability/lognormal.hpp>
 #include <fsl/population/sex-age.hpp>
 #include <fsl/harvesting/sex-age.hpp>
 #include <fsl/monitoring/distribution-summary.hpp>
@@ -13,6 +13,7 @@ template<class Time, class Length>
 class LengthCatchSampling : public Structure< LengthCatchSampling<Time, Length> > {
 public:
 
+	double imprecision = 0;
 	Array<double, Time, Length> proportions;
 	Array<DistributionSummary, Time> summaries;
 
@@ -50,19 +51,23 @@ public:
 		Array<double, Length> sample = 0;
 		double sum = 0;
 		uint index = 0;
+		Math::Probability::Lognormal error(1, imprecision);
 		for (auto length : Length::levels) {
 			for (auto sex : Sex::levels) {
 				for (auto age : Age::levels) {
 					sample(length) += population.numbers(sex, age) * 
 									fractions[index] * 
-									harvesting.selectivities(sex, age);
+									harvesting.selectivities(sex, age) * 
+									(imprecision > 0 ? error.random() : 1);
 					index++;
 				}
 			}
 			sum += sample(length);
 		}
 		sample /= sum;
+
 		for (auto length : Length::levels) proportions(time, length) = sample(length);
+
 		summaries(time).calculate(sample);
 	}
 
