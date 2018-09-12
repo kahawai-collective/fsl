@@ -10,33 +10,23 @@ However, the main purpose for FSL is as a library for fisheries management proce
 FSL provides C++ classes that can be composed in alternative ways to 
 provides for alternative types of MPE range from simple to complex.
 
-## Organisation
+## Setting up
 
+On most Linux systems you should have the required build tools installed already and you should be able to run:
 
+    make tests
 
-## Documentation
+On Windows, the recommended approach is to build using MSYS2 and MinGW64:
 
-`fsl/<grandparent>/<parent>/<module>`
+1. Download and install MYSYS2 following the instructions at https://msys2.github.io/
 
-Each module should have the following files:
+2. Open the MYSY2 shell and install build tools:
 
-- A module __must__ have a C++ header file with a name `<module>.hpp`
+    pacman -S make mingw-w64-x86_64-toolchain zip
 
-- A module __should__ have a C++ testing file with a name `<module>.cxx`
+3. Open the MinGW64 shell and run:
 
-- A module __should__ have a documentation files with a name `<module>.cila`
-
-
-```sh
-make population/recruitment/ricker.module
-```
-
-```
-fsl/population/recruitment/ricker/
-├── ricker.cila
-├── ricker.cxx
-└── ricker.hpp
-```
+    make tests
 
 ## Documentation
 
