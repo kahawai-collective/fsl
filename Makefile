@@ -44,7 +44,7 @@ requires/boost: requires/boost_$(BOOST_VERSION).tar.bz2
 # Stencila
 # For arrays and frames etc
 
-STENCILA_VERSION := 0.2
+STENCILA_VERSION := e7d0502e05ada56fa002b2d22e5c5de7a428c0bb
 
 requires/stencila-cpp-$(STENCILA_VERSION).zip:
 	@mkdir -p requires
