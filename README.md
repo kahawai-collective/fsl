@@ -12,10 +12,10 @@ provides for alternative types of MPE range from simple to complex.
 
 ## Setting up
 
-On most Linux systems you should have the required build tools installed already and you should be able to run:
+On most Linux systems you should have the required build tools installed already and you should be able to install libraries that FSL requires using:
 
 ```bash
-make tests
+make requires
 ```
 
 On Windows, the recommended approach is to build using MSYS2 and MinGW64:
@@ -25,13 +25,13 @@ On Windows, the recommended approach is to build using MSYS2 and MinGW64:
 2. Open the MYSY2 shell and install build tools:
 
 ```bash
-pacman -S make mingw-w64-x86_64-toolchain zip
+pacman -S make mingw-w64-x86_64-toolchain zip bzip2
 ```
 
-3. Open the MinGW64 shell and run:
+3. Open the MinGW64 shell and install the libraries that FSL requires using:
 
 ```bash
-make tests
+make requires
 ```
 
 ## Documentation
