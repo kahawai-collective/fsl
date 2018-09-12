@@ -52,7 +52,7 @@ requires/stencila-cpp-$(STENCILA_VERSION).tar.gz:
 
 requires/stencila: requires/stencila-cpp-$(STENCILA_VERSION).tar.gz
 	rm -rf requires/stencila
-	unzip -o $< -d requires
+	tar -xf $< -C requires
 	mv requires/cpp-$(STENCILA_VERSION)/ requires/stencila/
 	touch $@
 
