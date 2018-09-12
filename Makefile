@@ -31,12 +31,12 @@ requires: requires/boost requires/stencila
 
 BOOST_VERSION := 1_62_0
 
-requires/boost_$(BOOST_VERSION).tar.bz2:
+requires/boost_$(BOOST_VERSION).tar.gz:
 	@mkdir -p requires
-	wget --no-check-certificate -O $@ http://prdownloads.sourceforge.net/boost/boost_$(BOOST_VERSION).tar.bz2
+	wget --no-check-certificate -O $@ http://prdownloads.sourceforge.net/boost/boost_$(BOOST_VERSION).tar.gz
 
-requires/boost: requires/boost_$(BOOST_VERSION).tar.bz2
-	tar --bzip2 -xf $< -C requires
+requires/boost: requires/boost_$(BOOST_VERSION).tar.gz
+	tar -xf $< -C requires
 	mv requires/boost_$(BOOST_VERSION) requires/boost
 	cd requires/boost && ./bootstrap.sh --with-libraries=filesystem,system,test && ./b2 --prefix=. link=static install
 
