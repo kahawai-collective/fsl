@@ -97,7 +97,7 @@ public:
  */
 class ParameterSample : public std::vector<double> {
 private:
-    uint index_ = 0;
+    unsigned int index_ = 0;
     std::vector<std::string> ids_;
 
 public:
@@ -127,7 +127,7 @@ public:
         return (*this)[index_++];
     }
 
-    uint find(const std::string& id){
+    unsigned int find(const std::string& id){
         auto found = std::find(ids_.begin(),ids_.end(),id);
         if(found==ids_.end()) throw std::runtime_error("No parameter found with id:"+id);
         return found-ids_.begin();
@@ -156,13 +156,13 @@ public:
     ParameterSamples(Type data):std::vector<ParameterSample>(data){};
 
     ParameterSample random(void) {
-        uint row = std::rand()%size();
+        unsigned int row = std::rand()%size();
         sample_ = operator[](row);
         return sample_;
     }
 
     double get(const std::string& id){
-        uint column = std::find(ids_.begin(),ids_.end(),id)-ids_.begin();
+        unsigned int column = std::find(ids_.begin(),ids_.end(),id)-ids_.begin();
         return sample_[column];
     }
 
@@ -251,13 +251,13 @@ public:
 
 
     template<class Binder>
-    void apply(Binder& binder, Model& model, uint time){
+    void apply(Binder& binder, Model& model, unsigned int time){
         self().bind(binder,model,time);
     }
 
     template<class Binder>
     void apply(Binder& binder, Model& model){
-        for(uint time=self().first();time<=self().last();time++) apply(binder,model,time);
+        for(unsigned int time=self().first();time<=self().last();time++) apply(binder,model,time);
     }
 
     template<class Binder>
@@ -273,7 +273,7 @@ public:
 
         Setter(ParameterSample& sample):sample_(sample){}
 
-        void operator()(double& variable, uint index){
+        void operator()(double& variable, unsigned int index){
             variable = sample_[index];
         }
 
@@ -283,7 +283,7 @@ public:
         }
     };
 
-    void set(Model& model, uint time, ParameterSample& sample){
+    void set(Model& model, unsigned int time, ParameterSample& sample){
         Setter setter(sample);
         apply(setter,model,time);
     }
@@ -434,7 +434,7 @@ public:
 
             Model model;
             Data data_ = data;
-            for(uint time=self().first();time<=self().last();time++){
+            for(unsigned int time=self().first();time<=self().last();time++){
                 // Apply the parameter set to the model
                 set(model,time,modified);
                 model.update(time);
@@ -451,7 +451,7 @@ public:
     /*
 
     struct Counter {
-        uint count = 0;
+        unsigned int count = 0;
 
         template<class Parameter>
         void operator()(const std::string& name, double& value, Parameter& parameter){
@@ -459,7 +459,7 @@ public:
         }
     };
 
-    uint count(void) const {
+    unsigned int count(void) const {
         Model model;
         Counter counter;
         bind(model,counter);
@@ -478,7 +478,7 @@ public:
 
 
     struct Getter {
-        uint index = 0;
+        unsigned int index = 0;
         std::vector<double> parameters;
 
         template<class Parameter>
@@ -495,7 +495,7 @@ public:
 
 
     struct Setter {
-        uint index = 0;
+        unsigned int index = 0;
         std::vector<double> parameters;
 
         template<class Parameter>
@@ -539,7 +539,7 @@ public:
     }
 
     struct Validator {
-        uint index = 0;
+        unsigned int index = 0;
         std::vector<double> parameters;
         bool ok = true;
 
@@ -564,7 +564,7 @@ public:
     }
 
     struct Restricter {
-        uint index = 0;
+        unsigned int index = 0;
         std::vector<double> ins;
         std::vector<double> outs;
 
@@ -618,8 +618,8 @@ public:
     }
 
     void parameters(std::ostream& stream, const std::vector<double>& parameters){
-        uint size = parameters.size();
-        for(uint index=0;index<size;index++){
+        unsigned int size = parameters.size();
+        for(unsigned int index=0;index<size;index++){
             stream<<parameters[index];
             if(index<size-1) stream<<"\t";
         }

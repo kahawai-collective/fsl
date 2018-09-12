@@ -21,7 +21,7 @@ public:
         xs(xs),ys(ys){}
 
     double interpolate(const double& x) const {
-        for(uint index=0;index<xs.size()-1;index++){
+        for(unsigned int index=0;index<xs.size()-1;index++){
             if(xs[index]<=x and x<xs[index+1]){
                 return ys[index] + (x-xs[index]) * (ys[index+1]-ys[index])/(xs[index+1]-xs[index]);
             }

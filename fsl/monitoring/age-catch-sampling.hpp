@@ -29,7 +29,7 @@ public:
 	}
 
 	template<class Sex>
-	void update(uint time, const Population::SexAge<Sex, Age>& population, const Harvesting::SexAge<Sex, Age>& harvesting) {
+	void update(unsigned int time, const Population::SexAge<Sex, Age>& population, const Harvesting::SexAge<Sex, Age>& harvesting) {
 		Array<double, Age> sample = 0;
 		double sum = 0;
 		for (auto age : Age::levels) {

@@ -34,7 +34,7 @@ public:
 	template<class Sex, class Age>
 	void initialise(const Population::SexAge<Sex, Age>& population) {
 		fractions.size(Sex::size() * Age::size() * Length::size());
-		uint index = 0;
+		unsigned int index = 0;
 		for (auto length : Length::levels) {
 			double l = length.index();
 			for (auto sex : Sex::levels) {
@@ -47,10 +47,10 @@ public:
 	}
 
 	template<class Sex, class Age>
-	void update(uint time, const Population::SexAge<Sex, Age>& population, const Harvesting::SexAge<Sex, Age>& harvesting) {
+	void update(unsigned int time, const Population::SexAge<Sex, Age>& population, const Harvesting::SexAge<Sex, Age>& harvesting) {
 		Array<double, Length> sample = 0;
 		double sum = 0;
-		uint index = 0;
+		unsigned int index = 0;
 		Math::Probability::Lognormal error(1, imprecision);
 		for (auto length : Length::levels) {
 			for (auto sex : Sex::levels) {

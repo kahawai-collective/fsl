@@ -102,9 +102,9 @@ namespace Models {
  */
 template<
     class Derived,
-    uint Sexes,
-    uint Ages,
-    uint Sectors
+    unsigned int Sexes,
+    unsigned int Ages,
+    unsigned int Sectors
 >
 class Matiri : public Polymorph<Derived> {
 public:
@@ -514,7 +514,7 @@ public:
     /**
      * Update the model
      */
-    void update(uint time=0){
+    void update(unsigned int time=0){
 
         // Calculate number of recruits
         recruits_determ = recruitment_relation?recruitment_relation(biomass_spawning):recruitment_relation.r0;
@@ -529,7 +529,7 @@ public:
             // Oldest age class accumulates 
             numbers(sex,ages.size()-1) += numbers(sex,ages.size()-2);
             // For most ages just "shuffle" along
-            for(uint age=ages.size()-2;age>0;age--){
+            for(unsigned int age=ages.size()-2;age>0;age--){
                 numbers(sex,age) = numbers(sex,age-1);
             }
             // Recruits are split between sexes according to the sex ratio
@@ -599,8 +599,8 @@ public:
         bool recruitment_variation_on = recruitment_variation;
         recruitment_variation.off();
         // Iterate until there is a very minor change in biomass
-        uint steps = 0;
-        const uint steps_max = 10000;
+        unsigned int steps = 0;
+        const unsigned int steps_max = 10000;
         double biomass_prev = 1;
         while(steps<steps_max){
             update();
@@ -645,7 +645,7 @@ public:
     }
 
     template<class Model,typename Tag>
-    void write(const Model& model, const Tag& tag, uint time=0){
+    void write(const Model& model, const Tag& tag, unsigned int time=0){
         this->overall
             <<tag<<"\t"
             <<time<<"\t"
@@ -705,8 +705,8 @@ public:
     }
 
     template<class Model>
-    void write(Model& model, const std::string& tag, uint begin, uint end){
-        for(uint time=begin;time<end;time++){
+    void write(Model& model, const std::string& tag, unsigned int begin, unsigned int end){
+        for(unsigned int time=begin;time<end;time++){
             model.update(time);
             write(model,tag,time);
         }

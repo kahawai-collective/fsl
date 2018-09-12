@@ -82,7 +82,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
      * Update
      */
     template<class Population>
-    void update(uint time, Population* population) {
+    void update(unsigned int time, Population* population) {
         biomass_selected_last = biomass_selected(*population);
         rate = quantity/biomass_selected_last;
         if (rate > rate_max) {

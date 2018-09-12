@@ -21,12 +21,12 @@ public:
 class RestrictValuePeriods : public RestrictValue {
 public:
     struct Period : RestrictValue {
-        uint start = 0;
-        uint finish = 0;
+        unsigned int start = 0;
+        unsigned int finish = 0;
     };
     Period periods[10];
 
-    double restrict(const double& value, uint time){
+    double restrict(const double& value, unsigned int time){
         for(auto period : periods){
             if(period.start==0 and period.finish==0) break;
             if(time>=period.start and time<=period.finish){

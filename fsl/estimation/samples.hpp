@@ -30,13 +30,13 @@ public:
 	Samples(Type data):std::vector<Sample>(data){};
 
 	Sample random(void) {
-		uint row = std::rand()%size();
+		unsigned int row = std::rand()%size();
 		sample_ = operator[](row);
 		return sample_;
 	}
 
 	double get(const std::string& label){
-		uint column = std::find(labels_.begin(),labels_.end(),label)-labels_.begin();
+		unsigned int column = std::find(labels_.begin(),labels_.end(),label)-labels_.begin();
 		return sample_[column];
 	}
 

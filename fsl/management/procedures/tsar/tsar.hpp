@@ -37,7 +37,7 @@ public:
     /**
      * Start time for trajectory e.g. 2014
      */
-    uint start;
+    unsigned int start;
 
     /**
      * Asymmetry of response
@@ -63,7 +63,7 @@ public:
         const double& starting, 
         double* const index, 
         const double& responsiveness=1,
-        const double& initial=1, const double& slope=0.01,const double& target=2, const uint& start=0,
+        const double& initial=1, const double& slope=0.01,const double& target=2, const unsigned int& start=0,
         const double& asymmetry=1):
         DynamicControlProcedure(control,starting),
         index(index),
@@ -94,7 +94,7 @@ public:
         DynamicControlProcedure::reset();
     }
     
-    void operate(uint time) {
+    void operate(unsigned int time) {
         double last = value;
         double current = *index;
         smooth = smoother.update(current);

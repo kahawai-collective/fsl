@@ -56,7 +56,7 @@ public:
         return *this;
     }
     
-    BIPR& operate(uint time){
+    BIPR& operate(unsigned int time){
         double last = value;
         double current = *index;
         double smooth = smoother.update(current);

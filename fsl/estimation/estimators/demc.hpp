@@ -76,21 +76,21 @@ public:
     //! @brief Create a set of replicates for evaluations
     //!
     //! This method must set both *parameters* and *states*.
-    void run(uint size=1000, uint trials=1e6) {       
+    void run(unsigned int size=1000, unsigned int trials=1e6) {       
         std::ofstream log_file;
         if(log) log_file.open(directory+"/log.tsv");
 
         std::ofstream errors_file;
         if(errors) errors_file.open(directory+"/errors.tsv");
 
-        uint columns = samples.columns();
-        uint accepted = 0;
+        unsigned int columns = samples.columns();
+        unsigned int accepted = 0;
 
         // For each trial...
-        for(uint trial=0;trial<trials;trial++){
+        for(unsigned int trial=0;trial<trials;trial++){
             update_();
 
-            uint rows = samples.rows();
+            unsigned int rows = samples.rows();
                 
             Values candidate(columns);
             double likelihood = NAN;
@@ -110,12 +110,12 @@ public:
                     Sample a = select_();
                     Sample b = select_();
                     Sample c = select_();
-                    for(uint column=0;column<columns;column++){
+                    for(unsigned int column=0;column<columns;column++){
                         donor[column] = a[column] + blending*(b[column]-c[column]);
                     }
                 }
-                uint which = chance.random() * columns;
-                for(uint column=0;column<columns;column++){
+                unsigned int which = chance.random() * columns;
+                for(unsigned int column=0;column<columns;column++){
                     if(column==which or chance.random()<crossing){
                         candidate[column] = donor[column];
                     }

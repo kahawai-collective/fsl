@@ -268,7 +268,7 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
             // Oldest age class accumulates 
             numbers(sex, age_max) += numbers(sex, age_max-1);
             // For most ages just "shuffle" along
-            for(uint age = age_max-1; age > 0; age--){
+            for(unsigned int age = age_max-1; age > 0; age--){
                 numbers(sex, age) = numbers(sex, age-1);
             }
             // Recruits are split evenly between sexes
@@ -303,8 +303,8 @@ class SexAge : public Structure< SexAge<Sexes, Ages> > {
         auto recruits_vary_current = recruits_vary;
         recruits_vary = false;
         // Iterate until there is a very minor change in biomass_spawning_last
-        uint steps = 0;
-        const uint steps_max = 1e6;
+        unsigned int steps = 0;
+        const unsigned int steps_max = 1e6;
         double biomass_spawning_prev = 1;
         while(steps<steps_max){
             update();

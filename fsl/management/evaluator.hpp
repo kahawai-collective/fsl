@@ -19,11 +19,11 @@ public:
      */
     std::vector<ProcedureAny> procedures;
 
-    uint first;
-    uint start;
-    uint last;
+    unsigned int first;
+    unsigned int start;
+    unsigned int last;
 
-    uint replicates = 0;
+    unsigned int replicates = 0;
 
     Derived& write(void){
         std::ofstream procedures_file("procedures.tsv");
@@ -58,7 +58,7 @@ public:
             {"replicate","sample","procedure"}
         );
         // For each replicate...
-        for(uint replicate=0;replicate<replicates;replicate++){
+        for(unsigned int replicate=0;replicate<replicates;replicate++){
             // Select a random sample
             Sample sample = samples.random();
             // Load sample into parameters
@@ -66,7 +66,7 @@ public:
             // Create a starting model state by copying the supplied
             // model and iterating from `first` to `start`
             Model starting = model;
-            for(uint time=first;time<start;time++){
+            for(unsigned int time=first;time<start;time++){
                 //... set model parameters
                 parameters_.set(starting,time);
                 //... do `before()` method
@@ -78,9 +78,9 @@ public:
             }
             // Create a random generator seed to be used to ensure the same
             // process and observation error realisations for each candidate
-            uint seed = replicate + 13750892;
+            unsigned int seed = replicate + 13750892;
             // For each candidate...
-            for(uint candidate=0;candidate<procedures.size();candidate++){
+            for(unsigned int candidate=0;candidate<procedures.size();candidate++){
                 // Reset the evaluator
                 derived().reset();
                 // Reset random seed
@@ -95,7 +95,7 @@ public:
                 // Create a local performance set
                 Performance performance_ = performance;
                 performance_.initialise(model_);
-                for(uint time=start;time<=last;time++){
+                for(unsigned int time=start;time<=last;time++){
                     //... set model parameters
                     parameters_.set(model_,time);
                     //... do `before()` method

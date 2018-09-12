@@ -174,20 +174,20 @@ class Sample {
 private:
 
     const Samples& samples_;
-    uint row_;
+    unsigned int row_;
 
 public:
 
-    Sample(const Samples& samples,uint row):
+    Sample(const Samples& samples,unsigned int row):
         samples_(samples),
         row_(row){        
     }
 
-    uint index(void) const {
+    unsigned int index(void) const {
         return row_;
     }
 
-    uint columns(void) const;
+    unsigned int columns(void) const;
 
     /**
      * Check the sample has a column with name
@@ -201,7 +201,7 @@ public:
      * 
      * @param  Index of the variate
      */
-    double get(uint index) const;
+    double get(unsigned int index) const;
 
     /**
      * Get a variate value from the sample
@@ -216,7 +216,7 @@ public:
     double likelihood(void) const;
 
 
-    double operator[](uint index) const {
+    double operator[](unsigned int index) const {
         return get(index);
     }
 
@@ -257,7 +257,7 @@ typedef std::vector<double> Values;
 class Samples {
 private:
 
-    uint rows_ = 0;
+    unsigned int rows_ = 0;
     
     struct Cell_ {
         Values values;
@@ -274,11 +274,11 @@ private:
 
 public:
 
-    uint rows(void) const {
+    unsigned int rows(void) const {
         return cells_.size();
     }
 
-    uint columns(void) const {
+    unsigned int columns(void) const {
         return names_.size();
     }
 
@@ -288,14 +288,14 @@ public:
         else return false;
     }
 
-    double get(uint row, uint column) const {
+    double get(unsigned int row, unsigned int column) const {
         return cells_[row].values[column];
     }
 
-    double get(uint row, const std::string& name) const {
+    double get(unsigned int row, const std::string& name) const {
         auto iter = std::find(names_.begin(),names_.end(),name);
         if(iter != names_.end()){
-            uint column = iter-names_.begin();
+            unsigned int column = iter-names_.begin();
             return get(row,column);
         }
         else return NAN;
@@ -310,11 +310,11 @@ public:
         return *this;
     }
 
-    double likelihood(uint row) const {
+    double likelihood(unsigned int row) const {
         return cells_[row].likelihood;
     }
 
-    Sample operator[](uint index) const {
+    Sample operator[](unsigned int index) const {
         return Sample(*this,index);
     }
 
@@ -327,7 +327,7 @@ public:
     }    
 
     Sample random(void) const {
-        uint row = std::rand()%rows();
+        unsigned int row = std::rand()%rows();
         return Sample(*this,row);
     }
 
@@ -340,7 +340,7 @@ public:
         return remove(sample.index());
     }
 
-    Samples& remove(uint index){
+    Samples& remove(unsigned int index){
         cells_.erase(cells_.begin()+index);
         return *this;
     }
@@ -403,7 +403,7 @@ public:
 
 };
 
-uint Sample::columns(void) const {
+unsigned int Sample::columns(void) const {
     return samples_.columns();
 }
 
@@ -411,7 +411,7 @@ bool Sample::has(const std::string& name) const {
     return samples_.has(name);
 }
 
-double Sample::get(uint index) const {
+double Sample::get(unsigned int index) const {
     return samples_.get(row_,index);
 }
 
@@ -497,7 +497,7 @@ public:
 
         template<class Distribution,class... Indices>
         DerivedMirror& data(Variables<Distribution,Indices...>& variables, const std::string& name){
-            for(uint index=0;index<variables.size();index++){
+            for(unsigned int index=0;index<variables.size();index++){
                 derived().variate(variables[index],name+variables.subscript(index,true));
             }
             return derived();
@@ -509,7 +509,7 @@ public:
     /**
      * Get the number of variates in the `Set`
      */
-    uint count(void) {
+    unsigned int count(void) {
         Count_ mirror;
         derived().reflect(mirror);
         return mirror.count;
@@ -518,7 +518,7 @@ public:
 private:
 
     struct Count_ : SetMirror<Count_> {
-        uint count = 0;
+        unsigned int count = 0;
 
         template<class Distribution>
         void variate(Variate<Distribution>& variate, const std::string& name){
@@ -632,7 +632,7 @@ private:
 
     struct LoadVector_ : SetMirror<LoadVector_> {
         const std::vector<double>& vector;
-        uint index = 0;
+        unsigned int index = 0;
 
         LoadVector_(const std::vector<double>& vector):
             vector(vector){
@@ -718,7 +718,7 @@ public:
 
         template<class Distribution,class... Indices>
         ListWriter& data(Variables<Distribution,Indices...>& variables, const std::string& name){
-            for(uint index=0;index<variables.size();index++){
+            for(unsigned int index=0;index<variables.size();index++){
                 variate(variables[index],name+variables.subscript(index,true));
             }
             return *this;
@@ -763,7 +763,7 @@ public:
 
         template<class Distribution,class... Indices>
         PdfWriter& data(Variables<Distribution,Indices...>& variables, const std::string& name){
-            for(uint index=0;index<variables.size();index++){
+            for(unsigned int index=0;index<variables.size();index++){
                 variate(variables[index],name+variables.subscript(index,true));
             }
             return *this;
@@ -931,7 +931,7 @@ private:
     struct Restrict_ : SetMirror<Restrict_> {
         const std::vector<double>& supplied;
         std::vector<double> restricted;
-        uint index = 0;
+        unsigned int index = 0;
 
         Restrict_(const std::vector<double>& supplied):
             supplied(supplied),

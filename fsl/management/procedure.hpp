@@ -17,7 +17,7 @@ public:
     virtual void reset(void) {
     }
 
-    virtual void operate(uint time) {
+    virtual void operate(unsigned int time) {
     }
 
     virtual std::string record(void) const {
@@ -25,7 +25,7 @@ public:
     }
 
     /*
-    void stream(uint time, const std::string& path = "") const {
+    void stream(unsigned int time, const std::string& path = "") const {
         if (path.length() and not stream_) {
             stream_ = new std::ofstream(path);
         }
@@ -57,7 +57,7 @@ public:
         value(value){
     }
 
-    virtual void operate(uint time){
+    virtual void operate(unsigned int time){
         *control = value;
     }
 };

@@ -40,7 +40,7 @@ public:
 	}
 
 	template<class Population, class Harvesting>
-	void update(uint time, const Population& population, const Harvesting& harvesting) {
+	void update(unsigned int time, const Population& population, const Harvesting& harvesting) {
 		double cpue_biomass = harvesting.biomass_selected(population);
 
         double cpue_apparent = std::pow(cpue_biomass, beta);

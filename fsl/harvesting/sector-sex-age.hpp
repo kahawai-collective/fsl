@@ -22,7 +22,7 @@ public:
     }
 
     template<class Population>
-    void update(uint time, Population* population) {
+    void update(unsigned int time, Population* population) {
         for (auto sector : sectors_) sectors(sector).update(time, population);  
     }
 };

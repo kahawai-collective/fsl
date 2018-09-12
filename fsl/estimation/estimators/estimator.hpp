@@ -38,7 +38,7 @@ public:
     /**
      * Write log every `log` iterations
      */
-    uint log  = 100;
+    unsigned int log  = 100;
 
     /**
      * Write errors to file?
@@ -48,7 +48,7 @@ public:
     /**
      * Write samples every `store` iterations
      */
-    uint store = 1000;
+    unsigned int store = 1000;
 
 
     Estimator(const std::string& directory = "estimator"):

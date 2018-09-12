@@ -24,8 +24,8 @@ public:
     double buffer;
     double reaction = 1;
    
-    uint wait;
-    uint time_last = 0;
+    unsigned int wait;
+    unsigned int time_last = 0;
 
     double max = 1e50;
 
@@ -52,7 +52,7 @@ public:
         time_last = 0;
     }
     
-    virtual void operate(uint time){
+    virtual void operate(unsigned int time){
         //double last = value;
         double current = *index;
         double smooth = smoother.update(current);
@@ -70,7 +70,7 @@ public:
         DynamicControlProcedure::operate(time);
     }
 
-    virtual std::string record(uint time) const {
+    virtual std::string record(unsigned int time) const {
         if (time == 0) return "time\tindex\tsmooth\ttarget\tbuffer\tvalue\n";
         else return boost::str(
             boost::format("%s\t%s\t%s\t%s\t%s\t%s\n") % 

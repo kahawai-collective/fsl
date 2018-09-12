@@ -29,7 +29,7 @@ public:
     	double sum = 0;
     	double sumprod = 0;
         double last = -1;
-    	uint n = 0;
+    	unsigned int n = 0;
     	median = 0;
         p10 = 0;
         mrad = 0;

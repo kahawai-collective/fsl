@@ -84,7 +84,7 @@ public:
         return *this;
     }
     
-    BTAR& operate(uint time){
+    BTAR& operate(unsigned int time){
         // Store current control value
         double last = value;
         // Get biomass index and update smoother
