@@ -46,11 +46,11 @@ requires/boost: requires/boost_$(BOOST_VERSION).tar.gz
 
 STENCILA_VERSION := e7d0502e05ada56fa002b2d22e5c5de7a428c0bb
 
-requires/stencila-cpp-$(STENCILA_VERSION).zip:
+requires/stencila-cpp-$(STENCILA_VERSION).tar.gz:
 	@mkdir -p requires
-	wget --no-check-certificate -O $@ https://github.com/stencila/cpp/archive/$(STENCILA_VERSION).zip
+	wget --no-check-certificate -O $@ https://github.com/stencila/cpp/archive/$(STENCILA_VERSION).tar.gz
 
-requires/stencila: requires/stencila-cpp-$(STENCILA_VERSION).zip
+requires/stencila: requires/stencila-cpp-$(STENCILA_VERSION).tar.gz
 	rm -rf requires/stencila
 	unzip -o $< -d requires
 	mv requires/cpp-$(STENCILA_VERSION)/ requires/stencila/
