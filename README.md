@@ -14,7 +14,9 @@ provides for alternative types of MPE range from simple to complex.
 
 On most Linux systems you should have the required build tools installed already and you should be able to run:
 
-    make tests
+```bash
+make tests
+```
 
 On Windows, the recommended approach is to build using MSYS2 and MinGW64:
 
@@ -22,11 +24,15 @@ On Windows, the recommended approach is to build using MSYS2 and MinGW64:
 
 2. Open the MYSY2 shell and install build tools:
 
-    pacman -S make mingw-w64-x86_64-toolchain zip
+```bash
+pacman -S make mingw-w64-x86_64-toolchain zip
+```
 
 3. Open the MinGW64 shell and run:
 
-    make tests
+```bash
+make tests
+```
 
 ## Documentation
 
